@@ -1,96 +1,234 @@
-# atomica-core
+# ATÓMICA Core
 
-Fuente oficial de conocimiento de **ATÓMICA**. Sitio de documentación en
-Markdown, versionado y desplegable en Cloudflare Pages. Separado del
-repositorio de producto `Atomica-app`.
+> El conocimiento que da forma a ATÓMICA.
 
-Construido con [Docusaurus 3](https://docusaurus.io/) (Node ≥ 20).
+---
 
-## Características de la infraestructura
+# ¿Qué es este repositorio?
 
-- Contenido 100 % en **Markdown/MDX** bajo control de **Git**.
-- **Navegación lateral** autogenerada desde la estructura de `docs/`.
-- **Buscador local** offline (sin Algolia ni servicios externos).
-- Diagramas **Mermaid**.
-- **Modo claro/oscuro** (respeta la preferencia del sistema).
-- **Versionado** nativo de la documentación.
-- Sitio en **español**.
+ATÓMICA Core es el repositorio oficial de la metodología de ATÓMICA.
 
-## Requisitos
+No contiene el producto.
 
-- Node.js ≥ 20 (ver `.nvmrc`).
-- npm.
+No contiene la interfaz.
 
-## Ejecutar en local
+No contiene la implementación técnica.
 
-```bash
-npm install        # instala dependencias (solo la primera vez)
-npm start          # servidor de desarrollo con recarga en caliente
-```
+Contiene el conocimiento que permite construir el producto.
 
-Abre `http://localhost:3000`.
+Su objetivo es preservar la lógica metodológica independientemente de la tecnología utilizada para implementarla.
 
-Otros comandos útiles:
+Si la aplicación desapareciera mañana, este repositorio debería permitir reconstruir ATÓMICA desde cero.
 
-```bash
-npm run build      # genera el sitio estático en /build
-npm run serve      # sirve /build en local para verificar el build de producción
-npm run clear      # limpia la caché de Docusaurus
-```
+---
 
-## Añadir contenido
+# Propósito
 
-1. Crea archivos `.md` o `.mdx` dentro de `docs/`.
-2. Agrupa por carpetas; la barra lateral se genera sola.
-3. Controla el orden con `sidebar_position` en el frontmatter o con un
-   archivo `_category_.json` por carpeta.
+ATÓMICA nace con una idea sencilla:
 
-No hay que tocar `sidebars.js` para añadir documentos.
+Las organizaciones no fracasan únicamente por falta de resultados.
 
-## Versionado
+Fracasan porque acumulan fragilidades que permanecen ocultas hasta que un cambio interno o externo las hace visibles.
 
-Para congelar el estado actual de la documentación como una versión estable:
+Nuestro objetivo no es medir únicamente el estado de una empresa.
 
-```bash
-npm run docs:version 1.0
-```
+Nuestro objetivo es comprender cómo funciona, dónde concentra su fragilidad y qué capacidades debe fortalecer para aumentar su resiliencia y evolucionar hacia una organización antifrágil.
 
-Esto crea `versioned_docs/version-1.0/` y `versioned_sidebars/`, y activa
-automáticamente el selector de versión en la barra de navegación. La carpeta
-`docs/` pasa a representar la versión en desarrollo ("Next"). Repite el
-comando (`1.1`, `2.0`, …) en cada corte de versión.
+---
 
-Referencia: https://docusaurus.io/docs/versioning
+# Qué NO es
 
-## Despliegue en Cloudflare Pages
+Este repositorio NO es:
 
-1. Sube este repositorio a GitHub (`isvidalga/atomica-core`).
-2. En el panel de Cloudflare: **Workers & Pages → Create → Pages →
-   Connect to Git** y selecciona el repositorio.
-3. Configuración de build:
-   - **Framework preset**: Docusaurus (o "None").
-   - **Build command**: `npm run build`
-   - **Build output directory**: `build`
-4. **Variables de entorno** → añade `NODE_VERSION` = `20` (Cloudflare usa
-   una versión antigua de Node por defecto; Docusaurus 3 requiere ≥ 20).
-5. Deploy. Cada `push` a `main` redepliega automáticamente; las ramas de PR
-   generan previsualizaciones.
+- documentación técnica
+- manual de usuario
+- documentación de programación
+- documentación comercial
+- material de marketing
 
-### Dominio personalizado
+Todo el contenido aquí almacenado debe ser válido aunque la aplicación cambie completamente de tecnología.
 
-En **Pages → tu proyecto → Custom domains**, añade el dominio (p. ej.
-`docs.atomicalab.es`) y crea el registro CNAME que Cloudflare indique.
-Recuerda actualizar `url` y `baseUrl` en `docusaurus.config.js`.
+---
 
-## Estructura
+# Filosofía
 
-```
-atomica-core/
-├── docs/                  # contenido (Markdown/MDX)
-├── src/css/custom.css     # tema y colores de marca
-├── static/                # activos estáticos (imágenes, favicon…)
-├── docusaurus.config.js   # configuración del sitio
-├── sidebars.js            # barra lateral (autogenerada)
-├── versioned_docs/        # se crea al cortar versiones
-└── package.json
-```
+ATÓMICA entiende la empresa como un sistema complejo.
+
+Los problemas rara vez aparecen de forma aislada.
+
+Las fragilidades interactúan.
+
+Las capacidades se refuerzan entre sí.
+
+Las decisiones generan efectos indirectos.
+
+Por ello, el objetivo no consiste en optimizar indicadores individuales, sino en comprender el comportamiento del sistema.
+
+---
+
+# Principios fundamentales
+
+Toda la metodología se construye sobre una serie de principios inmutables.
+
+Entre ellos:
+
+- Nada al azar.
+- Toda afirmación debe ser trazable.
+- El conocimiento siempre es incompleto.
+- La organización es un sistema complejo.
+- El software implementa la metodología; no la define.
+- La metodología es independiente de la tecnología.
+- La incertidumbre forma parte del modelo.
+- El aprendizaje continuo prevalece sobre la certificación puntual.
+
+Estos principios se desarrollan en `02_principles/principles.md`.
+
+---
+
+# Modelo conceptual
+
+ATÓMICA no representa empresas.
+
+Construye un modelo organizacional basado en información disponible.
+
+Ese modelo evoluciona continuamente.
+
+El flujo conceptual es:
+
+Empresa
+
+↓
+
+Declaraciones
+
+↓
+
+Modelo organizacional
+
+↓
+
+Hipótesis
+
+↓
+
+Capacidades
+
+↓
+
+Fragilidades
+
+↓
+
+Prácticas
+
+↓
+
+Evidencias
+
+↓
+
+Incremento del nivel de confianza
+
+↓
+
+Nuevo modelo organizacional
+
+Cada ciclo mejora simultáneamente:
+
+- la organización;
+- el conocimiento que ATÓMICA posee sobre ella.
+
+---
+
+# Arquitectura del conocimiento
+
+El conocimiento se organiza en varios niveles.
+
+## Visión
+
+Describe el propósito de ATÓMICA.
+
+## Metodología
+
+Define el funcionamiento del IFO y del proceso de diagnóstico.
+
+## Principios
+
+Recoge las reglas inmutables del sistema.
+
+## Ontología
+
+Define las entidades fundamentales y sus relaciones.
+
+## Capacidades
+
+Representan aquello que una organización debe ser capaz de hacer.
+
+## Fragilidades
+
+Patrones recurrentes que reducen la resiliencia organizacional.
+
+## Patrones organizacionales
+
+Configuraciones de capacidades y fragilidades que aparecen de forma recurrente.
+
+## Prácticas
+
+Acciones concretas destinadas a fortalecer capacidades.
+
+## Evidencias
+
+Elementos que incrementan el nivel de confianza del modelo.
+
+---
+
+# Separación de responsabilidades
+
+ATÓMICA distingue claramente entre tres capas.
+
+## Metodología
+
+Describe cómo interpretar una organización.
+
+## Conocimiento
+
+Representa el modelo organizacional.
+
+## Presentación
+
+Muestra ese conocimiento mediante dashboards, informes y asistentes conversacionales.
+
+Esta separación constituye uno de los principios arquitectónicos fundamentales del proyecto.
+
+---
+
+# Estado actual
+
+Versión metodológica:
+
+IFO 1.0
+
+Estado:
+
+En desarrollo.
+
+El modelo conceptual puede evolucionar mediante nuevas versiones metodológicas, manteniendo siempre la trazabilidad de los diagnósticos históricos.
+
+---
+
+# Evolución
+
+La evolución de ATÓMICA debe priorizar siempre:
+
+1. Mejor conocimiento.
+2. Mejor metodología.
+3. Mejor interpretación.
+4. Mejor experiencia de usuario.
+
+Nunca al contrario.
+
+---
+
+# Licencia
+
+Pendiente de definir.
