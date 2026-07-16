@@ -1,0 +1,277 @@
+# 07 · Vistas
+
+Estado: RFC-001 (Draft)
+
+Versión: 0.1
+
+Última revisión: Julio 2026
+
+---
+
+# Breadcrumb
+
+atomica-core/
+
+└── 30_architecture/
+
+└── 07_vistas.md
+
+---
+
+# Propósito
+
+Las Vistas representan distintas formas de observar un mismo Modelo Organizacional.
+
+No crean conocimiento.
+
+No modifican el Modelo.
+
+No contienen lógica propia.
+
+Únicamente representan información adaptada al contexto de cada usuario.
+
+---
+
+# Principio Fundamental
+
+Existe un único Modelo Organizacional.
+
+Existen múltiples perspectivas.
+
+Las vistas nunca duplican información.
+
+---
+
+# Arquitectura
+
+Organización
+
+↓
+
+Modelo Organizacional
+
+↓
+
+Motor de Conocimiento
+
+↓
+
+Motor de Comprensión
+
+↓
+
+Vista
+
+↓
+
+Usuario
+
+---
+
+# Regla
+
+Dos usuarios distintos nunca observarán dos modelos distintos.
+
+Observarán dos interpretaciones del mismo modelo.
+
+---
+
+# Tipos de Vista
+
+## Vista CEO
+
+Objetivo
+
+Reducir incertidumbre para la toma de decisiones.
+
+Prioriza
+
+• riesgos
+
+• cambios
+
+• capacidades
+
+• incertidumbres
+
+• evolución
+
+No prioriza
+
+• detalle documental
+
+• relaciones técnicas
+
+---
+
+## Vista Consejo
+
+Objetivo
+
+Comprender la evolución de la organización.
+
+Prioriza
+
+• tendencias
+
+• decisiones
+
+• riesgos estructurales
+
+• memoria organizacional
+
+---
+
+## Vista Dirección
+
+Objetivo
+
+Comprender la situación de un área concreta.
+
+Prioriza
+
+• capacidades
+
+• eventos
+
+• indicadores
+
+---
+
+## Vista Auditor
+
+Objetivo
+
+Verificar.
+
+Prioriza
+
+• procedencia
+
+• evidencias
+
+• trazabilidad
+
+• contradicciones
+
+Nunca recomendaciones.
+
+---
+
+## Vista Inversor
+
+Objetivo
+
+Comprender resiliencia futura.
+
+Prioriza
+
+• estabilidad
+
+• capacidad adaptativa
+
+• riesgos
+
+• evolución histórica
+
+---
+
+## Vista Administración Pública
+
+Objetivo
+
+Comprobar cumplimiento.
+
+Prioriza
+
+• evidencias
+
+• documentos
+
+• indicadores
+
+• auditoría
+
+---
+
+## Vista Tercer Sector
+
+Objetivo
+
+Comprender impacto.
+
+Prioriza
+
+• gobernanza
+
+• comunidad
+
+• aprendizaje
+
+• resiliencia
+
+---
+
+# Componentes comunes
+
+Todas las vistas poseen:
+
+Estado
+
+↓
+
+Cambios
+
+↓
+
+Explicación
+
+↓
+
+Trazabilidad
+
+↓
+
+Memoria
+
+---
+
+# Componentes específicos
+
+Cada Vista podrá incorporar componentes propios.
+
+Nunca podrá crear conocimiento independiente.
+
+---
+
+# Restricciones
+
+Las Vistas nunca:
+
+• modifican el Modelo Organizacional;
+
+• recalculan indicadores;
+
+• alteran confianza;
+
+• generan afirmaciones.
+
+---
+
+# Relación con Donella
+
+Donella no pertenece a una Vista.
+
+Puede ser utilizada desde cualquier Vista.
+
+Su comportamiento dependerá únicamente del contexto del usuario.
+
+Nunca del conocimiento disponible.
+
+---
+
+# Futuro
+
+Nuevas Vistas podrán añadirse sin modificar el Modelo Organizacional.
+
+El crecimiento del producto se realizará mediante nuevas perspectivas y no mediante nuevas arquitecturas.
