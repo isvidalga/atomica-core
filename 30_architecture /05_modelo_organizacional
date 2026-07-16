@@ -1,0 +1,169 @@
+# 05 · Modelo Organizacional
+
+Estado: RFC-001 (Draft)
+
+Versión: 0.1
+
+---
+
+# Breadcrumb
+
+Architecture
+
+↓
+
+Modelo Organizacional
+
+---
+
+# Propósito
+
+Definir la representación interna de una organización dentro de ATÓMICA.
+
+El Modelo Organizacional no describe una empresa.
+
+Describe el estado de conocimiento que ATÓMICA posee sobre dicha empresa.
+
+Por tanto:
+
+Una organización real existe fuera del sistema.
+
+El Modelo Organizacional existe dentro de ATÓMICA.
+
+Nunca son equivalentes.
+
+---
+
+# Definición
+
+El Modelo Organizacional es una representación dinámica, incompleta y trazable de una organización.
+
+No pretende reproducir toda la realidad.
+
+Pretende representar únicamente aquello que puede justificarse mediante evidencia.
+
+---
+
+# Principios
+
+El modelo:
+
+• evoluciona continuamente;
+
+• nunca está terminado;
+
+• mantiene incertidumbre explícita;
+
+• conserva memoria temporal;
+
+• separa observación de interpretación.
+
+---
+
+# Componentes
+
+El modelo está compuesto por:
+
+Organización
+
+Capacidades
+
+Eventos
+
+Evidencias
+
+Hipótesis
+
+Afirmaciones
+
+Riesgos
+
+Incertidumbres
+
+Indicadores
+
+Relaciones
+
+---
+
+# Regla fundamental
+
+Nada existe dentro del modelo si no posee:
+
+procedencia
+
+fecha
+
+estado
+
+nivel de confianza
+
+---
+
+# Memoria
+
+El modelo nunca elimina información.
+
+Las afirmaciones pueden quedar obsoletas.
+
+Nunca desaparecen.
+
+El conocimiento conserva historia.
+
+---
+
+# Temporalidad
+
+El modelo representa:
+
+Estado actual.
+
+Estado pasado.
+
+Evolución.
+
+Nunca únicamente una fotografía.
+
+---
+
+# Incompletitud
+
+Toda organización posee zonas desconocidas.
+
+El modelo debe representarlas.
+
+Nunca ocultarlas.
+
+---
+
+# Neutralidad
+
+El modelo no juzga.
+
+Describe.
+
+El juicio pertenece al Motor Epistémico.
+
+---
+
+# Representaciones derivadas
+
+Del Modelo Organizacional derivan:
+
+IFO
+
+Radar
+
+Informe
+
+Donella
+
+Observatorio
+
+Benchmark
+
+Predicción
+
+Todas son vistas.
+
+Ninguna constituye el modelo.
