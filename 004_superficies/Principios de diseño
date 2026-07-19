@@ -1,0 +1,47 @@
+## Principios de diseño
+
+### Silencio
+
+La pantalla permanece estable.
+
+Nada se mueve sin intervención del usuario.
+
+---
+
+### Continuidad
+
+Toda transición mantiene el contexto.
+
+El usuario nunca pierde la referencia del punto desde el que comenzó la exploración.
+
+---
+
+### Profundidad
+
+Cada interacción revela una capa.
+
+Nunca sustituye completamente la anterior.
+
+---
+
+### Economía
+
+Cada elemento visible debe justificar su existencia.
+
+Si una información no modifica una decisión, no debe mostrarse.
+
+---
+
+### Contexto
+
+Toda información aparece junto a aquello que la origina.
+
+Nunca existen paneles independientes desconectados del Modelo Vivo.
+
+---
+
+### Reversibilidad
+
+El usuario puede regresar al nivel anterior mediante una única acción.
+
+Nunca necesita reconstruir mentalmente el recorrido realizado.
