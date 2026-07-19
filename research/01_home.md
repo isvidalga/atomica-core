@@ -1,11 +1,31 @@
-¿Qué ve el CEO en los primeros 3 segundos?
+# HOME
 
-¿Qué ve en los primeros 10 segundos?
+## Objetivo
 
-¿Cuántos elementos compiten por la atención?
+Que un CEO pueda responder en menos de diez segundos:
 
-¿Cuál es el dato principal?
+1. ¿Cómo está mi empresa?
+2. ¿Dónde debo intervenir?
+3. ¿Qué debo saber hoy?
 
-¿Cuál es el dato secundario?
+Nada más.
 
-¿Qué desaparece si elimino el 40%?
+---
+
+# Arquitectura
+
+┌──────────────────────────────────────────────────────────────┐
+│ Navbar                                                       │
+└──────────────────────────────────────────────────────────────┘
+
+┌────────────┬───────────────────────┬──────────────────────────┐
+│ IFO        │ Intervención          │ Donella                 │
+└────────────┴───────────────────────┴──────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────┐
+│ Sistemas Organizacionales                                    │
+└──────────────────────────────────────────────────────────────┘
+
+┌───────────────┬────────────────┬─────────────────────────────┐
+│ Alertas       │ Evolución IFO  │ Actividad                   │
+└───────────────┴────────────────┴─────────────────────────────┘
