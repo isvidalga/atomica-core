@@ -1,0 +1,213 @@
+# Sprint 4 · Modelo Vivo v1
+
+Objetivo
+
+Sustituir la pantalla inicial de la demo por el nuevo Modelo Vivo.
+
+No modificar Observe, Pattern, Crónica ni Donella.
+
+Únicamente crear la nueva Home del CEO.
+
+------------------------------------------------------------
+
+REQUISITOS
+
+La pantalla debe comprenderse en menos de 10 segundos.
+
+Debe transmitir serenidad.
+
+Debe parecer un instrumento científico.
+
+Nunca un dashboard.
+
+Nunca Bloomberg.
+
+Nunca PowerBI.
+
+Nunca Notion.
+
+Apple + Linear + Instrumento científico.
+
+------------------------------------------------------------
+
+ESTRUCTURA
+
+La pantalla tendrá exactamente cinco bloques.
+
+01.
+
+Estado del organismo
+
+Elemento dominante.
+
+Una única representación del estado global.
+
+No porcentaje.
+
+No KPI.
+
+No score gigante.
+
+Debe sentirse como observar un organismo vivo.
+
+------------------------------------------------------------
+
+02.
+
+Siete sistemas
+
+Propósito
+
+Flujo de Valor
+
+Personas
+
+Gobernanza
+
+Información
+
+Resiliencia
+
+Regeneración
+
+Cada uno muestra únicamente:
+
+• estado
+
+• tendencia
+
+• confianza
+
+Nada más.
+
+------------------------------------------------------------
+
+03.
+
+Tres tensiones prioritarias
+
+Máximo tres.
+
+Cada una contiene:
+
+Sistema
+
+Descripción
+
+Confianza
+
+Botón
+
+"Explorar"
+
+Ese botón abre Observe.
+
+------------------------------------------------------------
+
+04.
+
+Intervenciones abiertas
+
+Máximo tres.
+
+Estado
+
+Responsable
+
+Última actualización
+
+Nada más.
+
+------------------------------------------------------------
+
+05.
+
+Actividad reciente
+
+Tres eventos.
+
+Formato extremadamente limpio.
+
+Hace 2 días
+
+↓
+
+Nueva evidencia añadida.
+
+Hace 5 días
+
+↓
+
+Intervención iniciada.
+
+------------------------------------------------------------
+
+REGLAS
+
+No existen tarjetas.
+
+No existen sombras.
+
+No existen iconos decorativos.
+
+No existen gradientes.
+
+No existen gráficos circulares.
+
+No existen gauges.
+
+No existen donuts.
+
+No existen radares.
+
+Todo debe respirar.
+
+Muchísimo espacio negativo.
+
+------------------------------------------------------------
+
+NAVEGACIÓN
+
+El único destino posible es:
+
+Modelo Vivo
+
+↓
+
+Observe
+
+No mostrar menú lateral.
+
+No mostrar navegación compleja.
+
+------------------------------------------------------------
+
+TECNOLOGÍA
+
+HTML
+
+CSS
+
+Javascript
+
+Sin frameworks.
+
+Sin dependencias.
+
+Sin build.
+
+------------------------------------------------------------
+
+ENTREGABLE
+
+index.html
+
+modelo_vivo.css
+
+modelo_vivo.js
+
+datos_demo.js
+
+README.md
+
+Todo funcionando directamente desde Cloudflare Pages.
