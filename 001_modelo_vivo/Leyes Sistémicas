@@ -1,0 +1,66 @@
+# Leyes Sistémicas
+
+## Propósito
+
+Las leyes sistémicas constituyen el nivel más estable de ATÓMICA.
+
+No describen organizaciones concretas.
+
+Describen comportamientos que aparecen de forma recurrente en cualquier sistema organizado.
+
+Toda inferencia realizada por ATÓMICA debe ser compatible con estas leyes.
+
+Si una inferencia contradice una ley sistémica, la inferencia debe rechazarse.
+
+Las leyes permanecen.
+
+Los modelos evolucionan.
+
+Las interfaces cambian.
+
+Las leyes no.
+
+---
+
+## Naturaleza
+
+Una ley sistémica no es:
+
+- una regla de negocio.
+- una heurística.
+- una recomendación.
+- una opinión metodológica.
+
+Una ley sistémica representa una restricción del comportamiento observable de un sistema.
+
+Las leyes limitan aquello que el Motor de Inferencia puede concluir.
+
+Nunca obligan al sistema a producir una conclusión determinada.
+
+---
+
+## Principios
+
+Toda ley sistémica debe cumplir cuatro condiciones.
+
+### Universalidad
+
+Debe aplicarse independientemente del tamaño, sector o país de la organización.
+
+---
+
+### Observabilidad
+
+Debe poder relacionarse con observaciones verificables.
+
+---
+
+### Falsabilidad
+
+Debe poder ser contradicha mediante nueva evidencia.
+
+---
+
+### Trazabilidad
+
+Toda inferencia basada en una ley debe poder reconstruirse posteriormente.
