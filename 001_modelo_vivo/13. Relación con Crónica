@@ -1,0 +1,29 @@
+## 13. Relación con Crónica
+
+Crónica representa la memoria del Modelo Vivo.
+
+Su función consiste en mostrar cómo evoluciona el conocimiento de la organización a lo largo del tiempo.
+
+No registra únicamente acontecimientos.
+
+Registra cambios de estado, incorporación de evidencias, intervenciones e inferencias.
+
+Crónica responde a una única pregunta:
+
+¿Cómo hemos llegado hasta aquí?
+
+Cada entrada permanece inalterable.
+
+La historia del modelo es append-only.
+
+Las interpretaciones futuras nunca modifican el registro histórico.
+
+Toda observación conserva:
+
+- fecha
+- origen
+- nivel de confianza
+- evidencia asociada
+- versión del modelo que produjo la inferencia
+
+Crónica constituye la memoria verificable del instrumento.
