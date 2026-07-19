@@ -1,0 +1,60 @@
+# Evidencias
+
+## Propósito
+
+Evidencias constituye la superficie de verificación del Modelo Vivo.
+
+Toda hipótesis debe poder justificarse mediante evidencia.
+
+Evidencias responde a una única pregunta:
+
+¿Por qué el Modelo Vivo estima esto?
+
+---
+
+## Entrada
+
+Siempre se accede desde:
+
+- una tensión
+- un patrón
+- un registro de Crónica
+- una inferencia
+
+Nunca desde un menú principal.
+
+---
+
+## Información visible
+
+Cada evidencia muestra:
+
+- origen
+- fecha
+- tipo
+- relación con el modelo
+- nivel de confianza
+
+La evidencia original permanece accesible.
+
+ATÓMICA nunca sustituye el documento por un resumen.
+
+---
+
+## Función
+
+Una evidencia puede:
+
+- aumentar confianza
+- reducir confianza
+- mantener confianza
+
+Nunca determina por sí sola el estado del sistema.
+
+---
+
+## Restricciones
+
+Eliminar una evidencia nunca elimina una inferencia histórica.
+
+Únicamente modifica el conocimiento disponible a partir de ese momento.
