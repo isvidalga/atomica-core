@@ -1,0 +1,37 @@
+# Comportamiento
+
+La pantalla nunca cambia sola.
+
+No existen animaciones permanentes.
+
+No existen contadores.
+
+No existen refrescos automáticos.
+
+Todo movimiento responde a una acción del usuario.
+
+---
+
+Al pasar el cursor:
+
+No aparecen tooltips.
+
+Únicamente aumenta ligeramente la definición del elemento.
+
+---
+
+Al hacer clic sobre una tensión:
+
+Transición.
+
+Zoom.
+
+Observe.
+
+---
+
+Al volver:
+
+El Modelo Vivo permanece exactamente donde estaba.
+
+Nunca pierde el contexto.
