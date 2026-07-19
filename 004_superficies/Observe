@@ -1,0 +1,123 @@
+# Observe
+
+## Propósito
+
+Observe constituye la superficie de exploración del Modelo Vivo.
+
+No es una pantalla de resultados.
+
+No es un dashboard.
+
+No es una cronología.
+
+No es un visor de datos.
+
+Su misión consiste en permitir al CEO comprender aquello que el Modelo Vivo ha señalado como relevante.
+
+Observe responde únicamente a una pregunta:
+
+¿Qué está ocurriendo aquí?
+
+---
+
+## Entrada
+
+Observe nunca constituye la primera pantalla.
+
+Siempre se accede desde un elemento del Modelo Vivo.
+
+Puede iniciarse desde:
+
+- un sistema
+- una tensión
+- una intervención
+- una relación
+
+Nunca desde un menú.
+
+---
+
+## Alcance
+
+Observe analiza exclusivamente el contexto seleccionado.
+
+No cambia de tema.
+
+No mezcla varios problemas.
+
+Mantiene el foco.
+
+---
+
+## Información visible
+
+Observe puede mostrar:
+
+- relaciones
+- dependencias
+- tensiones
+- evolución local
+- incertidumbre
+- confianza
+
+Nunca muestra recomendaciones.
+
+Nunca muestra planes de acción.
+
+---
+
+## Navegación
+
+Toda navegación aumenta el nivel de detalle.
+
+Sistema
+
+↓
+
+Relación
+
+↓
+
+Patrón
+
+↓
+
+Crónica
+
+↓
+
+Evidencia
+
+Nunca existen saltos laterales.
+
+Nunca existen menús complejos.
+
+---
+
+## Interacción
+
+El usuario observa.
+
+Selecciona.
+
+Profundiza.
+
+Nunca configura.
+
+Nunca parametriza.
+
+Nunca construye informes.
+
+---
+
+## Restricciones
+
+Observe nunca modifica el Modelo Vivo.
+
+Nunca interpreta.
+
+Nunca calcula.
+
+Nunca genera conocimiento.
+
+Observe únicamente revela aquello que ya existe en el Motor de Inferencia.
