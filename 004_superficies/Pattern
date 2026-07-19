@@ -1,0 +1,92 @@
+# Pattern
+
+## Propósito
+
+Pattern constituye la superficie de comprensión del Modelo Vivo.
+
+Su función consiste en explicar por qué una tensión observada tiende a repetirse.
+
+No analiza acontecimientos aislados.
+
+Analiza estructuras.
+
+Pattern responde a una única pregunta:
+
+¿Por qué este comportamiento vuelve a aparecer?
+
+---
+
+## Entrada
+
+Pattern siempre se abre desde Observe.
+
+Nunca desde un menú.
+
+Nunca desde un listado.
+
+Siempre existe un contexto previo.
+
+---
+
+## Unidad de análisis
+
+Pattern trabaja sobre patrones.
+
+Nunca sobre personas.
+
+Nunca sobre departamentos.
+
+Nunca sobre acontecimientos individuales.
+
+---
+
+## Información visible
+
+Cada patrón muestra únicamente:
+
+- nombre
+- descripción
+- sistemas implicados
+- nivel de confianza
+- evidencia disponible
+
+No muestra recomendaciones.
+
+No muestra planes.
+
+No muestra responsables.
+
+---
+
+## Relaciones
+
+Un patrón puede afectar a varios sistemas simultáneamente.
+
+Pattern representa relaciones.
+
+Nunca jerarquías.
+
+---
+
+## Evolución
+
+Todo patrón puede:
+
+- fortalecerse
+- debilitarse
+- desaparecer
+- transformarse
+
+La evolución depende exclusivamente de nueva evidencia.
+
+---
+
+## Restricciones
+
+Pattern nunca afirma causalidad.
+
+Pattern nunca identifica culpables.
+
+Pattern nunca predice resultados.
+
+Pattern representa hipótesis estructurales.
