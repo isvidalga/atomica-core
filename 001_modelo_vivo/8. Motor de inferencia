@@ -1,0 +1,98 @@
+## 8. Motor de inferencia
+
+El Modelo Vivo no calcula resultados.
+
+Los infiere.
+
+El Motor de Inferencia transforma observaciones en hipótesis estructurales sobre el estado de la organización.
+
+Su función no es producir respuestas.
+
+Su función es estimar el estado más probable del sistema con el nivel de confianza correspondiente.
+
+---
+
+### Entradas
+
+El Motor de Inferencia utiliza exclusivamente información disponible para la organización.
+
+Entre otras:
+
+- diagnóstico inicial
+- respuestas históricas
+- evidencias aportadas
+- intervenciones realizadas
+- evolución temporal
+- comportamiento observado del modelo
+
+Toda entrada conserva su origen y fecha.
+
+Ninguna información sustituye a otra.
+
+El conocimiento es acumulativo.
+
+---
+
+### Proceso
+
+El motor aplica las leyes sistémicas definidas en este documento.
+
+Cada nueva observación modifica el estado del modelo.
+
+Nunca modifica el pasado.
+
+Las inferencias anteriores permanecen registradas como parte de la evolución del conocimiento.
+
+---
+
+### Salidas
+
+El Motor de Inferencia produce únicamente cuatro tipos de resultado.
+
+#### Estado
+
+Representa la situación estimada de cada sistema.
+
+---
+
+#### Nivel de confianza
+
+Representa la solidez de la inferencia realizada.
+
+No expresa calidad de la organización.
+
+Expresa calidad del conocimiento disponible.
+
+---
+
+#### Tensiones
+
+Identifica relaciones cuya evolución requiere atención.
+
+Las tensiones no constituyen diagnósticos.
+
+Representan hipótesis priorizadas.
+
+---
+
+#### Incertidumbres
+
+Identifica aquellas zonas del modelo donde la evidencia resulta insuficiente para emitir inferencias robustas.
+
+Reducir incertidumbre también constituye una intervención válida.
+
+---
+
+### Restricciones
+
+El Motor de Inferencia nunca:
+
+- afirma hechos no observados.
+- inventa relaciones.
+- completa información ausente.
+- genera recomendaciones automáticas.
+- modifica datos históricos.
+
+Toda inferencia debe poder reconstruirse a partir de las observaciones que la originaron.
+
+La trazabilidad constituye un requisito del modelo.
