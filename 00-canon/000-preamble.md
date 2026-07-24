@@ -1,40 +1,24 @@
----
-
-id: CANON-000
-
-title: ATÓMICA Canon
-
-status: Frozen
-
-version: 1.0.0
-
-owner: Product
-
-authority: Highest
-
-last_review: 2026-07-25
-
-depends_on: []
-
-related_to: []
-
-supersedes: []
-
----
-
 # ATÓMICA Canon
 
-## Propósito
+**Estado:** Frozen
+
+**Versión:** 1.0.0
+
+---
+
+# Preámbulo
 
 El Canon constituye la fuente única de verdad de ATÓMICA.
 
-Define la identidad del producto, los principios que lo gobiernan y las reglas que toda implementación debe respetar.
+Su propósito es preservar la identidad del producto mediante un conjunto de documentos normativos que definen aquello que ATÓMICA es, aquello que nunca será y las reglas que gobiernan su evolución.
 
-El Canon no documenta el producto.
+El Canon no documenta una implementación.
 
 El Canon define el producto.
 
-Cuando exista una discrepancia entre el código, la interfaz, la documentación o cualquier otra implementación y el Canon, prevalecerá siempre el Canon.
+Toda implementación —arquitectura, diseño, código o metodología— deberá respetar las decisiones contenidas en el Canon.
+
+Cuando exista una contradicción entre una implementación y el Canon, prevalecerá siempre el Canon.
 
 ---
 
@@ -44,19 +28,24 @@ El Canon es una especificación normativa.
 
 No describe cómo está construido ATÓMICA.
 
-Define aquello que ATÓMICA debe ser con independencia de la tecnología, el equipo o el momento en que se implemente.
+Define aquello que debe permanecer verdadero independientemente de la tecnología utilizada, del equipo responsable o del momento en que se implemente.
 
-Su contenido debe permanecer válido aunque cambien la arquitectura técnica, el lenguaje de programación, el diseño visual o la organización responsable del producto.
+Su contenido debe aspirar a permanecer válido durante toda la vida del producto.
 
 ---
 
 # Finalidad
 
-El Canon existe para preservar la identidad de ATÓMICA.
+El Canon existe para garantizar que ATÓMICA evolucione mediante refinamiento y no mediante acumulación de funcionalidades.
 
-Toda evolución del producto debe reforzar esa identidad.
+Toda evolución deberá hacer el producto:
 
-Ninguna evolución podrá modificarla sin una decisión explícita registrada mediante el proceso de gobernanza establecido por el propio Canon.
+- más claro;
+- más coherente;
+- más comprensible;
+- más fiel a su propósito.
+
+Nunca más complejo por sí mismo.
 
 ---
 
@@ -64,123 +53,48 @@ Ninguna evolución podrá modificarla sin una decisión explícita registrada me
 
 El Canon gobierna:
 
-* la identidad del producto;
-* el lenguaje oficial del dominio;
-* los principios de diseño y producto;
-* la arquitectura conceptual;
-* los criterios de evolución;
-* las decisiones estructurales del sistema.
+- la identidad del producto;
+- el lenguaje oficial;
+- la arquitectura conceptual;
+- los principios de diseño;
+- los principios de producto;
+- los criterios de evolución.
 
-El Canon no define implementaciones técnicas.
+No gobierna tecnologías concretas.
 
-El Canon no prescribe soluciones tecnológicas.
+No define implementaciones.
 
-El Canon no contiene decisiones circunstanciales.
+No contiene decisiones circunstanciales.
 
 ---
 
 # Autoridad
 
-El Canon constituye el nivel de autoridad más alto del proyecto.
+El Canon constituye el nivel más alto de autoridad dentro de ATÓMICA.
 
-Todos los documentos restantes derivan de él.
+Todo documento situado fuera del Canon deberá ser compatible con él.
 
-Ningún documento, implementación o decisión podrá contradecir una declaración contenida en el Canon.
-
-Cuando exista conflicto entre distintos documentos, prevalecerá siempre el documento situado en el nivel superior de autoridad definido por el propio Canon.
-
----
-
-# Principios editoriales
-
-Todo documento perteneciente al Canon deberá cumplir las siguientes reglas.
-
-## 1. Carácter normativo
-
-Define.
-
-Nunca describe.
-
----
-
-## 2. Permanencia
-
-Debe aspirar a permanecer válido durante la evolución del producto.
-
-Nunca dependerá de una tecnología concreta ni de una implementación específica.
-
----
-
-## 3. Precisión
-
-Cada afirmación debe admitir una única interpretación razonable.
-
-Se evitarán expresiones ambiguas o abiertas a interpretación.
-
----
-
-## 4. Responsabilidad única
-
-Cada documento responde a una única pregunta fundamental.
-
-Ningún documento duplicará el contenido de otro.
-
----
-
-## 5. Coherencia
-
-Todos los documentos del Canon deben formar un único sistema.
-
-Las contradicciones entre documentos son inadmisibles.
-
----
-
-## 6. Estabilidad
-
-El Canon evoluciona lentamente.
-
-La incorporación de nuevas funcionalidades nunca constituye, por sí sola, un motivo suficiente para modificar el Canon.
+Ninguna implementación podrá modificar el significado del Canon.
 
 ---
 
 # Evolución
 
-El Canon no evoluciona por acumulación.
-
-Evoluciona por refinamiento.
+El Canon evoluciona lentamente.
 
 Toda modificación deberá demostrar que:
 
-* preserva la identidad de ATÓMICA;
-* elimina una ambigüedad o contradicción existente; o
-* mejora objetivamente la capacidad del Canon para gobernar el producto.
-
-Las modificaciones del Canon deberán seguir el proceso de gobernanza definido en este repositorio.
-
----
-
-# Relación con el producto
-
-El producto constituye una implementación del Canon.
-
-La arquitectura constituye una implementación del Canon.
-
-El diseño constituye una implementación del Canon.
-
-El código constituye una implementación del Canon.
-
-Ninguno de ellos define la identidad de ATÓMICA.
-
-Todos la materializan.
+- preserva la identidad del producto;
+- elimina una contradicción;
+- elimina una ambigüedad; o
+- mejora objetivamente la capacidad del Canon para gobernar ATÓMICA.
 
 ---
 
-# Declaración final
+# Declaración
 
 ATÓMICA evoluciona mediante conocimiento.
 
-No mediante acumulación de funcionalidades.
-
-El Canon existe para garantizar que cada decisión haga el producto más claro, más coherente y más fiel a su propósito.
+No mediante acumulación.
 
 Mientras el Canon permanezca íntegro, la identidad de ATÓMICA permanecerá íntegra.
