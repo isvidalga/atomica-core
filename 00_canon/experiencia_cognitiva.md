@@ -1,6 +1,6 @@
-# ATÓMICA Experiencia Cognitiva
+# Experiencia Cognitiva
 
-Estado: Draft
+Estado: CANÓNICO
 
 Versión: 1.0
 
@@ -8,29 +8,42 @@ Versión: 1.0
 
 # Propósito
 
+La Experiencia Cognitiva define los principios que gobiernan la interacción entre una persona y el conocimiento producido por ATÓMICA.
+
+No describe pantallas.
+
+No describe componentes.
+
+No describe navegación.
+
+Define cómo debe producirse la comprensión.
+
+Todo el producto deberá respetar estos principios.
+
+---
+
+# Principio fundamental
+
 ATÓMICA no pretende mostrar información.
 
 Pretende producir comprensión.
 
-Toda decisión de producto deberá reducir el esfuerzo cognitivo necesario para comprender el estado de una organización.
+Toda decisión de diseño deberá reducir el esfuerzo cognitivo necesario para comprender el estado de una organización.
 
-El objetivo de la interfaz no es informar.
+El objetivo nunca es informar.
 
 El objetivo es revelar.
 
 ---
 
-# Objetivo del producto
+# Objetivo
 
-Cada sesión de uso debe permitir al CEO responder cuatro preguntas.
+Toda sesión debe permitir responder cuatro preguntas.
 
-¿Qué está ocurriendo?
-
-¿Por qué merece atención?
-
-¿Qué ocurrirá si no intervengo?
-
-¿Dónde obtendré el mayor impacto?
+- ¿Qué está ocurriendo?
+- ¿Por qué merece atención?
+- ¿Qué ocurrirá si no intervengo?
+- ¿Dónde obtendré el mayor impacto?
 
 Si una sesión termina sin responderlas, el producto ha fallado.
 
@@ -38,7 +51,7 @@ Si una sesión termina sin responderlas, el producto ha fallado.
 
 # Modelo Cognitivo
 
-ATÓMICA guía al usuario mediante cinco fases.
+Toda interacción sigue siempre el mismo recorrido.
 
 Observar
 
@@ -58,99 +71,65 @@ Decidir
 
 Actuar
 
-Nunca modifica este orden.
+Este orden nunca cambia.
 
 ---
 
-# Fase 1 · Observar
+# Observar
 
-Objetivo
+El usuario identifica el estado del sistema.
 
-Permitir reconocer el estado del sistema en menos de tres segundos.
+No interpreta.
 
-El usuario no interpreta.
+Reconoce.
 
-Únicamente percibe.
-
-La interfaz debe responder inmediatamente:
+Debe responderse inmediatamente:
 
 ¿Qué estoy viendo?
 
 ---
 
-# Fase 2 · Comprender
+# Comprender
 
-Objetivo
+El usuario comprende el significado del estado observado.
 
-Explicar el significado del estado observado.
+Toda información debe disponer de contexto suficiente para interpretarse.
 
-La interfaz responde:
+Debe responderse:
 
 ¿Por qué es importante?
 
-Nunca muestra únicamente datos.
-
-Siempre muestra contexto.
-
 ---
 
-# Fase 3 · Relacionar
-
-Objetivo
-
-Conectar causas, consecuencias y dependencias.
+# Relacionar
 
 El usuario deja de observar elementos aislados.
 
-Empieza a comprender un sistema.
+Comienza a comprender relaciones, dependencias y estructuras.
 
 ---
 
-# Fase 4 · Decidir
+# Decidir
 
-Objetivo
+El sistema reduce incertidumbre.
 
-Reducir incertidumbre suficiente para priorizar una intervención.
+Nunca toma decisiones.
 
-ATÓMICA no decide.
-
-Reduce incertidumbre.
-
-La decisión pertenece siempre al CEO.
+La decisión pertenece siempre al usuario.
 
 ---
 
-# Fase 5 · Actuar
+# Actuar
 
-Objetivo
+Toda acción posible debe derivarse de la comprensión obtenida.
 
-Convertir comprensión en acción.
-
-Toda acción propuesta deberá estar conectada con la información previamente mostrada.
-
-Nunca aparecerá como una recomendación aislada.
-
----
-
-# Carga Cognitiva
-
-Toda pantalla deberá minimizar simultáneamente:
-
-Memoria necesaria.
-
-Número de decisiones.
-
-Cambios de contexto.
-
-Búsquedas visuales.
-
-Interpretaciones ambiguas.
+Nunca aparecerá desconectada del conocimiento previo.
 
 ---
 
 # Jerarquía Cognitiva
 
-La atención del usuario siempre seguirá el mismo orden.
+La atención sigue siempre el mismo orden.
 
 Estado
 
@@ -174,31 +153,25 @@ Explicación
 
 Acción
 
-Nunca al revés.
+Nunca al contrario.
 
 ---
 
 # Profundidad Progresiva
 
-Toda pantalla tendrá tres niveles.
+Toda representación admite tres niveles.
 
-Reconocimiento.
+- Reconocimiento.
+- Comprensión.
+- Investigación.
 
-Comprensión.
-
-Investigación.
-
-La mayoría de usuarios permanecerán en el primer nivel.
-
-Muy pocos llegarán al tercero.
-
-La interfaz debe optimizar ambos casos.
+El acceso a mayor profundidad nunca debe aumentar la complejidad del nivel anterior.
 
 ---
 
 # Ritmo Cognitivo
 
-El producto alterna continuamente dos estados.
+La interacción alterna dos modos.
 
 Panorámica.
 
@@ -214,47 +187,40 @@ Panorámica.
 
 Profundidad.
 
-Nunca presenta profundidad permanente.
-
-Nunca presenta panorámica permanente.
+Nunca permanece indefinidamente en uno de ellos.
 
 ---
 
 # Continuidad
 
-Cada pantalla deberá responder una única pregunta.
+Cada vista responde una única pregunta.
 
-La siguiente pantalla únicamente responderá la siguiente pregunta lógica.
+La siguiente responde únicamente la siguiente pregunta lógica.
 
-Nunca adelantará información.
+Nunca adelanta información.
 
-Nunca repetirá información.
+Nunca repite información innecesariamente.
 
 ---
 
-# Memoria
+# Memoria Cognitiva
 
-El usuario nunca deberá reconstruir mentalmente información ya mostrada.
+El usuario nunca debe reconstruir mentalmente información ya presentada.
 
-El producto conserva el contexto durante toda la navegación.
+El contexto debe conservarse durante toda la interacción.
 
 ---
 
 # Confianza
 
-La confianza no constituye una pantalla.
+Toda afirmación susceptible de interpretación deberá mostrar explícitamente:
 
-Constituye una propiedad transversal.
+- nivel de confianza;
+- origen;
+- evidencia disponible;
+- fecha.
 
-Todo aquello que requiera interpretación deberá indicar:
-
-nivel de confianza
-
-fecha
-
-origen
-
-evidencia disponible
+La confianza constituye una propiedad transversal.
 
 ---
 
@@ -264,60 +230,64 @@ La incertidumbre nunca desaparece.
 
 Únicamente disminuye.
 
-Toda representación deberá expresar claramente:
+Toda representación debe distinguir claramente:
 
-qué sabemos
-
-qué creemos
-
-qué desconocemos
+- lo observado;
+- lo inferido;
+- lo desconocido.
 
 ---
 
-# Fatiga Cognitiva
+# Carga Cognitiva
 
-El producto deberá reducir:
+Toda interacción deberá minimizar:
 
-scroll innecesario
-
-cambios de contexto
-
-lectura repetitiva
-
-interpretación de colores
-
-búsqueda de acciones
+- memoria de trabajo;
+- decisiones simultáneas;
+- cambios de contexto;
+- búsqueda visual;
+- ambigüedad.
 
 ---
 
-# Tiempo hasta la comprensión
+# Tiempo de Comprensión
 
-Toda pantalla deberá permitir comprender su propósito en menos de diez segundos.
+Toda representación debe permitir comprender su propósito en menos de diez segundos.
 
-Si necesita explicación previa, la pantalla deberá rediseñarse.
-
----
-
-# Tiempo hasta la decisión
-
-Toda pantalla deberá facilitar una decisión útil antes de treinta segundos.
-
-No necesariamente una decisión definitiva.
-
-Pero sí una decisión siguiente.
+Si requiere explicación previa, deberá rediseñarse.
 
 ---
 
-# Consistencia Cognitiva
+# Tiempo hasta la Decisión
 
-Los mismos patrones producen siempre los mismos significados.
+Toda representación debe facilitar una decisión útil en menos de treinta segundos.
 
-El usuario nunca deberá reinterpretar el lenguaje del producto.
+No necesariamente definitiva.
+
+Sí suficiente para decidir el siguiente paso.
 
 ---
 
-# Principio Final
+# Consistencia
 
-El éxito de ATÓMICA no se mide por el número de funcionalidades.
+Un mismo patrón siempre produce el mismo significado.
 
-Se mide por la velocidad con la que un CEO comprende una organización compleja.
+El lenguaje cognitivo nunca cambia entre pantallas.
+
+---
+
+# Invariantes
+
+- La comprensión prevalece sobre la información.
+- La decisión pertenece al usuario.
+- El contexto nunca se pierde.
+- La incertidumbre siempre es visible.
+- El significado siempre precede a la acción.
+
+---
+
+# Declaración
+
+La calidad de ATÓMICA no se mide por el número de funcionalidades.
+
+Se mide por la velocidad con la que una organización compleja puede comprenderse.
