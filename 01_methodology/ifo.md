@@ -1,59 +1,50 @@
 # Índice de Fragilidad Oculta (IFO)
 
-**Versión:** 1.0  
-**Estado:** Normativo  
-**Última actualización:** 2026-07-13
+**Estado:** Frozen
+
+**Versión:** 1.1.0
 
 ---
 
 # Propósito
 
-Este documento define la naturaleza, función y límites del Índice de Fragilidad Oculta (IFO) dentro de la metodología ATÓMICA.
+El Índice de Fragilidad Oculta (IFO) constituye el principal instrumento metodológico de ATÓMICA para sintetizar la evaluación de la fragilidad organizacional.
 
-El IFO es el mecanismo mediante el cual ATÓMICA sintetiza una parte del conocimiento construido sobre una organización.
-
-Su finalidad es proporcionar una representación comprensible del nivel de fragilidad organizacional identificado por el modelo.
+Su finalidad consiste en ofrecer una representación cuantitativa, comprensible y comparable del estado metodológico obtenido mediante el proceso de observación.
 
 El IFO no pretende describir completamente una organización.
 
-Constituye una aproximación cuantitativa derivada de un modelo organizacional basado en información incompleta.
+Su función consiste en facilitar la comprensión del resultado del Modelo Organizacional.
 
 ---
 
-# Naturaleza del IFO
+# Naturaleza
 
-El IFO es un resultado metodológico derivado.
+El IFO pertenece exclusivamente a la metodología.
 
 No constituye una entidad del dominio.
 
-No representa una propiedad objetiva de la organización.
+No representa una propiedad objetiva de una organización.
 
-No existe independientemente del modelo que lo genera.
+No existe independientemente del Modelo Organizacional.
 
-El IFO debe interpretarse como:
-
-> una estimación cuantitativa de la presencia relativa de condiciones asociadas a fragilidad organizacional según el conocimiento disponible en un momento determinado.
+El IFO constituye una representación metodológica derivada.
 
 ---
 
-# Qué mide el IFO
+# Qué representa
 
-El IFO mide la probabilidad relativa de que determinadas configuraciones organizacionales puedan representar fuentes de fragilidad.
+El IFO representa una estimación metodológica del nivel relativo de fragilidad organizacional inferido a partir del conocimiento disponible.
 
-Estas configuraciones se identifican mediante:
+Su interpretación depende siempre del Modelo Organizacional que le da origen.
 
-- declaraciones obtenidas durante el diagnóstico;
-- hipótesis generadas por el modelo;
-- capacidades observadas;
-- fragilidades identificadas;
-- evidencias disponibles;
-- niveles de confianza asociados.
+El IFO nunca debe interpretarse de manera aislada.
 
 ---
 
-# Qué no mide el IFO
+# Qué no representa
 
-El IFO no mide:
+El IFO no representa:
 
 - éxito empresarial;
 - rentabilidad;
@@ -62,108 +53,68 @@ El IFO no mide:
 - calidad de gestión;
 - sostenibilidad certificada;
 - cumplimiento normativo;
-- madurez organizacional absoluta;
-- superioridad frente a otras empresas.
+- madurez organizacional;
+- comparación objetiva entre organizaciones.
 
-Un IFO favorable no implica que una organización sea excelente.
+El IFO no constituye un juicio.
 
-Un IFO desfavorable no implica que una organización esté destinada a fracasar.
+Constituye una representación metodológica.
 
 ---
 
 # Principio fundamental
 
-## El IFO no evalúa empresas. Evalúa configuraciones de fragilidad.
+El IFO no evalúa organizaciones.
 
-Dos organizaciones con el mismo IFO pueden poseer fragilidades completamente diferentes.
+Evalúa configuraciones metodológicas de fragilidad.
 
-Por tanto, el valor agregado del sistema no reside únicamente en la puntuación global.
+Dos organizaciones pueden compartir el mismo IFO y presentar estructuras organizacionales completamente diferentes.
 
-Reside en la estructura que explica dicha puntuación.
+El valor principal de ATÓMICA no reside en la puntuación obtenida.
 
----
-
-# Relación entre modelo e IFO
-
-El modelo organizacional constituye la fuente primaria de conocimiento.
-
-El IFO constituye una representación secundaria derivada.
-
-La relación es:
-Organización
-│
-▼
-Declaraciones
-│
-▼
-Hipótesis
-│
-▼
-Modelo organizacional
-│
-▼
-Evaluación de fragilidad
-│
-▼
-IFO
-
-El proceso no puede invertirse.
-
-Un IFO nunca debe utilizarse para reconstruir el modelo sin acceder a sus componentes explicativos.
+Reside en la explicación estructural que la hace posible.
 
 ---
 
 # Unidad de análisis
 
-La unidad de análisis del IFO es la organización como sistema.
+La unidad de análisis del IFO es la organización considerada como sistema.
 
-El índice no evalúa individuos aislados.
+El IFO no evalúa:
 
-No evalúa departamentos de manera independiente.
+- individuos;
+- departamentos aislados;
+- acciones individuales;
+- eventos independientes.
 
-No evalúa acciones concretas.
-
-Analiza configuraciones organizacionales que emergen de la interacción entre:
-
-- estructura;
-- personas;
-- conocimiento;
-- procesos;
-- relaciones;
-- recursos;
-- contexto.
+Toda evaluación se realiza sobre configuraciones organizacionales.
 
 ---
 
-# Dimensiones del IFO
+# Organización metodológica
 
-El IFO se estructura mediante dimensiones metodológicas.
+El IFO organiza la observación mediante Dimensiones metodológicas.
 
-Las dimensiones permiten organizar el análisis en áreas conceptuales diferenciadas.
+Las Dimensiones permiten estructurar el análisis sin dividir la organización en partes independientes.
 
-Cada dimensión agrupa capacidades, hipótesis y posibles fragilidades relacionadas.
+La definición completa de las Dimensiones pertenece al documento:
 
-Las dimensiones no representan partes independientes de una organización.
-
-Una organización funciona como un sistema conectado.
-
-Por tanto, las interacciones entre dimensiones pueden ser tan relevantes como sus valores individuales.
+`01_methodology/dimensiones.md`
 
 ---
 
-# Interpretación del resultado
+# Interpretación
 
-El IFO debe interpretarse como una señal para orientar investigación y acción.
+El IFO constituye una herramienta para orientar la comprensión de una organización.
 
-No como una sentencia.
+Nunca constituye una conclusión definitiva.
 
-Un resultado del IFO debe responder:
+Su utilización debe facilitar preguntas como:
 
-- ¿Dónde aparecen señales de fragilidad?
-- ¿Qué hipótesis explican esas señales?
-- ¿Qué nivel de confianza posee el modelo?
-- ¿Qué información adicional podría modificar la interpretación?
-- ¿Qué capacidades pueden reforzarse?
+- ¿Dónde aparecen señales relevantes?
+- ¿Qué configuraciones requieren mayor atención?
+- ¿Qué aspectos conviene investigar con mayor profundidad?
+- ¿Cómo evoluciona la organización a lo largo del tiempo?
 
 ---
 
@@ -171,109 +122,66 @@ Un resultado del IFO debe responder:
 
 ATÓMICA utiliza rangos interpretativos para facilitar la comunicación del resultado.
 
-Los rangos no representan categorías absolutas.
-
-Representan zonas orientativas dentro del modelo.
-
-Actualmente:
+Estos rangos constituyen únicamente una simplificación metodológica.
 
 | Rango | Interpretación |
-|---|---|
-| 0-25 | Frágil |
-| 26-50 | Robusto |
-| 51-75 | Resiliente |
-| 76-100 | Antifrágil |
+|--------|----------------|
+| 0–25 | Frágil |
+| 26–50 | Robusto |
+| 51–75 | Resiliente |
+| 76–100 | Antifrágil |
 
-Estos rangos deben entenderse como una representación simplificada.
-
-La interpretación completa requiere analizar dimensiones, capacidades, fragilidades y confianza.
+Los rangos no sustituyen el análisis del Modelo Organizacional.
 
 ---
 
 # Evolución temporal
 
-El valor del IFO aumenta cuando puede observarse su evolución.
+El principal valor del IFO aparece cuando puede observarse su evolución.
 
-Un único diagnóstico representa una fotografía parcial.
+Un único diagnóstico constituye una observación puntual.
 
-Una secuencia temporal permite identificar:
+La comparación longitudinal permite identificar tendencias organizacionales.
 
-- reducción de fragilidades;
-- aparición de nuevas dependencias;
-- cambios en capacidades;
-- evolución de la confianza del modelo.
-
-La comparación temporal debe realizarse considerando cambios en la metodología y en la calidad de la información disponible.
-
----
-
-# Relación con evidencias
-
-Las evidencias no modifican directamente el IFO.
-
-Primero modifican la confianza asociada a las hipótesis del modelo.
-
-Posteriormente, dicha modificación puede alterar la evaluación de fragilidad.
-
-La relación correcta es:
-Evidencias
-│
-▼
-Confianza de hipótesis
-│
-▼
-Modelo organizacional
-│
-▼
-IFO
+Toda comparación deberá considerar la evolución de la metodología y del conocimiento disponible.
 
 ---
 
 # Limitaciones
 
-El IFO presenta las limitaciones inherentes a cualquier modelo basado en información parcial.
+El IFO presenta las limitaciones propias de cualquier representación metodológica.
 
 Entre ellas:
 
-- dependencia de la calidad de las declaraciones;
-- disponibilidad desigual de evidencias;
-- interpretación humana;
-- evolución del contexto organizacional;
-- simplificación necesaria para comunicar sistemas complejos.
+- información incompleta;
+- incertidumbre inherente al conocimiento organizacional;
+- evolución continua de la organización;
+- simplificación necesaria para facilitar la comprensión.
 
-Estas limitaciones no invalidan el modelo.
+Estas limitaciones forman parte del instrumento.
 
-Forman parte de él y deben permanecer explícitas.
-
----
-
-# Gobernanza del IFO
-
-Cualquier modificación del IFO deberá preservar:
-
-- trazabilidad;
-- explicabilidad;
-- coherencia con la ontología;
-- separación entre observación e inferencia;
-- capacidad de evolución histórica.
-
-Los cambios que afecten a:
-
-- dimensiones;
-- pesos;
-- reglas de cálculo;
-- interpretación;
-
-deberán registrarse mediante una decisión metodológica versionada.
+Nunca deben ocultarse.
 
 ---
 
-# Principio final
+# Gobernanza
 
-El IFO no pretende proporcionar una respuesta definitiva sobre una organización.
+Toda modificación del IFO deberá preservar:
 
-Su función es mejorar la calidad de las preguntas.
+- comparabilidad histórica;
+- coherencia con el Canon;
+- trazabilidad metodológica;
+- capacidad explicativa;
+- estabilidad del instrumento.
 
-Un buen modelo no elimina la incertidumbre.
+Toda modificación deberá registrarse mediante una decisión metodológica versionada.
 
-Hace visible dónde existe.
+---
+
+# Declaración
+
+El IFO constituye el principal instrumento metodológico de síntesis de ATÓMICA.
+
+Su propósito no consiste en eliminar la incertidumbre.
+
+Su propósito consiste en hacerla observable y comprensible.
