@@ -1,71 +1,53 @@
-# ORG-EVIDENCE · Evidencia
+# Evidencia
 
-| Campo | Valor |
-|--------|-------|
-| Identificador | ORG-EVIDENCE |
-| Capa | Ontology |
-| Estado | RC-1 |
-| Versión | 0.1 |
+**Estado:** Frozen
+
+**Versión:** 1.0.0
+
+**Breadcrumb:** `20_epistemologia/evidencia.md`
 
 ---
 
 # Propósito
 
-La Evidencia representa todo elemento verificable que respalda, cuestiona o modifica el conocimiento construido por el Modelo.
+Este documento define el concepto de Evidencia dentro de la epistemología de ATÓMICA.
 
-La Evidencia nunca constituye conocimiento por sí misma.
-
-Su función es sustentar la construcción y revisión del conocimiento.
+La Evidencia constituye el mecanismo mediante el cual una Hipótesis puede aumentar o disminuir su plausibilidad.
 
 ---
 
 # Definición
 
-Una Evidencia es un elemento verificable incorporado al Modelo para justificar una Representación, un Estado o una Hipótesis.
+Una Evidencia es una Observación utilizada para evaluar una Hipótesis.
 
-Toda Evidencia mantiene su identidad, procedencia e integridad.
+La Evidencia no constituye un tipo diferente de información.
+
+Constituye un rol epistemológico que una Observación adquiere dentro del proceso de evaluación del Modelo.
 
 ---
 
 # Naturaleza
 
-La Evidencia:
-
-- pertenece al Modelo;
-- es verificable;
-- posee origen conocido;
-- posee trazabilidad;
-- es persistente;
-- puede perder vigencia sin perder existencia.
-
----
-
-# Composición
-
-Una Evidencia puede corresponder, entre otros, a:
-
-- documentos;
-- registros;
-- observaciones verificadas;
-- indicadores;
-- entrevistas;
-- respuestas del diagnóstico;
-- fuentes externas.
-
-La clasificación concreta pertenece a la metodología.
-
----
-
-# Incorporación
-
 Toda Evidencia:
 
-- conserva su origen;
-- conserva su fecha de incorporación;
-- conserva su relación con las Observaciones que la utilizan;
-- nunca modifica directamente el conocimiento.
+- procede de una Observación;
+- evalúa una o varias Hipótesis;
+- modifica únicamente la Confianza del Modelo;
+- nunca modifica la realidad observada.
 
-La incorporación de nueva Evidencia únicamente puede producir un nuevo Estado.
+---
+
+# Alcance
+
+Una Evidencia puede:
+
+- respaldar una Hipótesis;
+- debilitar una Hipótesis;
+- resultar insuficiente para modificar su Confianza.
+
+La ausencia de Evidencia no implica falsedad.
+
+Implica únicamente insuficiencia de conocimiento.
 
 ---
 
@@ -73,68 +55,79 @@ La incorporación de nueva Evidencia únicamente puede producir un nuevo Estado.
 
 Toda Evidencia:
 
-- puede respaldar múltiples Observaciones;
-- puede respaldar múltiples Hipótesis;
-- puede participar en múltiples Estados;
-- pertenece a la Memoria del Modelo.
+- procede de exactamente una Observación;
+- puede evaluar una o varias Hipótesis;
+- influye exclusivamente sobre la Confianza de dichas Hipótesis.
+
+---
+
+# Restricciones
+
+## E-001
+
+Toda Evidencia procede de una Observación.
+
+---
+
+## E-002
+
+Toda Evidencia evalúa al menos una Hipótesis.
+
+---
+
+## E-003
+
+Una Evidencia nunca constituye una Hipótesis.
+
+---
+
+## E-004
+
+Una Evidencia nunca modifica directamente una Hipótesis.
+
+---
+
+## E-005
+
+Una Evidencia nunca modifica directamente el Estado del Modelo.
+
+---
+
+## E-006
+
+Toda Evidencia conserva su trazabilidad hasta la Observación de la que procede.
 
 ---
 
 # Exclusiones
 
-La Evidencia nunca contiene:
+Una Evidencia nunca constituye:
 
-- interpretaciones;
-- conclusiones;
-- decisiones;
-- recomendaciones;
-- intervenciones;
-- juicios de valor.
-
----
-
-# Invariantes
-
-**I-1** Toda Evidencia posee un origen identificable.
-
-**I-2** Toda Evidencia mantiene trazabilidad completa.
-
-**I-3** Ninguna Evidencia modifica directamente un Estado.
-
-**I-4** Toda Evidencia puede dejar de ser vigente sin desaparecer.
-
-**I-5** La eliminación de Evidencia histórica no está permitida.
-
-**I-6** Toda Evidencia permanece asociada a la Memoria del Modelo.
-
-**I-7** Toda Evidencia puede ser reutilizada por futuros Estados sin alterar su contenido.
+- un hecho;
+- una decisión;
+- una recomendación;
+- una intervención;
+- una conclusión.
 
 ---
 
 # Dependencias
 
-- core/axiomas.md
-- ontology/memoria.md
+- `10_nucleo/axiomas.md`
+- `20_epistemologia/observacion.md`
+- `20_epistemologia/hipotesis.md`
 
 ---
 
 # Utilizado por
 
-- observacion.md
-- estado.md
-- hipotesis.md
-- trayectoria.md
+- `20_epistemologia/confianza.md`
+- `40_metodologia/`
 
 ---
 
-# Consecuencias arquitectónicas
+# Declaración
 
-1. La Evidencia constituye el único fundamento verificable del conocimiento del Modelo.
+La Evidencia no demuestra que una Hipótesis sea verdadera.
 
-2. Ningún Estado puede justificarse sin Evidencia trazable.
-
-3. La incorporación de Evidencia nunca altera retrospectivamente el conocimiento histórico.
-
-4. La pérdida de trazabilidad invalida el uso de la Evidencia dentro del Modelo.
-
-5. Toda auditoría del Modelo puede reconstruirse a partir de las Evidencias conservadas.
+Únicamente modifica el grado de confianza con el que el Modelo la sostiene.
