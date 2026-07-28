@@ -1,17 +1,18 @@
-# ORG-MEMORY · Memoria
+# Memoria
 
-| Campo | Valor |
-|--------|-------|
-| Identificador | ORG-MEMORY |
-| Capa | Ontology |
-| Estado | RC-1 |
-| Versión | 0.1 |
+**Estado:** Frozen
+
+**Versión:** 1.0.0
+
+**Breadcrumb:** `30_ontologia/memoria.md`
 
 ---
 
 # Propósito
 
-La Memoria constituye la capacidad del Modelo para conservar conocimiento histórico sin alterar su significado.
+Este documento define el concepto de Memoria dentro de la ontología de ATÓMICA.
+
+La Memoria constituye la capacidad del Modelo para preservar el conocimiento histórico sin alterar su significado.
 
 No representa almacenamiento técnico.
 
@@ -21,11 +22,13 @@ Representa persistencia del conocimiento.
 
 # Definición
 
-La Memoria es el conjunto ordenado de Estados, Representaciones, Observaciones y Evidencias que permanecen disponibles para reconstruir la evolución del conocimiento del Modelo.
+La Memoria es la propiedad mediante la cual el Modelo conserva íntegramente la sucesión histórica de Estados pertenecientes a una Identidad.
 
-La Memoria nunca modifica el conocimiento.
+La Memoria no genera conocimiento.
 
-La Memoria lo conserva.
+No modifica conocimiento.
+
+Únicamente garantiza su conservación.
 
 ---
 
@@ -37,44 +40,60 @@ La Memoria:
 - es acumulativa;
 - es persistente;
 - es histórica;
-- es inmutable;
-- nunca representa la realidad.
+- es inmutable.
 
 ---
 
-# Composición
+# Alcance
 
-La Memoria puede contener:
+La Memoria permite:
 
-- Estados históricos;
-- Representaciones históricas;
-- Observaciones;
-- Evidencias;
-- Hipótesis históricas;
-- relaciones de trazabilidad.
-
-La composición concreta pertenece a la metodología.
+- conservar todos los Estados históricos;
+- conservar todas las Representaciones históricas;
+- preservar la Trayectoria completa de una Identidad;
+- reconstruir el conocimiento admitido en cualquier instante lógico.
 
 ---
 
 # Persistencia
 
-Ningún elemento incorporado a la Memoria puede eliminarse por evolución normal del Modelo.
+Ningún Estado histórico puede eliminarse.
 
-La incorporación de nuevo conocimiento únicamente amplía la Memoria.
+Ninguna Representación histórica puede modificarse.
 
-Nunca sustituye su contenido histórico.
+Toda Trayectoria permanece íntegramente disponible mientras exista la Memoria del Modelo.
 
 ---
 
-# Relaciones
+# Restricciones
 
-La Memoria:
+## MM-001
 
-- conserva una o más Trayectorias;
-- conserva todos los Estados históricos;
-- conserva las Evidencias utilizadas;
-- permite reconstruir cualquier Estado histórico.
+Toda Memoria se construye exclusivamente mediante Estados históricos.
+
+---
+
+## MM-002
+
+La incorporación de nuevo conocimiento nunca elimina conocimiento previo.
+
+---
+
+## MM-003
+
+Toda reconstrucción histórica debe producir exactamente el mismo conocimiento admitido en ese instante.
+
+---
+
+## MM-004
+
+La Memoria nunca altera el significado de los elementos que conserva.
+
+---
+
+## MM-005
+
+La pérdida de Memoria constituye una corrupción del Modelo.
 
 ---
 
@@ -82,50 +101,35 @@ La Memoria:
 
 La Memoria nunca contiene:
 
+- Observaciones;
+- Evidencias;
+- Hipótesis;
+- Confianza;
 - decisiones;
 - recomendaciones;
-- planes de acción;
+- intervenciones;
 - objetivos;
-- intervenciones.
-
----
-
-# Invariantes
-
-**I-1** Ningún Estado histórico puede desaparecer de la Memoria.
-
-**I-2** Toda Representación histórica permanece accesible.
-
-**I-3** Toda Evidencia utilizada conserva su trazabilidad.
-
-**I-4** Toda reconstrucción histórica debe producir exactamente el mismo conocimiento que existía en ese momento.
-
-**I-5** La Memoria nunca altera el significado de los elementos que conserva.
+- planes de acción.
 
 ---
 
 # Dependencias
 
-- core/axiomas.md
-- ontology/estado.md
-- ontology/trayectoria.md
+- `10_nucleo/axiomas.md`
+- `30_ontologia/estado.md`
+- `30_ontologia/trayectoria.md`
 
 ---
 
 # Utilizado por
 
-- cronica.md
-- observatorio.md
-- hipotesis.md
+- `40_metodologia/`
+- `50_producto/`
 
 ---
 
-# Consecuencias arquitectónicas
+# Declaración
 
-1. El Modelo conserva todo su conocimiento histórico.
+La Memoria garantiza que el conocimiento admitido por el Modelo permanezca íntegro y reconstruible a lo largo del tiempo.
 
-2. Toda auditoría puede reconstruir el conocimiento existente en cualquier instante.
-
-3. La pérdida de Memoria constituye una corrupción del Modelo.
-
-4. La evolución nunca implica pérdida de conocimiento histórico.
+La evolución del Modelo nunca implica pérdida de conocimiento histórico.
