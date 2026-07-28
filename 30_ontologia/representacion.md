@@ -1,122 +1,146 @@
-# ORG-REPRESENTATION · Representación
+# Representación
 
-| | |
-|---|---|
-| **Identificador** | ORG-REPRESENTATION |
-| **Capa** | 30 · Ontology |
-| **Concepto canónico** | Representación |
-| **Estado** | CANÓNICO |
-| **Versión** | 1.0 |
-| **Reemplaza** | — |
+**Estado:** Frozen
 
-Las cláusulas de este documento se citan por su numeral (ORG-REPRESENTATION §4.2).
+**Versión:** 1.0.0
+
+**Breadcrumb:** `30_ontologia/representacion.md`
 
 ---
 
-# 1. Propósito
+# Propósito
 
-**1.1** El Modelo no observa organizaciones directamente.
+Este documento define el concepto de Representación dentro de la ontología de ATÓMICA.
 
-**1.2** El Modelo construye representaciones.
-
-**1.3** Toda inferencia opera sobre representaciones.
-
-**1.4** Este documento define qué constituye una Representación.
+La Representación constituye la estructura formal mediante la cual el Modelo expresa el conocimiento admitido sobre una Identidad en un Estado determinado.
 
 ---
 
-# 2. Definición
+# Definición
 
-**2.1** Una Representación es la estructura formal mediante la cual el Modelo expresa el conocimiento admitido sobre un referente organizacional.
+Una Representación es la estructura formal asociada a un Estado.
 
-**2.2** Toda Representación corresponde exactamente a un Estado.
+Su función consiste en organizar el conocimiento admitido por el Modelo sin alterar el referente observado.
 
-**2.3** Todo Estado contiene exactamente una Representación.
-
----
-
-# 3. Naturaleza
-
-**3.1** La Representación pertenece exclusivamente al Modelo.
-
-**3.2** No pertenece a la organización observada.
-
-**3.3** No constituye un hecho.
-
-**3.4** No constituye una opinión.
-
-**3.5** Es una construcción formal derivada del conocimiento admitido.
+Toda Representación pertenece exactamente a un Estado.
 
 ---
 
-# 4. Constitución
+# Naturaleza
+
+La Representación:
+
+- pertenece al Modelo;
+- no pertenece a la organización observada;
+- no constituye un hecho;
+- no constituye una opinión;
+- no interpreta;
+- estructura el conocimiento admitido.
+
+---
+
+# Constitución
 
 Toda Representación está compuesta por:
 
-**4.1** Observaciones admitidas.
+- las Observaciones admitidas por el Modelo;
+- las Relaciones estructurales entre dichas Observaciones;
+- las restricciones definidas por el Modelo;
+- la trazabilidad necesaria para reconstruir el Estado.
 
-**4.2** Relaciones estructurales.
+---
 
-**4.3** Restricciones derivadas del Modelo.
+# Formación
 
-**4.4** Trazabilidad.
+Una Representación se constituye simultáneamente con un Estado.
 
-No contiene:
+Toda modificación de una Representación requiere la creación de un nuevo Estado.
 
-- recomendaciones;
+Una Representación nunca puede modificarse una vez constituida.
+
+---
+
+# Persistencia
+
+Toda Representación histórica permanece disponible.
+
+Ninguna Representación histórica puede alterarse.
+
+La sucesión de Representaciones constituye la evolución del conocimiento admitido por el Modelo.
+
+---
+
+# Restricciones
+
+## RP-001
+
+Toda Representación pertenece exactamente a un Estado.
+
+---
+
+## RP-002
+
+Toda Representación pertenece exactamente a una Identidad.
+
+---
+
+## RP-003
+
+Ninguna Representación existe sin Estado.
+
+---
+
+## RP-004
+
+Toda Representación conserva su trazabilidad.
+
+---
+
+## RP-005
+
+Una Representación nunca modifica el referente observado.
+
+---
+
+## RP-006
+
+Toda modificación de una Representación genera un nuevo Estado.
+
+---
+
+# Exclusiones
+
+Una Representación nunca contiene:
+
+- Hipótesis;
+- Evidencias;
+- Confianza;
 - decisiones;
-- interpretación;
-- clasificación metodológica.
+- recomendaciones;
+- intervenciones;
+- clasificaciones metodológicas;
+- puntuaciones;
+- interfaces.
 
 ---
 
-# 5. Formación
+# Dependencias
 
-**5.1** La Representación se constituye junto con el Estado.
-
-**5.2** Ninguna Representación puede existir sin Estado.
-
-**5.3** Toda modificación produce una nueva Representación mediante un nuevo Estado.
+- `10_nucleo/axiomas.md`
+- `30_ontologia/identidad.md`
+- `30_ontologia/estado.md`
 
 ---
 
-# 6. Persistencia
+# Utilizado por
 
-**6.1** Toda Representación histórica permanece disponible.
-
-**6.2** Ninguna Representación histórica se modifica.
-
----
-
-# 7. Invariantes
-
-**I-1** Toda Representación pertenece a un único Estado.
-
-**I-2** Toda Representación pertenece a una única Identidad.
-
-**I-3** Ninguna Representación existe sin Estado.
-
-**I-4** Ninguna Representación modifica el referente.
-
-**I-5** Toda Representación es trazable.
+- `40_metodologia/`
+- `50_producto/`
 
 ---
 
-# 8. Dependencias
+# Declaración
 
-| Documento | Uso |
-|-----------|-----|
-| ORG-STATE | Estado |
-| ORG-IDENTITY | Referente |
-| TRACEABILITY | Relaciones |
+La Representación constituye la expresión formal del conocimiento admitido por el Modelo sobre una Identidad en un Estado determinado.
 
----
-
-# 9. Utilizado por
-
-| Documento |
-|-----------|
-| hypothesis |
-| benchmark |
-| ifo |
-| observatorio |
+Toda evolución del Modelo implica la creación de una nueva Representación asociada a un nuevo Estado.
