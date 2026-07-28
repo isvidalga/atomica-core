@@ -90,9 +90,9 @@ Nunca constituye información adicional.
 
 ## MV-004 · Las relaciones tienen prioridad sobre los objetos
 
-Una organización no se comprende observando elementos aislados.
+Una organización no puede comprenderse observando elementos aislados.
 
-Se comprende observando las relaciones entre ellos.
+Solo puede comprenderse observando las relaciones entre ellos.
 
 El Modelo Vivo representa primero relaciones.
 
@@ -207,17 +207,29 @@ El Modelo Vivo emerge del siguiente proceso.
 
 ```text
 Observaciones
-        ↓
+
+↓
+
 Evidencias
-        ↓
+
+↓
+
 Hipótesis
-        ↓
+
+↓
+
 Relaciones
-        ↓
+
+↓
+
 Patrones
-        ↓
+
+↓
+
 Estado Sistémico
-        ↓
+
+↓
+
 Modelo Vivo
 ```
 
@@ -235,13 +247,32 @@ Representa una estimación continuamente actualizada.
 
 El Modelo Vivo siempre representa el Estado Sistémico vigente.
 
----
+El Estado Sistémico integra:
+
+- las capacidades observadas;
+- las fragilidades inferidas;
+- los patrones activos;
+- las relaciones relevantes;
+- las hipótesis abiertas;
+- la confianza acumulada.
+
+Nunca representa una verdad objetiva.
+
+Representa la mejor explicación disponible del funcionamiento de la organización en un instante determinado.
 
 # Relaciones
 
-Las relaciones constituyen la estructura principal del Modelo.
+Las relaciones constituyen la estructura principal del Modelo Vivo.
 
-Pueden existir entre:
+No representan proximidad.
+
+No representan similitud.
+
+Representan influencia sistémica.
+
+Toda relación expresa una dependencia entre dos o más elementos del Modelo.
+
+Las relaciones pueden existir entre:
 
 - capacidades;
 - fragilidades;
@@ -249,14 +280,76 @@ Pueden existir entre:
 - hipótesis;
 - intervenciones;
 - evidencias;
-- organizaciones.
+- organizaciones;
+- sistemas.
 
-Las relaciones poseen:
+---
 
+# Propiedades de una relación
+
+Toda relación posee:
+
+- origen;
+- destino;
 - dirección;
 - intensidad;
 - confianza;
-- evolución temporal.
+- fecha de creación;
+- última actualización;
+- estado.
+
+Una relación nunca constituye una afirmación absoluta.
+
+Representa una inferencia estructural.
+
+---
+
+# Dirección
+
+Las relaciones poseen dirección.
+
+La dirección forma parte del conocimiento.
+
+No todas las relaciones son simétricas.
+
+Modificar la dirección implica modificar el significado.
+
+---
+
+# Intensidad
+
+La intensidad representa el grado de influencia estimado entre dos elementos.
+
+No representa frecuencia.
+
+No representa cantidad.
+
+Una relación poco frecuente puede poseer una influencia muy elevada.
+
+---
+
+# Confianza
+
+Toda relación incorpora un nivel de confianza.
+
+La confianza expresa la solidez de la inferencia.
+
+Nunca expresa gravedad.
+
+---
+
+# Evolución
+
+Las relaciones evolucionan.
+
+Pueden:
+
+- fortalecerse;
+- debilitarse;
+- desaparecer;
+- reaparecer.
+
+La desaparición nunca elimina su historia.
 
 ---
 
@@ -269,9 +362,32 @@ Nunca acontecimientos aislados.
 El Modelo Vivo utiliza los patrones para comprender:
 
 - recurrencias;
+- concentraciones;
 - dependencias;
 - dinámicas organizacionales;
-- zonas de concentración sistémica.
+- zonas de tensión;
+- estabilidad;
+- deterioro.
+
+Los patrones permiten observar el comportamiento del sistema más allá de los eventos individuales.
+
+---
+
+# Masa sistémica
+
+Cada patrón posee una masa sistémica.
+
+La masa representa su capacidad de influir sobre el resto del Modelo.
+
+Depende de:
+
+- persistencia;
+- amplitud;
+- conexiones;
+- intensidad;
+- confianza.
+
+La masa no representa gravedad.
 
 ---
 
@@ -279,24 +395,34 @@ El Modelo Vivo utiliza los patrones para comprender:
 
 Las hipótesis permiten representar conocimiento todavía no confirmado.
 
-Pueden:
+Una hipótesis puede:
 
 - fortalecerse;
 - debilitarse;
-- confirmarse;
-- refutarse.
+- confirmarse parcialmente;
+- refutarse;
+- dividirse;
+- fusionarse con otra.
 
-El Modelo Vivo conserva todas.
+Ninguna hipótesis desaparece.
+
+Toda evolución queda registrada.
 
 ---
 
 # Evidencias
 
-Las evidencias nunca constituyen el elemento principal del Modelo.
+Las evidencias fundamentan el Modelo.
 
-Su función consiste exclusivamente en fundamentar aquello que el Modelo representa.
+Nunca constituyen el elemento protagonista.
 
-Toda representación puede recorrerse hasta sus evidencias.
+Su función consiste exclusivamente en justificar las inferencias realizadas.
+
+Toda representación del Modelo debe poder recorrerse hasta las evidencias que la sostienen.
+
+Las evidencias nunca sustituyen al Modelo.
+
+Lo alimentan.
 
 ---
 
@@ -304,36 +430,61 @@ Toda representación puede recorrerse hasta sus evidencias.
 
 El Modelo Vivo incorpora memoria.
 
-No representa únicamente el presente.
+Nunca representa únicamente el presente.
 
 Todo estado actual incorpora la historia que permitió alcanzarlo.
 
-El pasado permanece siempre disponible.
+El pasado permanece disponible.
 
 Nunca desaparece.
+
+Nunca se reescribe.
+
+La evolución forma parte del Modelo.
+
+---
+
+# Persistencia
+
+Cada modificación del Modelo genera una nueva versión del conocimiento.
+
+Nunca sustituye completamente la anterior.
+
+El Modelo siempre conserva:
+
+- qué cambió;
+- cuándo cambió;
+- por qué cambió;
+- qué evidencia provocó el cambio.
 
 ---
 
 # Actualización
 
-El Modelo Vivo se modifica únicamente cuando cambia el conocimiento.
+El Modelo Vivo únicamente se modifica cuando cambia el conocimiento disponible.
 
-Nunca cuando cambia la interfaz.
+Nunca cambia porque:
 
-Nunca cuando cambia la representación gráfica.
+- cambie la interfaz;
+- cambie el diseño;
+- cambie la implementación técnica;
+- cambie la visualización.
 
-Nunca cuando cambia la implementación técnica.
-
-El conocimiento precede siempre a la visualización.
+El conocimiento precede siempre a la representación.
 
 ---
 
 # Explicabilidad
 
-Todo elemento del Modelo debe poder explicarse mediante una cadena completa.
+Todo elemento representado debe poder explicarse.
 
-```text
-Estado
+La explicación nunca constituye un texto generado.
+
+Constituye un recorrido completo por el conocimiento.
+
+La cadena mínima de explicación es:
+
+Estado Sistémico
 
 ↓
 
@@ -354,28 +505,129 @@ Evidencias
 ↓
 
 Observaciones
-```
 
-La cadena nunca puede interrumpirse.
+El recorrido nunca puede interrumpirse.
+
+---
+
+# Navegabilidad
+
+Todo elemento del Modelo puede convertirse en punto de inicio de una exploración.
+
+El usuario puede recorrer libremente las relaciones.
+
+Nunca pierde el contexto.
+
+Nunca abandona el Modelo.
+
+La navegación siempre conserva la trazabilidad completa.
 
 ---
 
 # Instrumentos relacionados
 
-El Modelo Vivo se alimenta de:
+El Modelo Vivo recibe información procedente de:
 
-- Memoria Organizacional.
-- Motor de Patrones.
-- Grafo de Relaciones.
-- Evidencias.
-- Timeline.
+- Memoria Organizacional;
+- Timeline;
+- Motor de Patrones;
+- Grafo de Relaciones;
+- Evidencias;
+- Diagnósticos.
 
 Y proporciona conocimiento a:
 
-- DONELLA.
-- Crónica.
-- Intervenciones.
-- Instrumentos de análisis.
+- DONELLA;
+- Crónica;
+- Instrumentos de intervención;
+- Sistemas de análisis;
+- Informes;
+- Explicaciones.
+
+El Modelo Vivo constituye el núcleo de inteligencia del producto.
+
+Todos los instrumentos se apoyan sobre él.
+
+Nunca al contrario.
+
+# Qué puede afirmar y qué nunca puede afirmar
+
+El Modelo Vivo representa conocimiento estimado.
+
+No representa verdad.
+
+Toda afirmación emitida por ATÓMICA debe respetar los límites del conocimiento disponible.
+
+Nunca podrá expresar un grado de certeza superior al que permitan las observaciones, las evidencias y las reglas metodológicas vigentes.
+
+---
+
+# Puede afirmar
+
+El Modelo Vivo puede afirmar:
+
+- que existen patrones compatibles con la evidencia disponible;
+- que determinados sistemas presentan mayor o menor nivel de tensión;
+- que una hipótesis aumenta o disminuye su nivel de confianza;
+- que una intervención parece modificar el comportamiento del sistema;
+- que existe evidencia suficiente o insuficiente para sostener una inferencia;
+- que determinadas relaciones requieren observación adicional.
+
+Toda afirmación debe poder justificarse mediante una cadena completa de trazabilidad.
+
+---
+
+# Nunca puede afirmar
+
+El Modelo Vivo nunca puede afirmar:
+
+- que conoce la realidad completa de la organización;
+- que una relación observada constituye una causalidad demostrada;
+- que una intervención producirá un resultado determinado;
+- que una organización es objetivamente frágil, resiliente o antifrágil;
+- que la ausencia de evidencia implica ausencia de riesgo;
+- que una hipótesis ha quedado definitivamente validada.
+
+Toda conclusión permanece abierta a revisión.
+
+---
+
+# Principio de falsabilidad
+
+Toda hipótesis puede:
+
+- fortalecerse;
+- debilitarse;
+- modificarse;
+- refutarse.
+
+Ninguna inferencia es permanente.
+
+El Modelo Vivo evoluciona cuando aparece nueva evidencia o cuando cambia el marco metodológico que interpreta dicha evidencia.
+
+---
+
+# Principio de transparencia
+
+Toda afirmación emitida por el Modelo Vivo debe responder, como mínimo, a las siguientes preguntas:
+
+- ¿Qué observaciones la sustentan?
+- ¿Qué evidencias la respaldan?
+- ¿Qué reglas metodológicas se aplicaron?
+- ¿Qué nivel de confianza posee?
+- ¿Qué información futura podría modificarla o refutarla?
+
+Si cualquiera de estas preguntas no puede responderse, la afirmación no debe emitirse.
+
+---
+
+# Principio de humildad epistemológica
+
+El Modelo Vivo nunca pretende sustituir el juicio humano.
+
+Su función consiste en hacer explícito el mejor estado de conocimiento disponible en cada momento.
+
+La decisión final pertenece siempre a la organización.
 
 ---
 
@@ -421,12 +673,68 @@ Constituye una representación del conocimiento disponible sobre dicho mundo.
 
 ---
 
-# Principio final
+## R-007
 
-El Modelo Vivo no pretende describir una organización.
+La representación nunca depende de una implementación técnica concreta.
 
-Pretende hacer visible la estructura de conocimiento mediante la que esa organización puede comprenderse a sí misma.
+El Modelo debe poder representarse mediante distintas interfaces sin alterar su significado.
 
-No representa la realidad.
+---
 
-Representa la mejor explicación disponible de esa realidad en cada momento.
+## R-008
+
+Toda representación debe poder reconstruirse utilizando únicamente el registro histórico y las reglas metodológicas vigentes en el momento en que fue generada.
+
+---
+
+# Relación con el resto del producto
+
+El Modelo Vivo constituye el núcleo de inteligencia de ATÓMICA.
+
+No sustituye a los demás instrumentos.
+
+Los integra.
+
+Cada instrumento responde una pregunta distinta:
+
+- La Memoria Organizacional explica cómo evolucionó el conocimiento.
+- La Timeline explica cuándo ocurrieron los cambios.
+- El Grafo de Relaciones explica cómo se conecta el sistema.
+- El Motor de Patrones explica qué estructuras permanecen.
+- DONELLA ayuda a interpretar el conocimiento disponible.
+- La Crónica explica la evolución narrativa de la organización.
+
+El Modelo Vivo sintetiza todo ese conocimiento en una representación sistémica única.
+
+---
+
+# Criterios de aceptación
+
+La implementación del Modelo Vivo se considera correcta únicamente si cumple todas las condiciones siguientes:
+
+- Nunca representa hechos como verdades absolutas.
+- Toda representación incorpora incertidumbre.
+- Toda representación puede recorrerse hasta sus observaciones originales.
+- Las relaciones poseen prioridad sobre los objetos.
+- Los patrones representan estructuras persistentes y no eventos aislados.
+- El conocimiento evoluciona sin eliminar su historia.
+- Las hipótesis pueden fortalecerse, modificarse o refutarse.
+- Ninguna conclusión impide futuras revisiones.
+- El Modelo puede reconstruirse para cualquier instante histórico.
+- La interfaz nunca modifica el significado del Modelo.
+
+---
+
+# Filosofía
+
+Una organización nunca puede observarse completamente.
+
+Solo puede comprenderse mediante modelos sucesivamente mejores.
+
+El Modelo Vivo no representa la organización.
+
+Representa la mejor explicación disponible sobre cómo esa organización parece funcionar en un momento determinado.
+
+Su finalidad no consiste en ofrecer respuestas definitivas.
+
+Consiste en hacer visible aquello que todavía merece ser comprendido.
