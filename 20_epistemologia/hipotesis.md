@@ -1,124 +1,138 @@
-# ORG-HYPOTHESIS · Hipótesis
+# Hipótesis
 
-| Campo | Valor |
-|--------|-------|
-| Identificador | ORG-HYPOTHESIS |
-| Capa | Ontology |
-| Estado | RC-1 |
-| Versión | 0.1 |
+**Estado:** Frozen
+
+**Versión:** 1.0.0
+
+**Breadcrumb:** `20_epistemologia/hipotesis.md`
 
 ---
 
 # Propósito
 
-La Hipótesis representa una explicación provisional que el Modelo formula para interpretar un Estado.
+Este documento define el concepto de Hipótesis dentro de la epistemología de ATÓMICA.
 
-No constituye un hecho.
-
-No constituye una conclusión definitiva.
-
-Su función es orientar la interpretación del conocimiento disponible.
+La Hipótesis constituye la unidad mínima de interpretación generada por el Modelo para explicar las observaciones disponibles.
 
 ---
 
 # Definición
 
-Una Hipótesis es una proposición inferida por el Modelo a partir de un Estado y respaldada por las observaciones y evidencias disponibles.
+Una Hipótesis es una proposición formulada por el Modelo para explicar una o varias Observaciones.
 
-Toda Hipótesis permanece abierta a revisión.
+No constituye un hecho.
+
+No constituye una verdad.
+
+No constituye una decisión.
 
 ---
 
 # Naturaleza
 
-La Hipótesis:
+Toda Hipótesis:
 
 - pertenece al Modelo;
 - es inferencial;
+- es provisional;
 - es revisable;
-- posee incertidumbre;
-- depende de la evidencia disponible;
-- nunca constituye una verdad demostrada.
+- posee un nivel de Confianza.
 
 ---
 
-# Generación
+# Alcance
 
-Toda Hipótesis:
+Una Hipótesis puede:
 
-- deriva de un Estado;
-- utiliza las observaciones disponibles;
-- utiliza las evidencias aceptadas;
-- puede desaparecer si un nuevo Estado deja de sostenerla.
-
-La aparición de nueva evidencia nunca modifica una Hipótesis existente.
-
-Genera una nueva Hipótesis asociada a un nuevo Estado.
+- explicar una o varias Observaciones;
+- ser respaldada por Evidencias;
+- ser debilitada por Evidencias;
+- ser sustituida por otra Hipótesis cuando deje de explicar adecuadamente el conocimiento disponible.
 
 ---
 
 # Relaciones
 
-Toda Hipótesis:
+Una Hipótesis:
 
-- pertenece exactamente a un Estado;
-- puede estar respaldada por múltiples Evidencias;
-- puede relacionarse con múltiples Fragilidades;
-- puede relacionarse con múltiples Capacidades.
+- se origina a partir de una o varias Observaciones;
+- puede estar asociada a múltiples Evidencias;
+- posee exactamente un nivel de Confianza.
+
+---
+
+# Restricciones
+
+## H-001
+
+Toda Hipótesis pertenece a un único Modelo.
+
+---
+
+## H-002
+
+Toda Hipótesis debe originarse a partir de una o varias Observaciones.
+
+---
+
+## H-003
+
+Una Hipótesis puede existir sin Evidencia suficiente.
+
+---
+
+## H-004
+
+Toda Hipótesis puede ser refutada.
+
+---
+
+## H-005
+
+La incorporación de nuevas Evidencias nunca convierte una Hipótesis en un hecho.
+
+---
+
+## H-006
+
+La Confianza modifica la plausibilidad de una Hipótesis.
+
+Nunca su naturaleza.
 
 ---
 
 # Exclusiones
 
-La Hipótesis nunca contiene:
+Una Hipótesis nunca constituye:
 
-- decisiones;
-- recomendaciones;
-- intervenciones;
-- objetivos;
-- planes de acción;
-- certificaciones.
-
----
-
-# Invariantes
-
-**I-1** Toda Hipótesis pertenece exactamente a un Estado.
-
-**I-2** Ninguna Hipótesis existe sin evidencia asociada.
-
-**I-3** Ninguna Hipótesis puede modificar un Estado.
-
-**I-4** Toda Hipótesis puede ser refutada.
-
-**I-5** Una Hipótesis histórica nunca se modifica.
-
-**I-6** La sustitución de una Hipótesis requiere un nuevo Estado.
+- una observación;
+- una evidencia;
+- una decisión;
+- una recomendación;
+- una intervención;
+- un objetivo;
+- un plan de acción.
 
 ---
 
 # Dependencias
 
-- core/axiomas.md
-- ontology/estado.md
-- ontology/evidencia.md
+- `10_nucleo/axiomas.md`
+- `20_epistemologia/observacion.md`
+- `20_epistemologia/evidencia.md`
+- `20_epistemologia/confianza.md`
 
 ---
 
 # Utilizado por
 
-- observatorio.md
-- cronica.md
-- intervencion.md
+- `40_metodologia/`
+- `50_producto/`
 
 ---
 
-# Consecuencias arquitectónicas
+# Declaración
 
-1. El Modelo propone hipótesis; nunca afirma hechos.
+El Modelo nunca afirma hechos acerca de una organización.
 
-2. Toda Hipótesis debe poder justificarse mediante Evidencias.
-
-3. El incremento de evidencia aumenta o disminuye la plausibilidad de una Hipótesis, pero nunca la convierte en una verdad absoluta.
-
-4. El usuario siempre podrá conocer qué Evidencias respaldan una Hipótesis concreta.
+Formula Hipótesis para explicar las Observaciones disponibles y las mantiene abiertas a revisión conforme evoluciona el conocimiento.
