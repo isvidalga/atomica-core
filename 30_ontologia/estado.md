@@ -1,207 +1,210 @@
-# ORG-STATE · Estado
+# Estado
 
-| | |
-|---|---|
-| **Identificador** | ORG-STATE |
-| **Capa** | 30 · Ontology |
-| **Concepto canónico** | Estado |
-| **Estado** | CANÓNICO |
-| **Versión** | 1.0 |
-| **Reemplaza** | — |
+**Estado:** Frozen
 
-Las cláusulas de este documento se citan por su numeral (ORG-STATE §4.2).
+**Versión:** 1.0.0
+
+**Breadcrumb:** `30_ontologia/estado.md`
 
 ---
 
-# 1. Propósito
+# Propósito
 
-**1.1** El Modelo representa organizaciones mediante una sucesión de Estados.
+Este documento define el concepto de Estado dentro de la ontología de ATÓMICA.
 
-**1.2** Toda inferencia, comparación, memoria, trayectoria o representación opera sobre Estados.
+El Estado constituye la unidad fundamental mediante la cual el Modelo representa el conocimiento admitido sobre una Identidad en un instante lógico.
 
-**1.3** Sin una definición formal de Estado no existe dominio sobre el que aplicar las operaciones del Modelo.
-
-**1.4** Este documento define exclusivamente qué es un Estado.
+Toda evolución del Modelo se expresa como una sucesión de Estados.
 
 ---
 
-# 2. Definición
+# Definición
 
-**2.1** Un Estado es la representación íntegra del conocimiento que el Modelo admite sobre un único referente en un instante lógico.
+Un Estado es la representación íntegra del conocimiento que el Modelo admite sobre una única Identidad en un instante lógico.
 
-**2.2** Todo Estado pertenece exactamente a un referente organizacional.
-
-**2.3** Todo Estado representa únicamente el conocimiento admitido por el Modelo en el instante lógico en que fue constituido.
-
-**2.4** Un Estado no representa la organización.
+Un Estado no representa la organización.
 
 Representa el conocimiento disponible sobre ella.
 
-**2.5** Todo Estado constituye un objeto del Modelo.
+Todo Estado constituye un objeto del Modelo.
 
-No constituye un hecho del mundo.
-
----
-
-# 3. Naturaleza
-
-**3.1** El Estado es una entidad ontológica del Modelo.
-
-**3.2** Es inmutable.
-
-Una vez constituido no puede modificarse.
-
-**3.3** Todo cambio en el conocimiento produce un nuevo Estado.
-
-Nunca modifica uno existente.
-
-**3.4** El Estado no contiene interpretación.
-
-Las interpretaciones pertenecen a las hipótesis.
-
-**3.5** El Estado no contiene decisiones.
-
-Las decisiones pertenecen a los usuarios.
-
-**3.6** El Estado no constituye un juicio sobre la organización.
+Nunca constituye un hecho del mundo.
 
 ---
 
-# 4. Constitución
+# Naturaleza
+
+Todo Estado:
+
+- pertenece al Modelo;
+- pertenece exactamente a una Identidad;
+- es inmutable;
+- representa un único instante lógico;
+- puede ser sucedido por otro Estado.
+
+La creación de un nuevo Estado nunca modifica uno existente.
+
+---
+
+# Constitución
 
 Todo Estado está compuesto por:
 
-**4.1** Identificador único.
-
-**4.2** Referente organizacional.
-
-**4.3** Instante lógico.
-
-**4.4** Representación admitida.
-
-**4.5** Relaciones con el Estado precedente.
-
-**4.6** Relaciones con el Estado sucesor, cuando exista.
+- un identificador único;
+- una Identidad;
+- un instante lógico;
+- una Representación vigente;
+- una referencia al Estado precedente, cuando exista;
+- una referencia al Estado sucesor, cuando exista.
 
 ---
 
-# 5. Exclusiones
+# Formación
+
+Un Estado nace cuando el Modelo admite una Representación distinta de la vigente.
+
+La creación de un Estado depende exclusivamente de un cambio en el conocimiento admitido.
+
+El tiempo físico no determina la creación de un Estado.
+
+Todo Estado nuevo preserva íntegramente la trazabilidad con los Estados anteriores.
+
+---
+
+# Sucesión
+
+Todo Estado puede tener, como máximo, un Estado sucesor dentro de la misma Identidad.
+
+La sucesión:
+
+- preserva la continuidad del Modelo;
+- mantiene la trazabilidad histórica;
+- nunca modifica Estados anteriores.
+
+La sucesión no implica continuidad de Hipótesis.
+
+La sucesión no implica aumento de Confianza.
+
+Ambas pertenecen a la capa epistemológica.
+
+---
+
+# Persistencia
+
+Todo Estado permanece como registro histórico.
+
+Ningún Estado desaparece.
+
+Sólo un Estado puede ser vigente para una misma Identidad.
+
+La pérdida de vigencia nunca altera el contenido del Estado.
+
+---
+
+# Terminación
+
+Un Estado deja de ser vigente únicamente cuando es sucedido por otro Estado perteneciente a la misma Identidad.
+
+La desaparición de una Identidad nunca elimina sus Estados históricos.
+
+---
+
+# Restricciones
+
+## ST-001
+
+Todo Estado pertenece exactamente a una Identidad.
+
+---
+
+## ST-002
+
+Todo Estado posee un identificador único.
+
+---
+
+## ST-003
+
+Todo Estado es inmutable.
+
+---
+
+## ST-004
+
+Un Estado nunca representa más de una Identidad.
+
+---
+
+## ST-005
+
+Todo Estado pertenece exactamente a una Trayectoria.
+
+---
+
+## ST-006
+
+Sólo puede existir un Estado vigente por Identidad.
+
+---
+
+## ST-007
+
+Todo Estado conserva permanentemente su trazabilidad.
+
+---
+
+## ST-008
+
+Ninguna operación puede modificar un Estado previamente constituido.
+
+---
+
+## ST-009
+
+Todo cambio en el conocimiento admitido genera un nuevo Estado.
+
+---
+
+# Exclusiones
 
 Un Estado nunca contiene:
 
-**5.1** Evidencias originales.
-
-**5.2** Hipótesis.
-
-**5.3** Explicaciones.
-
-**5.4** Recomendaciones.
-
-**5.5** Clasificaciones metodológicas.
-
-**5.6** Puntuaciones.
-
-**5.7** Interfaces.
-
-**5.8** Algoritmos.
-
-**5.9** Componentes visuales.
+- Observaciones;
+- Evidencias;
+- Hipótesis;
+- Confianza;
+- recomendaciones;
+- intervenciones;
+- clasificaciones metodológicas;
+- puntuaciones;
+- interfaces;
+- algoritmos;
+- componentes visuales.
 
 ---
 
-# 6. Formación
+# Dependencias
 
-**6.1** Un Estado nace cuando el Modelo admite una representación distinta de la previamente vigente.
-
-**6.2** El tiempo físico no determina la creación de un Estado.
-
-**6.3** La creación depende exclusivamente de un cambio en el conocimiento admitido.
-
-**6.4** El Estado anterior permanece inalterado.
+- `10_nucleo/axiomas.md`
+- `30_ontologia/identidad.md`
+- `30_ontologia/representacion.md`
+- `30_ontologia/trayectoria.md`
 
 ---
 
-# 7. Sucesión
+# Utilizado por
 
-**7.1** Todo Estado puede dar lugar, como máximo, a un Estado sucesor dentro de la misma identidad organizacional.
-
-**7.2** La sucesión preserva la trazabilidad.
-
-**7.3** La sucesión no implica continuidad de hipótesis.
-
-**7.4** La sucesión no implica aumento de confianza.
+- `30_ontologia/trayectoria.md`
+- `30_ontologia/representacion.md`
+- `40_metodologia/`
+- `50_producto/`
 
 ---
 
-# 8. Persistencia
+# Declaración
 
-**8.1** Todo Estado permanece como registro histórico.
+El Estado constituye la unidad fundamental mediante la cual ATÓMICA preserva y organiza el conocimiento admitido sobre una Identidad.
 
-**8.2** Ningún Estado desaparece.
+Toda evolución del Modelo se produce mediante la creación de nuevos Estados.
 
-**8.3** Sólo uno puede ser el Estado vigente de un referente.
-
-**8.4** Los Estados históricos conservan toda su trazabilidad.
-
----
-
-# 9. Terminación
-
-**9.1** Un Estado deja de ser vigente únicamente cuando es sucedido por otro Estado.
-
-**9.2** La pérdida de vigencia no altera su contenido.
-
-**9.3** La terminación de la identidad organizacional no elimina los Estados históricos.
-
----
-
-# 10. Invariantes
-
-**I-1.** Todo Estado pertenece a un único referente.
-
-**I-2.** Todo Estado posee un único identificador.
-
-**I-3.** Todo Estado es inmutable.
-
-**I-4.** Ningún Estado representa más de un referente.
-
-**I-5.** Ningún Estado puede modificarse.
-
-**I-6.** Todo Estado pertenece a exactamente una trayectoria.
-
-**I-7.** Sólo puede existir un Estado vigente por referente.
-
-**I-8.** Todo Estado conserva su trazabilidad.
-
-**I-9.** Ninguna operación altera un Estado previamente constituido.
-
-**I-10.** Todo cambio genera un nuevo Estado.
-
----
-
-# 11. Dependencias
-
-| Documento | Uso |
-|-----------|-----|
-| axioms | Fundamentos |
-| knowledge-laws | Estatuto del conocimiento |
-| identity | Referente |
-| temporality | Instante lógico |
-| traceability | Relaciones entre Estados |
-
----
-
-# 12. Utilizado por
-
-| Documento |
-|-----------|
-| trajectory |
-| representation |
-| hypothesis |
-| evidence |
-| aggregation |
-| contradiction |
-| decay |
-| benchmark |
-| ifo |
-| observatorio |
+Ningún Estado previamente constituido puede modificarse.
