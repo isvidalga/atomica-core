@@ -700,3 +700,31 @@ Consiste en hacer visible aquello que todavía merece ser comprendido.
 Los sistemas organizacionales se representan utilizando los estados definidos en:
 
 `00_canon/sistemas_organizacionales.md`
+
+---
+
+## Relación con Observe
+
+Observe constituye la primera superficie de exploración del Modelo Vivo.
+
+No genera conocimiento.
+
+No realiza inferencias.
+
+No interpreta la organización.
+
+Su función consiste en permitir que el CEO explore el conocimiento representado por el Modelo Vivo desde distintos niveles de detalle.
+
+Observe responde únicamente a una pregunta:
+
+> ¿Qué está ocurriendo?
+
+El Modelo Vivo representa el conocimiento disponible.
+
+Observe permite recorrer dicha representación.
+
+Toda la información mostrada por Observe procede del conocimiento generado por el Motor de Inferencia y organizado por el Modelo Vivo.
+
+Observe nunca mantiene conocimiento propio.
+
+Constituye exclusivamente una superficie de observación.
