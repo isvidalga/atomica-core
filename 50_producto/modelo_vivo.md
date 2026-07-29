@@ -728,3 +728,148 @@ Toda la información mostrada por Observe procede del conocimiento generado por 
 Observe nunca mantiene conocimiento propio.
 
 Constituye exclusivamente una superficie de observación.
+
+---
+
+## Relación con Pattern
+
+Pattern constituye la segunda superficie de exploración del Modelo Vivo.
+
+Su función consiste en revelar patrones presentes en el conocimiento representado por el Modelo Vivo.
+
+No explica acontecimientos aislados.
+
+No genera nuevas inferencias.
+
+Identifica y permite explorar configuraciones recurrentes del organismo.
+
+Pattern responde únicamente a una pregunta:
+
+> ¿Por qué este comportamiento aparece de forma recurrente?
+
+Los patrones representan hipótesis estructurales compatibles con la evidencia disponible.
+
+Nunca constituyen diagnósticos.
+
+Toda representación mostrada por Pattern debe conservar la trazabilidad completa hacia las hipótesis, relaciones, evidencias y observaciones que la sustentan.
+
+Pattern nunca mantiene conocimiento propio.
+
+Constituye exclusivamente una superficie de exploración del Modelo Vivo.
+
+---
+
+## Relación con Crónica
+
+Crónica constituye la memoria del Modelo Vivo.
+
+Su función consiste en mostrar cómo ha evolucionado el conocimiento sobre la organización a lo largo del tiempo.
+
+No registra únicamente acontecimientos.
+
+Registra la evolución del conocimiento mediante observaciones, evidencias, inferencias, intervenciones y cambios de estado.
+
+Crónica responde únicamente a una pregunta:
+
+> ¿Cómo hemos llegado hasta aquí?
+
+Cada registro permanece inalterable.
+
+La historia del conocimiento es append-only.
+
+Las inferencias posteriores nunca modifican el registro histórico.
+
+Cada registro conserva, como mínimo:
+
+- fecha;
+- origen;
+- observaciones relacionadas;
+- evidencias asociadas;
+- nivel de confianza;
+- versión de la metodología;
+- versión del Modelo Vivo que generó la representación.
+
+Toda representación mostrada por Crónica debe poder reconstruirse utilizando únicamente la información disponible en el momento en que fue generada.
+
+Crónica nunca mantiene conocimiento propio.
+
+Constituye exclusivamente la memoria verificable del Modelo Vivo.
+
+---
+
+## Relación con Evidencias
+
+Las Evidencias constituyen el fundamento verificable del Modelo Vivo.
+
+Su función consiste en aumentar o reducir la confianza de las inferencias que representan el conocimiento sobre la organización.
+
+Las Evidencias nunca generan conocimiento por sí mismas.
+
+Permiten justificar, fortalecer, debilitar o refutar las inferencias existentes.
+
+El Modelo Vivo responde únicamente a una pregunta:
+
+> ¿Qué conocemos sobre la organización?
+
+Las Evidencias responden a una pregunta distinta:
+
+> ¿Por qué podemos sostener ese conocimiento?
+
+Toda representación del Modelo Vivo debe poder recorrerse hasta las Evidencias que la sustentan.
+
+La definición de Evidencia, sus propiedades y su ciclo de vida pertenecen al dominio y se encuentran definidas en:
+
+`02_domain/evidencia.md`
+
+Eliminar una Evidencia nunca elimina la historia del conocimiento.
+
+Únicamente puede modificar el nivel de confianza de las inferencias relacionadas.
+
+Las Evidencias nunca mantienen conocimiento propio.
+
+Constituyen exclusivamente el fundamento verificable del Modelo Vivo.
+
+---
+
+## Relación con Donella
+
+Donella constituye la capa de interpretación sistémica del Modelo Vivo.
+
+No representa un asistente conversacional de propósito general.
+
+No sustituye el juicio del CEO.
+
+No toma decisiones.
+
+No genera conocimiento nuevo.
+
+Su función consiste en facilitar la interpretación del conocimiento representado por el Modelo Vivo.
+
+Donella trabaja exclusivamente sobre el conocimiento disponible en el Modelo Vivo.
+
+Nunca utiliza información ajena al modelo.
+
+Donella puede:
+
+- explicar relaciones relevantes;
+- formular hipótesis alternativas compatibles con la evidencia disponible;
+- explicar principios sistémicos;
+- señalar incertidumbres;
+- identificar información cuya obtención podría aumentar la confianza del modelo.
+
+Donella nunca puede:
+
+- afirmar hechos no observados;
+- presentar hipótesis como certezas;
+- emitir recomendaciones categóricas;
+- ocultar incertidumbre;
+- modificar las inferencias del Motor de Inferencia;
+- alterar el registro histórico del conocimiento.
+
+Toda interpretación realizada por Donella debe poder justificarse mediante la misma cadena de trazabilidad que sustenta el Modelo Vivo.
+
+Donella constituye exclusivamente una capa de interpretación.
+
+Su misión consiste en ayudar al CEO a comprender mejor el conocimiento disponible y formular mejores preguntas.
+
+La decisión final pertenece siempre a la organización.
