@@ -162,6 +162,18 @@ Nunca representa elementos sin fundamento suficiente.
 
 ---
 
+# Sistemas Organizacionales
+
+El Modelo Vivo organiza toda representación utilizando los Siete Sistemas Organizacionales definidos en:
+
+`00_canon/sistemas_organizacionales.md`
+
+La importancia relativa de cada sistema depende del estado sistémico estimado en cada instante.
+
+Ningún sistema posee prioridad permanente.
+
+---
+
 # Qué no representa
 
 El Modelo Vivo no es:
