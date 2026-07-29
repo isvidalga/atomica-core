@@ -694,3 +694,9 @@ Representa la mejor explicación disponible sobre cómo esa organización parece
 Su finalidad no consiste en ofrecer respuestas definitivas.
 
 Consiste en hacer visible aquello que todavía merece ser comprendido.
+
+---
+
+Los sistemas organizacionales se representan utilizando los estados definidos en:
+
+`00_canon/sistemas_organizacionales.md`
