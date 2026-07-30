@@ -17,115 +17,125 @@ ATÓMICA
 
 # Propósito
 
-Este documento constituye el índice oficial del catálogo de patrones organizacionales de ATÓMICA.
+Este documento constituye el registro oficial de los patrones organizacionales reconocidos por la metodología de ATÓMICA.
 
-Su función consiste en identificar todos los patrones reconocidos por la metodología.
+Su finalidad consiste en identificar los patrones que forman parte del modelo organizacional.
 
-No describe su contenido.
+No describe su funcionamiento.
 
-No define su funcionamiento.
+No define sus reglas.
 
-La descripción completa de cada patrón pertenece exclusivamente a su documento correspondiente.
+No explica su detección.
+
+Cada patrón dispone de un documento propio.
 
 ---
 
-# Organización del catálogo
+# Naturaleza del catálogo
 
-Los patrones se almacenan en:
+El catálogo representa el conjunto de patrones disponibles para la interpretación del comportamiento organizacional.
 
-```text
-09_patterns/
-└── catalog/
-```
+Cada patrón constituye una hipótesis metodológica independiente.
 
-Cada patrón dispone de un documento independiente.
+La incorporación, modificación o retirada de un patrón requiere una decisión metodológica explícita.
 
-El nombre del archivo constituye un identificador estable dentro del repositorio.
+---
 
-La numeración facilita únicamente la organización del catálogo.
+# Organización
 
-No representa prioridad.
+Cada patrón posee:
 
-No representa gravedad.
+- un identificador único;
+- un nombre oficial;
+- un documento propio;
+- una versión;
+- un estado metodológico.
 
-No representa orden de ejecución.
+El identificador permanece estable durante todo el ciclo de vida del patrón.
+
+El nombre podrá evolucionar cuando exista una justificación metodológica.
+
+---
+
+# Estados
+
+Un patrón puede encontrarse en uno de los siguientes estados:
+
+## Borrador
+
+Se encuentra en elaboración.
+
+No puede utilizarse durante la interpretación organizacional.
+
+---
+
+## En revisión
+
+Su definición está siendo validada.
+
+Puede modificarse.
+
+---
+
+## Canónico
+
+Forma parte oficialmente de la metodología.
+
+Puede utilizarse para interpretar organizaciones.
+
+---
+
+## Obsoleto
+
+Ha sido sustituido por otro patrón.
+
+Se conserva únicamente por motivos históricos y de trazabilidad.
 
 ---
 
 # Catálogo oficial
 
-| ID | Patrón |
-|----|---------|
-| 01 | Retrasos de reacción |
-| 02 | Hipótesis repetidamente refutadas |
-| 03 | Decisiones sin evidencia |
-| 04 | Áreas olvidadas |
-| 05 | Cambios demasiado rápidos |
-| 06 | Estabilidad excesiva |
-| 07 | Dependencia de personas clave |
-| 08 | Concentración de proveedores |
-| 09 | Ciclos estacionales ignorados |
-| 10 | Déficit de aprendizaje organizacional |
-| 11 | Ilusión de control |
-| 12 | Fuga de talento predecible |
-| 13 | Sesgo de confirmación institucional |
-| 14 | Escalada del compromiso |
-| 15 | Silos de información |
-| 16 | Ritmo de reuniones vs. ritmo operativo |
-| 17 | Inflación de métricas |
-| 18 | Déficit de atención estratégica |
-| 19 | Rotación de prioridades sin cierre |
-| 20 | Dependencia de clientes |
-| 21 | Delegación reversible |
-| 22 | Déficit de experimentación |
-| 23 | Acumulación de deuda técnica |
-| 24 | Invisibilidad del trabajo interno |
-| 25 | Fragmentación de memoria |
-| 26 | Ritmo de contratación vs. integración |
-| 27 | Concentración de riesgo en clientes |
-| 28 | Patrón de solución mágica |
-| 29 | Asimetría de feedback |
-| 30 | Inflación de procesos |
-| 31 | Déficit de narrativa coherente |
-| 32 | Escapismo estratégico |
-| 33 | Acumulación de deberes |
-| 34 | Reorganización cíclica |
-| 35 | Déficit de diversidad cognitiva |
-| 36 | Éxito por accidente |
-| 37 | Invisibilidad de costes de oportunidad |
-| 38 | Escalada de requisitos |
-| 39 | Déficit de memoria de fallos |
-| 40 | Héroe de turno |
-| 41 | Ritmo de innovación vs. absorción |
-| 42 | Concentración de decisiones |
-| 43 | Déficit de cierre |
-| 44 | Parálisis por análisis |
-| 45 | Inflación de reuniones sincronizadas |
-| 46 | Migración de problemas |
-| 47 | Déficit de retroalimentación cerrada |
-| 48 | Optimización local |
-| 49 | Acumulación de deuda comunicativa |
-| 50 | Narrativa retrospectiva |
+| ID | Patrón | Estado |
+|----|---------|--------|
+| P-001 | ... | Canónico |
+| P-002 | ... | Canónico |
+| P-003 | ... | Canónico |
+
+*(El catálogo se completará conforme se incorporen los patrones oficiales.)*
 
 ---
 
-# Evolución del catálogo
+# Reglas del catálogo
 
-La incorporación de nuevos patrones requiere:
+Todo patrón deberá:
 
-- una justificación metodológica;
-- una especificación conforme a `especificacion_patron.md`;
-- la actualización de este catálogo.
+- poseer un identificador único;
+- disponer de una especificación propia;
+- cumplir la estructura definida en `especificacion_patron.md`;
+- mantener compatibilidad con la ontología oficial;
+- ser versionable;
+- poder declararse obsoleto sin eliminar su historial.
 
-La eliminación de un patrón nunca implica su desaparición del historial metodológico.
+---
 
-Deberá registrarse como obsoleto o sustituido.
+# Evolución
+
+La creación de un nuevo patrón requiere:
+
+- justificación metodológica;
+- incorporación al catálogo;
+- creación de su documento individual;
+- asignación de identificador permanente.
+
+La eliminación de un patrón no implica su desaparición.
+
+Su historial deberá conservarse para mantener la trazabilidad metodológica.
 
 ---
 
 # Documentos relacionados
 
-- `09_patterns/README.md`
-- `09_patterns/especificacion_patron.md`
-- `03_epistemology/pattern-engine.md`
-- `02_ontology/patron.md`
+- `00_canon/principios.md`
+- `01_metodologia/metodologia.md`
+- `70_patrones/patrones_organizacionales.md`
+- `70_patrones/especificacion_patron.md`
