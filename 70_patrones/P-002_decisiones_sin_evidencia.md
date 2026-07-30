@@ -179,7 +179,7 @@ Este patrón no permite concluir que las decisiones sean incorrectas.
 
 # Relación con otros documentos
 
-- `patrones_organizacionales.md`
+- `naturaleza_patrones.md`
 - `catalogo_patrones_organizacionales.md`
 - `especificacion_patron.md`
 - `motor_patrones.md`

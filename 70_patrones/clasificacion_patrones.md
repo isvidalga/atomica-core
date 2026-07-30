@@ -184,7 +184,7 @@ Representa únicamente una agrupación metodológica de patrones.
 
 Este documento complementa:
 
-- `patrones_organizacionales.md`
+- `naturaleza_patrones.md`
 - `catalogo_patrones_organizacionales.md`
 - `motor_patrones.md`
 - `deteccion_patrones.md`

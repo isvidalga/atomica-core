@@ -124,7 +124,7 @@ Toda intervención deberá contribuir al fortalecimiento estructural de la organ
 
 Este documento complementa:
 
-- patrones_organizacionales.md
+- naturaleza_patrones.md
 - gravedad_patrones.md
 - confianza_patrones.md
 - plan_fortalecimiento.md

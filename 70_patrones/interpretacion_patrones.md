@@ -127,7 +127,7 @@ ATÓMICA nunca deberá:
 
 Este documento complementa:
 
-- patrones_organizacionales.md
+- naturaleza_patrones.md
 - confianza_patrones.md
 - gravedad_patrones.md
 - evolucion_patrones.md

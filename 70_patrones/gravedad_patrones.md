@@ -138,7 +138,7 @@ Toda recomendación deberá considerar el modelo organizacional completo.
 
 Este documento complementa:
 
-- patrones_organizacionales.md
+- naturaleza_patrones.md
 - clasificacion_patrones.md
 - persistencia_patrones.md
 - relaciones_entre_patrones.md

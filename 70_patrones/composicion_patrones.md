@@ -110,7 +110,7 @@ Toda composición deberá aportar una mejora real en la interpretación del mode
 
 Este documento complementa:
 
-- patrones_organizacionales.md
+- naturaleza_patrones.md
 - relaciones_entre_patrones.md
 - gravedad_patrones.md
 - confianza_patrones.md

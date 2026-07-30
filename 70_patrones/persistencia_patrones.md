@@ -152,7 +152,7 @@ La evolución temporal forma parte del conocimiento del sistema.
 
 Este documento complementa:
 
-- patrones_organizacionales.md
+- naturaleza_patrones.md
 - deteccion_patrones.md
 - ciclo_vida_patron.md
 

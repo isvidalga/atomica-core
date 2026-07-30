@@ -184,7 +184,7 @@ Este patrón nunca permite afirmar que una organización vaya a sufrir una inter
 
 # Relación con otros documentos
 
-- `patrones_organizacionales.md`
+- `naturaleza_patrones.md`
 - `catalogo_patrones_organizacionales.md`
 - `especificacion_patron.md`
 - `motor_patrones.md`

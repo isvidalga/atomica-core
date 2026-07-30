@@ -197,7 +197,7 @@ La evolución del patrón y la evolución de su confianza constituyen procesos r
 
 Este documento complementa:
 
-- `patrones_organizacionales.md`
+- `naturaleza_patrones.md`
 - `motor_patrones.md`
 - `deteccion_patrones.md`
 - `especificacion_patron.md`

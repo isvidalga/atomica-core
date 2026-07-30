@@ -234,7 +234,7 @@ El motor nunca podrá:
 
 Este documento se complementa con:
 
-- `patrones_organizacionales.md`, que define la naturaleza de los patrones.
+- `naturaleza_patrones.md`, que define la naturaleza de los patrones.
 - `catalogo_patrones_organizacionales.md`, que mantiene el inventario oficial.
 - `especificacion_patron.md`, que define la estructura de cada patrón individual.
 - `deteccion_patrones.md`, que especifica el proceso metodológico de detección.

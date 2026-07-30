@@ -145,7 +145,7 @@ La historia constituye parte del conocimiento metodológico.
 
 Este documento complementa:
 
-- patrones_organizacionales.md
+- naturaleza_patrones.md
 - ciclo_vida_patron.md
 - persistencia_patrones.md
 - gravedad_patrones.md

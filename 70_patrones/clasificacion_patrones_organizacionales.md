@@ -167,7 +167,7 @@ No deberán crearse categorías para resolver casos particulares.
 
 Este documento complementa:
 
-- `patrones_organizacionales.md`
+- `naturaleza_patrones.md`
 - `catalogo_patrones_organizacionales.md`
 - `especificacion_patron.md`
 

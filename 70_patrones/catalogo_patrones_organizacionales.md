@@ -137,5 +137,5 @@ Su historial deberá conservarse para mantener la trazabilidad metodológica.
 
 - `00_canon/principios.md`
 - `01_metodologia/metodologia.md`
-- `70_patrones/patrones_organizacionales.md`
+- `70_patrones/naturaleza_patrones.md`
 - `70_patrones/especificacion_patron.md`

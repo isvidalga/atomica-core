@@ -164,7 +164,7 @@ No demostraciones causales.
 
 Este documento complementa:
 
-- patrones_organizacionales.md
+- naturaleza_patrones.md
 - clasificacion_patrones.md
 - deteccion_patrones.md
 - persistencia_patrones.md

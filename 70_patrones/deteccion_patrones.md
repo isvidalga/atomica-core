@@ -208,7 +208,7 @@ La detección nunca podrá:
 Este documento complementa:
 
 - `motor_patrones.md`
-- `patrones_organizacionales.md`
+- `naturaleza_patrones.md`
 - `especificacion_patron.md`
 - `ciclo_de_vida_patron.md`
 

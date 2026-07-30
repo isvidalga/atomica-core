@@ -125,7 +125,7 @@ Toda interpretación deberá permitir distinguir claramente entre:
 
 Este documento complementa:
 
-- patrones_organizacionales.md
+- naturaleza_patrones.md
 - deteccion_patrones.md
 - persistencia_patrones.md
 - gravedad_patrones.md
