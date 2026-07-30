@@ -33,7 +33,9 @@ La intervención siempre se dirige a las causas organizacionales compatibles con
 
 # Naturaleza
 
-Una intervención representa una acción destinada a fortalecer el modelo organizacional.
+El concepto de Intervención se define en `50_producto/intervencion.md`.
+
+Este documento describe cómo se aplican las intervenciones sobre los patrones.
 
 Su finalidad consiste en reducir la probabilidad de persistencia o reaparición de un patrón.
 

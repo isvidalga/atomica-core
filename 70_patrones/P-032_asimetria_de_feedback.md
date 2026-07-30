@@ -1,4 +1,3 @@
-[29-asimetria-de-feedback.md](https://github.com/user-attachments/files/30106099/29-asimetria-de-feedback.md)
 # Asimetría de Feedback
 
 > **ID:** 29 | **Categoría:** Personas y cultura | **Severidad:** Medio

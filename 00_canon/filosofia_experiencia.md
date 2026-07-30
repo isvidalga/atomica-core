@@ -8,7 +8,7 @@ Versión: 2.0
 
 # Propósito
 
-La Evidencia constituye el fundamento verificable del conocimiento organizacional.
+Todo conocimiento organizacional debe sostenerse sobre evidencia verificable.
 
 Su función no consiste en almacenar información.
 
@@ -232,11 +232,11 @@ Toda Evidencia conserva su contexto histórico.
 
 # Dependencias
 
-- `30_ontology/evidencia.md`
-- `30_ontology/hipotesis.md`
+- `20_epistemologia/evidencia.md`
+- `20_epistemologia/hipotesis.md`
 - `30_ontology/patron.md`
-- `30_ontology/estado.md`
-- `30_ontology/memoria.md`
+- `30_ontologia/estado.md`
+- `30_ontologia/memoria.md`
 - `00_canon/filosofia.md`
 
 ---
