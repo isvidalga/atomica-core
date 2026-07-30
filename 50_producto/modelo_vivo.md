@@ -251,7 +251,9 @@ Cada transformación conserva su trazabilidad.
 
 # Estado Sistémico
 
-El Estado Sistémico constituye la expresión más reciente del conocimiento acumulado.
+El Estado Sistémico es la representación sintética del estado actual estimado de una organización, derivada del Modelo Vivo, que integra el conocimiento acumulado disponible y expresa las condiciones sistémicas observadas en un momento determinado.
+
+Constituye la expresión más reciente de ese conocimiento acumulado.
 
 No representa una fotografía.
 

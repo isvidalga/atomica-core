@@ -133,7 +133,9 @@ Representa únicamente una entrada para el proceso de inferencia.
 
 # Modelo Vivo
 
-El Modelo Vivo constituye la representación estructurada del conocimiento disponible sobre una organización.
+El Modelo Vivo es la implementación dinámica del Modelo Organizacional que mantiene actualizado ese conocimiento mediante observaciones, evidencias, relaciones y evolución temporal.
+
+El Modelo Vivo implementa y mantiene actualizado el Modelo Organizacional.
 
 No representa la organización real.
 
@@ -245,7 +247,9 @@ Por ello, ningún resultado puede interpretarse sin considerar simultáneamente 
 
 # Estado Sistémico
 
-El Estado Sistémico constituye la representación sintética del equilibrio del Modelo Vivo.
+El Estado Sistémico es la representación sintética del estado actual estimado de una organización, derivada del Modelo Vivo, que integra el conocimiento acumulado disponible y expresa las condiciones sistémicas observadas en un momento determinado.
+
+Expresa el equilibrio del Modelo Vivo.
 
 No resume toda la organización.
 

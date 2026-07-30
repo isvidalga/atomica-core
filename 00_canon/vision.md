@@ -236,7 +236,9 @@ No un estado permanente.
 
 # El papel del Modelo Organizacional
 
-El Modelo Organizacional constituye la representación del mejor conocimiento disponible sobre una organización en un momento determinado.
+El Modelo Organizacional es la representación conceptual del conocimiento disponible sobre una organización.
+
+El Modelo Vivo implementa y mantiene actualizado el Modelo Organizacional.
 
 No pretende reproducir la realidad.
 
