@@ -17,7 +17,11 @@ ATÓMICA
 
 # Propósito
 
-Este módulo define el catálogo oficial de patrones organizacionales de ATÓMICA.
+Este documento define la naturaleza de los patrones organizacionales.
+
+No constituye el catálogo oficial.
+
+El catálogo oficial se mantiene exclusivamente en `catalogo_patrones_organizacionales.md`.
 
 Un patrón representa una configuración recurrente del comportamiento de una organización.
 

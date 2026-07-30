@@ -1,8 +1,8 @@
-# Clasificación de Patrones
+# Perspectivas de Análisis de Patrones
 
 **Versión:** 1.0  
 **Estado:** Canónico  
-**Ubicación:** `70_patrones/clasificacion_patrones.md`
+**Ubicación:** `70_patrones/perspectivas_analisis_patrones.md`
 
 ---
 
@@ -11,18 +11,22 @@
 ```
 ATÓMICA
 └── 70 · Patrones
-    └── Clasificación de Patrones
+    └── Perspectivas de Análisis de Patrones
 ```
 
 ---
 
 # Propósito
 
-Este documento define la clasificación metodológica de los patrones organizacionales utilizados por ATÓMICA.
+Este documento describe distintas perspectivas desde las que un patrón puede analizarse.
 
-Su finalidad consiste en organizar el catálogo sin alterar la naturaleza de los patrones.
+No define la taxonomía oficial.
 
-La clasificación facilita la comprensión, navegación y evolución del repositorio.
+No sustituye la clasificación oficial.
+
+La clasificación oficial de patrones organizacionales pertenece exclusivamente a `clasificacion_patrones_organizacionales.md`.
+
+Su finalidad consiste en facilitar la comprensión, navegación y evolución del repositorio sin alterar la naturaleza de los patrones.
 
 No modifica el comportamiento del motor de detección.
 
@@ -195,6 +199,6 @@ Este documento complementa:
 
 # Conclusión
 
-La clasificación de patrones proporciona una organización estable del catálogo metodológico de ATÓMICA.
+Las perspectivas de análisis proporcionan lecturas complementarias del catálogo metodológico de ATÓMICA.
 
 Su finalidad consiste en facilitar la evolución del conocimiento sin alterar la naturaleza, detección o interpretación de los patrones organizacionales.

@@ -139,7 +139,7 @@ Toda recomendación deberá considerar el modelo organizacional completo.
 Este documento complementa:
 
 - naturaleza_patrones.md
-- clasificacion_patrones.md
+- perspectivas_analisis_patrones.md
 - persistencia_patrones.md
 - relaciones_entre_patrones.md
 

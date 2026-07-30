@@ -165,7 +165,7 @@ No demostraciones causales.
 Este documento complementa:
 
 - naturaleza_patrones.md
-- clasificacion_patrones.md
+- perspectivas_analisis_patrones.md
 - deteccion_patrones.md
 - persistencia_patrones.md
 
