@@ -251,11 +251,13 @@ Cada transformación conserva su trazabilidad.
 
 # Estado Sistémico
 
-El Estado Sistémico es la representación sintética del estado actual estimado de una organización, derivada del Modelo Vivo, que integra el conocimiento acumulado disponible y expresa las condiciones sistémicas observadas en un momento determinado.
+El concepto de Estado Sistémico se define en `40_metodologia/metodologia.md`.
 
-Constituye la expresión más reciente de ese conocimiento acumulado.
+Este documento no lo define: describe cómo el Modelo Vivo lo mantiene y lo representa dentro del producto.
 
-No representa una fotografía.
+El Modelo Vivo mantiene el Estado Sistémico como la expresión más reciente del conocimiento acumulado.
+
+No lo muestra como una fotografía.
 
 Representa una estimación continuamente actualizada.
 
