@@ -1,4 +1,4 @@
-# Catálogo de Patrones Organizacionales
+# Patrones Organizacionales
 
 **Versión:** 1.0  
 **Estado:** Canónico
@@ -9,123 +9,230 @@
 
 ATÓMICA
 
-→ Patrones Organizacionales
+→ Dominio
 
-→ Catálogo
+→ Patrones Organizacionales
 
 ---
 
 # Propósito
 
-Este documento constituye el índice oficial del catálogo de patrones organizacionales de ATÓMICA.
+Este módulo define el catálogo oficial de patrones organizacionales de ATÓMICA.
 
-Su función consiste en identificar todos los patrones reconocidos por la metodología.
+Un patrón representa una configuración recurrente del comportamiento de una organización.
 
-No describe su contenido.
+No describe un evento aislado.
 
-No define su funcionamiento.
+No describe una incidencia.
 
-La descripción completa de cada patrón pertenece exclusivamente a su documento correspondiente.
+No describe una opinión.
+
+Describe una estructura que se manifiesta repetidamente a través del tiempo.
 
 ---
 
-# Organización del catálogo
+# Qué es un patrón
 
-Los patrones se almacenan en:
+Un patrón organizacional es una relación estable entre múltiples observaciones que permite formular una hipótesis sobre el funcionamiento estructural de una organización.
 
-```text
-09_patterns/
-└── catalog/
+Un patrón no constituye una verdad.
+
+Constituye una hipótesis explicativa respaldada por evidencias.
+
+Su función consiste en ayudar al sistema a comprender aquello que resulta difícil de observar mediante eventos individuales.
+
+---
+
+# Qué no es un patrón
+
+Un patrón no es:
+
+- un indicador;
+- una métrica;
+- una capacidad;
+- una fragilidad;
+- una evidencia;
+- una intervención;
+- un diagnóstico.
+
+Cada uno de esos conceptos pertenece a una capa distinta del modelo organizacional.
+
+---
+
+# Papel dentro del modelo
+
+Los patrones pertenecen al nivel interpretativo del sistema.
+
+Relacionan información procedente de:
+
+- observaciones;
+- señales;
+- capacidades;
+- fragilidades;
+- hipótesis;
+- evidencias.
+
+Su aparición modifica el conocimiento disponible sobre la organización.
+
+No modifica directamente el estado organizacional.
+
+---
+
+# Ciclo de vida
+
+Todo patrón atraviesa un ciclo de vida común.
+
+```
+Observaciones
+
+↓
+
+Señales
+
+↓
+
+Hipótesis
+
+↓
+
+Patrón detectado
+
+↓
+
+Confirmación mediante evidencias
+
+↓
+
+Incremento del nivel de confianza
+
+↓
+
+Patrón consolidado
+
+↓
+
+Revisión continua
 ```
 
-Cada patrón dispone de un documento independiente.
+Un patrón nunca debe considerarse definitivo.
 
-El nombre del archivo constituye un identificador estable dentro del repositorio.
+Puede fortalecerse.
 
-La numeración facilita únicamente la organización del catálogo.
+Puede debilitarse.
+
+Puede desaparecer.
+
+---
+
+# Relación con el resto del dominio
+
+Un patrón puede:
+
+- utilizar múltiples observaciones;
+- apoyar una o varias hipótesis;
+- relacionarse con múltiples capacidades;
+- contribuir a múltiples fragilidades;
+- generar recomendaciones de intervención.
+
+Sin embargo:
+
+Un patrón nunca sustituye a ninguno de esos conceptos.
+
+---
+
+# Catálogo
+
+El catálogo oficial se encuentra en:
+
+```
+09_patterns/catalog/
+```
+
+Cada patrón posee un identificador único.
+
+La numeración únicamente identifica el documento.
 
 No representa prioridad.
 
 No representa gravedad.
 
-No representa orden de ejecución.
+No representa importancia.
 
 ---
 
-# Catálogo oficial
+# Estructura obligatoria
 
-| ID | Patrón |
-|----|---------|
-| 01 | Retrasos de reacción |
-| 02 | Hipótesis repetidamente refutadas |
-| 03 | Decisiones sin evidencia |
-| 04 | Áreas olvidadas |
-| 05 | Cambios demasiado rápidos |
-| 06 | Estabilidad excesiva |
-| 07 | Dependencia de personas clave |
-| 08 | Concentración de proveedores |
-| 09 | Ciclos estacionales ignorados |
-| 10 | Déficit de aprendizaje organizacional |
-| 11 | Ilusión de control |
-| 12 | Fuga de talento predecible |
-| 13 | Sesgo de confirmación institucional |
-| 14 | Escalada del compromiso |
-| 15 | Silos de información |
-| 16 | Ritmo de reuniones vs. ritmo operativo |
-| 17 | Inflación de métricas |
-| 18 | Déficit de atención estratégica |
-| 19 | Rotación de prioridades sin cierre |
-| 20 | Dependencia de clientes |
-| 21 | Delegación reversible |
-| 22 | Déficit de experimentación |
-| 23 | Acumulación de deuda técnica |
-| 24 | Invisibilidad del trabajo interno |
-| 25 | Fragmentación de memoria |
-| 26 | Ritmo de contratación vs. integración |
-| 27 | Concentración de riesgo en clientes |
-| 28 | Patrón de solución mágica |
-| 29 | Asimetría de feedback |
-| 30 | Inflación de procesos |
-| 31 | Déficit de narrativa coherente |
-| 32 | Escapismo estratégico |
-| 33 | Acumulación de deberes |
-| 34 | Reorganización cíclica |
-| 35 | Déficit de diversidad cognitiva |
-| 36 | Éxito por accidente |
-| 37 | Invisibilidad de costes de oportunidad |
-| 38 | Escalada de requisitos |
-| 39 | Déficit de memoria de fallos |
-| 40 | Héroe de turno |
-| 41 | Ritmo de innovación vs. absorción |
-| 42 | Concentración de decisiones |
-| 43 | Déficit de cierre |
-| 44 | Parálisis por análisis |
-| 45 | Inflación de reuniones sincronizadas |
-| 46 | Migración de problemas |
-| 47 | Déficit de retroalimentación cerrada |
-| 48 | Optimización local |
-| 49 | Acumulación de deuda comunicativa |
-| 50 | Narrativa retrospectiva |
+Todos los patrones deberán seguir exactamente la misma estructura documental.
+
+La plantilla oficial se define en:
+
+```
+09_patterns/00_especificacion_patron.md
+```
+
+No podrán añadirse apartados específicos a un único patrón.
+
+Toda modificación estructural deberá realizarse sobre la plantilla común.
 
 ---
 
-# Evolución del catálogo
+# Detectores
 
-La incorporación de nuevos patrones requiere:
+La lógica utilizada para detectar patrones pertenece al módulo:
 
-- una justificación metodológica;
-- una especificación conforme a `especificacion_patron.md`;
-- la actualización de este catálogo.
+```
+09_patterns/detectors/
+```
 
-La eliminación de un patrón nunca implica su desaparición del historial metodológico.
+Los detectores implementan reglas.
 
-Deberá registrarse como obsoleto o sustituido.
+No definen el significado del patrón.
+
+---
+
+# Índices
+
+Las estructuras auxiliares de búsqueda, clasificación o agrupación pertenecen al módulo:
+
+```
+09_patterns/indexes/
+```
+
+Los índices no forman parte del conocimiento metodológico.
+
+Únicamente facilitan su utilización.
+
+---
+
+# Evolución
+
+El catálogo de patrones constituye un activo vivo.
+
+Podrán añadirse nuevos patrones cuando existan fundamentos metodológicos suficientes.
+
+Ningún patrón podrá eliminarse sin dejar constancia de su deprecación o sustitución.
+
+---
+
+# Principios
+
+Todo patrón deberá cumplir las siguientes restricciones:
+
+- representar una estructura y no un evento;
+- ser falsable;
+- ser trazable;
+- apoyarse en observaciones identificables;
+- admitir distintos niveles de confianza;
+- poder revisarse con nueva evidencia;
+- mantener independencia respecto a cualquier implementación tecnológica.
 
 ---
 
 # Documentos relacionados
 
-- `09_patterns/README.md`
-- `09_patterns/especificacion_patron.md`
-- `03_epistemology/pattern-engine.md`
+- `00_canon/vision.md`
+- `00_canon/principios.md`
+- `01_methodology/methodology.md`
 - `02_ontology/patron.md`
+- `03_epistemology/pattern-engine.md`
+- `09_patterns/00_especificacion_patron.md`
