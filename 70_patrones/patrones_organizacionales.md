@@ -145,7 +145,7 @@ Un patrón nunca sustituye a ninguno de esos conceptos.
 El catálogo oficial se encuentra en:
 
 ```
-70_patrones/catalog/
+70_patrones/
 ```
 
 Cada patrón posee un identificador único.
@@ -167,7 +167,7 @@ Todos los patrones deberán seguir exactamente la misma estructura documental.
 La plantilla oficial se define en:
 
 ```
-09_patterns/00_especificacion_patron.md
+70_patrones/especificacion_patron.md
 ```
 
 No podrán añadirse apartados específicos a un único patrón.
@@ -181,7 +181,7 @@ Toda modificación estructural deberá realizarse sobre la plantilla común.
 La lógica utilizada para detectar patrones pertenece al módulo:
 
 ```
-09_patterns/detectors/
+TODO · módulo de detectores sin documento en el repositorio
 ```
 
 Los detectores implementan reglas.
@@ -195,7 +195,7 @@ No definen el significado del patrón.
 Las estructuras auxiliares de búsqueda, clasificación o agrupación pertenecen al módulo:
 
 ```
-09_patterns/indexes/
+TODO · módulo de índices sin documento en el repositorio
 ```
 
 Los índices no forman parte del conocimiento metodológico.
@@ -232,7 +232,7 @@ Todo patrón deberá cumplir las siguientes restricciones:
 
 - `00_canon/vision.md`
 - `00_canon/principios.md`
-- `01_methodology/methodology.md`
-- `02_ontology/patron.md`
-- `03_epistemology/pattern-engine.md`
-- `09_patterns/00_especificacion_patron.md`
+- TODO · `01_methodology/methodology.md` — documento inexistente
+- TODO · `02_ontology/patron.md` — documento inexistente
+- TODO · `03_epistemology/pattern-engine.md` — documento inexistente
+- `70_patrones/especificacion_patron.md`

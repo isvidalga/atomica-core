@@ -203,7 +203,7 @@ No se permiten documentos especiales para casos particulares.
 
 # Documentos relacionados
 
-- `09_patterns/README.md`
-- `01_methodology/methodology.md`
-- `02_ontology/patron.md`
-- `03_epistemology/pattern-engine.md`
+- TODO · `09_patterns/README.md` — documento inexistente
+- TODO · `01_methodology/methodology.md` — documento inexistente
+- TODO · `02_ontology/patron.md` — documento inexistente
+- TODO · `03_epistemology/pattern-engine.md` — documento inexistente
