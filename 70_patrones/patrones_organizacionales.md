@@ -145,7 +145,7 @@ Un patrón nunca sustituye a ninguno de esos conceptos.
 El catálogo oficial se encuentra en:
 
 ```
-09_patterns/catalog/
+70_patrones/catalog/
 ```
 
 Cada patrón posee un identificador único.
