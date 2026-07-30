@@ -84,7 +84,7 @@ La ausencia de conocimiento nunca será sustituida por estimaciones presentadas 
 
 ## N-005 · La incertidumbre acompaña siempre a la respuesta
 
-Toda respuesta deberá mostrar:
+Toda respuesta deberá mostrar, de forma explícita:
 
 - nivel de confianza;
 - origen del conocimiento;
@@ -124,6 +124,16 @@ Nunca son elementos del menú.
 Las preguntas utilizan estos objetos para construir comprensión.
 
 Nunca al contrario.
+
+---
+
+N-007 · La navegación progresa por comprensión
+
+El usuario podrá profundizar libremente dentro de una misma pregunta.
+
+El paso entre preguntas seguirá siempre el orden lógico de construcción del conocimiento.
+
+La navegación nunca adelantará respuestas propias de preguntas posteriores.
 
 ---
 
