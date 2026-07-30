@@ -149,7 +149,7 @@ Un patrón nunca sustituye a ninguno de esos conceptos.
 El catálogo oficial se encuentra en:
 
 ```
-70_patrones/
+70_patrones/catalogo_patrones_organizacionales.md
 ```
 
 Cada patrón posee un identificador único.
