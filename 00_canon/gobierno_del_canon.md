@@ -1,123 +1,178 @@
-# GOBIERNO DEL CANON
+# SISTEMA NORMATIVO
 
 Estado: CANÓNICO
 
-Versión: 1.0
+Versión: 2.0
 
 Ubicación:
 
-00_canon/gobierno_del_canon.md
+00_canon/sistema_normativo.md
 
 ---
 
 # Propósito
 
-El Gobierno del Canon define cómo se crea, adquiere autoridad, evoluciona y deja de tener validez un artefacto del canon.
+Definir los tipos de artefactos normativos del Canon.
+
+Definir la jerarquía normativa entre dichos tipos.
+
+Definir las reglas de precedencia entre artefactos.
+
+No define contenido metodológico.
 
 No define conceptos del dominio.
 
-No define metodología.
-
-No define la organización del repositorio.
-
-Define únicamente las reglas de gobierno del propio canon.
-
----
-
-# Alcance
-
-Este documento gobierna todos los artefactos canónicos.
-
-Todo artefacto deberá cumplir las reglas establecidas aquí para adquirir, conservar o perder autoridad.
+No define procedimientos de trabajo.
 
 ---
 
 # Principios
 
-## G-001 · La autoridad es explícita
+Todo artefacto pertenece exactamente a un único tipo normativo.
 
-Ningún artefacto posee autoridad por su existencia.
+Todo artefacto debe declarar explícitamente su tipo.
 
-La autoridad debe ser declarada conforme a este documento.
+Un artefacto nunca puede pertenecer simultáneamente a dos tipos.
 
----
-
-## G-002 · Toda autoridad posee origen
-
-Todo artefacto deriva su autoridad de otro artefacto de autoridad superior.
-
-No existen autoridades implícitas.
+El tipo normativo nunca puede inferirse.
 
 ---
 
-## G-003 · La autoridad no puede circular
+# Tipos de artefacto
 
-Un artefacto nunca puede fundamentar la autoridad del artefacto del que depende.
+## Norma
+
+Define reglas generales.
+
+Puede gobernar cualquier otro tipo normativo.
+
+Nunca registra entidades.
+
+Nunca contiene instancias.
 
 ---
 
-## G-004 · La autoridad prevalece sobre la antigüedad
+## Especificación
 
-En caso de conflicto prevalece el artefacto con mayor autoridad, no el más antiguo ni el más reciente.
+Define la estructura obligatoria de un tipo de artefacto.
+
+No crea autoridad conceptual.
 
 ---
 
-## G-005 · Toda modificación conserva trazabilidad
+## Catálogo
 
-Modificar un artefacto nunca elimina su historial.
+Declara oficialmente qué entidades existen.
+
+Nunca define su significado.
+
+---
+
+## Registro
+
+Conserva información histórica o administrativa.
+
+Nunca crea autoridad normativa.
+
+---
+
+## Decisión
+
+Resuelve explícitamente una cuestión abierta autorizada por una Norma.
+
+Nunca redefine una Norma.
 
 ---
 
 # Jerarquía normativa
 
-La jerarquía entre artefactos es estricta.
+La autoridad entre tipos queda fijada de forma única.
 
-Un artefacto solo puede depender de artefactos de igual o mayor autoridad.
+1. Norma
+2. Especificación
+3. Catálogo
+4. Registro
+5. Decisión
 
-Ningún artefacto puede modificar otro situado por encima de él.
-
----
-
-# Ciclo de vida
-
-Todo artefacto atraviesa un ciclo de vida definido.
-
-Creación.
-
-Revisión.
-
-Aprobación.
-
-Vigencia.
-
-Obsolescencia.
-
-Retirada.
-
-Las condiciones de transición entre estados deberán definirse para cada tipo de artefacto.
+No existe ninguna otra jerarquía normativa.
 
 ---
 
-# Conflictos
+# Relaciones permitidas
 
-Cuando dos artefactos entren en conflicto deberá aplicarse la jerarquía normativa.
+## Norma
 
-Si la jerarquía no resuelve el conflicto, el conflicto deberá permanecer explícitamente abierto.
+Puede gobernar:
+
+- Normas
+- Especificaciones
+- Catálogos
+- Registros
+- Decisiones
+
+---
+
+## Especificación
+
+Puede gobernar únicamente documentos de instancia.
+
+---
+
+## Catálogo
+
+Puede declarar entidades oficiales.
+
+---
+
+## Registro
+
+Únicamente conserva información.
+
+---
+
+## Decisión
+
+Únicamente resuelve cuestiones autorizadas por una Norma.
+
+Nunca crea autoridad permanente.
+
+---
+
+# Precedencia
+
+Cuando dos artefactos entren en conflicto:
+
+1. prevalece el artefacto de mayor autoridad según la jerarquía normativa;
+
+2. si pertenecen al mismo tipo, el conflicto permanece abierto;
+
+3. únicamente una nueva Decisión podrá resolver dicho conflicto cuando exista una Norma que la autorice.
 
 Nunca podrá resolverse mediante interpretación implícita.
 
 ---
 
-# Responsabilidad
+# Restricciones
 
-Todo artefacto posee una única responsabilidad.
+Un artefacto nunca cambia de tipo.
 
-Si un artefacto acumula responsabilidades distintas deberá dividirse.
+Cambiar de tipo implica crear un artefacto nuevo.
+
+La autoridad pertenece al artefacto, no al documento que lo representa.
+
+Todo artefacto deberá declarar explícitamente:
+
+- Tipo
+- Estado
+- Versión
+- Ubicación
+
+La ausencia de cualquiera de estos elementos constituye incumplimiento documental.
 
 ---
 
-# Derogación
+# Compatibilidad
 
-Ningún artefacto queda derogado por omisión.
+Esta versión sustituye íntegramente la versión 1.0.
 
-Toda derogación deberá declararse explícitamente.
+A partir de esta versión toda referencia al "artefacto de mayor autoridad" utilizará exclusivamente la jerarquía definida en este documento.
