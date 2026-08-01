@@ -11,6 +11,23 @@ auditorias/ontologia/PLAN_REMEDIACION_v1.2.md
 ```
 
 ---
+# Gobernanza
+
+Toda actuación de remediación deberá iniciarse mediante un documento específico de remediación asociado a uno de los grupos definidos en este plan.
+
+Cada documento de remediación deberá:
+
+- referenciar este plan;
+- limitarse a los hallazgos asignados al grupo correspondiente;
+- respetar las dependencias establecidas;
+- definir los documentos afectados;
+- establecer criterios verificables de aceptación.
+
+Ninguna remediación podrá alterar el orden, alcance o dependencias definidos en este plan.
+
+Cualquier modificación requerirá una nueva versión del presente documento respaldada por una nueva consolidación de hallazgos.
+
+---
 
 # Objeto
 
