@@ -2,7 +2,7 @@
 
 Estado: CANÓNICO
 
-Versión: 1.0
+Versión: 2.0
 
 Ubicación:
 
@@ -12,7 +12,9 @@ Ubicación:
 
 # Propósito
 
-Definir los tipos de artefactos normativos del canon y la relación de autoridad entre ellos.
+Definir el modelo formal del sistema normativo del Canon.
+
+Establecer los tipos de artefacto, su autoridad, su relación jerárquica y las reglas para resolver conflictos normativos.
 
 No define contenido metodológico.
 
@@ -22,19 +24,29 @@ No define procedimientos de trabajo.
 
 ---
 
-# Principio
+# Principios
 
-Todo artefacto pertenece exactamente a un tipo normativo.
+Todo artefacto pertenece exactamente a un único tipo normativo.
 
-Un artefacto nunca puede pertenecer simultáneamente a dos tipos.
+Todo artefacto posee una única autoridad normativa.
+
+La autoridad pertenece al artefacto, no al documento que lo representa.
+
+Un documento puede representar uno o varios artefactos únicamente cuando otra norma lo permita.
+
+Un artefacto nunca cambia de tipo.
+
+Cambiar de tipo implica crear un artefacto nuevo.
 
 ---
 
-# Tipos de artefacto
+# Tipos normativos
 
 ## Norma
 
-Define reglas generales.
+Define reglas generales del Canon.
+
+Puede crear, modificar o derogar autoridad normativa.
 
 Nunca registra entidades.
 
@@ -46,15 +58,21 @@ Nunca contiene instancias.
 
 Define la estructura obligatoria de un tipo de artefacto.
 
+Puede imponer requisitos formales.
+
 Nunca crea autoridad conceptual.
+
+Nunca contradice una Norma.
 
 ---
 
 ## Catálogo
 
-Declara oficialmente qué entidades existen.
+Declara oficialmente el conjunto de entidades autorizadas por una Norma.
 
-Nunca define su significado.
+Nunca define el significado de una entidad.
+
+Nunca interpreta normas.
 
 ---
 
@@ -62,57 +80,95 @@ Nunca define su significado.
 
 Conserva información histórica o administrativa.
 
-Nunca crea autoridad.
+Documenta hechos normativos.
+
+Nunca crea, modifica ni deroga autoridad.
 
 ---
 
 ## Decisión
 
-Resuelve explícitamente una cuestión abierta.
+Resuelve explícitamente una cuestión abierta autorizada por una Norma.
 
-Nunca redefine una norma.
+Nunca redefine una Norma.
+
+Nunca modifica implícitamente otro artefacto.
 
 ---
 
-# Relación entre artefactos
+# Jerarquía normativa
 
-Una Norma puede gobernar:
+La autoridad entre tipos queda definida por el siguiente orden:
 
-- Especificaciones
-- Catálogos
-- Registros
-- Decisiones
+1. Norma
+2. Especificación
+3. Catálogo
+4. Registro
+5. Decisión
 
-Una Especificación puede gobernar:
+Todo conflicto entre tipos distintos se resolverá aplicando esta jerarquía.
 
-- documentos de instancia
+---
 
-Un Catálogo puede declarar:
+# Capacidades por tipo
 
-- entidades oficiales
-
-Un Registro únicamente conserva información.
-
-Una Decisión únicamente resuelve cuestiones autorizadas por una Norma.
+| Acción | Norma | Especificación | Catálogo | Registro | Decisión |
+|---------|:----:|:--------------:|:---------:|:---------:|:---------:|
+| Crear autoridad | Sí | No | No | No | No |
+| Modificar autoridad | Sí | No | No | No | No |
+| Derogar autoridad | Sí | No | No | No | No |
+| Declarar entidades | No | No | Sí | No | No |
+| Registrar hechos | No | No | No | Sí | No |
+| Resolver cuestiones abiertas | No | No | No | No | Sí |
 
 ---
 
 # Conflictos
 
-Si dos artefactos del mismo tipo entran en conflicto:
+Si dos artefactos pertenecen a tipos distintos, prevalecerá el de mayor autoridad.
 
-el conflicto permanece abierto.
+Si pertenecen al mismo tipo, el conflicto permanecerá explícitamente abierto hasta que una Norma lo resuelva.
 
-Si pertenecen a tipos distintos:
+Nunca podrá resolverse un conflicto mediante interpretación implícita.
 
-prevalece el tipo de mayor autoridad.
+La cronología nunca constituye un criterio de precedencia.
+
+---
+
+# Validez
+
+La existencia de un artefacto no implica su autoridad.
+
+La representación documental de un artefacto no crea autoridad.
+
+La inscripción en un registro no crea autoridad.
+
+Los registros únicamente documentan autoridad previamente establecida conforme al Canon.
+
+---
+
+# Metadatos obligatorios
+
+Todo artefacto normativo deberá declarar como mínimo:
+
+- Identificador.
+- Tipo normativo.
+- Estado.
+- Versión.
+- Fecha de aprobación.
+- Artefacto del que deriva su autoridad, cuando exista.
+- Documentos afectados, cuando proceda.
 
 ---
 
 # Restricciones
 
-Un artefacto nunca cambia de tipo.
+Ningún artefacto puede modificar otro de mayor autoridad.
 
-Cambiar de tipo implica crear un artefacto nuevo.
+Ningún artefacto puede crear autoridad fuera de las capacidades definidas en este documento.
 
-La autoridad pertenece al artefacto, no al documento que lo representa.
+Toda derogación deberá declararse explícitamente.
+
+Toda contradicción normativa deberá permanecer abierta mientras no exista un artefacto con autoridad suficiente para resolverla.
+
+Todo documento deberá ser compatible con este sistema normativo.
