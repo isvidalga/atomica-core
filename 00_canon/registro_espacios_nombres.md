@@ -2,7 +2,7 @@
 
 Estado: CANÓNICO
 
-Versión: 1.0.0
+Versión: 2.0.0
 
 Ubicación:
 
@@ -70,7 +70,10 @@ Documento responsable de definir el concepto gobernado por un espacio de nombres
 
 | Prefijo | Concepto | Documento autoridad | Estado |
 |----------|----------|---------------------|--------|
-| *(Sin entradas en la versión 1.0.0)* | | | |
+| AD | Decisión | naturaleza_decision.md | ACTIVO |
+| R | Revisión | auditorias/README.md | ACTIVO |
+| RA | Auditoría de consolidación | auditorias/README.md | ACTIVO |
+| RG | Auditoría de gobierno | auditorias/README.md | ACTIVO |
 
 ---
 
@@ -126,15 +129,6 @@ Un prefijo retirado nunca podrá reutilizarse.
 
 ---
 
-# Estados
-
-Un espacio de nombres podrá encontrarse únicamente en uno de los siguientes estados:
-
-- Activo
-- Obsoleto
-
----
-
 # Incorporación
 
 La incorporación de un nuevo espacio de nombres requiere:
@@ -160,9 +154,9 @@ El prefijo nunca cambia.
 
 La retirada de un espacio de nombres:
 
-- no elimina su entrada;
-- conserva el historial;
-- impide cualquier reutilización futura del prefijo.
+- conserva su entrada en este registro;
+- impide la reutilización del prefijo;
+- no altera los identificadores históricos asociados.
 
 ---
 
@@ -182,8 +176,9 @@ No se permite:
 
 Depende de:
 
-- `00_canon/politica_identificadores.md`
-- `00_canon/gobierno_del_canon.md`
+- sistema_normativo.md
+- gobierno_del_canon.md
+- politica_identificadores.md
 
 Es utilizado por:
 
