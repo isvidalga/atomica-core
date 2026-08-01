@@ -90,3 +90,15 @@ Solo planificarlas.
 # Pendiente
 
 Generar el contenido completo del plan v1.2.
+
+---
+
+# Declaración
+
+Este documento sustituye íntegramente a:
+
+- PLAN_REMEDIACION_v1.1.md
+
+A partir de esta versión, toda planificación de remediación deberá referenciar exclusivamente este documento.
+
+PLAN_REMEDIACION_v1.1.md queda sustituido y se conserva únicamente por motivos de trazabilidad histórica.
