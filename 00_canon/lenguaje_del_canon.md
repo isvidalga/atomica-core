@@ -2,84 +2,91 @@
 
 Estado: CANÓNICO
 
-Versión: 1.0
+Tipo: NORMA
+
+Versión: 2.0.0
 
 Ubicación:
 
-```
 00_canon/lenguaje_del_canon.md
-```
 
 ---
 
 # Propósito
 
-El Lenguaje del Canon define el significado oficial de los términos fundamentales utilizados por el canon.
+Definir el significado oficial de los términos fundamentales del Canon.
 
-Su objetivo es eliminar ambigüedades terminológicas y garantizar que un mismo término tenga un único significado en todo el repositorio.
+Eliminar ambigüedades terminológicas.
 
-Ningún documento canónico podrá redefinir un término definido aquí.
+Garantizar que un mismo término posee exactamente un significado oficial.
+
+No define conceptos metodológicos.
+
+No define conceptos del dominio.
+
+Define únicamente el lenguaje normativo del Canon.
 
 ---
 
 # Principios
 
-## P-001 · Un término, un significado
+## P-001 · Un término posee una única definición oficial
 
-Cada término posee una única definición oficial.
-
-No pueden coexistir definiciones incompatibles del mismo término.
+No pueden coexistir definiciones incompatibles.
 
 ---
 
 ## P-002 · La definición prevalece sobre el uso
 
-Si un documento utiliza un término con un significado distinto al definido aquí, prevalece esta definición.
-
-El documento deberá corregirse.
+Si un documento utiliza un término con un significado distinto, deberá corregirse.
 
 ---
 
 ## P-003 · El lenguaje precede a la metodología
 
-Ningún concepto metodológico podrá declararse canónico si utiliza términos no definidos o ambiguos.
+Todo término utilizado por un documento canónico deberá estar definido.
+
+Los términos no definidos deberán incorporarse antes de adquirir carácter normativo.
 
 ---
 
-## P-004 · Toda redefinición requiere modificación explícita de este documento
+## P-004 · Toda redefinición es explícita
 
-Modificar el significado de un término constituye un cambio del Lenguaje del Canon.
+Modificar una definición requiere modificar este documento.
 
-Nunca puede hacerse implícitamente desde otro documento.
+Nunca puede hacerse implícitamente.
 
 ---
 
-# Términos
+# Estructura de una definición
 
-Cada término se documenta mediante la siguiente estructura obligatoria.
+Cada término contiene únicamente:
 
-## Nombre
-
-### Definición
-
-Definición oficial del término.
-
-### No es
-
-Conceptos que no deben confundirse con él.
-
-### Consecuencias normativas
-
-Reglas que se derivan directamente de la definición.
-
-### Relación con otros términos
-
-Dependencias o relaciones con otros términos definidos en este documento.
+- Nombre
+- Definición
+- No es
+- Consecuencias normativas
+- Relaciones
 
 ---
 
 # Términos definidos
 
-Actualmente ninguno.
+Las definiciones oficiales residen en las entradas individuales de este documento.
 
-Las definiciones oficiales se incorporarán mediante versiones posteriores de este documento.
+La ausencia de una definición constituye una incoherencia documental que deberá corregirse.
+
+Este documento no exige que todas las definiciones existan desde la primera versión.
+
+---
+
+# Relaciones
+
+Depende de:
+
+- sistema_normativo.md
+- gobierno_del_canon.md
+
+Gobernado por:
+
+- sistema_normativo.md
