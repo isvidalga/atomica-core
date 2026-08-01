@@ -165,3 +165,39 @@ De estos axiomas derivan:
 # Documentos dependientes
 
 Todos los documentos del Canon.
+
+---
+
+# Declaración
+
+Los términos siguientes constituyen el vocabulario primitivo del Canon.
+
+No derivan de los axiomas. Los axiomas operan sobre ellos.
+
+## Modelo
+
+El Modelo es el objeto raíz del sistema: aquello que admite, define, contiene y evoluciona.
+
+Las entidades son su contenido. Las Relaciones son su estructura.
+
+## Organización
+
+La Organización es el referente externo: aquello sobre lo que ATÓMICA construye conocimiento.
+
+Es el referente organizacional al que se refiere A1.
+
+## Dominio
+
+El Dominio es el ámbito conceptual contenido en el Modelo, y estrictamente menor que él, de aquello que el Modelo representa acerca del referente.
+
+Lo pueblan las entidades que la Ontología gobierna.
+
+## Conocimiento admitido
+
+El conocimiento admitido es el contenido determinado que el Modelo admite sobre una Identidad en un instante lógico.
+
+## Instante lógico
+
+El instante lógico es la unidad del régimen de temporalidad lógica establecido en A8.
+
+No es cronológico.
