@@ -1,4 +1,4 @@
-# SISTEMA NORMATIVO
+# GOBIERNO DEL CANON
 
 Estado: CANÓNICO
 
@@ -6,173 +6,157 @@ Versión: 2.0
 
 Ubicación:
 
-00_canon/sistema_normativo.md
+00_canon/gobierno_del_canon.md
 
 ---
 
 # Propósito
 
-Definir los tipos de artefactos normativos del Canon.
+Definir cómo un artefacto adquiere, ejerce, modifica y pierde autoridad dentro del Canon.
 
-Definir la jerarquía normativa entre dichos tipos.
-
-Definir las reglas de precedencia entre artefactos.
-
-No define contenido metodológico.
+No define conceptos metodológicos.
 
 No define conceptos del dominio.
 
-No define procedimientos de trabajo.
+No define la organización del repositorio.
+
+---
+
+# Alcance
+
+Este documento gobierna todos los artefactos normativos definidos por `00_canon/sistema_normativo.md`.
+
+Todo artefacto deberá cumplir estas reglas para adquirir, conservar, modificar o perder autoridad.
 
 ---
 
 # Principios
 
-Todo artefacto pertenece exactamente a un único tipo normativo.
+## G-001 · La autoridad es explícita
 
-Todo artefacto debe declarar explícitamente su tipo.
+La autoridad de un artefacto debe declararse explícitamente.
 
-Un artefacto nunca puede pertenecer simultáneamente a dos tipos.
-
-El tipo normativo nunca puede inferirse.
+Ningún artefacto adquiere autoridad por su mera existencia.
 
 ---
 
-# Tipos de artefacto
+## G-002 · Toda autoridad posee origen
 
-## Norma
+Todo artefacto, excepto los Axiomas, deriva su autoridad de otro artefacto de igual o superior autoridad.
 
-Define reglas generales.
-
-Puede gobernar cualquier otro tipo normativo.
-
-Nunca registra entidades.
-
-Nunca contiene instancias.
+Los Axiomas constituyen el fundamento último del Canon.
 
 ---
 
-## Especificación
+## G-003 · La autoridad no puede circular
 
-Define la estructura obligatoria de un tipo de artefacto.
-
-No crea autoridad conceptual.
+Ningún artefacto puede fundamentar directa o indirectamente la autoridad de sí mismo.
 
 ---
 
-## Catálogo
+## G-004 · La autoridad prevalece sobre la cronología
 
-Declara oficialmente qué entidades existen.
+En caso de conflicto nunca prevalece el documento más reciente.
 
-Nunca define su significado.
-
----
-
-## Registro
-
-Conserva información histórica o administrativa.
-
-Nunca crea autoridad normativa.
+Prevalece exclusivamente el artefacto con mayor autoridad.
 
 ---
 
-## Decisión
+## G-005 · La trazabilidad es obligatoria
 
-Resuelve explícitamente una cuestión abierta autorizada por una Norma.
-
-Nunca redefine una Norma.
+Toda modificación debe conservar el historial documental.
 
 ---
 
-# Jerarquía normativa
+## G-006 · Todo artefacto posee un tipo
 
-La autoridad entre tipos queda fijada de forma única.
-
-1. Norma
-2. Especificación
-3. Catálogo
-4. Registro
-5. Decisión
-
-No existe ninguna otra jerarquía normativa.
+Todo artefacto deberá declarar explícitamente su tipo normativo.
 
 ---
 
-# Relaciones permitidas
+## G-007 · Todo artefacto posee un estado
 
-## Norma
-
-Puede gobernar:
-
-- Normas
-- Especificaciones
-- Catálogos
-- Registros
-- Decisiones
+Todo artefacto deberá declarar un estado válido para su tipo.
 
 ---
 
-## Especificación
+# Autoridad
 
-Puede gobernar únicamente documentos de instancia.
+La autoridad de un artefacto viene determinada exclusivamente por:
 
----
+- su tipo normativo;
+- su estado;
+- su origen declarado.
 
-## Catálogo
-
-Puede declarar entidades oficiales.
-
----
-
-## Registro
-
-Únicamente conserva información.
+Ningún otro criterio genera autoridad.
 
 ---
 
-## Decisión
+# Dependencias
 
-Únicamente resuelve cuestiones autorizadas por una Norma.
+Un artefacto únicamente podrá depender de:
 
-Nunca crea autoridad permanente.
+- un artefacto de mayor autoridad; o
+- un artefacto del mismo nivel cuando la dependencia no altere su autoridad.
+
+Nunca podrá depender de un artefacto inferior.
 
 ---
 
-# Precedencia
+# Conflictos
 
-Cuando dos artefactos entren en conflicto:
+Cuando dos artefactos entren en conflicto se aplicará el siguiente procedimiento:
 
-1. prevalece el artefacto de mayor autoridad según la jerarquía normativa;
+1. verificar el tipo normativo;
+2. aplicar el orden de autoridad definido en `sistema_normativo.md`;
+3. comprobar si existe derogación explícita;
+4. comprobar si existe sustitución explícita.
 
-2. si pertenecen al mismo tipo, el conflicto permanece abierto;
+Si el conflicto persiste:
 
-3. únicamente una nueva Decisión podrá resolver dicho conflicto cuando exista una Norma que la autorice.
+el conflicto permanecerá abierto.
 
-Nunca podrá resolverse mediante interpretación implícita.
+Nunca podrá resolverse mediante interpretación.
+
+---
+
+# Derogación
+
+Ningún artefacto queda derogado por omisión.
+
+Toda derogación deberá declararse explícitamente.
+
+Toda derogación deberá identificar:
+
+- el artefacto derogado;
+- el artefacto que lo sustituye;
+- la fecha;
+- la versión.
+
+---
+
+# Sustitución
+
+Un artefacto sustituido deberá pasar al estado OBSOLETO cuando dicho estado exista para su tipo.
+
+La sustitución nunca elimina el historial.
+
+---
+
+# Responsabilidad
+
+Todo artefacto posee una única responsabilidad.
+
+Si un artefacto acumula responsabilidades distintas deberá dividirse.
 
 ---
 
 # Restricciones
 
-Un artefacto nunca cambia de tipo.
+La autoridad pertenece al artefacto.
 
-Cambiar de tipo implica crear un artefacto nuevo.
+El documento únicamente representa dicho artefacto.
 
-La autoridad pertenece al artefacto, no al documento que lo representa.
+La cronología nunca constituye criterio de autoridad.
 
-Todo artefacto deberá declarar explícitamente:
-
-- Tipo
-- Estado
-- Versión
-- Ubicación
-
-La ausencia de cualquiera de estos elementos constituye incumplimiento documental.
-
----
-
-# Compatibilidad
-
-Esta versión sustituye íntegramente la versión 1.0.
-
-A partir de esta versión toda referencia al "artefacto de mayor autoridad" utilizará exclusivamente la jerarquía definida en este documento.
+La ausencia de información obligatoria invalida la autoridad normativa del artefacto correspondiente.
