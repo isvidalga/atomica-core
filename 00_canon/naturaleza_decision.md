@@ -1,8 +1,8 @@
-# Naturaleza de las Decisiones
+# NATURALEZA DE LAS DECISIONES
 
 Estado: CANÓNICO
 
-Versión: 1.0.0
+Versión: 2.0
 
 Ubicación:
 
@@ -12,23 +12,43 @@ Ubicación:
 
 # Propósito
 
-Definir qué es una Decisión dentro del canon.
+Definir la naturaleza de las Decisiones del Canon.
 
-Establecer su autoridad, ciclo de vida y alcance.
+Definir su autoridad.
+
+Definir su ciclo de vida.
+
+Definir sus efectos normativos.
+
+No define conceptos del dominio.
+
+No define metodología.
+
+No define producto.
 
 ---
 
 # Definición
 
-Una Decisión es un acto de gobierno del canon.
+Una Decisión es un artefacto normativo de tipo **Decisión**.
 
-No representa conocimiento del dominio.
+Su finalidad es resolver explícitamente una cuestión abierta autorizada por una Norma.
 
-No representa metodología.
+Una Decisión nunca crea un tipo de artefacto.
 
-No representa producto.
+Una Decisión nunca modifica implícitamente otro artefacto.
 
-Representa la congelación explícita de una resolución que modifica o interpreta el canon.
+Una Decisión nunca sustituye documentación conceptual.
+
+---
+
+# Tipo normativo
+
+Tipo: Decisión
+
+Conforme a:
+
+- sistema_normativo.md
 
 ---
 
@@ -40,7 +60,9 @@ Toda Decisión es trazable.
 
 Toda Decisión permanece registrada.
 
-Toda Decisión produce un efecto explícito sobre el canon.
+Toda Decisión produce un efecto normativo explícito.
+
+Toda Decisión debe poder verificarse documentalmente.
 
 ---
 
@@ -48,12 +70,15 @@ Toda Decisión produce un efecto explícito sobre el canon.
 
 Una Decisión puede:
 
-- introducir una norma;
-- interpretar una norma existente;
-- retirar una norma;
-- resolver una contradicción.
+- resolver una cuestión abierta;
+- interpretar una Norma;
+- aprobar una modificación explícita;
+- declarar una derogación;
+- resolver una contradicción normativa.
 
-Nunca puede sustituir un documento conceptual.
+Una Decisión nunca redefine una Norma.
+
+Una Decisión nunca sustituye un documento conceptual.
 
 ---
 
@@ -69,15 +94,19 @@ No posee autoridad normativa.
 
 ## CONGELADA
 
-Forma parte del gobierno vigente del canon.
+Forma parte del gobierno vigente.
 
 Es vinculante.
+
+Puede ser utilizada como autoridad.
 
 ---
 
 ## OBSOLETA
 
-Ha sido sustituida.
+Ha sido sustituida mediante otra Decisión.
+
+No produce nuevos efectos normativos.
 
 Se conserva únicamente por trazabilidad.
 
@@ -95,17 +124,50 @@ CONGELADA
 
 OBSOLETA
 
+No existen transiciones adicionales.
+
+---
+
+# Requisitos obligatorios
+
+Toda Decisión deberá declarar explícitamente:
+
+- Identificador.
+- Estado.
+- Versión.
+- Fecha.
+- Alcance.
+- Justificación.
+- Documentos afectados.
+- Norma habilitante.
+- Versión del Canon.
+
+La ausencia de cualquiera de estos elementos invalida la autoridad normativa de la Decisión.
+
 ---
 
 # Autoridad
 
-Toda Decisión debe indicar:
+Una Decisión obtiene autoridad únicamente cuando:
 
-- alcance;
-- justificación;
-- documentos afectados;
-- fecha;
-- versión del canon.
+- pertenece al tipo Decisión;
+- se encuentra en estado CONGELADA;
+- deriva de una Norma habilitante;
+- cumple todos los requisitos obligatorios;
+- figura inscrita en el Catálogo de Decisiones.
+
+---
+
+# Derogación
+
+Una Decisión únicamente puede perder vigencia mediante:
+
+- declaración explícita de obsolescencia; o
+- sustitución explícita por otra Decisión.
+
+Nunca por omisión.
+
+Nunca por contradicción implícita.
 
 ---
 
@@ -113,9 +175,11 @@ Toda Decisión debe indicar:
 
 Una Decisión nunca modifica un documento implícitamente.
 
-Toda modificación debe reflejarse en los documentos afectados.
+Toda modificación deberá reflejarse explícitamente en los documentos afectados.
 
-Las Decisiones no sustituyen la documentación normativa.
+Una Decisión nunca altera la autoridad de una Norma.
+
+Una Decisión nunca cambia el tipo normativo de un artefacto.
 
 ---
 
@@ -123,8 +187,9 @@ Las Decisiones no sustituyen la documentación normativa.
 
 Depende de:
 
-- arquitectura_repositorio.md
+- sistema_normativo.md
+- gobierno_del_canon.md
 
-Utilizado por:
+Gobierna:
 
-- todas las Decisiones del canon
+- todas las Decisiones del Canon.
