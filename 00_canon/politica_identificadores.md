@@ -247,7 +247,7 @@ Esta política depende de:
 Esta política gobierna:
 
 - `00_canon/registro_espacios_nombres.md`
-- `00_canon/registro_documentos.md`
+- `00_canon/rregistro_documentos_canonicos.md`
 - `00_canon/registro_obsolescencias.md`
 
 ---
