@@ -2,7 +2,7 @@
 
 Estado: CANÓNICO
 
-Versión: 1.0.0
+Versión: 2.0.0
 
 Ubicación:
 
@@ -46,9 +46,9 @@ Cada entrada registra:
 
 # Registro
 
-| ID | Tipo | Nombre | Retirada | Versión | Sustituido por |
-|----|------|---------|----------|----------|----------------|
-| — | — | — | — | — | — |
+No existen obsolescencias registradas en la presente versión del Canon.
+
+Las futuras retiradas se incorporarán manteniendo íntegramente el historial.
 
 ---
 
@@ -60,15 +60,23 @@ Una retirada nunca elimina:
 - el documento;
 - el historial.
 
+Toda retirada deberá reflejarse simultáneamente en:
+
+- el documento afectado;
+- el Registro de Documentos Canónicos;
+- el presente registro.
+
 ---
 
 # Relaciones
 
 Depende de:
 
+- sistema_normativo.md
+- gobierno_del_canon.md
 - politica_identificadores.md
 - politica_versionado.md
 
 Utilizado por:
 
-- todos los catálogos
+- registro_documentos_canonicos.md
