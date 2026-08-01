@@ -2,7 +2,7 @@
 
 Estado: CANÓNICO
 
-Versión: 1.0.0
+Versión: 2.0.0
 
 Ubicación:
 
@@ -12,47 +12,52 @@ Ubicación:
 
 # Propósito
 
-Declarar el conjunto oficial de Decisiones que gobiernan el canon.
+Declarar el conjunto oficial de Decisiones del canon.
 
-Este documento constituye la única fuente de verdad sobre la existencia de Decisiones.
+Determinar las condiciones que una Decisión debe cumplir para formar parte del gobierno vigente.
 
-No desarrolla su contenido.
+No desarrolla el contenido de las Decisiones.
 
-Únicamente declara cuáles forman parte oficialmente del gobierno del canon.
+No sustituye sus documentos.
 
 ---
 
 # Principios
 
-Toda Decisión existe únicamente cuando figura inscrita en este catálogo.
-
 Toda Decisión posee un único identificador.
 
-Toda Decisión posee exactamente un documento asociado.
+Toda Decisión posee un único documento asociado.
+
+Toda Decisión deberá cumplir los requisitos definidos en:
+
+- naturaleza_decision.md
+- registro_documentos_canonicos.md
 
 ---
 
-# Organización
+# Documento de Decisión
 
-Cada entrada registra exclusivamente:
+Una Decisión forma parte del canon cuando:
 
-- Identificador
-- Título
-- Estado
-- Versión
-- Documento
+- existe un documento de Decisión;
+- dicho documento cumple los requisitos documentales establecidos por el canon;
+- figura inscrito en `registro_documentos_canonicos.md`.
+
+Este documento no constituye un registro administrativo.
+
+Únicamente establece las reglas que deben cumplir las Decisiones.
 
 ---
 
-# Catálogo Oficial
+# Identificación
 
-| ID | Decisión | Estado | Versión | Documento |
-|----|-----------|--------|----------|-----------|
-| D-001 | Pendiente de inventario | CONGELADA | 1.0.0 | governance/decisions/... |
-| D-002 | Pendiente de inventario | CONGELADA | 1.0.0 | governance/decisions/... |
-| D-003 | Pendiente de inventario | CONGELADA | 1.0.0 | governance/decisions/... |
-| D-004 | Pendiente de inventario | CONGELADA | 1.0.0 | governance/decisions/... |
-| D-005 | Pendiente de inventario | CONGELADA | 1.0.0 | governance/decisions/... |
+Toda Decisión deberá declarar:
+
+- identificador;
+- estado;
+- versión;
+- ubicación;
+- documentos afectados.
 
 ---
 
@@ -61,22 +66,29 @@ Cada entrada registra exclusivamente:
 Toda nueva Decisión requiere:
 
 - documento propio;
-- inscripción en este catálogo;
-- publicación de una nueva versión del canon.
+- cumplimiento de los requisitos documentales del canon.
 
 ---
 
 # Retirada
 
-Una Decisión retirada conserva:
+Una Decisión nunca desaparece.
 
-- identificador;
-- historial;
-- documento.
+Su estado pasará a:
 
-Su estado pasa a:
+OBSOLETA
 
-Obsoleta
+Conservando íntegramente su historial.
+
+---
+
+# Restricciones
+
+Una Decisión nunca podrá existir sin documento propio.
+
+Una Decisión nunca podrá compartir identificador.
+
+Una Decisión nunca podrá modificar implícitamente otra Decisión.
 
 ---
 
@@ -85,7 +97,8 @@ Obsoleta
 Depende de:
 
 - naturaleza_decision.md
+- registro_documentos_canonicos.md
 
 Utilizado por:
 
-- todo el gobierno del canon
+- todas las Decisiones del canon
