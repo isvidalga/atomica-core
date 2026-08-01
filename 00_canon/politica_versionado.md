@@ -213,9 +213,10 @@ La clasificación deberá justificarse.
 
 Una versión oficial del canon requiere:
 
-- aprobación por el Gobierno del Canon;
-- actualización de los registros afectados;
-- actualización de la versión correspondiente.
+- aprobación conforme al Gobierno del Canon;
+- actualización del Registro de Documentos Canónicos cuando proceda;
+- actualización de los documentos afectados;
+- coherencia con la versión del canon vigente.
 
 ---
 
@@ -235,7 +236,8 @@ No se permite:
 
 Depende de:
 
-- `00_canon/gobierno_del_canon.md`
+- 00_canon/sistema_normativo.md
+- 00_canon/gobierno_del_canon.md
 
 Gobierna:
 
