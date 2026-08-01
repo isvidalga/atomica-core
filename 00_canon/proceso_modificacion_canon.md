@@ -2,7 +2,7 @@
 
 Estado: CANÓNICO
 
-Versión: 1.0.0
+Versión: 2.0.0
 
 Ubicación:
 
@@ -72,12 +72,14 @@ Se modifican únicamente los documentos declarados.
 
 ## 5. Verificación
 
-Se comprueba:
+Se comprobará:
 
-- coherencia;
-- referencias;
-- dependencias;
-- catálogos.
+- coherencia normativa;
+- referencias documentales;
+- dependencias declaradas;
+- tipos normativos;
+- cumplimiento del Gobierno del Canon;
+- actualización de los registros afectados.
 
 ---
 
@@ -86,9 +88,9 @@ Se comprueba:
 La modificación genera:
 
 - nueva versión;
-- changelog;
-- commit;
-- actualización de registros.
+- actualización de los documentos afectados;
+- actualización del Registro de Documentos Canónicos cuando proceda;
+- publicación de la nueva versión del Canon.
 
 ---
 
@@ -97,6 +99,8 @@ La modificación genera:
 No modificar documentos fuera del alcance declarado.
 
 No introducir autoridad implícita.
+
+No modificar el tipo normativo de un artefacto existente.
 
 No modificar documentos congelados sin nueva versión.
 
@@ -108,8 +112,9 @@ No publicar cambios parcialmente verificados.
 
 Depende de:
 
+- sistema_normativo.md
+- gobierno_del_canon.md
 - politica_versionado.md
-
 - registro_documentos_canonicos.md
 
 Utilizado por:
