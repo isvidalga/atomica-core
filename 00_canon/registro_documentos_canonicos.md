@@ -1,8 +1,8 @@
-# Registro de Documentos Canónicos
+# REGISTRO DE DOCUMENTOS CANÓNICOS
 
 Estado: CANÓNICO
 
-Versión: 1.0.0
+Versión: 2.0.0
 
 Ubicación:
 
@@ -12,31 +12,37 @@ Ubicación:
 
 # Propósito
 
-Definir qué constituye un documento canónico del repositorio.
+Mantener el inventario oficial de los documentos canónicos.
 
-Establecer las condiciones necesarias para que un documento pueda formar parte del canon.
+Permitir verificar su identidad documental.
 
-Garantizar que la pertenencia al canon sea verificable de forma objetiva.
+Garantizar la trazabilidad del canon.
+
+No crea autoridad normativa.
+
+No modifica autoridad normativa.
 
 ---
 
 # Principios
 
-Un documento no es canónico porque lo afirme.
+La autoridad de un documento procede del Sistema Normativo y del Gobierno del Canon.
 
-Un documento es canónico porque figura inscrito en este registro.
+La inscripción únicamente declara que un documento pertenece al canon.
 
-La inscripción es el único acto que otorga estatuto canónico.
+La ausencia de inscripción constituye una incoherencia documental que deberá corregirse.
+
+La inscripción nunca crea autoridad.
 
 ---
 
 # Documento Canónico
 
-Un documento canónico es un documento oficialmente registrado que constituye una fuente normativa del repositorio.
+Un documento canónico es un documento reconocido por el canon.
 
-Todo documento canónico posee exactamente una entrada en este registro.
+Todo documento canónico debe figurar exactamente una vez en este registro.
 
-Todo documento no registrado carece de autoridad normativa.
+El registro constituye la referencia oficial del inventario documental.
 
 ---
 
@@ -46,13 +52,13 @@ Todo documento canónico deberá cumplir simultáneamente las siguientes condici
 
 ## Identificador
 
-Debe poseer un identificador único dentro del repositorio.
+Debe poseer un identificador único.
 
 ---
 
 ## Ubicación
 
-Debe residir en una ubicación compatible con la arquitectura del repositorio.
+Debe residir en una ubicación válida según la arquitectura.
 
 ---
 
@@ -86,50 +92,41 @@ Cada entrada contiene únicamente:
 
 - Identificador
 - Nombre oficial
+- Tipo normativo
 - Ubicación
 - Estado
 - Versión
 - Responsable documental
 
-No se admiten campos adicionales sin modificación de esta política.
-
 ---
 
 # Altas
 
-Un documento únicamente adquiere estatuto canónico cuando:
+Una nueva inscripción incorpora el documento al inventario oficial.
 
-- existe físicamente;
-- cumple los requisitos obligatorios;
-- queda inscrito en este registro.
+La inscripción no modifica su autoridad normativa.
 
 ---
 
 # Modificaciones
 
-Las modificaciones no alteran la identidad del documento.
-
-Toda modificación conserva el mismo identificador documental.
+Las modificaciones conservan el mismo identificador documental.
 
 ---
 
 # Retirada
 
-Un documento retirado nunca desaparece del registro.
+Los documentos retirados permanecen inscritos.
 
-Su estado cambia a:
+Su estado documental cambia conforme a su normativa específica.
 
-Obsoleto
-
-El historial permanece íntegro.
+Nunca se elimina su historial.
 
 ---
 
 # Prohibiciones
 
-No declarar un documento canónico sin inscripción.
-
-No registrar el mismo documento más de una vez.
+No duplicar inscripciones.
 
 No reutilizar identificadores retirados.
 
@@ -141,6 +138,8 @@ No eliminar entradas históricas.
 
 Depende de:
 
+- sistema_normativo.md
+- gobierno_del_canon.md
 - arquitectura_repositorio.md
 - politica_identificadores.md
 
