@@ -1,104 +1,125 @@
-# PLAN DE REMEDIACIÓN v1.2
+# Plan de Remediación · v1.2
 
-Estado: BORRADOR
+Estado: PLAN
 
 Versión: 1.2
 
 Ubicación:
 
+```
 auditorias/ontologia/PLAN_REMEDIACION_v1.2.md
+```
 
 ---
 
 # Objeto
 
-Consolidar todas las remediaciones derivadas de las auditorías R-06 a R-10.
+Este documento constituye el backlog oficial de remediación para la versión v1.1 del repositorio.
 
-Este documento sustituye al plan v1.1.
+Sustituye al plan v1.1 tras la revisión documentada en:
 
-No modifica ninguna auditoría.
+```
+auditorias/ontologia/REVISION_PLAN_REMEDIACION_v1.1.md
+```
 
-Únicamente reorganiza, fusiona y elimina remediaciones para obtener el backlog mínimo necesario para alcanzar consistencia documental.
+No implementa remediaciones.
+
+No modifica documentos canónicos.
+
+No redefine conceptos.
+
+Su única finalidad es establecer el conjunto mínimo, completo y ordenado de remediaciones necesarias para publicar la versión v1.1.
 
 ---
 
 # Alcance
 
-Entradas:
+Auditorías de origen:
 
-- auditorias/ontologia/R-06_*.md
-- auditorias/ontologia/R-07_*.md
-- auditorias/ontologia/R-08_*.md
-- auditorias/ontologia/R-09_*.md
-- auditorias/ontologia/R-10_*.md
-- auditorias/ontologia/REVISION_PLAN_REMEDIACION_v1.1.md
+- R-06 · Mecanismo de definición oficial
+- R-07 · Ciclo Estado ⇄ Representación
+- R-08 · Anclaje del grafo ontológico
+- R-09 · Dependencia Canon ↔ Ontología
+- R-10 · Cierre del grafo ontológico
 
-No utilizar ninguna otra fuente.
+Referencia auditada:
+
+```
+tag v1.0
+commit fe6dc5c
+```
+
+Documento sustituido:
+
+```
+auditorias/ontologia/PLAN_REMEDIACION_v1.1.md
+```
+
+Documento de revisión:
+
+```
+auditorias/ontologia/REVISION_PLAN_REMEDIACION_v1.1.md
+```
 
 ---
 
 # Estado
 
-BORRADOR.
-
-No constituye documentación canónica.
+Pendiente de implementación.
 
 ---
 
 # Objetivo
 
-Generar un backlog definitivo de remediaciones:
-
-- completo
-- mínimo
-- sin duplicidades
-- con dependencias verificables
-- con cobertura íntegra de R-06 a R-10
+Definir el backlog oficial de remediación que deberá ejecutarse para publicar la versión v1.1 del repositorio.
 
 ---
 
 # Resultado esperado
 
-Un plan v1.2 que:
+Al completar todas las remediaciones deberá ser posible:
 
-- elimine remediaciones innecesarias
-- fusione remediaciones equivalentes
-- incorpore cualquier remediación ausente detectada en la revisión
-- mantenga trazabilidad completa hacia todas las auditorías
-- preserve el camino crítico de ejecución
+- eliminar las no conformidades detectadas por R-06 a R-10;
+- publicar la versión v1.1;
+- ejecutar una nueva ronda completa de auditorías sobre dicha versión.
+
+---
+
+# Cambios respecto a v1.1
+
+La versión v1.2 incorpora las conclusiones verificadas de la revisión del plan.
+
+En particular:
+
+- elimina las remediaciones innecesarias;
+- fusiona las remediaciones redundantes;
+- incorpora las remediaciones ausentes;
+- recalcula dependencias;
+- recalcula el camino crítico;
+- recalcula el orden de ejecución;
+- actualiza la trazabilidad.
 
 ---
 
 # Restricciones
 
-No modificar las auditorías.
+Este documento no autoriza modificaciones del repositorio.
 
-No reinterpretar sus conclusiones.
+Toda implementación deberá realizarse mediante commits independientes.
 
-No introducir remediaciones nuevas salvo las exigidas explícitamente por la revisión v1.1.
+Las auditorías originales permanecerán inmutables.
 
-No alterar hechos verificados.
-
-No cambiar el alcance de ninguna auditoría.
-
-No resolver las remediaciones.
-
-Solo planificarlas.
+Toda remediación deberá poder trazarse hasta una o varias auditorías de origen.
 
 ---
 
 # Pendiente
 
-Generar el contenido completo del plan v1.2.
-
----
-
-# Declaración
-
-Este documento sustituye íntegramente a:
+Este documento será completado exclusivamente a partir de:
 
 - PLAN_REMEDIACION_v1.1.md
+- REVISION_PLAN_REMEDIACION_v1.1.md
 
-A partir de esta versión, toda planificación de remediación deberá referenciar exclusivamente este documento.
+No deberá utilizar ninguna otra fuente.
 
-PLAN_REMEDIACION_v1.1.md queda sustituido y se conserva únicamente por motivos de trazabilidad histórica.
+El resultado deberá convertirse en el backlog oficial de remediación para la versión v1.1.
