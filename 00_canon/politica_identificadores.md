@@ -2,7 +2,7 @@
 
 Estado: CANÓNICO
 
-Versión: 1.0.0
+Versión: 2.0.0
 
 Ubicación:
 
@@ -138,7 +138,7 @@ Un concepto no podrá utilizar simultáneamente más de un espacio de nombres of
 
 ## R-004
 
-Todo identificador oficial deberá estar inscrito en el Registro de Identificadores.
+Todo identificador oficial deberá estar inscrito en el registro oficial correspondiente.
 
 ---
 
@@ -209,11 +209,11 @@ Los espacios oficiales se declaran exclusivamente en:
 
 ---
 
-# Registro de identificadores
+# Registro
 
-Los identificadores oficiales se registran exclusivamente mediante el mecanismo definido por el Gobierno del Canon.
+Los identificadores oficiales se inscriben exclusivamente en el registro correspondiente definido por el Canon.
 
-Un identificador no registrado carece de validez normativa.
+Todo identificador deberá ser verificable mediante dicho registro.
 
 ---
 
@@ -240,15 +240,16 @@ No se permite:
 
 # Relaciones
 
-Esta política depende de:
+Depende de:
 
-- `00_canon/gobierno_del_canon.md`
+- sistema_normativo.md
+- gobierno_del_canon.md
 
-Esta política gobierna:
+Gobierna:
 
-- `00_canon/registro_espacios_nombres.md`
-- `00_canon/rregistro_documentos_canonicos.md`
-- `00_canon/registro_obsolescencias.md`
+- registro_documentos_canonicos.md
+- registro_espacios_nombres.md
+- registro_obsolescencias.md
 
 ---
 
