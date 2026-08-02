@@ -26,12 +26,18 @@ La implementación del producto reside únicamente en atomica-app.
 
 # Orden de precedencia
 
+Cada repositorio oficial declara su ámbito de autoridad.
+
+Cuando exista conflicto entre dos repositorios, prevalecerá el repositorio cuya responsabilidad incluya el conocimiento gobernado.
+
+Actualmente:
+
 1. atomica-core
 2. atomica-app
 
 Toda discrepancia entre ambos se resolverá en favor de atomica-core.
 
-La implementación deberá adaptarse al canon.
+La implementación deberá adaptarse a la autoridad normativa de atomica-core.
 
 El canon nunca se adaptará a una implementación existente.
 
@@ -90,3 +96,16 @@ Las auditorías del canon evaluarán exclusivamente atomica-core.
 Las auditorías de sincronización evaluarán la correspondencia entre atomica-app y atomica-core.
 
 Las discrepancias detectadas en la sincronización se clasificarán como desviaciones de implementación.
+
+---
+
+# Relaciones
+
+Depende de:
+
+- gobierno_del_canon.md
+- sistema_normativo.md
+
+Gobierna:
+
+- la relación normativa entre repositorios oficiales
