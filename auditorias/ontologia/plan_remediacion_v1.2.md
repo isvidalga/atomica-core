@@ -11,7 +11,7 @@ RA-01_consolidacion_hallazgos.md
 
 Ubicación:
 
-90_auditorias/ontologia/plan_remediacion_v1.2.md
+auditorias/ontologia/plan_remediacion_v1.2.md
 
 ---
 

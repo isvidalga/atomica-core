@@ -11,7 +11,7 @@ tag v1.0 (`fe6dc5c`)
 
 Ubicación:
 
-90_auditorias/ontologia/AD-02_implementacion_documental_del_modelo.md
+auditorias/ontologia/AD-02_implementacion_documental_del_modelo.md
 
 ---
 

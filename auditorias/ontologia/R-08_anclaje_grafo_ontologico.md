@@ -12,7 +12,7 @@ tag v1.0 (`fe6dc5c`)
 Ubicación:
 
 ```
-90_auditorias/ontologia/R-08_anclaje_grafo_ontologico.md
+auditorias/ontologia/R-08_anclaje_grafo_ontologico.md
 ```
 
 ---

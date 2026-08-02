@@ -7,7 +7,7 @@ Versión: 1.0
 Ubicación:
 
 ```
-90_auditorias/PLAN_REMEDIACION_v1.1.md
+auditorias/PLAN_REMEDIACION_v1.1.md
 ```
 
 ---

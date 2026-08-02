@@ -5,7 +5,7 @@ Estado: EVIDENCIA
 Ubicación:
 
 ```
-90_auditorias/ontologia/
+auditorias/ontologia/
 ```
 
 ---

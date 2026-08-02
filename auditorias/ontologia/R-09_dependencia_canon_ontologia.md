@@ -12,7 +12,7 @@ tag v1.0 (`fe6dc5c`)
 Ubicación:
 
 ```
-90_auditorias/ontologia/R-09_dependencia_canon_ontologia.md
+auditorias/ontologia/R-09_dependencia_canon_ontologia.md
 ```
 
 ---
