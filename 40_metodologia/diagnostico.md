@@ -1,40 +1,62 @@
 # Diagnóstico
 
-**Estado:** Frozen
+Estado: CANÓNICO
 
-**Versión:** 1.1.0
+Tipo: ESPECIFICACIÓN
 
-**Breadcrumb:** `40_metodologia/diagnostico.md`
+Versión: 2.0.0
+
+Ubicación:
+
+40_metodologia/diagnostico.md
 
 ---
 
 # Propósito
 
-El Diagnóstico define el proceso metodológico mediante el cual ATÓMICA obtiene información sobre una organización.
+Definir el Diagnóstico como el proceso metodológico mediante el cual ATÓMICA obtiene Observaciones sobre una organización.
 
-Su finalidad es producir observaciones que puedan incorporarse posteriormente al Modelo.
+Su finalidad consiste exclusivamente en incorporar información al proceso de construcción del conocimiento.
 
 El Diagnóstico no interpreta.
 
 No infiere.
 
+No explica.
+
 No prescribe.
 
-Únicamente obtiene información.
+Únicamente obtiene Observaciones metodológicamente válidas.
 
 ---
 
 # Naturaleza
 
-El Diagnóstico pertenece a la Metodología.
+El Diagnóstico pertenece exclusivamente a la Metodología.
 
 No forma parte de la Ontología.
 
+No pertenece a la Epistemología.
+
 No constituye conocimiento.
 
-No constituye una representación.
+No constituye una Representación.
+
+No modifica el Modelo.
 
 Constituye el mecanismo mediante el cual el Modelo obtiene información del referente organizacional.
+
+---
+
+# Función
+
+El Diagnóstico tiene una única función:
+
+obtener Observaciones que puedan ser posteriormente evaluadas por el Modelo.
+
+El tratamiento posterior de dichas Observaciones pertenece a la Epistemología y al Motor de Inferencia.
+
+Nunca al Diagnóstico.
 
 ---
 
@@ -51,6 +73,7 @@ El Diagnóstico nunca produce directamente:
 - Hipótesis;
 - Evidencias;
 - Confianza;
+- Estado Sistémico;
 - IFO.
 
 ---
@@ -62,67 +85,115 @@ El Diagnóstico define:
 - qué información se solicita;
 - cómo se obtiene;
 - bajo qué condiciones puede incorporarse al Modelo;
-- la estructura metodológica de la obtención de información.
+- la estructura metodológica para adquirir Observaciones.
 
 No define:
 
 - entidades ontológicas;
 - reglas de inferencia;
-- cálculo del IFO;
-- interpretación del conocimiento.
+- interpretación del conocimiento;
+- cálculo del Estado Sistémico;
+- cálculo del IFO.
+
+---
+
+# Relación con el Modelo
+
+El Diagnóstico constituye la puerta de entrada de información al Modelo.
+
+Las Observaciones obtenidas pueden incorporarse posteriormente al proceso epistemológico.
+
+La incorporación de nuevas Observaciones podrá originar:
+
+- nuevas Hipótesis;
+- nueva Evidencia;
+- modificación de la Confianza;
+- un nuevo Estado;
+- una nueva Representación.
+
+Ninguno de estos procesos pertenece al Diagnóstico.
 
 ---
 
 # Restricciones
 
-## D-001
+## DG-001
 
 Toda información obtenida mediante un Diagnóstico constituye una Observación.
 
 ---
 
-## D-002
+## DG-002
 
 El Diagnóstico nunca genera conocimiento.
 
 ---
 
-## D-003
+## DG-003
 
 El Diagnóstico nunca modifica directamente el Modelo.
 
 ---
 
-## D-004
+## DG-004
 
 Toda incorporación de conocimiento constituye un proceso posterior al Diagnóstico.
 
 ---
 
-## D-005
+## DG-005
 
-La validez del Diagnóstico es independiente de las interpretaciones posteriores.
+El Diagnóstico nunca genera Hipótesis.
+
+---
+
+## DG-006
+
+El Diagnóstico nunca genera Evidencias.
+
+---
+
+## DG-007
+
+El Diagnóstico nunca modifica la Confianza.
+
+---
+
+## DG-008
+
+El Diagnóstico nunca produce directamente un Estado Sistémico ni un IFO.
+
+---
+
+## DG-009
+
+La validez metodológica del Diagnóstico es independiente de las interpretaciones posteriores realizadas por el Modelo.
 
 ---
 
 # Dependencias
 
-- `10_nucleo/`
-- `30_ontologia/observacion.md`
+Depende de:
 
----
-
-# Utilizado por
-
-- `40_metodologia/ifo.md`
+- `00_canon/sistema_normativo.md`
+- `00_canon/gobierno_del_canon.md`
+- `20_epistemologia/observacion.md`
+- `40_metodologia/metodologia.md`
 - `40_metodologia/dimensiones.md`
+
+Utilizado por:
+
+- `20_epistemologia/observacion.md`
+- `40_metodologia/ifo.md`
+- `40_metodologia/evolucion_temporal.md`
+- `50_producto/modelo_vivo.md`
 
 ---
 
 # Declaración
 
-El Diagnóstico constituye el mecanismo de adquisición de información del Modelo.
+El Diagnóstico constituye el mecanismo mediante el cual ATÓMICA adquiere Observaciones sobre una organización.
 
-Su única responsabilidad es producir Observaciones metodológicamente válidas.
+Su única responsabilidad consiste en obtener información metodológicamente válida.
 
-Todo conocimiento generado por ATÓMICA comienza necesariamente en un Diagnóstico.
+Todo conocimiento construido por ATÓMICA comienza necesariamente con Observaciones obtenidas mediante un Diagnóstico.
