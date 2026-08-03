@@ -30,6 +30,8 @@ Toda modificación produce una nueva versión.
 
 Toda modificación identifica su impacto.
 
+Toda modificación deberá preservar la coherencia del Canon.
+
 ---
 
 # Procedimiento
@@ -52,6 +54,8 @@ La modificación se clasifica como:
 - MINOR
 - MAJOR
 
+La clasificación deberá justificarse conforme a la Política de Versionado.
+
 ---
 
 ## 3. Evaluación
@@ -61,12 +65,15 @@ Se identifican:
 - documentos afectados;
 - dependencias;
 - compatibilidad.
+- registros afectados.
 
 ---
 
 ## 4. Implementación
 
-Se modifican únicamente los documentos declarados.
+Se modifican exclusivamente los documentos declarados durante la evaluación.
+
+No podrán incorporarse modificaciones adicionales durante la implementación.
 
 ---
 
@@ -80,6 +87,7 @@ Se comprobará:
 - tipos normativos;
 - cumplimiento del Gobierno del Canon;
 - actualización de los registros afectados.
+- registros oficiales.
 
 ---
 
@@ -91,6 +99,7 @@ La modificación genera:
 - actualización de los documentos afectados;
 - actualización del Registro de Documentos Canónicos cuando proceda;
 - publicación de la nueva versión del Canon.
+- actualización del Registro de Documentos Canónicos cuando proceda.
 
 ---
 
@@ -106,6 +115,10 @@ No modificar documentos congelados sin nueva versión.
 
 No publicar cambios parcialmente verificados.
 
+No modificar retrospectivamente versiones publicadas.
+
+No incorporar modificaciones fuera del alcance aprobado.
+
 ---
 
 # Relaciones
@@ -115,8 +128,13 @@ Depende de:
 - sistema_normativo.md
 - gobierno_del_canon.md
 - politica_versionado.md
-- registro_documentos_canonicos.md
 
 Utilizado por:
 
 - todo el canon
+
+---
+
+No constituye un mecanismo de gobierno.
+
+Únicamente define el procedimiento de modificación.
