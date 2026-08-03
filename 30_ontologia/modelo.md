@@ -1,8 +1,6 @@
-# MODELO
+# Modelo
 
 Estado: CANÓNICO
-
-Tipo: CONCEPTO
 
 Versión: 2.0.0
 
@@ -14,171 +12,140 @@ Ubicación:
 
 # Propósito
 
-Definir el concepto de Modelo dentro de la ontología de ATÓMICA.
+Definir el concepto ontológico de Modelo.
 
-El Modelo constituye la estructura organizada mediante la cual ATÓMICA construye, conserva y razona sobre el conocimiento relativo a un referente organizacional.
+El Modelo constituye el sistema formal dentro del cual existen todas las representaciones construidas por ATÓMICA.
+
+No representa la realidad.
+
+Representa el conocimiento admitido sobre ella.
 
 ---
 
 # Definición
 
-Un Modelo es una organización formal del conocimiento que representa un referente sin confundirse con él.
+Un Modelo es un sistema formal que organiza el conocimiento construido por ATÓMICA sobre un referente.
 
-El Modelo no constituye la realidad.
+El Modelo constituye el universo ontológico dentro del cual existen las Identidades, los Estados, las Trayectorias, las Representaciones y la Memoria.
 
-El Modelo organiza el conocimiento disponible sobre dicha realidad.
+Toda afirmación producida por ATÓMICA pertenece al Modelo.
+
+Nunca pertenece directamente a la realidad observada.
 
 ---
 
 # Naturaleza
 
-Todo Modelo:
+El Modelo:
 
-- pertenece a ATÓMICA;
-- organiza conocimiento;
-- posee una Identidad;
-- evoluciona mediante Estados;
-- conserva una Trayectoria;
-- preserva Memoria;
-- mantiene Relaciones entre sus entidades.
-
-El Modelo nunca modifica el referente que representa.
+- pertenece exclusivamente a ATÓMICA;
+- representa conocimiento;
+- nunca modifica el referente observado;
+- evoluciona mediante nuevos Estados;
+- preserva permanentemente su trazabilidad.
 
 ---
 
 # Constitución
 
-Todo Modelo está constituido por:
+El Modelo está constituido por:
 
-- una Identidad;
-- una sucesión de Estados;
-- una Trayectoria;
-- Memoria;
-- Relaciones entre sus entidades.
+- Identidades;
+- Estados;
+- Trayectorias;
+- Representaciones;
+- Memoria.
 
-Las Representaciones constituyen manifestaciones del Modelo.
-
-No forman parte de su estructura ontológica.
-
----
-
-# Evolución
-
-Un Modelo evoluciona exclusivamente mediante la incorporación de nuevos Estados.
-
-La evolución nunca modifica Estados anteriores.
-
-La evolución preserva íntegramente la continuidad de la Identidad.
-
----
-
-# Alcance
-
-Todo razonamiento realizado por ATÓMICA ocurre sobre un Modelo.
-
-Las Observaciones alimentan el Modelo.
-
-Las Hipótesis pertenecen al Modelo.
-
-Las Evidencias modifican la Confianza del Modelo.
-
-Las Representaciones permiten comunicar el Modelo.
-
----
-
-# Restricciones
-
-## MD-001
-
-Todo Modelo posee exactamente una Identidad.
-
----
-
-## MD-002
-
-Todo Estado pertenece exactamente a un Modelo.
-
----
-
-## MD-003
-
-Todo razonamiento ocurre sobre el Modelo.
-
-Nunca directamente sobre el referente.
-
----
-
-## MD-004
-
-El Modelo nunca constituye la realidad que representa.
-
----
-
-## MD-005
-
-La evolución del Modelo nunca altera su historial.
-
----
-
-## MD-006
-
-Las Representaciones nunca constituyen el Modelo.
-
-Únicamente lo representan.
-
----
-
-# Exclusiones
-
-Un Modelo nunca constituye:
-
-- el referente organizacional;
-- una interfaz;
-- un algoritmo;
-- un documento;
-- una simulación;
-- un producto.
+Estos elementos existen únicamente como partes del Modelo.
 
 ---
 
 # Relaciones
 
-Depende de:
+El Modelo:
 
-- 10_nucleo/axiomas.md
-- 10_nucleo/principios.md
-- 30_ontologia/identidad.md
-- 30_ontologia/estado.md
-- 30_ontologia/trayectoria.md
-- 30_ontologia/memoria.md
-- 30_ontologia/relacion.md
+- contiene Identidades;
+- organiza Estados;
+- preserva Trayectorias;
+- expresa Representaciones;
+- conserva Memoria.
 
-Gobierna:
-
-- representacion.md
-
-Utilizado por:
-
-- 20_epistemologia/
-- 40_metodologia/
-- 50_producto/
+Las relaciones epistemológicas del conocimiento se apoyan sobre esta estructura, pero no forman parte de ella.
 
 ---
 
-# Responsabilidad
+# Restricciones
 
-Este documento define exclusivamente el concepto de Modelo.
+## MO-001
 
-No define Representaciones.
+Todo Estado pertenece exactamente a un Modelo.
 
-No define el Modelo Organizacional.
+---
 
-No establece procedimientos metodológicos.
+## MO-002
+
+Toda Trayectoria pertenece exactamente a un Modelo.
+
+---
+
+## MO-003
+
+Toda Representación pertenece exactamente a un Modelo.
+
+---
+
+## MO-004
+
+Toda Memoria pertenece exactamente a un Modelo.
+
+---
+
+## MO-005
+
+La evolución del Modelo nunca modifica retrospectivamente sus Estados.
+
+---
+
+## MO-006
+
+Toda modificación del conocimiento admitido genera un nuevo Estado del Modelo.
+
+---
+
+# Exclusiones
+
+El Modelo nunca constituye:
+
+- la organización observada;
+- una tecnología;
+- una implementación;
+- una interfaz;
+- un algoritmo;
+- un producto.
+
+---
+
+# Dependencias
+
+- `10_nucleo/axiomas.md`
+
+---
+
+# Utilizado por
+
+- `30_ontologia/identidad.md`
+- `30_ontologia/estado.md`
+- `30_ontologia/trayectoria.md`
+- `30_ontologia/representacion.md`
+- `30_ontologia/memoria.md`
+- `20_epistemologia/`
 
 ---
 
 # Declaración
 
-El Modelo constituye la estructura organizada del conocimiento mediante la cual ATÓMICA observa, conserva, interpreta y comunica el conocimiento relativo a una Identidad.
+ATÓMICA nunca opera directamente sobre la realidad.
 
-Toda operación realizada por ATÓMICA ocurre sobre el Modelo y nunca directamente sobre el referente organizacional.
+Opera exclusivamente sobre un Modelo.
+
+Todo conocimiento construido, conservado o comunicado por ATÓMICA pertenece siempre al Modelo.
