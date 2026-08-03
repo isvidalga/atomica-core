@@ -1,24 +1,24 @@
 # Instrumento de Patrones
 
-Estado: CANÓNICO
+**Estado:** CANÓNICO
 
-Versión: 2.0
+**Versión:** 2.1.0
 
 ---
 
 # Propósito
 
-El Instrumento de Patrones constituye el principal instrumento visual de observación de ATÓMICA.
+El Instrumento de Patrones constituye el instrumento mediante el cual ATÓMICA representa y permite explorar patrones organizacionales identificados por el Modelo.
 
-Su finalidad consiste en hacer visible el comportamiento conjunto de las Fragilidades y Capacidades detectadas por el Modelo.
+Su finalidad consiste en hacer visibles relaciones persistentes entre Fragilidades, Capacidades y otros elementos del Modelo que ayudan a comprender el comportamiento observado de una organización.
 
-No representa datos.
+No representa datos como unidad principal.
 
-No representa indicadores.
+No representa indicadores aislados.
 
 No representa documentos.
 
-Representa comportamiento organizacional.
+Representa patrones construidos por el Modelo.
 
 ---
 
@@ -30,7 +30,9 @@ No pertenece a la Ontología.
 
 No pertenece a la Metodología.
 
-No crea conocimiento.
+No crea patrones.
+
+No detecta conocimiento nuevo.
 
 Representa conocimiento ya construido por el Modelo.
 
@@ -38,69 +40,75 @@ Representa conocimiento ya construido por el Modelo.
 
 # Pregunta que responde
 
-El Instrumento responde una única pregunta.
+El Instrumento responde una única pregunta:
 
-> ¿Qué estructuras están gobernando actualmente el comportamiento de la organización?
+> ¿Qué patrones organizacionales están asociados al comportamiento observado?
 
-Nunca responde otras preguntas.
+No responde:
+
+- qué debe hacerse;
+- qué decisión debe tomarse;
+- qué causa explica definitivamente un comportamiento.
 
 ---
 
 # Objetos representados
 
-El Instrumento representa exclusivamente objetos definidos por el Canon.
+El Instrumento representa objetos definidos por el Canon:
 
-Puede representar:
+- Patrones;
+- Fragilidades;
+- Capacidades;
+- Relaciones;
+- Hipótesis;
+- Evidencias asociadas.
 
-- Fragilidades.
-- Capacidades.
-- Relaciones.
-- Hipótesis.
-- Evidencias (cuando el usuario profundiza).
-
-Nunca introduce objetos nuevos.
+Nunca introduce objetos conceptuales propios.
 
 ---
 
 # Principios
 
-## P-001 · Los patrones son el protagonista
+## P-001 · El patrón es la unidad principal
 
-El usuario observa primero los patrones.
+El usuario explora primero relaciones y configuraciones organizacionales.
 
-Nunca observa primero los datos.
-
----
-
-## P-002 · El comportamiento prevalece sobre la cifra
-
-El Instrumento comunica dinámica.
-
-Nunca comunica únicamente valores.
+Los datos individuales constituyen elementos de soporte, no la representación principal.
 
 ---
 
-## P-003 · Todo patrón conserva su identidad
+## P-002 · El comportamiento prevalece sobre el valor aislado
 
-Una Fragilidad o una Capacidad mantiene siempre el mismo significado dentro de cualquier representación.
+El Instrumento comunica estructuras y relaciones.
 
-El Instrumento nunca altera dicho significado.
+No reduce la comprensión organizacional a cifras individuales.
 
 ---
 
-## P-004 · Toda representación mantiene contexto
+## P-003 · Toda entidad conserva su identidad
+
+Una Fragilidad, Capacidad o Patrón mantiene siempre el mismo significado dentro de cualquier representación.
+
+El Instrumento nunca modifica su definición.
+
+---
+
+## P-004 · Todo patrón conserva contexto
 
 Ningún patrón aparece aislado.
 
-Siempre aparece dentro del contexto organizacional correspondiente.
+Toda representación mantiene:
+
+- organización;
+- Estado asociado;
+- relaciones relevantes;
+- nivel de confianza.
 
 ---
 
 ## P-005 · La incertidumbre permanece visible
 
-Toda representación muestra el nivel de confianza asociado al conocimiento representado.
-
-Nunca existe una representación sin incertidumbre.
+Toda representación mantiene la confianza y la incertidumbre asociada al conocimiento mostrado.
 
 ---
 
@@ -108,44 +116,48 @@ Nunca existe una representación sin incertidumbre.
 
 El Instrumento permite:
 
-- explorar;
-- profundizar;
-- filtrar;
-- recorrer relaciones;
-- recorrer la evolución temporal.
+- explorar patrones;
+- profundizar en relaciones;
+- consultar evidencias asociadas;
+- recorrer evolución temporal;
+- acceder al Estado relacionado.
 
-Nunca modifica el Modelo.
+Nunca:
 
-Nunca modifica el conocimiento.
+- modifica el Modelo;
+- modifica conocimiento;
+- genera interpretaciones nuevas.
 
 ---
 
 # Navegación
 
-Desde cualquier patrón el usuario puede acceder a:
+Desde un patrón el usuario puede acceder a:
 
-- Hipótesis relacionadas.
-- Evidencias asociadas.
-- Intervenciones propuestas.
-- Trayectoria histórica.
-- Representación del Estado correspondiente.
+- Fragilidades relacionadas;
+- Capacidades relacionadas;
+- Hipótesis asociadas;
+- Evidencias disponibles;
+- Intervenciones relacionadas;
+- Trayectoria histórica;
+- Estado correspondiente.
 
-La navegación siempre conserva el contexto.
+La navegación conserva siempre el contexto del Modelo.
 
 ---
 
 # Representación temporal
 
-El Instrumento permite observar:
+El Instrumento puede mostrar evolución de patrones:
 
 - aparición;
 - persistencia;
 - debilitamiento;
 - desaparición.
 
-La representación temporal nunca sustituye la Crónica.
+La evolución temporal complementa a la Línea Temporal y la Crónica.
 
-La complementa.
+No las sustituye.
 
 ---
 
@@ -153,45 +165,63 @@ La complementa.
 
 ## R-001
 
-El Instrumento nunca interpreta.
+El Instrumento nunca genera patrones nuevos.
+
+---
 
 ## R-002
 
-El Instrumento nunca recomienda.
+El Instrumento nunca interpreta causalidad.
+
+---
 
 ## R-003
 
-El Instrumento nunca calcula conocimiento.
+El Instrumento nunca recomienda acciones.
+
+---
 
 ## R-004
 
 El Instrumento únicamente representa conocimiento producido por el Modelo.
 
+---
+
 ## R-005
 
-Toda representación conserva la trazabilidad del conocimiento mostrado.
+Toda representación conserva trazabilidad.
 
 ---
 
 # Dependencias
 
-- 00_canon
-- Ontología
-- Metodología
-- Navegación
+El Instrumento de Patrones depende de:
 
----
+- Modelo Vivo;
+- Estado Sistémico;
+- Ontología;
+- Metodología.
 
-# Utilizado por
+Puede ser representado mediante:
 
-- Cockpit
-- Observatorio
-- Asesor Cognitivo
+- Observatorio;
+- Cockpit;
+- Asesor Cognitivo.
+
+No depende de:
+
+- tecnología;
+- implementación;
+- interfaz concreta.
 
 ---
 
 # Principio final
 
-El Instrumento de Patrones no existe para mostrar información.
+El Instrumento de Patrones no existe para mostrar información aislada.
 
-Existe para hacer visible la estructura organizacional que explica el comportamiento observado.
+Existe para hacer visibles configuraciones organizacionales persistentes que ayudan a comprender el comportamiento observado del sistema.
+
+ATÓMICA no muestra patrones para decidir.
+
+Los muestra para comprender mejor.
