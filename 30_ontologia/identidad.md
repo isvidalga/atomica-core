@@ -1,8 +1,6 @@
-# IDENTIDAD
+# Identidad
 
 Estado: CANÓNICO
-
-Tipo: CONCEPTO
 
 Versión: 2.0.0
 
@@ -14,73 +12,87 @@ Ubicación:
 
 # Propósito
 
-Definir el concepto de Identidad dentro de la ontología de ATÓMICA.
+Definir el concepto ontológico de Identidad.
 
-La Identidad constituye la continuidad del referente organizacional sobre el que se construye el Modelo.
+La Identidad constituye el vínculo permanente entre una Organización y el Modelo.
 
-Sin Identidad no pueden existir Estados, Trayectorias ni Representaciones.
+Sobre ella se organiza toda la evolución del conocimiento representado por ATÓMICA.
+
+Sin Identidad no pueden existir Trayectorias, Estados ni Representaciones.
 
 ---
 
 # Definición
 
-Una Identidad es la continuidad lógica de un mismo referente organizacional a través del tiempo.
+Una Identidad es la entidad ontológica que mantiene la continuidad de una misma Organización dentro del Modelo.
 
-No representa una personalidad jurídica.
+La Identidad no representa la Organización.
 
-No representa una entidad legal.
+Tampoco constituye una Representación.
 
-No representa un identificador administrativo.
-
-Representa aquello que permite afirmar que distintos Estados pertenecen al mismo referente organizacional.
+Constituye el mecanismo mediante el cual el Modelo reconoce que distintos Estados pertenecen a la misma Organización.
 
 ---
 
 # Naturaleza
 
-La Identidad:
+Toda Identidad:
 
-- no es un Estado;
-- no es una Trayectoria;
-- no es una Representación;
-- no describe atributos;
+- pertenece al Modelo;
+- referencia exactamente una Organización;
+- permanece estable durante toda su existencia;
+- no describe conocimiento;
 - no evoluciona.
 
-La Identidad expresa continuidad.
+La evolución pertenece a los Estados.
+
+La continuidad pertenece a la Identidad.
 
 ---
 
 # Propiedades
 
-Toda Identidad:
+Toda Identidad posee:
 
-- posee un identificador único;
-- posee exactamente un Estado vigente;
-- puede poseer múltiples Estados históricos;
-- posee exactamente una Trayectoria;
-- puede poseer múltiples Representaciones.
+- un identificador único;
+- exactamente una Organización;
+- exactamente una Trayectoria;
+- exactamente un Estado vigente;
+- cero o más Estados históricos.
 
 ---
 
 # Persistencia
 
-La Identidad permanece mientras continúe existiendo el mismo referente organizacional.
+La Identidad permanece mientras continúe existiendo la misma Organización conforme a los criterios definidos por el Canon.
 
-Los cambios en estructura, estrategia, personas, tecnología, procesos o denominación no implican por sí mismos una nueva Identidad.
+Cambios en:
 
-Podrán modificar únicamente el Estado.
+- estructura;
+- dirección;
+- accionariado;
+- procesos;
+- tecnología;
+- estrategia;
+- tamaño;
+- denominación;
+- forma jurídica;
+
+no implican necesariamente una nueva Identidad.
+
+Únicamente pueden producir nuevos Estados.
 
 ---
 
 # Finalización
 
-Una Identidad finaliza cuando deja de cumplirse el criterio de continuidad definido por el Canon.
+Una Identidad finaliza cuando deja de existir la continuidad de la Organización representada.
 
 Una Identidad finalizada:
 
-- conserva íntegramente su historial;
-- cierra su Trayectoria;
-- no admite nuevos Estados.
+- conserva íntegramente su Trayectoria;
+- conserva todos sus Estados;
+- nunca puede reactivarse.
 
 ---
 
@@ -88,16 +100,17 @@ Una Identidad finalizada:
 
 Toda Identidad:
 
+- referencia exactamente una Organización;
 - posee exactamente una Trayectoria;
 - posee exactamente un Estado vigente;
 - puede poseer múltiples Estados históricos;
-- puede poseer múltiples Representaciones.
-
-Todo Estado pertenece exactamente a una Identidad.
+- puede poseer múltiples Representaciones históricas.
 
 Toda Trayectoria pertenece exactamente a una Identidad.
 
-Toda Representación pertenece exactamente a una Identidad.
+Todo Estado pertenece exactamente a una Identidad.
+
+Toda Representación pertenece indirectamente a una Identidad a través de su Estado.
 
 ---
 
@@ -111,31 +124,51 @@ Toda Identidad posee un identificador único.
 
 ## ID-002
 
-Ningún Estado existe sin Identidad.
+Toda Identidad referencia exactamente una Organización.
 
 ---
 
 ## ID-003
 
-Toda Trayectoria pertenece exactamente a una Identidad.
+Toda Identidad posee exactamente una Trayectoria.
 
 ---
 
 ## ID-004
 
-Ninguna Identidad pertenece a otra.
+Sólo puede existir un Estado vigente por Identidad.
 
 ---
 
 ## ID-005
 
-La desaparición de un Estado nunca implica la desaparición de la Identidad.
+Toda nueva Identidad inicia una nueva Trayectoria.
 
 ---
 
 ## ID-006
 
-Toda nueva Identidad inicia una nueva Trayectoria.
+Dos Identidades nunca pueden fusionarse.
+
+---
+
+## ID-007
+
+Una Identidad nunca puede dividirse.
+
+---
+
+## ID-008
+
+Una Identidad finalizada nunca puede reactivarse.
+
+---
+
+## ID-009
+
+La modificación de una Organización nunca altera directamente su Identidad.
+
+Produce, en su caso, nuevos Estados.
 
 ---
 
@@ -144,46 +177,43 @@ Toda nueva Identidad inicia una nueva Trayectoria.
 La Identidad nunca contiene:
 
 - Observaciones;
-- Evidencias;
 - Hipótesis;
+- Evidencias;
 - Confianza;
-- indicadores;
-- puntuaciones;
+- Representaciones;
+- capacidades;
+- fragilidades;
+- patrones;
 - decisiones;
 - intervenciones.
 
 ---
 
-# Relaciones
+# Dependencias
 
-Depende de:
-
-- 10_nucleo/axiomas.md
-- 10_nucleo/principios.md
-
-Gobierna:
-
-- estado.md
-- trayectoria.md
-- representacion.md
-- memoria.md
+- `10_nucleo/axiomas.md`
+- `30_ontologia/modelo.md`
+- `30_ontologia/organizacion.md`
 
 ---
 
-# Responsabilidad
+# Utilizado por
 
-Este documento define exclusivamente el concepto de Identidad.
-
-No define Estados.
-
-No define Trayectorias.
-
-No define Representaciones.
-
-No establece criterios metodológicos de evaluación.
+- `30_ontologia/trayectoria.md`
+- `30_ontologia/estado.md`
+- `30_ontologia/representacion.md`
+- `30_ontologia/memoria.md`
 
 ---
 
 # Declaración
 
-La Identidad constituye el referente permanente sobre el que ATÓMICA preserva la continuidad del conocimiento a través del tiempo.
+La Identidad constituye el mecanismo mediante el cual el Modelo preserva la continuidad de una Organización a lo largo de toda su evolución.
+
+La Organización constituye el referente.
+
+La Identidad preserva su continuidad.
+
+La Trayectoria registra su evolución.
+
+Los Estados representan dicha evolución mediante sucesivas Representaciones.
