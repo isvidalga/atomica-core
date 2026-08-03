@@ -1,148 +1,273 @@
 # Crónica
 
-**Estado:** CANÓNICO
+Estado: CANÓNICO
 
-**Versión:** 1.0.0
+Versión: 2.0.0
+
+Tipo: Producto
+
+Ubicación:
+
+```text
+50_producto/cronica.md
+```
 
 ---
 
 # Propósito
 
-La Crónica constituye el instrumento mediante el cual ATÓMICA representa la evolución histórica del conocimiento construido sobre una organización.
+Este documento define la Crónica como el instrumento del Producto responsable de representar la evolución del conocimiento mantenido por el Modelo Vivo.
 
-Su finalidad consiste en hacer visible cómo ha cambiado el Modelo a lo largo del tiempo.
+Su finalidad consiste en permitir comprender cómo ha cambiado el conocimiento organizacional a lo largo del tiempo.
 
-La Crónica no registra acontecimientos.
+La Crónica responde exclusivamente a una pregunta:
 
-Representa la evolución del conocimiento.
+> **¿Cómo ha evolucionado este sistema?**
+
+---
+
+# Alcance
+
+Este documento regula las responsabilidades de la Crónica como instrumento de la capa Producto.
+
+No define:
+
+- la Ontología;
+- la Metodología;
+- la Trayectoria;
+- la Memoria;
+- el Estado;
+- el Modelo Vivo;
+- la implementación técnica.
+
+---
+
+# Dependencias normativas
+
+Este documento depende de:
+
+- `00_canon/`
+- `10_nucleo/`
+- `20_epistemologia/`
+- `30_ontologia/`
+- `40_metodologia/`
+- `50_producto/principios.md`
+- `50_producto/modelo_vivo.md`
+- `50_producto/lenguaje_producto.md`
+- `50_producto/experiencia_cognitiva.md`
+- `50_producto/navegacion.md`
+- `50_producto/flujo_exploracion.md`
+- `50_producto/pattern.md`
+
+En caso de conflicto prevalecen siempre las definiciones canónicas.
+
+---
+
+# Objetivo
+
+La Crónica permite comprender la evolución del conocimiento representado por el Modelo Vivo.
+
+Su responsabilidad consiste en representar cómo dicho conocimiento ha cambiado a lo largo de una trayectoria.
+
+No reconstruye la historia de la organización.
+
+No interpreta acontecimientos.
+
+No explica causas.
+
+No recomienda actuaciones.
 
 ---
 
 # Naturaleza
 
-La Crónica pertenece al Producto.
+La Crónica constituye un instrumento de exploración temporal.
 
-No pertenece a la Ontología.
+No constituye una línea temporal de acontecimientos.
 
-No pertenece a la Metodología.
+No constituye un registro de actividad.
 
-Constituye una representación longitudinal del Modelo Organizacional.
+No constituye un historial documental.
 
----
-
-# Qué representa
-
-La Crónica representa exclusivamente:
-
-- la sucesión de Estados;
-- la evolución de la Trayectoria;
-- la aparición y desaparición de capacidades;
-- la evolución de fragilidades;
-- los cambios en el IFO;
-- la evolución de la confianza;
-- los cambios relevantes del Modelo.
+Representa exclusivamente la evolución del conocimiento mantenido por el Modelo Vivo.
 
 ---
 
-# Qué no representa
+# Responsabilidad
 
-La Crónica no representa:
+Corresponde a la Crónica:
 
-- acontecimientos históricos de la organización;
-- decisiones empresariales;
-- tareas realizadas;
-- reuniones;
-- documentos;
-- auditorías;
-- recomendaciones.
+- representar la evolución del conocimiento;
+- conservar la continuidad entre estados;
+- mostrar cambios relevantes;
+- facilitar la comprensión de la trayectoria del conocimiento;
+- preservar la trazabilidad temporal.
 
-Toda información representada pertenece al Modelo.
+No le corresponde:
+
+- modificar el Modelo Vivo;
+- generar conocimiento;
+- interpretar la evolución;
+- establecer causalidades;
+- recomendar decisiones.
 
 ---
 
-# Función
+# Principios
 
-La Crónica permite comprender cómo ha evolucionado el conocimiento disponible.
+## CRO-001 · Una única pregunta
 
-Entre otros aspectos:
+La Crónica responde exclusivamente:
 
-- cuándo apareció un cambio;
-- cuándo desapareció;
-- cuánto tiempo permaneció;
-- qué Estados marcaron cambios relevantes;
-- cómo evolucionó el nivel de fragilidad;
-- cómo evolucionó la confianza del Modelo.
+> ¿Cómo ha evolucionado este sistema?
+
+Toda representación deberá contribuir directamente a responder dicha pregunta.
+
+---
+
+## CRO-002 · La evolución pertenece al conocimiento
+
+La Crónica representa exclusivamente la evolución del conocimiento.
+
+Nunca representa acontecimientos históricos ajenos al Modelo.
+
+---
+
+## CRO-003 · La continuidad permanece visible
+
+Toda representación conserva la continuidad entre los estados representados.
+
+La evolución nunca aparece como una colección de estados aislados.
+
+---
+
+## CRO-004 · La historia nunca se modifica
+
+La incorporación de nuevo conocimiento no altera retrospectivamente las representaciones históricas.
+
+Cada representación conserva el conocimiento disponible en su momento.
+
+---
+
+## CRO-005 · Toda evolución es trazable
+
+Todo cambio representado deberá poder reconstruirse mediante la cadena completa de conocimiento.
+
+La representación nunca rompe dicha continuidad.
+
+---
+
+## CRO-006 · La incertidumbre evoluciona con el conocimiento
+
+La evolución de la incertidumbre forma parte de la representación cuando resulte relevante para comprender la trayectoria.
+
+Nunca se elimina de la historia.
+
+---
+
+# Representación
+
+La Crónica representa exclusivamente conocimiento histórico mantenido por el Modelo Vivo.
+
+La representación podrá incorporar, cuando resulte pertinente:
+
+- sucesión de estados;
+- cambios relevantes;
+- continuidad;
+- discontinuidades;
+- evolución de la confianza;
+- evolución de la incertidumbre.
+
+Toda representación deberá preservar el significado definido por el Sistema Normativo.
 
 ---
 
 # Temporalidad
 
-La unidad fundamental de la Crónica es el Estado.
+La unidad de representación pertenece al conocimiento definido por el Sistema Normativo.
 
-La Crónica nunca representa tiempo cronológico de forma aislada.
+La cronología constituye un soporte para comprender la evolución.
 
-Representa la sucesión lógica de Estados pertenecientes a una misma Trayectoria.
+Nunca el objeto principal representado.
 
 ---
 
 # Persistencia
 
-Toda información representada por la Crónica permanece disponible mientras exista la Memoria del Modelo.
+Toda representación histórica permanece disponible mientras forme parte de la Memoria del Modelo.
 
-La desaparición de un Estado vigente nunca elimina su representación histórica.
+La evolución del conocimiento nunca elimina su trazabilidad histórica.
+
+---
+
+# Integración con el Modelo Vivo
+
+El Modelo Vivo mantiene operativo el conocimiento organizacional.
+
+La Crónica representa su evolución.
+
+No modifica el contenido del Modelo.
+
+No genera nuevas representaciones conceptuales.
+
+---
+
+# Integración con el Flujo de Exploración
+
+La Crónica constituye el cuarto nivel del Flujo de Exploración.
+
+Recibe el contexto procedente de Pattern.
+
+Facilita el acceso a instrumentos orientados a verificar el fundamento del conocimiento representado.
 
 ---
 
 # Restricciones
 
-## R-001
+La Crónica no:
 
-La Crónica nunca modifica la Trayectoria.
-
----
-
-## R-002
-
-La Crónica nunca modifica un Estado.
-
----
-
-## R-003
-
-La Crónica nunca genera hipótesis.
+- redefine conceptos del Canon;
+- modifica la Ontología;
+- modifica el Modelo Vivo;
+- genera conocimiento;
+- interpreta acontecimientos;
+- establece relaciones causales;
+- recomienda actuaciones;
+- representa conocimiento no trazable.
 
 ---
 
-## R-004
+# Criterios de aceptación
 
-La Crónica únicamente representa conocimiento histórico existente.
+Una implementación de la Crónica se considera conforme únicamente cuando:
+
+- responde exclusivamente a la pregunta "¿Cómo ha evolucionado este sistema?";
+- representa únicamente la evolución del conocimiento mantenido por el Modelo Vivo;
+- conserva la continuidad entre estados;
+- mantiene visible la incertidumbre cuando corresponde;
+- toda representación permanece completamente trazable;
+- preserva la historia del conocimiento;
+- no modifica el Modelo Vivo;
+- mantiene el significado definido por el Sistema Normativo.
+
+El incumplimiento de cualquiera de estos criterios implica que la implementación no es conforme con el Canon.
 
 ---
 
-## R-005
+# Gobierno
 
-Toda representación de la Crónica debe ser completamente trazable hasta los Estados correspondientes.
+La evolución de este documento se encuentra regulada por el Sistema Normativo y el Gobierno del Canon.
 
----
+Toda modificación deberá limitarse a las responsabilidades de la Crónica como instrumento de la capa Producto.
 
-# Dependencias
-
-La Crónica depende de:
-
-- Ontología
-- Metodología
-- Observatorio
-
-No depende de:
-
-- Implementación
-- Tecnología
-- Interfaz gráfica
+Las modificaciones que afecten al significado de la Trayectoria, la Memoria o los Estados deberán realizarse previamente en las capas normativas correspondientes.
 
 ---
 
 # Declaración
 
-La Crónica no explica la historia de la organización.
+La Crónica no representa la historia de una organización.
 
-Explica la historia del conocimiento que ATÓMICA ha construido sobre ella.
+Representa la historia del conocimiento que ATÓMICA ha construido sobre ella.
+
+Su responsabilidad consiste exclusivamente en hacer visible la evolución del Modelo Vivo, preservando en todo momento el significado, la continuidad, la trazabilidad y la incertidumbre del conocimiento conforme al Sistema Normativo.
