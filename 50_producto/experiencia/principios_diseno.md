@@ -4,10 +4,13 @@
 
 **Versión:** 2.0.0
 
+**Tipo:** Producto
+
 **Ubicación:**
 
+```text
 50_producto/experiencia/principios_diseno.md
-
+```
 
 ---
 
@@ -37,9 +40,9 @@ El movimiento nunca constituye decoración.
 
 Toda transición, animación o cambio visual debe representar:
 
-- un cambio de conocimiento;
-- un cambio de contexto;
-- una acción del usuario.
+* un cambio de conocimiento;
+* un cambio de contexto;
+* una acción del usuario.
 
 ---
 
@@ -51,10 +54,10 @@ El usuario nunca pierde la referencia del punto desde el que inició el recorrid
 
 La experiencia mantiene la continuidad entre:
 
-- estados;
-- relaciones;
-- elementos explorados;
-- contexto temporal.
+* estados;
+* relaciones;
+* elementos explorados;
+* contexto temporal.
 
 ---
 
@@ -74,10 +77,10 @@ Todo elemento visible debe justificar su existencia.
 
 La información que no contribuye a:
 
-- comprender el estado del sistema;
-- explorar relaciones;
-- reducir incertidumbre;
-- orientar la comprensión;
+* comprender el estado representado;
+* explorar relaciones;
+* reducir incertidumbre;
+* orientar la comprensión;
 
 no debe representarse.
 
@@ -93,9 +96,9 @@ No existen representaciones aisladas del Modelo.
 
 Toda vista, recorrido o elemento de interacción debe conservar relación con:
 
-- el Estado correspondiente;
-- los elementos relacionados;
-- la trazabilidad disponible.
+* el Estado correspondiente;
+* los elementos relacionados;
+* la trazabilidad disponible.
 
 ---
 
@@ -115,15 +118,15 @@ La experiencia nunca modifica el significado del conocimiento representado.
 
 La interacción puede modificar:
 
-- el recorrido;
-- el nivel de detalle;
-- la forma de representación.
+* el recorrido;
+* el nivel de detalle;
+* la forma de representación.
 
 Nunca puede modificar:
 
-- el Modelo;
-- las entidades representadas;
-- las relaciones definidas por el Canon.
+* el Modelo;
+* las entidades representadas;
+* las relaciones definidas por el Canon.
 
 ---
 
@@ -144,7 +147,3 @@ La experiencia de ATÓMICA no dirige el pensamiento del usuario.
 Lo acompaña.
 
 Cada elemento existe para facilitar la comprensión del conocimiento representado por el Modelo Vivo con la menor carga cognitiva posible.
-
-La experiencia no añade significado al Modelo.
-
-Hace visible el significado que ya existe.
