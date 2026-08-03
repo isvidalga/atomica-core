@@ -2,19 +2,21 @@
 
 **Estado:** CANÓNICO
 
-**Versión:** 1.0.0
+**Versión:** 2.0.0
 
 ---
 
 # Propósito
 
-La Intervención constituye el instrumento mediante el cual ATÓMICA transforma el conocimiento generado por el Modelo en posibles líneas de actuación.
+La Intervención constituye el instrumento mediante el cual ATÓMICA representa posibles líneas de actuación derivadas del conocimiento generado por el Modelo.
 
-Su finalidad consiste en ayudar al usuario a decidir dónde intervenir.
+Su finalidad consiste en ayudar al usuario a explorar dónde una actuación podría tener capacidad de modificar el estado observado de la organización.
 
-ATÓMICA nunca ejecuta intervenciones.
+ATÓMICA no ejecuta intervenciones.
 
-Nunca decide por la organización.
+ATÓMICA no decide por la organización.
+
+ATÓMICA no prescribe acciones.
 
 ---
 
@@ -26,21 +28,31 @@ No pertenece a la Ontología.
 
 No pertenece a la Metodología.
 
-Constituye una representación operativa derivada del conocimiento disponible.
+Constituye una representación operativa derivada del conocimiento disponible en el Modelo.
+
+La Intervención no es una entidad organizacional.
+
+No representa un cambio realizado.
+
+Representa una posibilidad de actuación sobre un estado observado.
 
 ---
 
 # Qué representa
 
-La Intervención representa oportunidades de actuación derivadas del Estado vigente del Modelo.
+La Intervención representa posibilidades de exploración asociadas a un Estado Sistémico determinado.
 
-Cada propuesta se fundamenta en:
+Cada representación de intervención se fundamenta en:
 
-- capacidades observadas;
-- fragilidades identificadas;
-- hipótesis activas;
+- capacidades implicadas;
+- fragilidades observadas;
+- señales relevantes;
+- evidencia disponible;
+- interpretaciones vigentes del Modelo;
 - nivel de confianza;
-- trayectoria del conocimiento.
+- evolución conocida del sistema.
+
+Una Intervención expresa dónde podría existir una oportunidad de transformación, no qué debe hacerse.
 
 ---
 
@@ -55,106 +67,90 @@ La Intervención no representa:
 - tareas;
 - proyectos;
 - procedimientos;
+- metodologías de cambio;
+- recomendaciones automáticas;
 - consultoría.
 
-La decisión siempre pertenece al usuario.
+La decisión sobre cualquier actuación pertenece siempre al usuario y a la organización.
 
 ---
 
 # Función
 
-La Intervención permite identificar dónde una actuación podría producir un cambio significativo en la organización.
+La Intervención permite conectar el conocimiento observado con posibles ámbitos de actuación.
 
-Su propósito consiste en facilitar preguntas como:
+Su función consiste en facilitar preguntas como:
 
-- ¿Qué capacidad conviene fortalecer?
+- ¿Qué capacidad conviene explorar fortalecer?
 - ¿Qué fragilidad merece atención prioritaria?
-- ¿Qué intervención podría generar mayor impacto?
+- ¿Qué actuación podría modificar el estado observado?
 - ¿Qué incertidumbre conviene reducir antes de actuar?
+- ¿Qué hipótesis debería ser validada mediante una acción?
+
+La Intervención convierte conocimiento sistémico en espacios de decisión, sin sustituir la decisión humana.
+
+---
+
+# Entrada
+
+La Intervención recibe información procedente del Modelo:
+
+- Estado Sistémico;
+- señales observadas;
+- capacidades relacionadas;
+- fragilidades asociadas;
+- evidencias disponibles;
+- evolución de la trayectoria;
+- nivel de confianza del conocimiento disponible.
+
+---
+
+# Salida
+
+La Intervención produce una representación que incluye:
+
+- posible ámbito de actuación;
+- relación con el Estado observado;
+- fundamentos disponibles;
+- trazabilidad del conocimiento asociado;
+- incertidumbre existente.
+
+La salida no constituye una instrucción de ejecución.
 
 ---
 
 # Fundamentación
 
-Toda propuesta de intervención deberá indicar explícitamente:
+Toda representación de Intervención debe indicar explícitamente:
 
 - el Estado del que deriva;
-- las hipótesis relacionadas;
+- las señales relacionadas;
 - las capacidades implicadas;
 - las fragilidades asociadas;
+- las evidencias disponibles;
 - el nivel de confianza del Modelo.
 
-Ninguna intervención podrá existir sin esta trazabilidad.
+Ninguna Intervención puede existir sin trazabilidad hacia el conocimiento disponible.
 
 ---
 
 # Priorización
 
-La priorización constituye una representación metodológica.
+La Intervención puede representar una prioridad relativa cuando exista un criterio metodológico definido.
 
-Puede considerar, entre otros aspectos:
+Los criterios de priorización pertenecen a la Metodología.
 
-- impacto esperado;
-- confianza del Modelo;
-- persistencia de la fragilidad;
-- evolución de la Trayectoria;
-- dependencias estructurales.
+La Intervención únicamente representa el resultado de dicha priorización cuando corresponda.
 
-La metodología concreta pertenece al nivel metodológico.
+No define:
 
----
-
-# Restricciones
-
-## R-001
-
-La Intervención nunca modifica el Modelo.
+- fórmulas;
+- pesos;
+- algoritmos;
+- reglas de cálculo.
 
 ---
 
-## R-002
+# Ciclo de relación
 
-La Intervención nunca genera conocimiento nuevo.
-
----
-
-## R-003
-
-La Intervención nunca sustituye la decisión del usuario.
-
----
-
-## R-004
-
-Toda propuesta debe ser completamente trazable hasta el Estado correspondiente.
-
----
-
-## R-005
-
-Toda propuesta debe poder justificarse mediante el conocimiento disponible.
-
----
-
-# Dependencias
-
-La Intervención depende de:
-
-- Ontología
-- Metodología
-- Observatorio
-- Crónica
-
-No depende de:
-
-- Implementación
-- Tecnología
-- Interfaz gráfica
-
----
-
-# Declaración
-
-ATÓMICA no prescribe acciones.
-
-Hace visible dónde una intervención puede tener mayor capacidad de transformar la organización.
+La Intervención forma parte de un ciclo continuo:
