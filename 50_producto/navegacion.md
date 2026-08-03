@@ -1,16 +1,14 @@
 # Navegación
 
-Estado: CANÓNICO
+**Estado:** CANÓNICO
 
-Versión: 2.0.0
+**Versión:** 2.1.0
 
-Tipo: Producto
+**Tipo:** Producto
 
-Ubicación:
+**Ubicación:**
 
-```text
 50_producto/navegacion.md
-```
 
 ---
 
@@ -30,7 +28,7 @@ No organiza componentes de la interfaz.
 
 La navegación se construye exclusivamente a partir de preguntas de comprensión.
 
-Su finalidad consiste en facilitar la construcción progresiva de conocimiento.
+Su finalidad consiste en facilitar la construcción progresiva de comprensión sobre el conocimiento representado.
 
 ---
 
@@ -66,9 +64,11 @@ Este documento depende de:
 - `30_ontologia/`
 - `40_metodologia/`
 - `50_producto/principios.md`
+- `50_producto/principios_diseno.md`
 - `50_producto/modelo_vivo.md`
 - `50_producto/lenguaje_producto.md`
 - `50_producto/experiencia_cognitiva.md`
+- `50_producto/flujo_exploracion.md`
 
 En caso de conflicto prevalecen siempre las definiciones canónicas.
 
@@ -82,7 +82,7 @@ El propósito de navegar no consiste en encontrar información.
 
 Consiste en responder preguntas.
 
-Cada recorrido incrementa la comprensión disponible.
+Cada recorrido incrementa la comprensión del usuario sobre el conocimiento disponible.
 
 Nunca incrementa únicamente la cantidad de información mostrada.
 
@@ -180,7 +180,7 @@ Nunca cambia la pregunta que se está respondiendo.
 
 # Arquitectura
 
-Toda la navegación del producto deriva de un conjunto limitado y estable de preguntas.
+Toda la navegación del Producto deriva de un conjunto limitado y estable de preguntas.
 
 Cada pregunta constituye un espacio de comprensión independiente.
 
@@ -234,6 +234,8 @@ Comprender cómo ha evolucionado el conocimiento disponible.
 - decisiones;
 - priorizaciones.
 
+La representación temporal detallada pertenece a Crónica y Memoria Organizacional.
+
 ---
 
 ## ¿Qué desconozco?
@@ -247,7 +249,7 @@ Comprender los límites del conocimiento disponible.
 - identificar incertidumbre;
 - reconocer ausencia de conocimiento;
 - localizar información insuficiente;
-- comprender las limitaciones actuales del modelo.
+- comprender las limitaciones actuales del Modelo.
 
 ### No debe incorporar
 
@@ -257,23 +259,24 @@ Comprender los límites del conocimiento disponible.
 
 ---
 
-## ¿Qué opciones existen?
+## ¿Qué podría cambiar?
 
 ### Propósito
 
-Explorar posibles actuaciones compatibles con el conocimiento disponible.
+Explorar posibles líneas de intervención derivadas del conocimiento disponible.
 
 ### Debe permitir
 
-- comprender alternativas;
-- conocer su fundamento;
-- explorar las condiciones que las justifican;
-- interpretar su incertidumbre.
+- comprender capacidades implicadas;
+- comprender fragilidades relacionadas;
+- explorar posibles intervenciones;
+- conocer su fundamento y nivel de confianza.
 
-### No debe presentar
+### No debe incorporar
 
 - decisiones automáticas;
 - acciones obligatorias;
+- planes cerrados;
 - recomendaciones sin fundamento.
 
 ---
@@ -289,7 +292,8 @@ Comprender la evolución del conocimiento organizacional.
 - reconocer conocimiento consolidado;
 - identificar hipótesis confirmadas;
 - identificar hipótesis pendientes;
-- comprender la evolución de la capacidad de aprendizaje.
+- comprender cambios en la comprensión del sistema;
+- explorar la Memoria Organizacional.
 
 ### No debe reducir el aprendizaje
 
@@ -351,8 +355,6 @@ Una implementación de la navegación se considera conforme únicamente cuando:
 - la navegación organiza preguntas y no objetos;
 - la progresión incrementa la comprensión del usuario.
 
-El incumplimiento de cualquiera de estos criterios implica que la implementación no es conforme con el Canon.
-
 ---
 
 # Gobierno
@@ -373,6 +375,6 @@ Conduce al usuario hacia comprensión.
 
 Cada recorrido existe para responder una pregunta.
 
-Cada respuesta amplía el conocimiento disponible.
+Cada respuesta amplía la comprensión del usuario sobre el conocimiento disponible.
 
 La arquitectura de navegación constituye, por tanto, la estructura mediante la cual el Producto transforma conocimiento representado en comprensión utilizable.
