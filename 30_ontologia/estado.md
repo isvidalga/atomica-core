@@ -1,8 +1,6 @@
-# ESTADO
+# Estado
 
 Estado: CANÓNICO
-
-Tipo: CONCEPTO
 
 Versión: 2.0.0
 
@@ -14,25 +12,25 @@ Ubicación:
 
 # Propósito
 
-Definir el concepto de Estado dentro de la ontología de ATÓMICA.
+Definir el concepto ontológico de Estado.
 
-El Estado constituye la unidad fundamental mediante la cual el Modelo organiza el conocimiento vigente sobre una Identidad en un instante lógico.
+El Estado constituye la unidad histórica mediante la cual el Modelo organiza la evolución de una Identidad.
 
-Toda evolución del Modelo se expresa como una sucesión de Estados.
+Un Estado no contiene conocimiento.
+
+Un Estado referencia la Representación vigente del conocimiento admitido en un instante lógico.
 
 ---
 
 # Definición
 
-Un Estado es la organización del conocimiento vigente que el Modelo mantiene sobre una única Identidad en un instante lógico.
+Un Estado es una entidad ontológica perteneciente a una Trayectoria que referencia exactamente una Representación en un instante lógico determinado.
 
-Un Estado no representa el referente organizacional.
+El Estado no representa la Organización.
 
-Representa el conocimiento que el Modelo admite sobre dicho referente.
+No representa el conocimiento.
 
-Todo Estado constituye un objeto del Modelo.
-
-Nunca constituye un hecho del mundo.
+Representa un hito en la evolución del Modelo.
 
 ---
 
@@ -42,75 +40,68 @@ Todo Estado:
 
 - pertenece al Modelo;
 - pertenece exactamente a una Identidad;
-- es inmutable;
+- pertenece exactamente a una Trayectoria;
+- referencia exactamente una Representación;
 - representa un único instante lógico;
-- puede ser sucedido por otro Estado.
-
-La creación de un nuevo Estado nunca modifica uno existente.
+- es inmutable.
 
 ---
 
-# Constitución
+# Propiedades
 
 Todo Estado posee:
 
 - un identificador único;
 - una Identidad;
+- una Trayectoria;
+- una Representación;
 - un instante lógico;
-- una referencia al Estado precedente, cuando exista;
-- una referencia al Estado sucesor, cuando exista.
-
-Su Representación constituye un mecanismo independiente definido por `representacion.md`.
+- un Estado precedente, cuando exista;
+- un Estado sucesor, cuando exista.
 
 ---
 
 # Formación
 
-Un Estado se crea cuando el Modelo admite una modificación del conocimiento vigente sobre una Identidad.
+Un Estado nace cuando el Modelo admite una nueva Representación para una Identidad.
 
-La creación de un Estado depende exclusivamente de una modificación del conocimiento admitido.
+La creación de un Estado nunca modifica un Estado existente.
 
-El tiempo cronológico nunca determina por sí mismo la creación de un Estado.
-
-Todo nuevo Estado preserva íntegramente la trazabilidad de los Estados anteriores.
-
----
-
-# Sucesión
-
-Todo Estado podrá tener, como máximo, un Estado sucesor dentro de la misma Identidad.
-
-La sucesión:
-
-- preserva la continuidad del Modelo;
-- mantiene la trazabilidad histórica;
-- nunca modifica Estados anteriores.
-
-La sucesión nunca implica continuidad de Hipótesis.
-
-La sucesión nunca implica aumento de Confianza.
-
-Ambas pertenecen exclusivamente a la epistemología.
+Todo cambio produce un Estado nuevo.
 
 ---
 
 # Persistencia
 
-Todo Estado permanece como parte permanente del conocimiento histórico.
+Todo Estado permanece permanentemente en la Memoria del Modelo.
 
-Ningún Estado desaparece.
+La pérdida de vigencia nunca altera su contenido.
 
-Sólo un Estado puede permanecer vigente para una misma Identidad.
-
-La pérdida de vigencia nunca altera el contenido de un Estado.
+Un Estado histórico conserva exactamente las mismas relaciones que poseía al ser creado.
 
 ---
 
-# Finalización
+# Vigencia
 
-Un Estado deja de ser vigente únicamente cuando otro Estado de la misma Identidad pasa a ser el vigente.
+Sólo puede existir un Estado vigente para una misma Identidad.
 
-La desaparición de una Identidad nunca elimina sus Estados históricos.
+La creación de un nuevo Estado convierte automáticamente al anterior en histórico.
+
+Ningún Estado histórico desaparece.
+
+---
+
+# Relaciones
+
+Todo Estado:
+
+- pertenece exactamente a una Identidad;
+- pertenece exactamente a una Trayectoria;
+- referencia exactamente una Representación;
+- puede poseer un Estado precedente;
+- puede poseer un Estado sucesor.
+
+Una Representación pertenece exactamente a un Estado.
 
 ---
 
@@ -124,49 +115,49 @@ Todo Estado pertenece exactamente a una Identidad.
 
 ## ST-002
 
-Todo Estado posee un identificador único.
+Todo Estado pertenece exactamente a una Trayectoria.
 
 ---
 
 ## ST-003
 
-Todo Estado es inmutable.
+Todo Estado referencia exactamente una Representación.
 
 ---
 
 ## ST-004
 
-Un Estado nunca representa más de una Identidad.
+Todo Estado posee un identificador único.
 
 ---
 
 ## ST-005
 
-Todo Estado pertenece exactamente a una Trayectoria.
+Todo Estado representa exactamente un instante lógico.
 
 ---
 
 ## ST-006
 
-Sólo puede existir un Estado vigente por Identidad.
+Todo Estado es inmutable.
 
 ---
 
 ## ST-007
 
-Todo Estado conserva permanentemente su trazabilidad.
+Sólo puede existir un Estado vigente por Identidad.
 
 ---
 
 ## ST-008
 
-Ninguna operación podrá modificar un Estado previamente constituido.
+Todo cambio en la Representación genera un nuevo Estado.
 
 ---
 
 ## ST-009
 
-Toda modificación del conocimiento vigente genera un nuevo Estado.
+Ninguna operación puede modificar un Estado previamente constituido.
 
 ---
 
@@ -175,55 +166,44 @@ Toda modificación del conocimiento vigente genera un nuevo Estado.
 Un Estado nunca contiene:
 
 - Observaciones;
-- Evidencias;
 - Hipótesis;
+- Evidencias;
 - Confianza;
+- decisiones;
 - recomendaciones;
 - intervenciones;
-- algoritmos;
-- interfaces;
-- componentes visuales.
+- capacidades;
+- fragilidades;
+- patrones.
+
+Estos elementos pertenecen a otras capas del Canon o forman parte de la Representación.
 
 ---
 
-# Relaciones
+# Dependencias
 
-Depende de:
-
-- 10_nucleo/axiomas.md
-- 10_nucleo/principios.md
-- 30_ontologia/identidad.md
-
-Gobierna:
-
-- trayectoria.md
-- representacion.md
-
-Utilizado por:
-
-- 40_metodologia/
-- 50_producto/
+- `10_nucleo/axiomas.md`
+- `30_ontologia/modelo.md`
+- `30_ontologia/identidad.md`
+- `30_ontologia/trayectoria.md`
+- `30_ontologia/representacion.md`
 
 ---
 
-# Responsabilidad
+# Utilizado por
 
-Este documento define exclusivamente el concepto de Estado.
-
-No define Identidad.
-
-No define Trayectoria.
-
-No define Representación.
-
-No establece procedimientos metodológicos.
+- `30_ontologia/trayectoria.md`
+- `30_ontologia/memoria.md`
+- `40_metodologia/`
 
 ---
 
 # Declaración
 
-El Estado constituye la unidad fundamental mediante la cual ATÓMICA organiza el conocimiento vigente sobre una Identidad.
+El Estado constituye la unidad histórica mediante la cual el Modelo organiza la evolución de una Identidad.
 
-Toda evolución del Modelo se produce mediante la creación de nuevos Estados.
+El conocimiento pertenece a la Representación.
 
-Ningún Estado previamente constituido puede modificarse.
+La continuidad pertenece a la Trayectoria.
+
+El Estado únicamente conecta ambos conceptos dentro de la evolución del Modelo.
