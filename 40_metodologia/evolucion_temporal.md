@@ -2,37 +2,53 @@
 
 Estado: CANÓNICO
 
-Versión: 1.0
+Tipo: ESPECIFICACIÓN
+
+Versión: 2.0.0
 
 Ubicación:
 
-```
-20_metodologia/evolucion_temporal.md
-```
+40_metodologia/evolucion_temporal.md
 
 ---
 
 # Propósito
 
-La Evolución Temporal define cómo cambia el conocimiento sobre una organización a lo largo del tiempo.
+Definir cómo evoluciona el conocimiento construido por ATÓMICA a lo largo del tiempo.
 
-No describe la evolución de la organización en sí.
+La Evolución Temporal no describe la evolución de una organización.
 
-Describe la evolución del conocimiento disponible sobre ella.
+Describe la evolución del conocimiento admitido por el Modelo sobre dicha organización.
 
-Su finalidad consiste en garantizar que toda inferencia pueda interpretarse dentro de su contexto temporal.
+Su finalidad consiste en garantizar la continuidad, la trazabilidad y la reconstrucción del conocimiento.
 
 ---
 
 # Naturaleza
 
-La Evolución Temporal pertenece a la Metodología.
+La Evolución Temporal pertenece exclusivamente a la Metodología.
 
-No pertenece al Modelo Vivo.
+No forma parte de la Ontología.
 
-No constituye una representación visual.
+No forma parte de la Epistemología.
 
-Es un principio compartido por todos los instrumentos que gestionan conocimiento en ATÓMICA.
+No constituye una entidad.
+
+No constituye una representación.
+
+No constituye una interfaz.
+
+Constituye el principio metodológico que gobierna la evolución del conocimiento construido por el Modelo.
+
+---
+
+# Función
+
+La Evolución Temporal define cómo el Modelo incorpora nuevo conocimiento sin alterar el conocimiento previamente admitido.
+
+Toda evolución metodológica se expresa mediante la creación de nuevos Estados.
+
+Nunca mediante la modificación de Estados existentes.
 
 ---
 
@@ -40,9 +56,9 @@ Es un principio compartido por todos los instrumentos que gestionan conocimiento
 
 ## ET-001 · Continuidad
 
-Toda nueva observación se incorpora al conocimiento existente.
+Toda nueva Observación podrá incorporarse al conocimiento existente.
 
-Ninguna observación elimina las observaciones anteriores.
+Ninguna Observación elimina Observaciones anteriores.
 
 La evolución del conocimiento es acumulativa.
 
@@ -50,54 +66,96 @@ La evolución del conocimiento es acumulativa.
 
 ## ET-002 · Persistencia
 
-Las inferencias permanecen vigentes mientras no exista evidencia suficiente para modificarlas o refutarlas.
+Las Hipótesis permanecerán vigentes mientras no exista Evidencia suficiente para modificarlas o sustituirlas.
 
-La ausencia de nuevas observaciones no implica desaparición del conocimiento.
-
----
-
-## ET-003 · Intervención
-
-Toda intervención puede modificar el conocimiento disponible.
-
-El cambio nunca se produce por la mera ejecución de la intervención.
-
-Solo se produce cuando aparece evidencia suficiente sobre sus efectos.
+La ausencia de nuevas Observaciones no implica desaparición del conocimiento.
 
 ---
 
-## ET-004 · Memoria
+## ET-003 · Evidencia
 
-ATÓMICA conserva el historial completo de la evolución del conocimiento.
+La evolución del conocimiento depende exclusivamente de nueva Evidencia.
 
-Cada estado refleja la mejor interpretación disponible en el momento en que fue generado.
+El paso del tiempo nunca modifica por sí mismo el conocimiento admitido.
+
+---
+
+## ET-004 · Intervención
+
+Una Intervención nunca modifica directamente el Modelo.
+
+Únicamente la Evidencia derivada de sus efectos podrá producir nuevo conocimiento.
+
+---
+
+## ET-005 · Estado
+
+Toda modificación del conocimiento admitido genera un nuevo Estado.
+
+Los Estados anteriores permanecen inalterables.
+
+---
+
+## ET-006 · Memoria
+
+ATÓMICA conserva íntegramente la sucesión histórica de Estados.
+
+Cada Estado representa el conocimiento admitido en su instante lógico.
 
 El pasado nunca se reescribe.
 
 ---
 
-# Tiempo
+## ET-007 · Trayectoria
 
-El tiempo no actúa como un contador.
+La evolución del conocimiento se expresa mediante la Trayectoria de una Identidad.
 
-Constituye la dimensión que permite comprender la evolución del conocimiento organizacional.
-
-Toda inferencia debe interpretarse considerando su contexto temporal.
+Toda Trayectoria preserva el orden lógico de los Estados.
 
 ---
 
-# Relación con el resto del sistema
+# Tiempo
 
-La Evolución Temporal es utilizada por:
+El tiempo cronológico no determina la evolución del Modelo.
 
-- Modelo Vivo;
-- Motor de Inferencia;
-- Memoria Organizacional;
-- Timeline;
-- Crónica;
-- Evidencias.
+La evolución del conocimiento se organiza mediante instantes lógicos representados por Estados.
 
-Todos estos componentes comparten una única historia del conocimiento.
+Toda interpretación deberá considerar el contexto temporal correspondiente al Estado desde el que fue generada.
+
+---
+
+# Relación con el Modelo
+
+La Evolución Temporal conecta los principales elementos metodológicos del Canon.
+
+Toda evolución sigue la siguiente secuencia conceptual:
+
+```text
+Diagnóstico
+      │
+      ▼
+Observaciones
+      │
+      ▼
+Hipótesis
+      │
+      ▼
+Evidencias
+      │
+      ▼
+Confianza
+      │
+      ▼
+Nuevo Estado
+      │
+      ▼
+Nueva Representación
+      │
+      ▼
+Trayectoria
+```
+
+Cada nuevo Estado preserva íntegramente la historia anterior.
 
 ---
 
@@ -105,36 +163,72 @@ Todos estos componentes comparten una única historia del conocimiento.
 
 ## ET-001
 
-Nunca eliminar el registro histórico del conocimiento.
+Nunca podrá eliminarse conocimiento histórico.
 
 ---
 
 ## ET-002
 
-Nunca reinterpretar el pasado utilizando conocimiento futuro.
+Nunca podrá reinterpretarse un Estado utilizando conocimiento posterior.
 
 ---
 
 ## ET-003
 
-Toda modificación del conocimiento debe ser trazable.
+Toda modificación del conocimiento deberá ser completamente trazable.
 
 ---
 
 ## ET-004
 
-Toda inferencia debe poder reconstruirse utilizando únicamente la información disponible en el momento en que fue generada.
+Toda reconstrucción histórica deberá producir exactamente el conocimiento admitido en ese instante lógico.
 
 ---
 
-# Filosofía
+## ET-005
 
-El conocimiento organizacional no es estático.
+La evolución del conocimiento nunca modifica Estados previamente existentes.
 
-Evoluciona conforme aparecen nuevas observaciones, evidencias e intervenciones.
+---
 
-Comprender una organización exige comprender también cómo ha evolucionado el conocimiento sobre ella.
+## ET-006
 
-La historia forma parte del modelo.
+El paso del tiempo nunca constituye evidencia.
 
-Nunca constituye un registro accesorio.
+---
+
+## ET-007
+
+Toda evolución del conocimiento deberá expresarse mediante un nuevo Estado perteneciente a la misma Trayectoria.
+
+---
+
+# Dependencias
+
+Depende de:
+
+- `00_canon/sistema_normativo.md`
+- `00_canon/gobierno_del_canon.md`
+- `20_epistemologia/observacion.md`
+- `20_epistemologia/evidencia.md`
+- `20_epistemologia/hipotesis.md`
+- `20_epistemologia/confianza.md`
+- `30_ontologia/estado.md`
+- `30_ontologia/trayectoria.md`
+- `30_ontologia/memoria.md`
+- `40_metodologia/metodologia.md`
+
+Utilizado por:
+
+- `40_metodologia/ifo.md`
+- `50_producto/modelo_vivo.md`
+
+---
+
+# Declaración
+
+La Evolución Temporal garantiza que el conocimiento construido por ATÓMICA permanezca acumulativo, trazable y reconstruible.
+
+Toda evolución del Modelo se produce mediante la incorporación de nuevo conocimiento.
+
+Nunca mediante la modificación del conocimiento previamente admitido.
