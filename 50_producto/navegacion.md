@@ -2,378 +2,377 @@
 
 Estado: CANÓNICO
 
-Versión: 2.0
+Versión: 2.0.0
+
+Tipo: Producto
+
+Ubicación:
+
+```text
+50_producto/navegacion.md
+```
 
 ---
 
 # Propósito
 
-La navegación de ATÓMICA no se organiza por objetos.
+Este documento establece la arquitectura de navegación de ATÓMICA.
 
-No se organiza por módulos.
+La navegación organiza el acceso al conocimiento representado por el Producto.
 
-No se organiza por funcionalidades.
+No organiza funcionalidades.
 
-Se organiza exclusivamente por preguntas.
+No organiza módulos.
 
-Un menú basado en objetos obliga al usuario a saber dónde está la información.
+No organiza entidades del dominio.
 
-Un menú basado en preguntas únicamente exige que el usuario sepa qué quiere comprender.
+No organiza componentes de la interfaz.
 
-ATÓMICA adopta esta segunda aproximación porque su propósito no consiste en gestionar información.
+La navegación se construye exclusivamente a partir de preguntas de comprensión.
 
-Su propósito consiste en construir comprensión.
+Su finalidad consiste en facilitar la construcción progresiva de conocimiento.
 
-Existen exactamente cinco preguntas.
+---
 
-Toda la navegación del producto deriva de ellas.
+# Alcance
+
+Este documento regula la organización de la navegación en todos los instrumentos del Producto.
+
+Es aplicable a:
+
+- menús;
+- recorridos;
+- flujos de exploración;
+- cambios de contexto;
+- jerarquías de navegación.
+
+No define:
+
+- la Ontología;
+- la Metodología;
+- el Modelo Vivo;
+- la Arquitectura del Dominio;
+- el diseño visual.
+
+---
+
+# Dependencias normativas
+
+Este documento depende de:
+
+- `00_canon/`
+- `10_nucleo/`
+- `20_epistemologia/`
+- `30_ontologia/`
+- `40_metodologia/`
+- `50_producto/principios.md`
+- `50_producto/modelo_vivo.md`
+- `50_producto/lenguaje_producto.md`
+- `50_producto/experiencia_cognitiva.md`
+
+En caso de conflicto prevalecen siempre las definiciones canónicas.
+
+---
+
+# Objetivo
+
+La navegación permite acceder al conocimiento siguiendo el mismo orden lógico en el que dicho conocimiento puede comprenderse.
+
+El propósito de navegar no consiste en encontrar información.
+
+Consiste en responder preguntas.
+
+Cada recorrido incrementa la comprensión disponible.
+
+Nunca incrementa únicamente la cantidad de información mostrada.
 
 ---
 
 # Naturaleza
 
-La navegación pertenece al Producto.
+La navegación constituye un mecanismo de exploración del conocimiento.
 
-No pertenece a la Ontología.
+No forma parte del Modelo Vivo.
 
-No pertenece a la Metodología.
+No modifica el conocimiento representado.
 
-No modifica el Modelo.
+No interpreta el conocimiento.
 
-Su única función consiste en organizar el acceso al conocimiento construido por el Modelo.
+Únicamente organiza el acceso al mismo.
 
 ---
 
 # Principios
 
-## N-001 · Una pregunta por pantalla
+## NAV-001 · La navegación se organiza por preguntas
 
-Cada pantalla responde exactamente una pregunta.
+Toda navegación parte de una necesidad de comprensión.
 
-Una pantalla que responde simultáneamente a varias preguntas deja de responder correctamente a cualquiera de ellas.
+Los elementos del menú representan preguntas.
 
-No existirán pantallas resumen que mezclen preguntas distintas.
-
----
-
-## N-002 · El orden sigue la construcción del conocimiento
-
-La navegación sigue el proceso de construcción del conocimiento definido por el Canon.
-
-Cada pregunta presupone la comprensión de la anterior.
-
-El orden nunca se modifica por motivos comerciales, visuales o tecnológicos.
+Nunca representan objetos del dominio.
 
 ---
 
-## N-003 · Toda funcionalidad responde a una pregunta
+## NAV-002 · Una pregunta por instrumento
 
-Toda funcionalidad del Producto deberá responder exactamente a una de las cinco preguntas.
+Cada instrumento responde una única pregunta principal.
 
-Si una funcionalidad no puede asociarse claramente a una de ellas, no pertenece a ATÓMICA.
+La navegación conecta preguntas.
 
----
-
-## N-004 · Nunca sustituir la ausencia de conocimiento
-
-Si el Modelo no puede responder una pregunta, deberá declararlo explícitamente.
-
-La ausencia de conocimiento nunca será sustituida por estimaciones presentadas como hechos.
+No mezcla respuestas pertenecientes a distintos instrumentos.
 
 ---
 
-## N-005 · La incertidumbre acompaña siempre a la respuesta
+## NAV-003 · El recorrido sigue la construcción de comprensión
 
-Toda respuesta deberá mostrar, de forma explícita:
+La secuencia de navegación respeta el orden lógico necesario para comprender el conocimiento.
 
-- nivel de confianza;
-- origen del conocimiento;
-- limitaciones;
-- evidencia disponible.
-
-La incertidumbre nunca aparece separada del conocimiento.
+Cada pregunta presupone únicamente aquello que el usuario ya ha podido comprender.
 
 ---
 
-## N-006 · Los objetos no constituyen la navegación
+## NAV-004 · La exploración nunca modifica el conocimiento
 
-Organización.
+Ninguna acción de navegación altera el Modelo Vivo.
 
-Estado.
-
-Observación.
-
-Hipótesis.
-
-Evidencia.
-
-Capacidad.
-
-Fragilidad.
-
-Intervención.
-
-Relación.
-
-Trayectoria.
-
-Son objetos del Modelo.
-
-Nunca son elementos del menú.
-
-Las preguntas utilizan estos objetos para construir comprensión.
-
-Nunca al contrario.
+El recorrido únicamente modifica el nivel de comprensión alcanzado por el usuario.
 
 ---
 
-N-007 · La navegación progresa por comprensión
+## NAV-005 · El contexto permanece continuo
 
-El usuario podrá profundizar libremente dentro de una misma pregunta.
+Durante toda la exploración el usuario conserva la referencia del conocimiento desde el que inició el recorrido.
 
-El paso entre preguntas seguirá siempre el orden lógico de construcción del conocimiento.
-
-La navegación nunca adelantará respuestas propias de preguntas posteriores.
+La navegación nunca provoca pérdida de contexto.
 
 ---
 
-# Las cinco preguntas
+## NAV-006 · La incertidumbre acompaña al conocimiento
+
+Cuando una respuesta incorpore incertidumbre conforme al Sistema Normativo, dicha incertidumbre permanecerá visible durante toda la exploración.
+
+Nunca podrá separarse del conocimiento representado.
 
 ---
 
-# 1 · ¿Cómo estoy ahora?
+## NAV-007 · Los objetos no organizan la navegación
 
-## Propósito
+Las entidades definidas por la Ontología constituyen conocimiento.
 
-Responder cuál es el Estado vigente del Modelo.
+No constituyen elementos de navegación.
 
----
+La navegación utiliza dicho conocimiento para responder preguntas.
 
-## Debe mostrar
-
-- Estado vigente.
-- Representación del Estado.
-- Nivel de confianza.
-- Incertidumbre.
-- Factores que condicionan dicha incertidumbre.
+Nunca organiza el producto alrededor de los objetos.
 
 ---
 
-## Nunca debe mostrar
+## NAV-008 · La profundidad es progresiva
 
-- tendencias históricas;
-- evolución temporal;
-- recomendaciones;
-- priorización de acciones.
+Toda pregunta puede explorarse con distintos niveles de detalle.
 
----
+La profundización amplía la comprensión.
 
-## Objetos utilizados
-
-- Estado.
-- Representación.
-- Hipótesis.
-- Evidencia.
+Nunca cambia la pregunta que se está respondiendo.
 
 ---
 
-# 2 · ¿Qué ha pasado?
+# Arquitectura
 
-## Propósito
+Toda la navegación del producto deriva de un conjunto limitado y estable de preguntas.
 
-Responder cómo ha evolucionado el conocimiento del Modelo.
+Cada pregunta constituye un espacio de comprensión independiente.
 
-La respuesta se construye mediante la Línea Temporal del conocimiento.
+Cada espacio utiliza el conocimiento definido por el Canon y mantenido por el Modelo Vivo.
 
----
+La incorporación de nuevos instrumentos no modifica esta arquitectura.
 
-## Debe mostrar
-
-- sucesión de Estados;
-- cambios relevantes;
-- continuidad;
-- discontinuidades;
-- cambios metodológicos cuando existan.
+Únicamente amplía las formas de responder una pregunta existente o incorpora una nueva pregunta cuando resulte necesario mediante evolución del Canon.
 
 ---
 
-## Nunca debe mostrar
+# Preguntas de navegación
 
-- actividad irrelevante;
-- resúmenes sin trazabilidad;
-- ordenaciones por popularidad o relevancia.
+## ¿Cómo estoy ahora?
 
----
+### Propósito
 
-## Objetos utilizados
+Comprender el estado vigente del conocimiento representado.
 
-- Trayectoria.
-- Estado.
-- Representación.
-- Memoria.
+### Debe permitir
 
----
+- comprender la situación actual;
+- interpretar el nivel de confianza disponible;
+- reconocer las principales incertidumbres;
+- acceder al contexto necesario para interpretar el estado.
 
-# 3 · ¿Qué no estoy viendo?
+### No debe incorporar
 
-## Propósito
-
-Mostrar explícitamente los límites del conocimiento disponible.
-
-Es la pregunta que hace visible la incertidumbre del Modelo.
+- evolución histórica;
+- propuestas de intervención;
+- decisiones futuras.
 
 ---
 
-## Debe mostrar
+## ¿Qué ha cambiado?
 
-- ausencia de observaciones;
-- evidencias obsoletas;
-- hipótesis insuficientemente respaldadas;
-- capacidades con baja cobertura;
-- fragilidades con evidencia insuficiente;
-- contradicciones abiertas.
+### Propósito
 
----
+Comprender cómo ha evolucionado el conocimiento disponible.
 
-## Nunca debe mostrar
+### Debe permitir
+
+- identificar cambios;
+- comprender su continuidad;
+- reconocer cambios relevantes;
+- explorar la evolución del conocimiento.
+
+### No debe incorporar
 
 - recomendaciones;
-- interpretaciones;
-- acciones sugeridas.
+- decisiones;
+- priorizaciones.
 
 ---
 
-## Objetos utilizados
+## ¿Qué desconozco?
 
-- Observación.
-- Evidencia.
-- Hipótesis.
-- Capacidad.
-- Fragilidad.
+### Propósito
 
----
+Comprender los límites del conocimiento disponible.
 
-# 4 · ¿Qué debería hacer?
+### Debe permitir
 
-## Propósito
+- identificar incertidumbre;
+- reconocer ausencia de conocimiento;
+- localizar información insuficiente;
+- comprender las limitaciones actuales del modelo.
 
-Presentar posibles intervenciones derivadas del conocimiento disponible.
+### No debe incorporar
 
-Las intervenciones nunca constituyen decisiones.
-
-Constituyen hipótesis de actuación.
-
----
-
-## Debe mostrar
-
-- intervención propuesta;
-- fundamento;
-- evidencia asociada;
-- incertidumbre;
-- condiciones de validación.
+- intervenciones;
+- decisiones;
+- conclusiones no respaldadas.
 
 ---
 
-## Nunca debe mostrar
+## ¿Qué opciones existen?
 
-- acciones presentadas como obligatorias;
-- recomendaciones sin justificación;
-- priorizaciones basadas únicamente en indicadores.
+### Propósito
 
----
+Explorar posibles actuaciones compatibles con el conocimiento disponible.
 
-## Objetos utilizados
+### Debe permitir
 
-- Intervención.
-- Hipótesis.
-- Evidencia.
-- Fragilidad.
-- Capacidad.
+- comprender alternativas;
+- conocer su fundamento;
+- explorar las condiciones que las justifican;
+- interpretar su incertidumbre.
 
----
+### No debe presentar
 
-# 5 · ¿Estoy aprendiendo?
-
-## Propósito
-
-Determinar si la organización mejora su capacidad para generar conocimiento verificable.
-
-El aprendizaje se evalúa mediante la evolución del Modelo.
-
-No mediante la evolución del IFO.
+- decisiones automáticas;
+- acciones obligatorias;
+- recomendaciones sin fundamento.
 
 ---
 
-## Debe mostrar
+## ¿Estoy aprendiendo?
 
-- evolución del conocimiento;
-- hipótesis confirmadas;
-- hipótesis refutadas;
-- hipótesis pendientes;
-- calidad de la evidencia;
-- capacidad de anticipación.
+### Propósito
 
----
+Comprender la evolución del conocimiento organizacional.
 
-## Nunca debe mostrar
+### Debe permitir
 
-- progreso basado únicamente en indicadores;
-- evolución del IFO como sinónimo de aprendizaje.
+- reconocer conocimiento consolidado;
+- identificar hipótesis confirmadas;
+- identificar hipótesis pendientes;
+- comprender la evolución de la capacidad de aprendizaje.
 
----
+### No debe reducir el aprendizaje
 
-## Objetos utilizados
-
-- Hipótesis.
-- Evidencia.
-- Trayectoria.
-- Memoria.
+- a indicadores;
+- a puntuaciones;
+- al valor del IFO.
 
 ---
 
-# Arquitectura de navegación
+# Flujo de navegación
 
-Las pantallas nunca organizan funcionalidades.
+La navegación progresa entre preguntas.
 
-Organizan preguntas.
+Dentro de cada pregunta el usuario puede aumentar el nivel de profundidad sin abandonar el contexto.
 
-Cada pregunta utiliza uno o varios objetos del Modelo.
+El cambio entre preguntas constituye un cambio de objetivo de comprensión.
 
-Los objetos nunca determinan la navegación.
+El cambio de profundidad constituye únicamente una ampliación del conocimiento disponible.
 
-La navegación determina qué objetos son necesarios para responder cada pregunta.
+---
+
+# Transiciones
+
+Toda transición deberá preservar:
+
+- el contexto;
+- la continuidad;
+- el significado del conocimiento;
+- la trazabilidad del recorrido.
+
+Las transiciones nunca modificarán la interpretación del conocimiento representado.
 
 ---
 
 # Restricciones
 
-## R-001
+La navegación no:
 
-Toda pantalla responde exactamente una pregunta.
-
-## R-002
-
-Toda respuesta conserva la trazabilidad del conocimiento.
-
-## R-003
-
-Toda respuesta muestra su incertidumbre.
-
-## R-004
-
-Los objetos del Modelo nunca aparecen como elementos de navegación.
-
-## R-005
-
-Ninguna funcionalidad puede existir fuera de las cinco preguntas.
+- redefine conceptos del Canon;
+- modifica el Modelo Vivo;
+- interpreta la evidencia;
+- sustituye la Metodología;
+- organiza el producto mediante objetos;
+- depende de una interfaz concreta;
+- depende de una implementación técnica.
 
 ---
 
-# Principio final
+# Criterios de aceptación
 
-Las cinco preguntas constituyen la totalidad de la navegación de ATÓMICA.
+Una implementación de la navegación se considera conforme únicamente cuando:
 
-Todo elemento del Producto deberá contribuir a responder una de ellas.
+- toda navegación parte de una pregunta;
+- cada instrumento responde una única pregunta principal;
+- el contexto permanece continuo;
+- la exploración no modifica el conocimiento;
+- la incertidumbre permanece visible cuando corresponde;
+- las transiciones conservan el significado del conocimiento;
+- la navegación organiza preguntas y no objetos;
+- la progresión incrementa la comprensión del usuario.
 
-Si no puede hacerlo, deberá eliminarse.
+El incumplimiento de cualquiera de estos criterios implica que la implementación no es conforme con el Canon.
+
+---
+
+# Gobierno
+
+La evolución de este documento se encuentra regulada por el Sistema Normativo y el Gobierno del Canon.
+
+Las modificaciones deberán limitarse a la organización de la navegación como responsabilidad propia de la capa Producto.
+
+Las modificaciones que afecten al significado del conocimiento deberán realizarse previamente en las capas normativas correspondientes.
+
+---
+
+# Declaración
+
+La navegación de ATÓMICA no conduce al usuario hacia funcionalidades.
+
+Conduce al usuario hacia comprensión.
+
+Cada recorrido existe para responder una pregunta.
+
+Cada respuesta amplía el conocimiento disponible.
+
+La arquitectura de navegación constituye, por tanto, la estructura mediante la cual el Producto transforma conocimiento representado en comprensión utilizable.
