@@ -154,3 +154,100 @@ No define:
 # Ciclo de relación
 
 La Intervención forma parte de un ciclo continuo:
+Observación
+↓
+Señal
+↓
+Estructura interpretada
+↓
+Estado Sistémico
+↓
+Intervención posible
+↓
+Decisión humana
+↓
+Nueva observación
+↓
+Evolución del Modelo
+
+
+La Intervención no cierra el ciclo.
+
+Permite abrir nuevas observaciones.
+
+---
+
+# Restricciones
+
+## R-001
+
+La Intervención nunca modifica el Modelo.
+
+---
+
+## R-002
+
+La Intervención nunca genera conocimiento nuevo.
+
+---
+
+## R-003
+
+La Intervención nunca sustituye la decisión del usuario.
+
+---
+
+## R-004
+
+Toda Intervención debe ser trazable hasta el Estado Sistémico correspondiente.
+
+---
+
+## R-005
+
+Toda Intervención debe poder justificarse mediante conocimiento disponible.
+
+---
+
+## R-006
+
+La Intervención nunca representa una garantía de resultado.
+
+---
+
+## R-007
+
+La Intervención nunca se interpreta como una obligación de actuación.
+
+---
+
+# Dependencias
+
+La Intervención depende de:
+
+- Modelo Vivo;
+- Estado Sistémico;
+- Ontología;
+- Metodología.
+
+La Intervención puede ser representada mediante:
+
+- Observatorio;
+- Informe;
+- Crónica.
+
+No depende de:
+
+- Implementación tecnológica;
+- Interfaz gráfica;
+- Sistemas externos.
+
+---
+
+# Declaración
+
+ATÓMICA no prescribe acciones.
+
+ATÓMICA hace visible dónde una actuación podría tener capacidad de transformar la organización.
+
+La Intervención convierte conocimiento sistémico en una posibilidad de exploración, manteniendo siempre la decisión y la responsabilidad en manos de la organización.
