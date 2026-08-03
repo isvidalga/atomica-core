@@ -2,11 +2,13 @@
 
 Estado: CANÓNICO
 
-Versión: 1.0
+Versión: 2.0.0
+
+Tipo: Producto
 
 Ubicación:
 
-```
+```text
 50_producto/motor_inferencia.md
 ```
 
@@ -14,261 +16,285 @@ Ubicación:
 
 # Propósito
 
-El Motor de Inferencia transforma conocimiento disponible en inferencias sobre el estado de una organización.
+Este documento define el Motor de Inferencia de ATÓMICA como el componente del Producto responsable de transformar conocimiento disponible en nuevo conocimiento inferido.
 
-No calcula resultados.
+El Motor de Inferencia constituye el mecanismo mediante el cual el Producto estima el conocimiento organizacional compatible con las observaciones disponibles.
 
-No aplica reglas de negocio.
+No define:
 
-No emite diagnósticos.
+- la Ontología;
+- la Metodología;
+- las Leyes Sistémicas;
+- el Modelo Organizacional;
+- el Modelo Vivo.
 
-Su función consiste en estimar el estado sistémico más probable de la organización junto con el nivel de confianza asociado a cada inferencia.
+Su responsabilidad consiste exclusivamente en ejecutar el proceso de inferencia definido por el Sistema Normativo.
 
-El conocimiento generado por el Motor de Inferencia constituye la base sobre la que se construye el Modelo Vivo.
+---
+
+# Alcance
+
+Este documento regula el comportamiento del Motor de Inferencia como componente del Producto.
+
+No regula:
+
+- las definiciones del dominio;
+- las reglas metodológicas;
+- los criterios epistemológicos;
+- la representación del conocimiento;
+- la arquitectura técnica.
+
+---
+
+# Dependencias normativas
+
+Este documento depende de:
+
+- `00_canon/`
+- `10_nucleo/`
+- `20_epistemologia/`
+- `30_ontologia/`
+- `40_metodologia/`
+- `50_producto/modelo_vivo.md`
+- `50_producto/principios.md`
+
+En caso de conflicto prevalecen siempre las definiciones canónicas.
+
+---
+
+# Objetivo
+
+El Motor de Inferencia transforma el conocimiento disponible en conocimiento inferido compatible con la metodología vigente.
+
+Su finalidad consiste en mantener actualizado el conocimiento utilizado posteriormente por el Modelo Vivo y por el resto de instrumentos del Producto.
+
+El Motor de Inferencia no representa dicho conocimiento.
+
+Lo produce.
 
 ---
 
 # Naturaleza
 
-El Motor de Inferencia pertenece al Producto.
+El Motor de Inferencia constituye un componente interno del Producto.
 
-No pertenece al Canon.
+No interactúa directamente con el usuario.
 
-No pertenece a la Ontología.
-
-No constituye un modelo predictivo.
+No constituye un instrumento de exploración.
 
 No sustituye el juicio humano.
 
-Aplica las reglas metodológicas y las Leyes Sistémicas para transformar observaciones en conocimiento estructurado.
+Su función consiste exclusivamente en ejecutar el proceso de inferencia definido por el Sistema Normativo.
+
+---
+
+# Responsabilidad
+
+Corresponde al Motor de Inferencia:
+
+- recibir conocimiento disponible;
+- aplicar las reglas metodológicas vigentes;
+- producir conocimiento inferido;
+- mantener la continuidad de las inferencias;
+- conservar la trazabilidad completa del proceso;
+- suministrar conocimiento actualizado al Modelo Vivo.
+
+No le corresponde interpretar el conocimiento para el usuario.
+
+No le corresponde representarlo.
 
 ---
 
 # Principios
 
-## MI-001 · Toda inferencia parte de evidencia
+## MIN-001 · Toda inferencia parte de conocimiento disponible
 
-Ninguna inferencia puede producirse sin observaciones o evidencias que la sustenten.
+Ninguna inferencia puede producirse sin conocimiento previo compatible con la metodología vigente.
 
-La ausencia de evidencia nunca se interpreta como evidencia de ausencia.
-
----
-
-## MI-002 · El conocimiento es acumulativo
-
-Toda nueva observación amplía el conocimiento disponible.
-
-Nunca sustituye el conocimiento previamente registrado.
-
-La evolución del modelo conserva siempre su historia.
+La ausencia de conocimiento nunca constituye conocimiento.
 
 ---
 
-## MI-003 · La incertidumbre forma parte del resultado
+## MIN-002 · La inferencia es trazable
 
-Toda inferencia incorpora un nivel de confianza.
+Toda inferencia deberá poder reconstruirse completamente.
 
-La confianza representa la solidez del conocimiento disponible.
-
-Nunca representa la gravedad de una situación.
+Su origen permanecerá disponible durante toda la vida del conocimiento.
 
 ---
 
-## MI-004 · Toda inferencia es explicable
+## MIN-003 · La inferencia es revisable
 
-Toda inferencia debe poder reconstruirse mediante una cadena completa de trazabilidad.
+Toda inferencia podrá modificarse cuando cambie el conocimiento disponible.
 
-Ningún resultado puede convertirse en una caja negra.
+Ninguna inferencia posee carácter definitivo.
 
 ---
 
-## MI-005 · El conocimiento es revisable
+## MIN-004 · La incertidumbre forma parte del resultado
 
-Toda inferencia puede fortalecerse, debilitarse, modificarse o refutarse cuando aparece nueva evidencia.
+Toda inferencia incorpora la incertidumbre definida por el Sistema Normativo.
 
-Ninguna inferencia es definitiva.
+La incertidumbre nunca se elimina.
+
+Únicamente puede reducirse.
+
+---
+
+## MIN-005 · La inferencia conserva la continuidad
+
+Las nuevas inferencias amplían el conocimiento existente.
+
+No eliminan la historia del conocimiento.
+
+---
+
+## MIN-006 · La inferencia es compatible con la metodología
+
+Toda inferencia deberá producirse exclusivamente conforme a la metodología vigente.
+
+No podrán existir mecanismos alternativos de inferencia.
 
 ---
 
 # Entradas
 
-El Motor de Inferencia utiliza únicamente conocimiento disponible para la organización.
+El Motor de Inferencia utiliza únicamente conocimiento compatible con el Sistema Normativo.
 
-Entre otras fuentes:
+Las fuentes concretas pertenecen a la arquitectura del Producto.
 
-- diagnósticos;
-- observaciones;
-- evidencias;
-- respuestas históricas;
-- intervenciones registradas;
-- evolución temporal del conocimiento.
+Este documento no establece un catálogo cerrado de entradas.
 
-Toda entrada conserva:
+Toda entrada deberá conservar:
 
 - origen;
-- fecha;
-- trazabilidad.
-
-Ninguna entrada sustituye a otra.
-
-El conocimiento permanece acumulativo.
+- trazabilidad;
+- temporalidad;
+- contexto.
 
 ---
 
 # Proceso de inferencia
 
-El Motor de Inferencia interpreta el conocimiento disponible aplicando:
+El Motor de Inferencia ejecuta el proceso de inferencia definido por la metodología vigente.
 
-- las Leyes Sistémicas definidas en `00_canon/leyes_sistemicas.md`;
-- las reglas metodológicas vigentes;
-- el Modelo Organizacional.
+La lógica concreta del proceso pertenece a la capa Metodología.
 
-Cada nueva observación puede modificar las inferencias existentes.
+Este documento únicamente regula las responsabilidades del componente que la ejecuta.
 
-Nunca modifica el registro histórico.
+Durante dicho proceso el Motor:
 
-Las inferencias anteriores permanecen como parte de la evolución del conocimiento.
-
----
-
-# Conocimiento generado
-
-El Motor de Inferencia produce exclusivamente conocimiento inferido.
-
-Este conocimiento puede adoptar las siguientes formas.
-
-## Estado Sistémico
-
-Estimación del estado actual de la organización y de sus sistemas organizacionales.
+- interpreta el conocimiento disponible;
+- aplica las reglas metodológicas;
+- genera nuevo conocimiento inferido;
+- conserva la continuidad del conocimiento;
+- mantiene la trazabilidad completa.
 
 ---
 
-## Hipótesis
+# Salidas
 
-Explicaciones estructurales compatibles con la evidencia disponible.
+El Motor de Inferencia produce conocimiento inferido.
 
-Las hipótesis permanecen abiertas a revisión.
+La naturaleza de dicho conocimiento pertenece a la Ontología.
 
----
+Su representación pertenece al Modelo Vivo.
 
-## Nivel de confianza
-
-Estimación de la solidez de cada inferencia.
-
-Representa calidad del conocimiento.
-
-Nunca calidad de la organización.
+Su exploración pertenece a los instrumentos del Producto.
 
 ---
 
-## Tensiones
+# Integración con el Modelo Vivo
 
-Relaciones cuya evolución requiere observación prioritaria.
+El Modelo Vivo consume el conocimiento producido por el Motor de Inferencia.
 
-Las tensiones representan hipótesis relevantes.
+Ambos componentes poseen responsabilidades distintas.
 
-Nunca constituyen diagnósticos.
+El Motor de Inferencia produce conocimiento.
 
----
+El Modelo Vivo mantiene operativo dicho conocimiento.
 
-## Incertidumbres
-
-Zonas del modelo donde la evidencia resulta insuficiente para sostener inferencias robustas.
-
-Reducir incertidumbre constituye una intervención válida sobre el conocimiento.
+Ninguno sustituye al otro.
 
 ---
 
-# Relación con el Modelo Vivo
+# Integración con el Producto
 
-El Motor de Inferencia no representa conocimiento.
+El conocimiento producido por el Motor de Inferencia podrá ser utilizado por cualquier instrumento compatible con el Sistema Normativo.
 
-Produce conocimiento.
+Los instrumentos nunca ejecutan inferencias propias.
 
-El Modelo Vivo organiza y representa dicho conocimiento.
+Todos utilizan el conocimiento producido por este componente.
 
-Ambos componentes poseen responsabilidades distintas y complementarias.
+---
+
+# Continuidad
+
+Toda ejecución del Motor de Inferencia preserva la continuidad del conocimiento.
+
+La aparición de nuevo conocimiento no elimina el conocimiento previamente generado.
+
+La evolución permanece completamente trazable.
+
+---
+
+# Explicabilidad
+
+Toda inferencia deberá ser compatible con las reglas de explicabilidad definidas por el Sistema Normativo.
+
+El Motor de Inferencia nunca podrá producir resultados cuya reconstrucción resulte imposible.
 
 ---
 
 # Restricciones
 
-## MI-001
+El Motor de Inferencia no:
 
-Nunca afirmar hechos no observados.
-
----
-
-## MI-002
-
-Nunca inventar relaciones no sustentadas por evidencia.
-
----
-
-## MI-003
-
-Nunca completar información ausente mediante suposiciones.
-
----
-
-## MI-004
-
-Nunca modificar el registro histórico del conocimiento.
-
----
-
-## MI-005
-
-Toda inferencia debe poder reconstruirse mediante la cadena completa de trazabilidad.
-
----
-
-# Relación con el resto del producto
-
-El Motor de Inferencia recibe conocimiento procedente de:
-
-- Diagnósticos;
-- Observaciones;
-- Evidencias;
-- Memoria Organizacional;
-- Timeline;
-- Intervenciones registradas.
-
-Y proporciona conocimiento a:
-
-- Modelo Vivo;
-- DONELLA;
-- Crónica;
-- Instrumentos de análisis;
-- Informes.
-
-El Motor de Inferencia constituye el mecanismo mediante el cual ATÓMICA transforma información en conocimiento estructurado.
+- redefine conceptos del Canon;
+- modifica la Ontología;
+- sustituye la Metodología;
+- representa conocimiento;
+- interpreta conocimiento para el usuario;
+- modifica directamente el Modelo Vivo;
+- elimina conocimiento histórico;
+- genera inferencias incompatibles con el Sistema Normativo.
 
 ---
 
 # Criterios de aceptación
 
-La implementación del Motor de Inferencia se considera correcta únicamente si cumple todas las condiciones siguientes:
+Una implementación del Motor de Inferencia se considera conforme únicamente cuando:
 
-- Toda inferencia incorpora un nivel de confianza.
-- Toda inferencia puede explicarse mediante trazabilidad completa.
-- Ninguna inferencia modifica el registro histórico.
-- El conocimiento evoluciona sin perder versiones anteriores.
-- El motor aplica las Leyes Sistémicas y la metodología vigente.
-- Ninguna inferencia se presenta como una verdad definitiva.
+- toda inferencia parte de conocimiento disponible;
+- toda inferencia es completamente trazable;
+- toda inferencia conserva la incertidumbre correspondiente;
+- toda inferencia puede revisarse;
+- la continuidad del conocimiento permanece preservada;
+- el Motor aplica exclusivamente la metodología vigente;
+- el conocimiento producido resulta compatible con el Modelo Vivo.
+
+El incumplimiento de cualquiera de estos criterios implica que la implementación no es conforme con el Canon.
 
 ---
 
-# Filosofía
+# Gobierno
 
-El conocimiento organizacional no se obtiene mediante cálculos automáticos ni mediante reglas de negocio.
+La evolución de este documento se encuentra regulada por el Sistema Normativo y el Gobierno del Canon.
 
-Surge de la interpretación sistemática de observaciones, evidencias y relaciones utilizando un marco metodológico explícito.
+Toda modificación deberá limitararse a las responsabilidades del Motor de Inferencia como componente de la capa Producto.
 
-El Motor de Inferencia no decide.
+Las modificaciones que afecten a la lógica de inferencia deberán realizarse previamente en la capa Metodología.
 
-No diagnostica.
+---
 
-No recomienda.
+# Declaración
 
-Su función consiste exclusivamente en estimar, de forma explicable y trazable, la mejor representación posible del conocimiento disponible en cada momento.
+El Motor de Inferencia constituye el mecanismo mediante el cual ATÓMICA transforma conocimiento disponible en conocimiento inferido.
+
+No representa dicho conocimiento.
+
+No lo interpreta para el usuario.
+
+No sustituye el juicio humano.
+
+Su responsabilidad consiste exclusivamente en ejecutar, de forma coherente, trazable y revisable, el proceso de inferencia definido por el Sistema Normativo para mantener actualizado el conocimiento que posteriormente será representado por el Modelo Vivo.
