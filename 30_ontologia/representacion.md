@@ -1,8 +1,6 @@
-# REPRESENTACIÓN
+# Representación
 
 Estado: CANÓNICO
-
-Tipo: CONCEPTO
 
 Versión: 2.0.0
 
@@ -14,21 +12,23 @@ Ubicación:
 
 # Propósito
 
-Definir el concepto de Representación dentro de la ontología de ATÓMICA.
+Definir el concepto ontológico de Representación.
 
-La Representación constituye la manifestación formal mediante la cual un Modelo puede hacerse observable sin alterar su estructura ni el referente que representa.
+La Representación constituye la expresión formal mediante la cual un Estado organiza el conocimiento admitido sobre una Organización.
+
+Toda Representación pertenece exactamente a un Estado.
 
 ---
 
 # Definición
 
-Una Representación es una manifestación formal de un Modelo.
+Una Representación es la estructura formal asociada a un Estado.
 
-No constituye el Modelo.
+Su función consiste exclusivamente en organizar el conocimiento admitido por el Modelo.
 
-No constituye el referente organizacional.
+Nunca modifica el referente observado.
 
-Hace visible el conocimiento organizado por el Modelo.
+Nunca constituye el referente.
 
 ---
 
@@ -37,43 +37,58 @@ Hace visible el conocimiento organizado por el Modelo.
 Toda Representación:
 
 - pertenece al Modelo;
-- depende exactamente de un Estado;
-- no pertenece al referente organizacional;
-- no modifica el Modelo;
-- no modifica el referente;
-- puede adoptar distintas formas conservando el mismo significado.
+- pertenece exactamente a un Estado;
+- referencia indirectamente una Identidad;
+- es inmutable;
+- es persistente.
+
+La Representación organiza conocimiento.
+
+No produce conocimiento.
 
 ---
 
-# Constitución
+# Propiedades
 
 Toda Representación posee:
 
-- una referencia al Modelo;
-- una referencia al Estado que representa;
-- una estructura formal de representación.
-
-La forma de representación no modifica el contenido representado.
+- un identificador único;
+- exactamente un Estado;
+- una estructura formal del conocimiento admitido;
+- trazabilidad completa hacia los elementos que la sustentan.
 
 ---
 
 # Formación
 
-Toda Representación se genera a partir de un Estado del Modelo.
+Toda Representación se constituye simultáneamente con el Estado al que pertenece.
 
-Toda modificación del Estado genera una nueva Representación.
+Toda modificación del conocimiento admitido requiere la creación de:
 
-La modificación de una Representación nunca altera el Estado representado.
+- una nueva Representación;
+- un nuevo Estado.
+
+Nunca la modificación de una Representación existente.
 
 ---
 
 # Persistencia
 
-Toda Representación histórica permanece reconstruible.
+Toda Representación permanece disponible como parte del historial del Modelo.
 
-Las Representaciones pueden cambiar de forma.
+La sustitución por una nueva Representación nunca elimina la anterior.
 
-Nunca cambian el conocimiento correspondiente al Estado que representan.
+---
+
+# Relaciones
+
+Toda Representación:
+
+- pertenece exactamente a un Estado;
+- referencia indirectamente una Identidad mediante dicho Estado;
+- forma parte de exactamente una Trayectoria.
+
+Todo Estado posee exactamente una Representación.
 
 ---
 
@@ -87,79 +102,68 @@ Toda Representación pertenece exactamente a un Estado.
 
 ## RP-002
 
-Toda Representación pertenece exactamente a un Modelo.
+Una Representación nunca existe sin Estado.
 
 ---
 
 ## RP-003
 
-Ninguna Representación existe sin Estado.
+Toda Representación es inmutable.
 
 ---
 
 ## RP-004
 
-Toda Representación conserva la trazabilidad con el Estado representado.
+Toda modificación genera una nueva Representación.
 
 ---
 
 ## RP-005
 
-Una Representación nunca modifica el Modelo.
+Toda Representación conserva íntegramente su trazabilidad.
 
 ---
 
 ## RP-006
 
-Toda modificación del Estado genera una nueva Representación.
+Una Representación nunca modifica la Organización representada.
 
 ---
 
 # Exclusiones
 
-Una Representación nunca constituye:
+Una Representación nunca contiene:
 
-- el Modelo;
-- el referente organizacional;
 - Observaciones;
-- Evidencias;
 - Hipótesis;
+- Evidencias;
 - Confianza;
 - decisiones;
-- recomendaciones;
 - intervenciones;
-- interfaces de usuario.
+- interfaces;
+- algoritmos.
 
 ---
 
-# Relaciones
+# Dependencias
 
-Depende de:
-
-- 10_nucleo/axiomas.md
-- 10_nucleo/principios.md
-- 30_ontologia/modelo.md
-- 30_ontologia/estado.md
-
-Utilizado por:
-
-- 40_metodologia/
-- 50_producto/
+- `10_nucleo/axiomas.md`
+- `30_ontologia/modelo.md`
+- `30_ontologia/identidad.md`
+- `30_ontologia/estado.md`
 
 ---
 
-# Responsabilidad
+# Utilizado por
 
-Este documento define exclusivamente el concepto de Representación.
-
-No define el contenido del Modelo.
-
-No define mecanismos de visualización.
-
-No establece reglas metodológicas.
+- `40_metodologia/`
 
 ---
 
 # Declaración
 
-La Representación constituye la manifestación formal mediante la cual un Estado del Modelo puede hacerse observable conservando íntegramente el significado del conocimiento que representa.
+La Representación constituye la expresión formal del conocimiento admitido por el Modelo para un Estado determinado.
+
+Toda evolución del conocimiento implica una nueva Representación asociada a un nuevo Estado.
+
+Ninguna Representación previamente constituida puede modificarse.
