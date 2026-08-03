@@ -1,18 +1,24 @@
 # Dimensiones
 
-**Estado:** Frozen
+Estado: CANÓNICO
 
-**Versión:** 1.1.0
+Tipo: ESPECIFICACIÓN
 
-**Breadcrumb:** `40_metodologia/dimensiones.md`
+Versión: 2.0.0
+
+Ubicación:
+
+40_metodologia/dimensiones.md
 
 ---
 
 # Propósito
 
-Las Dimensiones constituyen el mecanismo metodológico mediante el cual ATÓMICA organiza la observación de una organización.
+Definir el concepto metodológico de Dimensión dentro de ATÓMICA.
 
-Su finalidad es estructurar el conocimiento sin fragmentar la organización en componentes independientes.
+Las Dimensiones constituyen el mecanismo mediante el cual la Metodología organiza el conocimiento construido por el Modelo.
+
+Su finalidad consiste en estructurar el análisis sin fragmentar la organización en componentes independientes.
 
 ---
 
@@ -24,24 +30,27 @@ No forman parte de la Ontología.
 
 No representan entidades del dominio.
 
+No representan objetos del Modelo.
+
 No representan partes reales de una organización.
 
-Constituyen una estructura metodológica utilizada para organizar el conocimiento del Modelo.
+Constituyen un criterio metodológico de clasificación del conocimiento construido por el Modelo.
 
 ---
 
 # Función
 
-Cada Dimensión agrupa de forma coherente:
+Cada Dimensión proporciona un criterio metodológico para organizar de forma coherente:
 
 - Capacidades;
 - Fragilidades;
-- Patrones;
-- Observaciones.
+- Patrones.
+
+Las Observaciones podrán asociarse a una Dimensión únicamente mediante las reglas metodológicas correspondientes.
 
 Las Dimensiones facilitan el análisis y la comunicación del conocimiento construido por el Modelo.
 
-No modifican dicho conocimiento.
+Nunca modifican dicho conocimiento.
 
 ---
 
@@ -56,9 +65,13 @@ Pueden ser utilizadas por:
 - la representación de resultados;
 - la evolución temporal.
 
-Las Dimensiones no determinan cómo se calcula el IFO.
+Las Dimensiones:
 
-No determinan las reglas de inferencia.
+- no determinan el cálculo del IFO;
+- no determinan las reglas de inferencia;
+- no crean conocimiento;
+- no modifican el Modelo;
+- no alteran el Estado Sistémico.
 
 ---
 
@@ -78,17 +91,29 @@ Toda Capacidad pertenece metodológicamente a una única Dimensión.
 
 ## D-003
 
-Una Fragilidad puede relacionarse con una o varias Dimensiones.
+La pertenencia de una Capacidad a una Dimensión constituye exclusivamente una clasificación metodológica.
 
 ---
 
 ## D-004
 
-Un Patrón puede involucrar elementos pertenecientes a distintas Dimensiones.
+Una Fragilidad puede relacionarse con una o varias Dimensiones.
 
 ---
 
 ## D-005
+
+La pertenencia de una Fragilidad a una Dimensión nunca modifica su significado.
+
+---
+
+## D-006
+
+Un Patrón puede involucrar elementos pertenecientes a distintas Dimensiones.
+
+---
+
+## D-007
 
 Las Dimensiones organizan el conocimiento.
 
@@ -98,23 +123,32 @@ Nunca modifican el Modelo.
 
 # Dependencias
 
-- `30_ontologia/`
-- `40_metodologia/diagnostico.md`
+Depende de:
+
+- `00_canon/sistema_normativo.md`
+- `00_canon/gobierno_del_canon.md`
+- `30_ontologia/modelo.md`
+- `20_epistemologia/observacion.md`
+- `40_metodologia/metodologia.md`
 
 ---
 
 # Utilizado por
 
+- `40_metodologia/catalogo_dimensiones.md`
+- `40_metodologia/diagnostico.md`
 - `40_metodologia/ifo.md`
-- `50_producto/`
-- `60_interfaz/`
+- `40_metodologia/evolucion_temporal.md`
+- `50_producto/modelo_vivo.md`
 
 ---
 
 # Declaración
 
-Las Dimensiones constituyen una estructura metodológica de organización del conocimiento.
+Las Dimensiones constituyen un criterio metodológico para organizar el conocimiento construido por el Modelo.
 
 No describen la organización observada.
 
-Describen la forma en que ATÓMICA organiza su observación.
+No modifican el Modelo.
+
+Describen exclusivamente la forma en que la Metodología organiza la observación y el análisis de una organización.
