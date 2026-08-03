@@ -14,23 +14,21 @@ Ubicación:
 
 Declarar el conjunto oficial de Decisiones del canon.
 
-Determinar las condiciones que una Decisión debe cumplir para formar parte del gobierno vigente.
+Declarar el conjunto oficial de documentos de Decisión que forman parte del Gobierno del Canon.
 
-No desarrolla el contenido de las Decisiones.
+No desarrolla su contenido.
 
 No sustituye sus documentos.
+
+No establece las reglas del Gobierno del Canon.
 
 ---
 
 # Principios
 
-Toda Decisión posee un único identificador.
+Toda Decisión deberá cumplir los requisitos definidos por:
 
-Toda Decisión posee un único documento asociado.
-
-Toda Decisión deberá cumplir los requisitos definidos en:
-
-- naturaleza_decision.md
+- gobierno_del_canon.md
 - registro_documentos_canonicos.md
 
 ---
@@ -96,7 +94,7 @@ Una Decisión nunca podrá modificar implícitamente otra Decisión.
 
 Depende de:
 
-- naturaleza_decision.md
+- gobierno_del_canon.md
 - registro_documentos_canonicos.md
 
 Utilizado por:
