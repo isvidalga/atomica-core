@@ -1,18 +1,22 @@
-# Observación
+# OBSERVACIÓN
 
-**Estado:** Frozen
+Estado: CANÓNICO
 
-**Versión:** 1.0.0
+Tipo: CONCEPTO
 
-**Breadcrumb:** `20_epistemologia/observacion.md`
+Versión: 2.0.0
+
+Ubicación:
+
+20_epistemologia/observacion.md
 
 ---
 
 # Propósito
 
-Este documento define el concepto de Observación dentro de la epistemología de ATÓMICA.
+Definir el concepto de Observación dentro de la epistemología de ATÓMICA.
 
-La observación constituye la unidad mínima mediante la cual el sistema incorpora información acerca de una organización.
+La Observación constituye la unidad mínima mediante la cual el sistema incorpora información procedente del referente.
 
 Toda construcción de conocimiento comienza con una observación.
 
@@ -20,71 +24,73 @@ Toda construcción de conocimiento comienza con una observación.
 
 # Definición
 
-Una observación es el registro de un fenómeno relativo a una organización.
+Una Observación es el registro de un fenómeno relativo a una organización.
 
-La observación no interpreta.
+La Observación registra.
 
-La observación no explica.
+No interpreta.
 
-La observación no concluye.
+No explica.
 
-Únicamente incorpora información al proceso de conocimiento.
+No concluye.
+
+Su única función consiste en incorporar información al proceso de construcción del conocimiento.
 
 ---
 
 # Naturaleza
 
-La observación pertenece al conocimiento construido por ATÓMICA.
+La Observación pertenece al conocimiento construido por ATÓMICA.
 
 No pertenece a la organización observada.
 
 No constituye una propiedad del dominio.
 
-No modifica la realidad observada.
+No modifica el referente.
 
-Únicamente amplía el conocimiento disponible sobre ella.
+Únicamente amplía el conocimiento disponible sobre él.
 
 ---
 
-# Alcance
+# Fuentes
 
-Una observación puede originarse a partir de múltiples fuentes.
+Una Observación podrá originarse a partir de distintas fuentes.
 
-Por ejemplo:
+Entre otras:
 
-- una declaración obtenida durante un diagnóstico;
-- un documento aportado como evidencia;
-- un indicador externo;
-- un hecho registrado;
-- una medición.
+- declaraciones;
+- documentos;
+- indicadores;
+- registros;
+- mediciones.
 
-La naturaleza de la fuente no modifica el significado epistemológico de la observación.
+La naturaleza de la fuente nunca modifica el significado epistemológico de la Observación.
 
 ---
 
 # Relaciones
 
-La observación constituye la entrada del proceso de construcción del conocimiento.
+La Observación constituye la entrada del proceso epistemológico.
 
 Su relación con el resto de la epistemología es:
 
 ```
-Organización
-        │
-        ▼
+Referente
+      │
+      ▼
 Observación
-        │
-        ▼
-Hipótesis
-        │
-        ▼
+      │
+      ▼
 Evidencia
-        │
-        ▼
+      │
+      ▼
+Hipótesis
+      │
+      ▼
 Confianza
 ```
 
-La observación nunca produce conocimiento por sí misma.
+Una Observación nunca constituye conocimiento suficiente por sí sola.
 
 ---
 
@@ -92,31 +98,31 @@ La observación nunca produce conocimiento por sí misma.
 
 ## O-001
 
-Toda observación hace referencia a una organización determinada.
+Toda Observación hace referencia a un único referente organizacional.
 
 ---
 
 ## O-002
 
-Una observación no constituye una hipótesis.
+Una Observación no constituye una Evidencia.
 
 ---
 
 ## O-003
 
-Una observación no constituye evidencia.
+Una Observación no constituye una Hipótesis.
 
 ---
 
 ## O-004
 
-Una observación puede dar origen a ninguna, una o varias hipótesis.
+Una Observación podrá dar lugar a ninguna, una o varias Evidencias.
 
 ---
 
 ## O-005
 
-Dos observaciones pueden resultar contradictorias.
+Dos Observaciones podrán resultar contradictorias.
 
 La contradicción forma parte del conocimiento disponible.
 
@@ -126,18 +132,19 @@ No invalida automáticamente ninguna de ellas.
 
 ## O-006
 
-La incorporación de una observación nunca modifica directamente la confianza del modelo.
+La incorporación de una Observación nunca modifica directamente la Confianza.
 
-La confianza sólo puede modificarse mediante la evaluación de evidencias sobre hipótesis existentes.
+La Confianza únicamente podrá modificarse mediante la evaluación de Hipótesis sustentadas por Evidencias.
 
 ---
 
 # Exclusiones
 
-No son observaciones:
+No son Observaciones:
 
 - interpretaciones;
 - inferencias;
+- hipótesis;
 - conclusiones;
 - recomendaciones;
 - decisiones;
@@ -149,24 +156,34 @@ Todos ellos pertenecen a niveles posteriores del conocimiento.
 
 ---
 
-# Dependencias
+# Relaciones
 
-Este documento depende de:
+Depende de:
 
-- `10_nucleo/axiomas.md`
-- `10_nucleo/principios.md`
+- 10_nucleo/axiomas.md
+- 10_nucleo/principios.md
+- 20_epistemologia/principios_epistemologicos.md
 
-Es utilizado por:
+Gobierna:
 
-- `20_epistemologia/hipotesis.md`
-- `20_epistemologia/evidencia.md`
-- `20_epistemologia/confianza.md`
-- `40_metodologia/`
+- evidencia.md
+
+Utilizado por:
+
+- hipotesis.md
+- confianza.md
+- 40_metodologia/
 
 ---
 
-# Declaración
+# Responsabilidad
 
-Toda construcción de conocimiento en ATÓMICA comienza con una observación.
+Este documento define exclusivamente el concepto de Observación.
 
-Ninguna observación constituye, por sí sola, conocimiento suficiente para describir una organización.
+No define Evidencias.
+
+No define Hipótesis.
+
+No define Confianza.
+
+No establece procedimientos metodológicos.
