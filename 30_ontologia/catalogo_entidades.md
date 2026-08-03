@@ -1,4 +1,4 @@
-# Organización
+# Catálogo de Entidades
 
 Estado: CANÓNICO
 
@@ -6,157 +6,125 @@ Versión: 2.0.0
 
 Ubicación:
 
-30_ontologia/organizacion.md
+30_ontologia/catalogo_entidades.md
 
 ---
 
 # Propósito
 
-Definir el concepto ontológico de Organización.
+Declarar el conjunto oficial de entidades ontológicas del Modelo.
 
-La Organización constituye el referente observado por ATÓMICA.
+Este catálogo constituye la única fuente de verdad sobre las entidades que forman parte de la Ontología.
 
-Existe independientemente del Modelo y de cualquier representación construida por el sistema.
+No define las entidades.
 
-No forma parte del conocimiento.
+No especifica su estructura.
 
-Constituye aquello sobre lo que el conocimiento se construye.
-
----
-
-# Definición
-
-Una Organización es un sistema real susceptible de ser observado por ATÓMICA.
-
-La Organización existe con independencia del Modelo.
-
-El Modelo nunca modifica la Organización.
-
-Únicamente construye conocimiento acerca de ella.
+Únicamente declara cuáles existen oficialmente.
 
 ---
 
-# Naturaleza
+# Principios
 
-La Organización:
+Toda entidad ontológica existe únicamente cuando figura inscrita en este catálogo.
 
-- pertenece a la realidad;
-- constituye el referente del Modelo;
-- existe independientemente de ATÓMICA;
-- puede evolucionar sin que el Modelo lo conozca;
-- nunca pertenece al conocimiento construido.
+Toda entidad posee un único identificador.
 
----
+Toda entidad posee exactamente una definición oficial.
 
-# Propiedades
+Toda entidad pertenece exclusivamente a la Ontología.
 
-Toda Organización:
-
-- constituye exactamente un referente organizacional;
-- puede poseer exactamente una Identidad dentro del Modelo;
-- puede ser observada;
-- puede evolucionar;
-- puede dejar de existir.
-
-La desaparición de una Organización no elimina el conocimiento histórico construido sobre ella.
+Las entidades epistemológicas pertenecen a la Epistemología y nunca forman parte de este catálogo.
 
 ---
 
-# Relaciones
+# Organización
 
-La Organización:
+Cada entrada registra:
 
-- constituye el referente de exactamente una Identidad;
-- puede originar Observaciones;
-- nunca pertenece al Modelo;
-- nunca pertenece a la Epistemología.
-
-El Modelo representa conocimiento sobre la Organización.
-
-Nunca representa la Organización misma.
+- Identificador
+- Entidad
+- Estado
+- Versión
+- Documento de referencia
 
 ---
 
-# Restricciones
+# Catálogo Oficial
 
-## ORG-001
-
-Toda Organización constituye un referente real.
-
----
-
-## ORG-002
-
-Toda Organización puede existir sin Modelo.
-
----
-
-## ORG-003
-
-Una Organización nunca pertenece al Modelo.
-
----
-
-## ORG-004
-
-Una Organización nunca pertenece a la Epistemología.
-
----
-
-## ORG-005
-
-Toda Identidad hace referencia exactamente a una Organización.
-
----
-
-## ORG-006
-
-La modificación de una Organización nunca modifica directamente el Modelo.
-
-Sólo nuevas Observaciones pueden modificar el conocimiento construido.
-
----
-
-## ORG-007
-
-La desaparición de una Organización nunca elimina la Memoria del Modelo.
+| ID | Entidad | Estado | Versión | Documento |
+|----|----------|--------|----------|-----------|
+| ENT-001 | Organización | CANÓNICO | 2.0.0 | organizacion.md |
+| ENT-002 | Modelo | CANÓNICO | 2.0.0 | modelo.md |
+| ENT-003 | Identidad | CANÓNICO | 2.0.0 | identidad.md |
+| ENT-004 | Estado | CANÓNICO | 2.0.0 | estado.md |
+| ENT-005 | Representación | CANÓNICO | 2.0.0 | representacion.md |
+| ENT-006 | Trayectoria | CANÓNICO | 2.0.0 | trayectoria.md |
+| ENT-007 | Memoria | CANÓNICO | 2.0.0 | memoria.md |
+| ENT-008 | Relación | CANÓNICO | 2.0.0 | relacion.md |
 
 ---
 
 # Exclusiones
 
-Una Organización nunca constituye:
+No pertenecen a la Ontología y, por tanto, no forman parte de este catálogo:
 
-- una Identidad;
-- un Estado;
-- una Trayectoria;
-- una Representación;
-- una Observación;
-- una Hipótesis;
-- una Evidencia;
-- una Confianza;
-- una Intervención.
+- Observación
+- Hipótesis
+- Evidencia
+- Confianza
+
+Estos conceptos pertenecen exclusivamente a la capa de Epistemología.
 
 ---
 
-# Dependencias
+# Evolución
 
-- `10_nucleo/axiomas.md`
+La incorporación de una nueva entidad requiere:
+
+- definición ontológica;
+- validación metodológica;
+- inscripción en este catálogo;
+- publicación de una nueva versión del Canon.
 
 ---
 
-# Utilizado por
+# Retirada
 
-- `30_ontologia/identidad.md`
-- `20_epistemologia/observacion.md`
-- `40_metodologia/`
+Una entidad retirada permanece registrada.
+
+Su estado pasará a:
+
+OBSOLETO
+
+Su identificador nunca podrá reutilizarse.
+
+---
+
+# Restricciones
+
+Una entidad nunca podrá aparecer más de una vez.
+
+Toda entidad deberá poseer un documento oficial.
+
+Una entidad nunca podrá pertenecer simultáneamente a dos capas del Canon.
+
+---
+
+# Relaciones
+
+Depende de:
+
+- `00_canon/politica_identificadores.md`
+
+Utilizado por:
+
+- toda la Ontología.
 
 ---
 
 # Declaración
 
-La Organización constituye el referente observado por ATÓMICA.
+Este catálogo declara exclusivamente las entidades ontológicas que constituyen el Modelo.
 
-Todo conocimiento construido por el sistema pertenece al Modelo.
-
-La Organización nunca forma parte del Modelo.
+Las entidades pertenecientes a otras capas del Canon deberán declararse en sus respectivos catálogos, cuando existan.
