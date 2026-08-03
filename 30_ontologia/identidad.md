@@ -1,18 +1,22 @@
-# Identidad
+# IDENTIDAD
 
-**Estado:** Frozen
+Estado: CANÓNICO
 
-**Versión:** 1.0.0
+Tipo: CONCEPTO
 
-**Breadcrumb:** `30_ontologia/identidad.md`
+Versión: 2.0.0
+
+Ubicación:
+
+30_ontologia/identidad.md
 
 ---
 
 # Propósito
 
-Este documento define el concepto de Identidad dentro de la ontología de ATÓMICA.
+Definir el concepto de Identidad dentro de la ontología de ATÓMICA.
 
-La Identidad constituye el referente permanente sobre el que se construye el Modelo.
+La Identidad constituye la continuidad del referente organizacional sobre el que se construye el Modelo.
 
 Sin Identidad no pueden existir Estados, Trayectorias ni Representaciones.
 
@@ -24,11 +28,11 @@ Una Identidad es la continuidad lógica de un mismo referente organizacional a t
 
 No representa una personalidad jurídica.
 
-No representa un CIF.
+No representa una entidad legal.
 
-No representa una empresa.
+No representa un identificador administrativo.
 
-Representa aquello que permite afirmar que distintos Estados pertenecen a la misma organización.
+Representa aquello que permite afirmar que distintos Estados pertenecen al mismo referente organizacional.
 
 ---
 
@@ -40,7 +44,7 @@ La Identidad:
 - no es una Trayectoria;
 - no es una Representación;
 - no describe atributos;
-- no cambia con el tiempo.
+- no evoluciona.
 
 La Identidad expresa continuidad.
 
@@ -54,8 +58,7 @@ Toda Identidad:
 - posee exactamente un Estado vigente;
 - puede poseer múltiples Estados históricos;
 - posee exactamente una Trayectoria;
-- puede finalizar;
-- nunca puede reiniciarse.
+- puede poseer múltiples Representaciones.
 
 ---
 
@@ -63,33 +66,21 @@ Toda Identidad:
 
 La Identidad permanece mientras continúe existiendo el mismo referente organizacional.
 
-Cambios en:
+Los cambios en estructura, estrategia, personas, tecnología, procesos o denominación no implican por sí mismos una nueva Identidad.
 
-- estructura;
-- dirección;
-- accionariado;
-- procesos;
-- tecnología;
-- estrategia;
-- tamaño;
-- denominación social;
-- forma jurídica;
-
-no modifican por sí mismos la Identidad.
-
-Pueden modificar únicamente el Estado.
+Podrán modificar únicamente el Estado.
 
 ---
 
 # Finalización
 
-Una Identidad finaliza cuando deja de cumplirse el criterio de continuidad establecido por el Canon.
+Una Identidad finaliza cuando deja de cumplirse el criterio de continuidad definido por el Canon.
 
 Una Identidad finalizada:
 
+- conserva íntegramente su historial;
 - cierra su Trayectoria;
-- no admite nuevos Estados;
-- nunca puede reactivarse.
+- no admite nuevos Estados.
 
 ---
 
@@ -138,7 +129,7 @@ Ninguna Identidad pertenece a otra.
 
 ## ID-005
 
-La desaparición de un Estado no implica la desaparición de la Identidad.
+La desaparición de un Estado nunca implica la desaparición de la Identidad.
 
 ---
 
@@ -148,32 +139,14 @@ Toda nueva Identidad inicia una nueva Trayectoria.
 
 ---
 
-## ID-007
-
-Dos Identidades nunca pueden fusionarse.
-
----
-
-## ID-008
-
-Una Identidad nunca puede dividirse.
-
----
-
-## ID-009
-
-Una Identidad finalizada nunca puede reactivarse.
-
----
-
 # Exclusiones
 
 La Identidad nunca contiene:
 
-- observaciones;
-- hipótesis;
-- evidencias;
-- confianza;
+- Observaciones;
+- Evidencias;
+- Hipótesis;
+- Confianza;
 - indicadores;
 - puntuaciones;
 - decisiones;
@@ -181,18 +154,33 @@ La Identidad nunca contiene:
 
 ---
 
-# Dependencias
+# Relaciones
 
-- `10_nucleo/axiomas.md`
+Depende de:
+
+- 10_nucleo/axiomas.md
+- 10_nucleo/principios.md
+
+Gobierna:
+
+- estado.md
+- trayectoria.md
+- representacion.md
+- memoria.md
 
 ---
 
-# Utilizado por
+# Responsabilidad
 
-- `30_ontologia/estado.md`
-- `30_ontologia/trayectoria.md`
-- `30_ontologia/representacion.md`
-- `30_ontologia/memoria.md`
+Este documento define exclusivamente el concepto de Identidad.
+
+No define Estados.
+
+No define Trayectorias.
+
+No define Representaciones.
+
+No establece criterios metodológicos de evaluación.
 
 ---
 
