@@ -1,8 +1,6 @@
-# TRAYECTORIA
+# Trayectoria
 
 Estado: CANÓNICO
-
-Tipo: CONCEPTO
 
 Versión: 2.0.0
 
@@ -14,86 +12,104 @@ Ubicación:
 
 # Propósito
 
-Definir el concepto de Trayectoria dentro de la ontología de ATÓMICA.
+Definir el concepto ontológico de Trayectoria.
 
-La Trayectoria constituye la secuencia ordenada de Estados pertenecientes a una misma Identidad.
+La Trayectoria constituye la continuidad lógica mediante la cual el Modelo organiza la evolución histórica de una Identidad.
 
-Toda evolución del Modelo se expresa mediante una Trayectoria.
+Toda evolución del conocimiento se expresa a través de una Trayectoria.
 
 ---
 
 # Definición
 
-Una Trayectoria es la secuencia ordenada de Estados pertenecientes a una misma Identidad.
+Una Trayectoria es la entidad ontológica que organiza la sucesión de Estados pertenecientes a una misma Identidad.
 
-Toda Trayectoria pertenece exactamente a una Identidad.
+No representa una secuencia cronológica.
 
-Ningún Estado puede pertenecer simultáneamente a dos Trayectorias.
+Representa la continuidad lógica del conocimiento admitido por el Modelo.
 
 ---
 
 # Naturaleza
 
-La Trayectoria:
+Toda Trayectoria:
 
 - pertenece al Modelo;
-- no constituye un objeto observado;
-- preserva el orden lógico de los Estados;
-- no contiene conocimiento;
-- contiene exclusivamente relaciones de sucesión entre Estados.
+- pertenece exactamente a una Identidad;
+- organiza una sucesión ordenada de Estados;
+- preserva la continuidad histórica;
+- es persistente.
+
+La Trayectoria no contiene conocimiento.
+
+Organiza la evolución del conocimiento.
 
 ---
 
-# Constitución
+# Propiedades
 
-Toda Trayectoria está formada por:
+Toda Trayectoria posee:
 
-- una Identidad;
-- un Estado inicial;
-- cero o más Estados intermedios;
-- un Estado vigente.
+- un identificador único;
+- exactamente una Identidad;
+- exactamente un Estado inicial;
+- exactamente un Estado vigente;
+- cero o más Estados históricos.
 
 ---
 
 # Formación
 
-Toda Trayectoria comienza con el primer Estado asociado a una Identidad.
+Toda Trayectoria nace simultáneamente con la Identidad.
 
 Cada nuevo Estado se incorpora al final de la Trayectoria.
 
-La incorporación nunca modifica Estados anteriores.
+La incorporación de un Estado nunca modifica los Estados anteriores.
+
+---
+
+# Evolución
 
 Una Trayectoria únicamente puede crecer.
 
----
+La evolución consiste exclusivamente en la incorporación de nuevos Estados.
 
-# Orden
-
-La Trayectoria preserva el orden lógico de los Estados.
-
-No representa necesariamente el tiempo cronológico.
-
-Representa la secuencia mediante la cual evoluciona el conocimiento del Modelo.
+Nunca en la modificación de Estados existentes.
 
 ---
 
-# Continuidad
+# Persistencia
 
-La continuidad de una Trayectoria depende exclusivamente de la continuidad de la Identidad.
+Toda Trayectoria permanece íntegra durante toda la existencia de la Identidad.
 
-La ausencia de nuevas Observaciones nunca interrumpe una Trayectoria.
+La finalización de la Identidad no elimina su Trayectoria.
 
-La finalización de la Identidad finaliza la Trayectoria.
+Únicamente impide la incorporación de nuevos Estados.
 
 ---
 
 # Finalización
 
-Una Trayectoria finaliza cuando finaliza la Identidad.
+Una Trayectoria finaliza cuando finaliza la Identidad a la que pertenece.
 
-Una Trayectoria finalizada conserva íntegramente su historial.
+Una Trayectoria finalizada:
 
-Nunca puede incorporar nuevos Estados.
+- conserva todos sus Estados;
+- conserva íntegramente su estructura;
+- nunca puede reactivarse.
+
+---
+
+# Relaciones
+
+Toda Trayectoria:
+
+- pertenece exactamente a una Identidad;
+- organiza uno o más Estados.
+
+Todo Estado pertenece exactamente a una Trayectoria.
+
+La Memoria preserva íntegramente toda Trayectoria.
 
 ---
 
@@ -113,19 +129,19 @@ Toda Trayectoria posee exactamente un Estado inicial.
 
 ## TR-003
 
-Toda Trayectoria posee exactamente un Estado vigente mientras permanezca activa.
+Toda Trayectoria posee exactamente un Estado vigente.
 
 ---
 
 ## TR-004
 
-Ningún Estado pertenece a más de una Trayectoria.
+Todo Estado pertenece exactamente a una Trayectoria.
 
 ---
 
 ## TR-005
 
-La secuencia de Estados es estrictamente ordenada.
+La sucesión de Estados está totalmente ordenada.
 
 ---
 
@@ -143,64 +159,48 @@ Los Estados nunca cambian de posición dentro de una Trayectoria.
 
 ## TR-008
 
-Toda Trayectoria conserva permanentemente su historial.
+Una Trayectoria finalizada nunca puede reactivarse.
 
 ---
 
 # Exclusiones
 
-Una Trayectoria nunca contiene:
+La Trayectoria nunca contiene:
 
 - Observaciones;
-- Evidencias;
 - Hipótesis;
+- Evidencias;
 - Confianza;
+- capacidades;
+- fragilidades;
+- patrones;
 - decisiones;
-- intervenciones;
-- interfaces;
-- componentes visuales.
+- intervenciones.
 
 ---
 
-# Relaciones
+# Dependencias
 
-Depende de:
-
-- 10_nucleo/axiomas.md
-- 10_nucleo/principios.md
-- 30_ontologia/identidad.md
-- 30_ontologia/estado.md
-
-Gobierna:
-
-- memoria.md
-
-Utilizado por:
-
-- representacion.md
-- 40_metodologia/
-- 50_producto/
+- `10_nucleo/axiomas.md`
+- `30_ontologia/modelo.md`
+- `30_ontologia/identidad.md`
+- `30_ontologia/estado.md`
 
 ---
 
-# Responsabilidad
+# Utilizado por
 
-Este documento define exclusivamente el concepto de Trayectoria.
-
-No define Estados.
-
-No define Memoria.
-
-No define Representaciones.
-
-No establece procedimientos metodológicos.
+- `30_ontologia/memoria.md`
+- `40_metodologia/`
 
 ---
 
 # Declaración
 
-La Trayectoria constituye la estructura que preserva la sucesión ordenada de Estados pertenecientes a una misma Identidad.
+La Trayectoria constituye la continuidad lógica mediante la cual el Modelo preserva la evolución histórica de una Identidad.
 
-Toda evolución del Modelo se expresa mediante la incorporación ordenada de nuevos Estados.
+La Identidad aporta permanencia.
 
-Ningún Estado previamente incorporado puede alterarse ni cambiar de posición.
+Los Estados representan cada instante lógico.
+
+La Trayectoria organiza su continuidad.
