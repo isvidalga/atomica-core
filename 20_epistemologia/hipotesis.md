@@ -1,30 +1,36 @@
-# Hipótesis
+# HIPÓTESIS
 
-**Estado:** Frozen
+Estado: CANÓNICO
 
-**Versión:** 1.0.0
+Tipo: CONCEPTO
 
-**Breadcrumb:** `20_epistemologia/hipotesis.md`
+Versión: 2.0.0
+
+Ubicación:
+
+20_epistemologia/hipotesis.md
 
 ---
 
 # Propósito
 
-Este documento define el concepto de Hipótesis dentro de la epistemología de ATÓMICA.
+Definir el concepto de Hipótesis dentro de la epistemología de ATÓMICA.
 
-La Hipótesis constituye la unidad mínima de interpretación generada por el Modelo para explicar las observaciones disponibles.
+La Hipótesis constituye la unidad mínima de interpretación mediante la cual el Modelo explica el conocimiento disponible.
 
 ---
 
 # Definición
 
-Una Hipótesis es una proposición formulada por el Modelo para explicar una o varias Observaciones.
+Una Hipótesis es una proposición formulada por el Modelo para explicar una o varias Evidencias.
 
 No constituye un hecho.
 
 No constituye una verdad.
 
 No constituye una decisión.
+
+Constituye una explicación provisional del conocimiento disponible.
 
 ---
 
@@ -36,28 +42,44 @@ Toda Hipótesis:
 - es inferencial;
 - es provisional;
 - es revisable;
-- posee un nivel de Confianza.
+- posee exactamente un nivel de Confianza.
 
 ---
 
 # Alcance
 
-Una Hipótesis puede:
+Una Hipótesis podrá:
 
-- explicar una o varias Observaciones;
-- ser respaldada por Evidencias;
-- ser debilitada por Evidencias;
-- ser sustituida por otra Hipótesis cuando deje de explicar adecuadamente el conocimiento disponible.
+- explicar una o varias Evidencias;
+- ser respaldada por nuevas Evidencias;
+- ser debilitada por nuevas Evidencias;
+- ser sustituida cuando deje de explicar adecuadamente el conocimiento disponible.
 
 ---
 
 # Relaciones
 
-Una Hipótesis:
+La Hipótesis ocupa la tercera etapa del proceso epistemológico.
 
-- se origina a partir de una o varias Observaciones;
-- puede estar asociada a múltiples Evidencias;
-- posee exactamente un nivel de Confianza.
+```
+Referente
+      │
+      ▼
+Observación
+      │
+      ▼
+Evidencia
+      │
+      ▼
+Hipótesis
+      │
+      ▼
+Confianza
+```
+
+Una Hipótesis podrá estar asociada a múltiples Evidencias.
+
+Toda Hipótesis posee exactamente un nivel de Confianza.
 
 ---
 
@@ -71,19 +93,19 @@ Toda Hipótesis pertenece a un único Modelo.
 
 ## H-002
 
-Toda Hipótesis debe originarse a partir de una o varias Observaciones.
+Toda Hipótesis deberá sustentarse en una o varias Evidencias.
 
 ---
 
 ## H-003
 
-Una Hipótesis puede existir sin Evidencia suficiente.
+Una Hipótesis podrá existir aunque la Evidencia disponible resulte insuficiente para sostenerla con alta Confianza.
 
 ---
 
 ## H-004
 
-Toda Hipótesis puede ser refutada.
+Toda Hipótesis deberá poder refutarse.
 
 ---
 
@@ -95,44 +117,63 @@ La incorporación de nuevas Evidencias nunca convierte una Hipótesis en un hech
 
 ## H-006
 
-La Confianza modifica la plausibilidad de una Hipótesis.
+La Confianza modifica únicamente la plausibilidad de una Hipótesis.
 
-Nunca su naturaleza.
+Nunca modifica su naturaleza.
 
 ---
 
 # Exclusiones
 
-Una Hipótesis nunca constituye:
+No constituyen Hipótesis:
 
-- una observación;
-- una evidencia;
-- una decisión;
-- una recomendación;
-- una intervención;
-- un objetivo;
-- un plan de acción.
-
----
-
-# Dependencias
-
-- `10_nucleo/axiomas.md`
-- `20_epistemologia/observacion.md`
-- `20_epistemologia/evidencia.md`
-- `20_epistemologia/confianza.md`
+- Observaciones;
+- Evidencias;
+- decisiones;
+- recomendaciones;
+- intervenciones;
+- objetivos;
+- planes de acción.
 
 ---
 
-# Utilizado por
+# Relaciones
 
-- `40_metodologia/`
-- `50_producto/`
+Depende de:
+
+- 10_nucleo/axiomas.md
+- 10_nucleo/principios.md
+- 20_epistemologia/principios_epistemologicos.md
+- 20_epistemologia/observacion.md
+- 20_epistemologia/evidencia.md
+
+Gobierna:
+
+- confianza.md
+
+Utilizado por:
+
+- 40_metodologia/
+- 50_producto/
+
+---
+
+# Responsabilidad
+
+Este documento define exclusivamente el concepto de Hipótesis.
+
+No define Observaciones.
+
+No define Evidencias.
+
+No define Confianza.
+
+No establece procedimientos metodológicos.
 
 ---
 
 # Declaración
 
-El Modelo nunca afirma hechos acerca de una organización.
+ATÓMICA nunca afirma hechos acerca de una organización.
 
-Formula Hipótesis para explicar las Observaciones disponibles y las mantiene abiertas a revisión conforme evoluciona el conocimiento.
+Formula Hipótesis para explicar las Evidencias disponibles y las mantiene abiertas a revisión conforme evoluciona el conocimiento.
