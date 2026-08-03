@@ -1,34 +1,44 @@
-# Memoria
+# MEMORIA
 
-**Estado:** Frozen
+Estado: CANÓNICO
 
-**Versión:** 1.0.0
+Tipo: CONCEPTO
 
-**Breadcrumb:** `30_ontologia/memoria.md`
+Versión: 2.0.0
+
+Ubicación:
+
+30_ontologia/memoria.md
 
 ---
 
 # Propósito
 
-Este documento define el concepto de Memoria dentro de la ontología de ATÓMICA.
+Definir el concepto de Memoria dentro de la ontología de ATÓMICA.
 
-La Memoria constituye la capacidad del Modelo para preservar el conocimiento histórico sin alterar su significado.
+La Memoria expresa la capacidad del Modelo para reconstruir íntegramente el conocimiento histórico de una Identidad.
 
 No representa almacenamiento técnico.
 
-Representa persistencia del conocimiento.
+No representa infraestructura.
+
+Representa la persistencia lógica del conocimiento.
 
 ---
 
 # Definición
 
-La Memoria es la propiedad mediante la cual el Modelo conserva íntegramente la sucesión histórica de Estados pertenecientes a una Identidad.
+La Memoria es la propiedad emergente del Modelo que permite reconstruir el conocimiento histórico de una Identidad a partir de la persistencia de sus Estados y de su Trayectoria.
 
-La Memoria no genera conocimiento.
+La Memoria no constituye un objeto independiente.
+
+No genera conocimiento.
 
 No modifica conocimiento.
 
-Únicamente garantiza su conservación.
+No almacena conocimiento.
+
+Expresa únicamente la posibilidad de reconstruirlo.
 
 ---
 
@@ -37,8 +47,9 @@ No modifica conocimiento.
 La Memoria:
 
 - pertenece al Modelo;
+- deriva de la persistencia de los Estados;
+- deriva de la Trayectoria;
 - es acumulativa;
-- es persistente;
 - es histórica;
 - es inmutable.
 
@@ -48,10 +59,22 @@ La Memoria:
 
 La Memoria permite:
 
-- conservar todos los Estados históricos;
-- conservar todas las Representaciones históricas;
-- preservar la Trayectoria completa de una Identidad;
-- reconstruir el conocimiento admitido en cualquier instante lógico.
+- reconstruir cualquier Estado histórico;
+- reconstruir cualquier Representación histórica;
+- reconstruir la Trayectoria completa de una Identidad;
+- preservar la continuidad del conocimiento.
+
+---
+
+# Formación
+
+La Memoria surge automáticamente como consecuencia de la incorporación de nuevos Estados.
+
+No requiere operaciones específicas.
+
+Toda modificación del conocimiento incrementa la Memoria.
+
+Nunca la sustituye.
 
 ---
 
@@ -61,7 +84,7 @@ Ningún Estado histórico puede eliminarse.
 
 Ninguna Representación histórica puede modificarse.
 
-Toda Trayectoria permanece íntegramente disponible mientras exista la Memoria del Modelo.
+Toda Trayectoria permanece íntegramente disponible mientras exista la Identidad correspondiente.
 
 ---
 
@@ -69,7 +92,7 @@ Toda Trayectoria permanece íntegramente disponible mientras exista la Memoria d
 
 ## MM-001
 
-Toda Memoria se construye exclusivamente mediante Estados históricos.
+La Memoria depende exclusivamente de los Estados y de la Trayectoria.
 
 ---
 
@@ -81,13 +104,13 @@ La incorporación de nuevo conocimiento nunca elimina conocimiento previo.
 
 ## MM-003
 
-Toda reconstrucción histórica debe producir exactamente el mismo conocimiento admitido en ese instante.
+Toda reconstrucción histórica deberá producir exactamente el conocimiento correspondiente al Estado reconstruido.
 
 ---
 
 ## MM-004
 
-La Memoria nunca altera el significado de los elementos que conserva.
+La Memoria nunca modifica el significado de los elementos reconstruidos.
 
 ---
 
@@ -113,23 +136,38 @@ La Memoria nunca contiene:
 
 ---
 
-# Dependencias
+# Relaciones
 
-- `10_nucleo/axiomas.md`
-- `30_ontologia/estado.md`
-- `30_ontologia/trayectoria.md`
+Depende de:
+
+- 10_nucleo/axiomas.md
+- 10_nucleo/principios.md
+- 30_ontologia/estado.md
+- 30_ontologia/trayectoria.md
+
+Utilizado por:
+
+- 40_metodologia/
+- 50_producto/
 
 ---
 
-# Utilizado por
+# Responsabilidad
 
-- `40_metodologia/`
-- `50_producto/`
+Este documento define exclusivamente el concepto de Memoria.
+
+No define Estados.
+
+No define Trayectorias.
+
+No define Representaciones.
+
+No establece mecanismos de almacenamiento.
 
 ---
 
 # Declaración
 
-La Memoria garantiza que el conocimiento admitido por el Modelo permanezca íntegro y reconstruible a lo largo del tiempo.
+La Memoria constituye la propiedad mediante la cual el Modelo puede reconstruir íntegramente el conocimiento histórico de una Identidad.
 
-La evolución del Modelo nunca implica pérdida de conocimiento histórico.
+La evolución del Modelo nunca implica pérdida del conocimiento previamente admitido.
