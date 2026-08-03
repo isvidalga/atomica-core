@@ -1,18 +1,22 @@
-# Relación
+# RELACIÓN
 
-**Estado:** Frozen
+Estado: CANÓNICO
 
-**Versión:** 1.0.0
+Tipo: CONCEPTO
 
-**Breadcrumb:** `30_ontologia/relacion.md`
+Versión: 2.0.0
+
+Ubicación:
+
+30_ontologia/relacion.md
 
 ---
 
 # Propósito
 
-Este documento define el concepto de Relación dentro de la ontología de ATÓMICA.
+Definir el concepto de Relación dentro de la ontología de ATÓMICA.
 
-Una Relación constituye la conexión estructural existente entre dos o más entidades del dominio.
+Una Relación constituye el vínculo estructural existente entre dos o más entidades del Modelo.
 
 Las Relaciones proporcionan estructura al Modelo.
 
@@ -22,11 +26,13 @@ Sin Relaciones, las entidades permanecerían aisladas.
 
 # Definición
 
-Una Relación es una conexión estructural entre dos o más entidades del dominio.
+Una Relación es un vínculo estructural entre dos o más entidades del Modelo.
 
 Una Relación no es ninguna de las entidades que conecta.
 
 Una Relación no modifica las entidades relacionadas.
+
+Una Relación expresa únicamente la existencia de una conexión.
 
 ---
 
@@ -35,18 +41,18 @@ Una Relación no modifica las entidades relacionadas.
 La Relación:
 
 - pertenece al Modelo;
-- pertenece al dominio;
-- es independiente de cualquier tecnología;
-- puede ser dirigida cuando la naturaleza de la conexión lo requiere;
-- nunca interpreta el significado de la conexión.
+- es independiente de cualquier implementación;
+- puede ser dirigida cuando la naturaleza de la conexión lo requiera;
+- nunca interpreta el significado de la conexión;
+- nunca altera las entidades relacionadas.
 
 ---
 
 # Constitución
 
-Toda Relación está formada por:
+Toda Relación posee:
 
-- un identificador;
+- un identificador único;
 - las entidades relacionadas;
 - la naturaleza de la conexión;
 - una dirección, cuando corresponda.
@@ -55,11 +61,19 @@ Toda Relación está formada por:
 
 # Formación
 
-Una Relación existe únicamente cuando existen las entidades que conecta.
+Una Relación únicamente puede establecerse entre entidades existentes del Modelo.
 
-La desaparición de cualquiera de ellas invalida la Relación.
+La creación de una Relación nunca modifica las entidades relacionadas.
 
 La modificación de una Relación genera una nueva Relación.
+
+---
+
+# Persistencia
+
+Toda Relación forma parte del conocimiento del Modelo.
+
+Su historial permanece trazable conforme a las reglas generales del Canon.
 
 ---
 
@@ -67,7 +81,7 @@ La modificación de una Relación genera una nueva Relación.
 
 ## RL-001
 
-Toda Relación conecta dos o más entidades del dominio.
+Toda Relación conecta dos o más entidades del Modelo.
 
 ---
 
@@ -91,7 +105,7 @@ Una Relación nunca sustituye a las entidades relacionadas.
 
 ## RL-005
 
-Una Relación nunca es una de las entidades relacionadas.
+Una Relación nunca constituye una de las entidades relacionadas.
 
 ---
 
@@ -103,7 +117,7 @@ Varias Relaciones pueden conectar las mismas entidades.
 
 ## RL-007
 
-La dirección de una Relación sólo existe cuando la naturaleza de la conexión lo requiere.
+La dirección de una Relación existe únicamente cuando la naturaleza de la conexión lo requiere.
 
 ---
 
@@ -129,18 +143,31 @@ Una Relación nunca contiene:
 
 ---
 
-# Dependencias
+# Relaciones
 
-- `10_nucleo/axiomas.md`
+Depende de:
+
+- 10_nucleo/axiomas.md
+- 10_nucleo/principios.md
+
+Utilizado por:
+
+- estado.md
+- representacion.md
+- 40_metodologia/
+- 50_producto/
 
 ---
 
-# Utilizado por
+# Responsabilidad
 
-- `30_ontologia/estado.md`
-- `30_ontologia/representacion.md`
-- `40_metodologia/`
-- `50_producto/`
+Este documento define exclusivamente el concepto de Relación.
+
+No define las entidades del dominio.
+
+No define el significado de las conexiones.
+
+No establece reglas metodológicas.
 
 ---
 
@@ -148,6 +175,6 @@ Una Relación nunca contiene:
 
 Las Relaciones constituyen la estructura del Modelo.
 
-Las entidades definen qué existe.
+Las entidades determinan qué existe.
 
-Las Relaciones definen cómo esas entidades permanecen conectadas.
+Las Relaciones determinan cómo dichas entidades permanecen conectadas.
