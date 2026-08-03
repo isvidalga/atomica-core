@@ -1,16 +1,20 @@
-# Trayectoria
+# TRAYECTORIA
 
-**Estado:** Frozen
+Estado: CANÓNICO
 
-**Versión:** 1.0.0
+Tipo: CONCEPTO
 
-**Breadcrumb:** `30_ontologia/trayectoria.md`
+Versión: 2.0.0
+
+Ubicación:
+
+30_ontologia/trayectoria.md
 
 ---
 
 # Propósito
 
-Este documento define el concepto de Trayectoria dentro de la ontología de ATÓMICA.
+Definir el concepto de Trayectoria dentro de la ontología de ATÓMICA.
 
 La Trayectoria constituye la secuencia ordenada de Estados pertenecientes a una misma Identidad.
 
@@ -34,9 +38,9 @@ La Trayectoria:
 
 - pertenece al Modelo;
 - no constituye un objeto observado;
-- representa la evolución del conocimiento admitido por el Modelo;
-- no contiene información;
-- contiene únicamente relaciones de sucesión entre Estados.
+- preserva el orden lógico de los Estados;
+- no contiene conocimiento;
+- contiene exclusivamente relaciones de sucesión entre Estados.
 
 ---
 
@@ -69,7 +73,7 @@ La Trayectoria preserva el orden lógico de los Estados.
 
 No representa necesariamente el tiempo cronológico.
 
-Representa la secuencia mediante la cual evoluciona el conocimiento admitido por el Modelo.
+Representa la secuencia mediante la cual evoluciona el conocimiento del Modelo.
 
 ---
 
@@ -77,19 +81,19 @@ Representa la secuencia mediante la cual evoluciona el conocimiento admitido por
 
 La continuidad de una Trayectoria depende exclusivamente de la continuidad de la Identidad.
 
-La ausencia de nuevas Observaciones no interrumpe una Trayectoria.
+La ausencia de nuevas Observaciones nunca interrumpe una Trayectoria.
 
 La finalización de la Identidad finaliza la Trayectoria.
 
 ---
 
-# Terminación
+# Finalización
 
-Una Trayectoria termina cuando finaliza la Identidad.
+Una Trayectoria finaliza cuando finaliza la Identidad.
 
-Una Trayectoria terminada nunca puede reabrirse.
+Una Trayectoria finalizada conserva íntegramente su historial.
 
-Toda nueva Identidad inicia una nueva Trayectoria.
+Nunca puede incorporar nuevos Estados.
 
 ---
 
@@ -109,7 +113,7 @@ Toda Trayectoria posee exactamente un Estado inicial.
 
 ## TR-003
 
-Toda Trayectoria posee exactamente un Estado vigente.
+Toda Trayectoria posee exactamente un Estado vigente mientras permanezca activa.
 
 ---
 
@@ -139,7 +143,7 @@ Los Estados nunca cambian de posición dentro de una Trayectoria.
 
 ## TR-008
 
-Una Trayectoria terminada nunca puede reactivarse.
+Toda Trayectoria conserva permanentemente su historial.
 
 ---
 
@@ -151,33 +155,51 @@ Una Trayectoria nunca contiene:
 - Evidencias;
 - Hipótesis;
 - Confianza;
-- clasificaciones metodológicas;
-- resultados;
 - decisiones;
-- intervenciones.
+- intervenciones;
+- interfaces;
+- componentes visuales.
 
 ---
 
-# Dependencias
+# Relaciones
 
-- `10_nucleo/axiomas.md`
-- `30_ontologia/identidad.md`
-- `30_ontologia/estado.md`
+Depende de:
+
+- 10_nucleo/axiomas.md
+- 10_nucleo/principios.md
+- 30_ontologia/identidad.md
+- 30_ontologia/estado.md
+
+Gobierna:
+
+- memoria.md
+
+Utilizado por:
+
+- representacion.md
+- 40_metodologia/
+- 50_producto/
 
 ---
 
-# Utilizado por
+# Responsabilidad
 
-- `30_ontologia/memoria.md`
-- `30_ontologia/representacion.md`
-- `40_metodologia/`
-- `50_producto/`
+Este documento define exclusivamente el concepto de Trayectoria.
+
+No define Estados.
+
+No define Memoria.
+
+No define Representaciones.
+
+No establece procedimientos metodológicos.
 
 ---
 
 # Declaración
 
-La Trayectoria constituye la continuidad del conocimiento admitido por el Modelo sobre una Identidad.
+La Trayectoria constituye la estructura que preserva la sucesión ordenada de Estados pertenecientes a una misma Identidad.
 
 Toda evolución del Modelo se expresa mediante la incorporación ordenada de nuevos Estados.
 
