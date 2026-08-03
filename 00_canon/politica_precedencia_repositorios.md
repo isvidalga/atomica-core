@@ -8,7 +8,11 @@ Versión: 1.0.0
 
 # Propósito
 
-Establecer la autoridad normativa entre los repositorios de ATÓMICA.
+Establecer la autoridad normativa entre los repositorios oficiales de ATÓMICA.
+
+Determinar el orden de precedencia cuando exista conflicto entre ellos.
+
+No define la organización interna de cada repositorio.
 
 ---
 
@@ -18,9 +22,9 @@ ATÓMICA se compone de repositorios con responsabilidades distintas.
 
 Cada repositorio posee un ámbito de autoridad exclusivo.
 
-La autoridad metodológica reside únicamente en atomica-core.
+La autoridad normativa reside exclusivamente en atomica-core.
 
-La implementación del producto reside únicamente en atomica-app.
+La implementación del producto reside exclusivamente en atomica-app.
 
 ---
 
@@ -45,9 +49,11 @@ El canon nunca se adaptará a una implementación existente.
 
 # Consecuencias
 
-Una discrepancia entre ambos repositorios no constituye un defecto del canon.
+Una discrepancia entre ambos repositorios no constituye un defecto del Canon.
 
 Constituye una desviación de implementación.
+
+Nunca una modificación implícita del Canon.
 
 ---
 
@@ -86,6 +92,8 @@ Ningún documento de atomica-app podrá redefinir:
 Toda modificación de estos elementos deberá realizarse primero en atomica-core.
 
 Solo después podrá sincronizarse la aplicación.
+
+Ningún repositorio distinto de atomica-core podrá publicar documentos con autoridad canónica.
 
 ---
 
