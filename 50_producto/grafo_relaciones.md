@@ -2,402 +2,340 @@
 
 Estado: CANÓNICO
 
-Versión: 2.0
+Versión: 2.0.0
+
+Tipo: Producto
+
+Ubicación:
+
+```text
+50_producto/grafo_relaciones.md
+```
 
 ---
 
 # Propósito
 
-El Grafo de Relaciones constituye la representación estructural de las relaciones existentes entre los objetos del Modelo.
+Este documento define el Grafo de Relaciones de ATÓMICA como el instrumento del Producto responsable de representar las relaciones existentes entre las entidades del conocimiento organizacional.
 
-No representa organigramas.
+Su finalidad consiste en facilitar la comprensión de cómo se estructura, conecta y propaga el conocimiento mantenido por el Modelo Vivo.
 
-No representa departamentos.
+No representa:
 
-No representa jerarquías administrativas.
+- organigramas;
+- departamentos;
+- estructuras jerárquicas;
+- procesos;
+- documentos.
 
-Representa relaciones significativas entre los objetos del conocimiento organizacional.
+Representa exclusivamente relaciones del conocimiento definidas por el Sistema Normativo.
 
-Su finalidad consiste en hacer visible cómo se propaga el conocimiento, cómo emergen los patrones y cómo se transmite la influencia dentro del sistema.
+---
+
+# Alcance
+
+Este documento regula las responsabilidades del Grafo de Relaciones como instrumento del Producto.
+
+No define:
+
+- la Ontología;
+- las entidades del dominio;
+- la definición de las Relaciones;
+- el Modelo Vivo;
+- la Metodología;
+- la implementación técnica.
+
+---
+
+# Dependencias normativas
+
+Este documento depende de:
+
+- `00_canon/`
+- `10_nucleo/`
+- `20_epistemologia/`
+- `30_ontologia/`
+- `40_metodologia/`
+- `50_producto/principios.md`
+- `50_producto/modelo_vivo.md`
+- `50_producto/lenguaje_producto.md`
+- `50_producto/experiencia_cognitiva.md`
+- `50_producto/grafo_conocimiento.md`
+
+En caso de conflicto prevalecen siempre las definiciones canónicas.
+
+---
+
+# Objetivo
+
+El Grafo de Relaciones permite explorar las conexiones existentes entre las entidades del conocimiento organizacional.
+
+Su propósito consiste en facilitar la comprensión de la estructura relacional del Modelo Vivo.
+
+No interpreta dichas relaciones.
+
+No genera nuevas relaciones.
+
+No modifica el conocimiento representado.
 
 ---
 
 # Naturaleza
 
-El Grafo de Relaciones pertenece al Producto.
+El Grafo de Relaciones constituye un instrumento de representación y exploración.
 
-No constituye una entidad de la Ontología.
+No forma parte de la Ontología.
 
-No modifica el Modelo.
+No constituye un mecanismo de inferencia.
 
-Representa visualmente las relaciones definidas por el Modelo.
+No constituye un instrumento de análisis.
 
-Su representación nunca altera el significado de dichas relaciones.
+Representa exclusivamente relaciones ya existentes en el conocimiento organizacional.
+
+---
+
+# Responsabilidad
+
+Corresponde al Grafo de Relaciones:
+
+- representar relaciones;
+- representar las entidades conectadas por ellas;
+- facilitar su exploración;
+- conservar el significado de cada relación;
+- mantener la trazabilidad del recorrido.
+
+No le corresponde:
+
+- crear relaciones;
+- modificar relaciones;
+- interpretar relaciones;
+- priorizar relaciones;
+- sustituir el juicio del usuario.
 
 ---
 
 # Principios
 
-## G-001 · Todo objeto puede relacionarse
+## GR-001 · Toda relación representa conocimiento
 
-Todo objeto del Modelo puede participar en una o varias relaciones.
+Cada relación representada forma parte del conocimiento organizacional.
 
-Ningún objeto existe completamente aislado.
-
----
-
-## G-002 · Toda relación posee significado
-
-Toda relación deberá expresar una dependencia estructural.
-
-Nunca constituirá un enlace visual.
-
-Nunca representará únicamente navegación.
+Las relaciones nunca constituyen únicamente enlaces visuales.
 
 ---
 
-## G-003 · El grafo representa conocimiento
+## GR-002 · Toda relación posee significado
 
-El grafo nunca representa documentos.
+Toda relación representada corresponde a una relación definida por la Ontología.
 
-Nunca representa registros.
-
-Nunca representa pantallas.
-
-Representa conocimiento y las relaciones existentes entre sus objetos.
+Su significado permanece invariable durante toda la representación.
 
 ---
 
-## G-004 · La posición nunca modifica el significado
+## GR-003 · La representación conserva el significado
 
-La posición espacial constituye únicamente una representación.
+La representación gráfica nunca altera el significado de las relaciones.
 
-Nunca modifica la naturaleza de las relaciones representadas.
-
----
-
-# Nodos
-
-Todo objeto del Modelo podrá representarse como un nodo.
-
-Entre ellos:
-
-- Organización;
-- Estado;
-- Representación;
-- Observación;
-- Evidencia;
-- Hipótesis;
-- Capacidad;
-- Fragilidad;
-- Intervención;
-- Relación;
-- Trayectoria;
-- Patrón.
-
-La incorporación de nuevos tipos de nodo deberá respetar el Canon.
+La disposición visual constituye únicamente una forma de representación.
 
 ---
 
-# Relaciones
+## GR-004 · El contexto permanece continuo
 
-Toda relación representada deberá declarar, como mínimo:
+Toda exploración conserva el contexto del elemento desde el que comenzó el recorrido.
 
-- origen;
-- destino;
-- naturaleza;
-- confianza.
-
-Podrá declarar además:
-
-- intensidad;
-- fecha;
-- vigencia;
-- dirección.
-
-Nunca existirá una relación sin significado explícito.
+El usuario nunca pierde la referencia del conocimiento explorado.
 
 ---
 
-# Naturalezas de relación
+## GR-005 · Toda relación es trazable
 
-El Producto podrá representar, entre otras, relaciones de tipo:
+Cada relación deberá poder reconstruirse mediante la cadena completa de conocimiento.
 
-- depende de;
-- explica;
-- provoca;
-- mitiga;
-- refuerza;
-- contradice;
-- genera;
-- necesita;
-- verifica;
-- aprende de;
-- participa en;
-- impacta;
-- observa;
-- protege;
-- sustituye.
+La trazabilidad constituye un requisito permanente.
 
-La definición semántica de cada relación pertenece a la Ontología.
+---
 
-El Producto únicamente las representa.
+## GR-006 · La representación evoluciona con el conocimiento
+
+La estructura representada evoluciona conforme evoluciona el Modelo Vivo.
+
+La representación nunca modifica el conocimiento histórico.
+
+---
+
+# Entidades representadas
+
+El Grafo de Relaciones representa exclusivamente entidades definidas por la Ontología.
+
+Este documento no mantiene un catálogo propio de entidades.
+
+Toda incorporación de nuevas entidades dependerá de la evolución del Canon.
+
+---
+
+# Relaciones representadas
+
+El Grafo representa únicamente relaciones existentes en el conocimiento organizacional.
+
+Cada relación deberá conservar:
+
+- significado;
+- contexto;
+- trazabilidad;
+- incertidumbre cuando corresponda.
+
+Las relaciones nunca podrán incorporarse por criterios exclusivamente visuales.
 
 ---
 
 # Dirección
 
-Las relaciones podrán ser:
+Cuando una relación posea dirección conforme a la Ontología, dicha dirección deberá conservarse durante la representación.
 
-- dirigidas;
-- no dirigidas;
+La dirección constituye una propiedad del conocimiento.
 
-según la naturaleza definida por el Modelo.
-
-La dirección nunca constituye una decisión visual.
-
-Forma parte del significado de la relación.
+Nunca una decisión de diseño.
 
 ---
 
 # Intensidad
 
-Una relación podrá expresar intensidad.
+Cuando una relación incorpore intensidad conforme al Sistema Normativo, dicha propiedad podrá representarse.
 
-La intensidad representa la relevancia estructural de la relación.
-
-Nunca representa frecuencia.
-
-Nunca representa cantidad.
-
----
-
-# Confianza
-
-Toda relación deberá mostrar el grado de confianza asociado al conocimiento que la sostiene.
-
-La confianza pertenece al Modelo.
+La intensidad pertenece al conocimiento.
 
 Nunca a la representación.
 
 ---
 
+# Confianza
+
+Cuando el conocimiento asociado a una relación incorpore un nivel de confianza, éste deberá permanecer disponible durante la exploración.
+
+La representación nunca modifica dicho nivel.
+
+---
+
 # Evolución
 
-Las relaciones podrán:
+Las relaciones podrán evolucionar conforme evoluciona el conocimiento organizacional.
 
-- aparecer;
-- fortalecerse;
-- debilitarse;
-- desaparecer;
-- reactivarse.
+La representación permitirá explorar dicha evolución cuando resulte compatible con el instrumento.
 
-La evolución pertenece a la Trayectoria del conocimiento.
-
-Nunca modifica retrospectivamente la historia.
+La evolución nunca modifica retrospectivamente el conocimiento histórico.
 
 ---
 
-# Comunidades
+# Agrupaciones emergentes
 
-El Producto podrá representar agrupaciones de nodos cuando estas emerjan del propio Modelo.
+El Grafo podrá representar agrupaciones de entidades cuando éstas emerjan del propio conocimiento organizacional.
 
-Las comunidades nunca se definirán manualmente.
+Las agrupaciones nunca constituirán categorías predefinidas.
 
-Nunca constituirán categorías predeterminadas.
-
-Representarán únicamente estructuras emergentes.
+Su representación dependerá exclusivamente del conocimiento disponible.
 
 ---
 
-# Centralidad
+# Exploración
 
-El Producto podrá calcular indicadores estructurales sobre el grafo para facilitar la comprensión del sistema.
+La exploración comienza siempre desde un contexto concreto.
 
-Entre ellos:
+El recorrido progresa mediante relaciones.
 
-- grado;
-- intermediación;
-- cercanía;
-- centralidad vectorial.
+Nunca mediante una representación global descontextualizada.
 
-Estos indicadores nunca constituyen conocimiento.
+Cada transición conserva:
 
-Constituyen instrumentos de exploración.
-
----
-
-# Propagación
-
-Toda modificación del conocimiento podrá recorrerse mediante el grafo.
-
-Ejemplo:
-
-Evidencia
-
-↓
-
-Hipótesis
-
-↓
-
-Patrón
-
-↓
-
-Fragilidad
-
-↓
-
-Intervención
-
-La propagación nunca constituye causalidad demostrada.
-
-Representa únicamente relaciones existentes en el Modelo.
-
----
-
-# Dependencias
-
-El Producto podrá representar dependencias:
-
-- fuertes;
-- débiles;
-- críticas;
-- emergentes.
-
-Las dependencias nunca constituyen juicios.
-
-Constituyen relaciones observadas.
+- el significado;
+- el contexto;
+- la continuidad;
+- la trazabilidad.
 
 ---
 
 # Explicabilidad
 
-Toda representación del grafo deberá conservar la trazabilidad completa.
+Toda relación representada deberá ser compatible con las reglas de explicabilidad definidas por el Sistema Normativo.
 
-El usuario deberá poder recorrer cualquier conclusión mediante la cadena correspondiente.
+El usuario podrá reconstruir la cadena completa de conocimiento asociada a cualquier relación representada.
 
-Ejemplo:
-
-Patrón
-
-↓
-
-Hipótesis
-
-↓
-
-Evidencia
-
-↓
-
-Observación
-
-↓
-
-Estado
-
-La cadena nunca podrá romperse.
+La representación nunca romperá dicha continuidad.
 
 ---
 
-# Navegación
+# Integración con el Grafo de Conocimiento
 
-La navegación siempre comienza en un objeto concreto.
+El Grafo de Conocimiento representa la estructura general del conocimiento organizacional.
 
-Nunca en el grafo completo.
+El Grafo de Relaciones especializa dicha representación facilitando la exploración explícita de las relaciones existentes entre las entidades.
 
-El usuario explora relaciones.
-
-No interpreta un mapa completo desde el inicio.
-
-El contexto siempre precede a la exploración.
+Ambos instrumentos poseen responsabilidades distintas y complementarias.
 
 ---
 
-# Visualización
+# Integración con el Modelo Vivo
 
-El Grafo constituye un instrumento de exploración.
+El Modelo Vivo mantiene operativo el conocimiento organizacional.
 
-Nunca una ilustración.
+El Grafo de Relaciones representa las conexiones existentes dentro de dicho conocimiento.
 
-Nunca una decoración.
+No modifica su contenido.
 
-Toda decisión visual deberá facilitar la comprensión de las relaciones.
-
-Nunca alterar su significado.
+No produce nuevas relaciones.
 
 ---
 
 # Restricciones
 
-## R-001
+El Grafo de Relaciones no:
 
-Todo nodo representa un objeto del Modelo.
-
----
-
-## R-002
-
-Toda relación representa una relación definida por el Modelo.
-
----
-
-## R-003
-
-La representación nunca crea relaciones inexistentes.
+- redefine conceptos del Canon;
+- modifica la Ontología;
+- crea entidades;
+- crea relaciones;
+- elimina relaciones existentes;
+- interpreta conocimiento;
+- modifica el Modelo Vivo;
+- altera el significado mediante decisiones visuales.
 
 ---
 
-## R-004
+# Criterios de aceptación
 
-La representación nunca elimina relaciones existentes.
+Una implementación del Grafo de Relaciones se considera conforme únicamente cuando:
 
----
+- representa exclusivamente relaciones definidas por la Ontología;
+- conserva el significado de todas las relaciones;
+- mantiene la trazabilidad completa;
+- preserva el contexto durante toda la exploración;
+- representa la incertidumbre cuando corresponde;
+- evoluciona coherentemente con el Modelo Vivo;
+- no crea ni elimina relaciones;
+- la representación nunca modifica el significado del conocimiento.
 
-## R-005
-
-Toda relación conserva su trazabilidad.
-
----
-
-## R-006
-
-Toda representación mantiene visible la incertidumbre del conocimiento representado.
-
----
-
-## R-007
-
-La disposición espacial nunca modifica el significado de las relaciones.
+El incumplimiento de cualquiera de estos criterios implica que la implementación no es conforme con el Canon.
 
 ---
 
-# Dependencias
+# Gobierno
 
-- `00_canon/filosofia.md`
-- `00_canon/navegacion.md`
-- `30_ontology/relacion.md`
-- `30_ontology/representacion.md`
-- `30_ontology/estado.md`
+La evolución de este documento se encuentra regulada por el Sistema Normativo y el Gobierno del Canon.
 
----
+Toda modificación deberá limitarse a las responsabilidades del Grafo de Relaciones como instrumento de la capa Producto.
 
-# Utilizado por
-
-- Observatorio
-- Instrumento de Patrones
-- Asesor Cognitivo
-- Explicabilidad
-- Gemelo Organizacional
+Las modificaciones que afecten al significado de las relaciones deberán realizarse previamente en las capas normativas correspondientes.
 
 ---
 
-# Principio final
+# Declaración
 
-Las organizaciones no funcionan mediante elementos aislados.
+El Grafo de Relaciones no representa un mapa visual.
 
-Funcionan mediante relaciones.
+Representa la estructura relacional del conocimiento organizacional.
 
-El Grafo de Relaciones hace visible esa estructura para permitir comprender cómo se propaga el conocimiento, cómo emergen los patrones y cómo una modificación local puede transformar el comportamiento completo del sistema.
+Cada relación mantiene el significado definido por la Ontología.
+
+Cada recorrido preserva el contexto y la trazabilidad.
+
+Su función consiste en hacer visible cómo se conecta el conocimiento mantenido por el Modelo Vivo, permitiendo comprender la organización a través de sus relaciones y no mediante elementos aislados.
