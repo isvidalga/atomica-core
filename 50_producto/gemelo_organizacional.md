@@ -2,23 +2,23 @@
 
 **Estado:** CANÓNICO
 
-**Versión:** 1.0.0
+**Versión:** 2.0.0
 
 ---
 
 # Propósito
 
-El Gemelo Organizacional constituye la representación navegable del Modelo Organizacional de una organización.
+El Gemelo Organizacional constituye la representación navegable del Modelo Vivo de una organización.
 
 No replica la organización.
 
 No simula la organización.
 
-No representa la realidad.
+No representa directamente la realidad organizacional.
 
-Representa el conocimiento admitido por el Modelo en un instante determinado.
+Representa el conocimiento admitido por ATÓMICA sobre una organización en un momento determinado.
 
-Su finalidad consiste en permitir comprender la organización como un sistema vivo.
+Su finalidad consiste en permitir comprender la organización como un sistema vivo mediante la exploración de sus estados, relaciones y evolución.
 
 ---
 
@@ -30,19 +30,23 @@ No pertenece a la Ontología.
 
 No pertenece a la Metodología.
 
+No constituye una entidad organizacional.
+
+No genera conocimiento.
+
 No modifica el Modelo.
 
-Organiza su representación para facilitar la comprensión.
+Organiza y presenta el conocimiento disponible para facilitar su comprensión.
 
 ---
 
 # Principios
 
-## G-001 · Un único Gemelo por Organización
+## G-001 · Un único Gemelo vigente por organización
 
-Cada organización dispone de un único Gemelo Organizacional.
+Cada Identidad Organizacional dispone de un único Gemelo Organizacional vigente.
 
-Nunca existen varios Gemelos simultáneos para una misma Identidad Organizacional.
+Las versiones históricas del conocimiento pertenecen a la Trayectoria y al registro de Estados.
 
 ---
 
@@ -50,25 +54,27 @@ Nunca existen varios Gemelos simultáneos para una misma Identidad Organizaciona
 
 El Gemelo nunca representa directamente la organización.
 
-Representa exclusivamente el conocimiento construido por el Modelo.
+Representa exclusivamente el conocimiento construido y admitido por el Modelo.
 
 ---
 
-## G-003 · El Gemelo siempre está vivo
+## G-003 · El Gemelo evoluciona con el Modelo
 
-Toda modificación del conocimiento admitido produce automáticamente una actualización del Gemelo mediante un nuevo Estado.
+El Gemelo refleja los Estados existentes del Modelo.
 
-Nunca se modifica manualmente.
+Cuando el Modelo incorpora nuevo conocimiento válido, el Gemelo puede representar un nuevo Estado.
+
+El Gemelo no crea dichos cambios.
 
 ---
 
 ## G-004 · El Gemelo es navegable
 
-El usuario nunca navega datos aislados.
+El usuario no navega únicamente datos aislados.
 
-Navega relaciones.
+Navega relaciones entre elementos del Modelo.
 
-Cada recorrido modifica la comprensión, no el conocimiento.
+La navegación modifica la comprensión del usuario, pero nunca modifica el conocimiento representado.
 
 ---
 
@@ -81,7 +87,7 @@ Toda representación mantiene visible:
 - incertidumbre;
 - trazabilidad.
 
-Nunca presenta una certeza inexistente.
+Nunca presenta como certeza aquello que el Modelo considera incierto.
 
 ---
 
@@ -90,9 +96,8 @@ Nunca presenta una certeza inexistente.
 El Gemelo Organizacional representa conjuntamente:
 
 - Organización;
-- Estado vigente;
+- Estado Sistémico vigente;
 - Trayectoria;
-- Representación;
 - Observaciones;
 - Evidencias;
 - Hipótesis;
@@ -100,11 +105,11 @@ El Gemelo Organizacional representa conjuntamente:
 - Fragilidades;
 - Relaciones;
 - Intervenciones;
-- Memoria.
+- representaciones derivadas de Memoria.
 
-La composición visual pertenece a la interfaz.
+La composición visual pertenece al Producto y puede variar según la interfaz.
 
-La composición conceptual permanece constante.
+La composición conceptual permanece estable.
 
 ---
 
@@ -112,17 +117,17 @@ La composición conceptual permanece constante.
 
 El Gemelo permite:
 
-- observar el Estado actual;
-- recorrer la Trayectoria;
-- comprender relaciones;
+- observar el Estado vigente;
+- recorrer la evolución histórica;
+- comprender relaciones sistémicas;
 - localizar Fragilidades;
 - localizar Capacidades;
 - inspeccionar Evidencias;
 - comprender Hipótesis;
 - explorar Intervenciones;
-- navegar la Memoria Organizacional.
+- consultar representaciones de Memoria Organizacional.
 
-Nunca modifica ninguno de estos objetos.
+El Gemelo nunca modifica los objetos representados.
 
 ---
 
@@ -130,37 +135,37 @@ Nunca modifica ninguno de estos objetos.
 
 ## R-001
 
-El Gemelo nunca constituye una simulación.
+El Gemelo nunca constituye una simulación de la organización.
 
 ---
 
 ## R-002
 
-El Gemelo nunca sustituye al Modelo.
+El Gemelo nunca sustituye al Modelo Vivo.
 
 ---
 
 ## R-003
 
-Toda representación conserva trazabilidad completa.
+Toda representación debe conservar trazabilidad hacia sus elementos de origen.
 
 ---
 
 ## R-004
 
-Toda representación conserva incertidumbre explícita.
+Toda representación debe conservar la incertidumbre disponible.
 
 ---
 
 ## R-005
 
-Toda navegación mantiene el contexto del usuario.
+La navegación nunca altera el Estado del Modelo.
 
 ---
 
 ## R-006
 
-El Gemelo nunca contiene conocimiento distinto del admitido por el Modelo.
+El Gemelo nunca contiene conocimiento distinto del admitido por ATÓMICA.
 
 ---
 
@@ -168,34 +173,45 @@ El Gemelo nunca contiene conocimiento distinto del admitido por el Modelo.
 
 El Gemelo depende de:
 
-- Canon
-- Ontología
-- Metodología
-- Navegación
+- Modelo Vivo;
+- Estado Sistémico;
+- Ontología;
+- Metodología.
+
+Puede ser utilizado mediante:
+
+- Observatorio;
+- Cockpit;
+- Asesor Cognitivo;
+- Informe;
+- Crónica;
+- Navegación.
 
 No depende de:
 
-- Implementación
-- Tecnología
-- Interfaz gráfica
+- Implementación tecnológica;
+- Arquitectura de interfaz;
+- Tecnología concreta.
 
 ---
 
 # Utilizado por
 
-- Cockpit
-- Observatorio
-- Asesor Cognitivo
-- Memoria Organizacional
-- Crónica
-- Navegación
+El Gemelo Organizacional puede ser representado o explorado mediante:
+
+- Cockpit;
+- Observatorio;
+- Asesor Cognitivo;
+- Memoria Organizacional;
+- Crónica;
+- Navegación.
 
 ---
 
 # Principio final
 
-ATÓMICA no muestra una colección de pantallas.
+ATÓMICA no presenta una colección desconectada de pantallas.
 
-Muestra un único Gemelo Organizacional.
+Presenta diferentes formas de explorar un mismo Modelo Vivo.
 
-Todo el Producto constituye distintas formas de recorrer el mismo conocimiento.
+El Gemelo Organizacional constituye la representación común desde la que el Producto permite comprender la organización.
