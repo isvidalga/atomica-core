@@ -1,8 +1,6 @@
-# MEMORIA
+# Memoria
 
 Estado: CANÓNICO
-
-Tipo: CONCEPTO
 
 Versión: 2.0.0
 
@@ -14,67 +12,60 @@ Ubicación:
 
 # Propósito
 
-Definir el concepto de Memoria dentro de la ontología de ATÓMICA.
+Definir el concepto ontológico de Memoria.
 
-La Memoria expresa la capacidad del Modelo para reconstruir íntegramente el conocimiento histórico de una Identidad.
+La Memoria constituye la capacidad del Modelo para preservar íntegramente la historia del conocimiento admitido sobre una Organización.
 
 No representa almacenamiento técnico.
 
-No representa infraestructura.
-
-Representa la persistencia lógica del conocimiento.
+Representa persistencia ontológica.
 
 ---
 
 # Definición
 
-La Memoria es la propiedad emergente del Modelo que permite reconstruir el conocimiento histórico de una Identidad a partir de la persistencia de sus Estados y de su Trayectoria.
+La Memoria es la propiedad mediante la cual el Modelo conserva íntegramente todos los Estados y Representaciones pertenecientes a una Trayectoria.
 
-La Memoria no constituye un objeto independiente.
+La Memoria no produce conocimiento.
 
-No genera conocimiento.
+No interpreta conocimiento.
 
 No modifica conocimiento.
 
-No almacena conocimiento.
-
-Expresa únicamente la posibilidad de reconstruirlo.
+Únicamente garantiza su conservación y reconstrucción.
 
 ---
 
 # Naturaleza
 
-La Memoria:
+Toda Memoria:
 
 - pertenece al Modelo;
-- deriva de la persistencia de los Estados;
-- deriva de la Trayectoria;
+- preserva Trayectorias;
 - es acumulativa;
-- es histórica;
+- es persistente;
 - es inmutable.
+
+La Memoria nunca altera el contenido del conocimiento que conserva.
 
 ---
 
-# Alcance
+# Propiedades
 
-La Memoria permite:
+La Memoria garantiza:
 
-- reconstruir cualquier Estado histórico;
-- reconstruir cualquier Representación histórica;
-- reconstruir la Trayectoria completa de una Identidad;
-- preservar la continuidad del conocimiento.
+- la conservación de todos los Estados;
+- la conservación de todas las Representaciones;
+- la conservación íntegra de cada Trayectoria;
+- la reconstrucción completa del conocimiento histórico.
 
 ---
 
 # Formación
 
-La Memoria surge automáticamente como consecuencia de la incorporación de nuevos Estados.
+La Memoria se incrementa exclusivamente mediante la incorporación de nuevos Estados.
 
-No requiere operaciones específicas.
-
-Toda modificación del conocimiento incrementa la Memoria.
-
-Nunca la sustituye.
+Nunca mediante la modificación de Estados existentes.
 
 ---
 
@@ -82,9 +73,23 @@ Nunca la sustituye.
 
 Ningún Estado histórico puede eliminarse.
 
-Ninguna Representación histórica puede modificarse.
+Ninguna Representación histórica puede alterarse.
 
-Toda Trayectoria permanece íntegramente disponible mientras exista la Identidad correspondiente.
+Toda Trayectoria permanece íntegramente reconstruible.
+
+---
+
+# Relaciones
+
+La Memoria:
+
+- preserva Trayectorias;
+- conserva Estados;
+- conserva Representaciones.
+
+No constituye una entidad independiente.
+
+Constituye una propiedad permanente del Modelo.
 
 ---
 
@@ -92,7 +97,7 @@ Toda Trayectoria permanece íntegramente disponible mientras exista la Identidad
 
 ## MM-001
 
-La Memoria depende exclusivamente de los Estados y de la Trayectoria.
+La Memoria únicamente incorpora nuevos Estados.
 
 ---
 
@@ -104,13 +109,13 @@ La incorporación de nuevo conocimiento nunca elimina conocimiento previo.
 
 ## MM-003
 
-Toda reconstrucción histórica deberá producir exactamente el conocimiento correspondiente al Estado reconstruido.
+Toda reconstrucción histórica deberá reproducir exactamente el conocimiento admitido en ese Estado.
 
 ---
 
 ## MM-004
 
-La Memoria nunca modifica el significado de los elementos reconstruidos.
+La Memoria nunca modifica el significado del conocimiento conservado.
 
 ---
 
@@ -125,49 +130,34 @@ La pérdida de Memoria constituye una corrupción del Modelo.
 La Memoria nunca contiene:
 
 - Observaciones;
-- Evidencias;
 - Hipótesis;
+- Evidencias;
 - Confianza;
 - decisiones;
 - recomendaciones;
 - intervenciones;
-- objetivos;
-- planes de acción.
+- interfaces.
 
 ---
 
-# Relaciones
+# Dependencias
 
-Depende de:
-
-- 10_nucleo/axiomas.md
-- 10_nucleo/principios.md
-- 30_ontologia/estado.md
-- 30_ontologia/trayectoria.md
-
-Utilizado por:
-
-- 40_metodologia/
-- 50_producto/
+- `10_nucleo/axiomas.md`
+- `30_ontologia/modelo.md`
+- `30_ontologia/trayectoria.md`
+- `30_ontologia/estado.md`
+- `30_ontologia/representacion.md`
 
 ---
 
-# Responsabilidad
+# Utilizado por
 
-Este documento define exclusivamente el concepto de Memoria.
-
-No define Estados.
-
-No define Trayectorias.
-
-No define Representaciones.
-
-No establece mecanismos de almacenamiento.
+- `40_metodologia/`
 
 ---
 
 # Declaración
 
-La Memoria constituye la propiedad mediante la cual el Modelo puede reconstruir íntegramente el conocimiento histórico de una Identidad.
+La Memoria garantiza que toda la evolución del conocimiento permanezca íntegra, persistente y reconstruible.
 
-La evolución del Modelo nunca implica pérdida del conocimiento previamente admitido.
+Ningún Estado ni ninguna Representación previamente admitidos pueden desaparecer del Modelo.
