@@ -1,0 +1,37 @@
+# D-005 · Creación del documento ORG-STATE
+
+| Campo | Valor |
+|--------|-------|
+| Identificador | D-005 |
+| Estado | OBSOLETA |
+| Versión | 1.0 |
+
+---
+
+# Obsolescencia
+
+Esta decisión ordenó la creación inicial del documento correspondiente al Estado.
+
+Una vez incorporado el documento al canon, la decisión agotó su efecto.
+
+Se conserva únicamente como registro histórico.
+
+---
+
+# Decisión
+
+El documento:
+
+ontology/estado.md
+
+se redactará desde cero.
+
+No existe en el repositorio un documento consolidable que defina el Estado como entidad ontológica.
+
+# Evidencia
+
+Auditoría de consolidación realizada sobre el repositorio.
+
+# Consecuencia
+
+Toda referencia futura al Estado del Modelo deberá depender de ORG-STATE.
