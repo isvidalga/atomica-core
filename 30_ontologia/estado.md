@@ -1,18 +1,22 @@
-# Estado
+# ESTADO
 
-**Estado:** Frozen
+Estado: CANÓNICO
 
-**Versión:** 1.0.0
+Tipo: CONCEPTO
 
-**Breadcrumb:** `30_ontologia/estado.md`
+Versión: 2.0.0
+
+Ubicación:
+
+30_ontologia/estado.md
 
 ---
 
 # Propósito
 
-Este documento define el concepto de Estado dentro de la ontología de ATÓMICA.
+Definir el concepto de Estado dentro de la ontología de ATÓMICA.
 
-El Estado constituye la unidad fundamental mediante la cual el Modelo representa el conocimiento admitido sobre una Identidad en un instante lógico.
+El Estado constituye la unidad fundamental mediante la cual el Modelo organiza el conocimiento vigente sobre una Identidad en un instante lógico.
 
 Toda evolución del Modelo se expresa como una sucesión de Estados.
 
@@ -20,11 +24,11 @@ Toda evolución del Modelo se expresa como una sucesión de Estados.
 
 # Definición
 
-Un Estado es la representación íntegra del conocimiento que el Modelo admite sobre una única Identidad en un instante lógico.
+Un Estado es la organización del conocimiento vigente que el Modelo mantiene sobre una única Identidad en un instante lógico.
 
-Un Estado no representa la organización.
+Un Estado no representa el referente organizacional.
 
-Representa el conocimiento disponible sobre ella.
+Representa el conocimiento que el Modelo admite sobre dicho referente.
 
 Todo Estado constituye un objeto del Modelo.
 
@@ -48,32 +52,33 @@ La creación de un nuevo Estado nunca modifica uno existente.
 
 # Constitución
 
-Todo Estado está compuesto por:
+Todo Estado posee:
 
 - un identificador único;
 - una Identidad;
 - un instante lógico;
-- una Representación vigente;
 - una referencia al Estado precedente, cuando exista;
 - una referencia al Estado sucesor, cuando exista.
+
+Su Representación constituye un mecanismo independiente definido por `representacion.md`.
 
 ---
 
 # Formación
 
-Un Estado nace cuando el Modelo admite una Representación distinta de la vigente.
+Un Estado se crea cuando el Modelo admite una modificación del conocimiento vigente sobre una Identidad.
 
-La creación de un Estado depende exclusivamente de un cambio en el conocimiento admitido.
+La creación de un Estado depende exclusivamente de una modificación del conocimiento admitido.
 
-El tiempo físico no determina la creación de un Estado.
+El tiempo cronológico nunca determina por sí mismo la creación de un Estado.
 
-Todo Estado nuevo preserva íntegramente la trazabilidad con los Estados anteriores.
+Todo nuevo Estado preserva íntegramente la trazabilidad de los Estados anteriores.
 
 ---
 
 # Sucesión
 
-Todo Estado puede tener, como máximo, un Estado sucesor dentro de la misma Identidad.
+Todo Estado podrá tener, como máximo, un Estado sucesor dentro de la misma Identidad.
 
 La sucesión:
 
@@ -81,29 +86,29 @@ La sucesión:
 - mantiene la trazabilidad histórica;
 - nunca modifica Estados anteriores.
 
-La sucesión no implica continuidad de Hipótesis.
+La sucesión nunca implica continuidad de Hipótesis.
 
-La sucesión no implica aumento de Confianza.
+La sucesión nunca implica aumento de Confianza.
 
-Ambas pertenecen a la capa epistemológica.
+Ambas pertenecen exclusivamente a la epistemología.
 
 ---
 
 # Persistencia
 
-Todo Estado permanece como registro histórico.
+Todo Estado permanece como parte permanente del conocimiento histórico.
 
 Ningún Estado desaparece.
 
-Sólo un Estado puede ser vigente para una misma Identidad.
+Sólo un Estado puede permanecer vigente para una misma Identidad.
 
-La pérdida de vigencia nunca altera el contenido del Estado.
+La pérdida de vigencia nunca altera el contenido de un Estado.
 
 ---
 
-# Terminación
+# Finalización
 
-Un Estado deja de ser vigente únicamente cuando es sucedido por otro Estado perteneciente a la misma Identidad.
+Un Estado deja de ser vigente únicamente cuando otro Estado de la misma Identidad pasa a ser el vigente.
 
 La desaparición de una Identidad nunca elimina sus Estados históricos.
 
@@ -155,13 +160,13 @@ Todo Estado conserva permanentemente su trazabilidad.
 
 ## ST-008
 
-Ninguna operación puede modificar un Estado previamente constituido.
+Ninguna operación podrá modificar un Estado previamente constituido.
 
 ---
 
 ## ST-009
 
-Todo cambio en el conocimiento admitido genera un nuevo Estado.
+Toda modificación del conocimiento vigente genera un nuevo Estado.
 
 ---
 
@@ -175,35 +180,49 @@ Un Estado nunca contiene:
 - Confianza;
 - recomendaciones;
 - intervenciones;
-- clasificaciones metodológicas;
-- puntuaciones;
-- interfaces;
 - algoritmos;
+- interfaces;
 - componentes visuales.
 
 ---
 
-# Dependencias
+# Relaciones
 
-- `10_nucleo/axiomas.md`
-- `30_ontologia/identidad.md`
-- `30_ontologia/representacion.md`
-- `30_ontologia/trayectoria.md`
+Depende de:
+
+- 10_nucleo/axiomas.md
+- 10_nucleo/principios.md
+- 30_ontologia/identidad.md
+
+Gobierna:
+
+- trayectoria.md
+- representacion.md
+
+Utilizado por:
+
+- 40_metodologia/
+- 50_producto/
 
 ---
 
-# Utilizado por
+# Responsabilidad
 
-- `30_ontologia/trayectoria.md`
-- `30_ontologia/representacion.md`
-- `40_metodologia/`
-- `50_producto/`
+Este documento define exclusivamente el concepto de Estado.
+
+No define Identidad.
+
+No define Trayectoria.
+
+No define Representación.
+
+No establece procedimientos metodológicos.
 
 ---
 
 # Declaración
 
-El Estado constituye la unidad fundamental mediante la cual ATÓMICA preserva y organiza el conocimiento admitido sobre una Identidad.
+El Estado constituye la unidad fundamental mediante la cual ATÓMICA organiza el conocimiento vigente sobre una Identidad.
 
 Toda evolución del Modelo se produce mediante la creación de nuevos Estados.
 
