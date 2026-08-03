@@ -3,7 +3,7 @@
 | Campo | Valor |
 |--------|-------|
 | Identificador | D-005 |
-| Estado | CONGELADA |
+| Estado | OBSOLETA |
 | Versión | 1.0 |
 
 # Decisión
