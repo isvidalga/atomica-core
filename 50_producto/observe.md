@@ -2,11 +2,13 @@
 
 Estado: CANÓNICO
 
-Versión: 1.0
+Versión: 2.0.0
+
+Tipo: Producto
 
 Ubicación:
 
-```
+```text
 50_producto/observe.md
 ```
 
@@ -14,214 +16,294 @@ Ubicación:
 
 # Propósito
 
-Observe constituye el instrumento de exploración del Modelo Vivo.
+Este documento define Observe como el instrumento del Producto responsable de ampliar la comprensión del conocimiento representado por el Modelo Vivo.
 
-No genera conocimiento.
+Su finalidad consiste en permitir explorar el contexto de un elemento concreto del conocimiento organizacional sin modificar su significado.
 
-No realiza inferencias.
+Observe responde exclusivamente a una pregunta:
 
-No interpreta la organización.
+> **¿Qué está ocurriendo aquí?**
 
-Su función consiste en permitir explorar el conocimiento representado por el Modelo Vivo con un nivel creciente de detalle.
+---
 
-Observe responde a una única pregunta:
+# Alcance
 
-> ¿Qué está ocurriendo aquí?
+Este documento regula las responsabilidades de Observe como instrumento de la capa Producto.
+
+No define:
+
+- la Ontología;
+- la Metodología;
+- el Modelo Vivo;
+- el Estado Sistémico;
+- las Relaciones;
+- la implementación técnica.
+
+---
+
+# Dependencias normativas
+
+Este documento depende de:
+
+- `00_canon/`
+- `10_nucleo/`
+- `20_epistemologia/`
+- `30_ontologia/`
+- `40_metodologia/`
+- `50_producto/principios.md`
+- `50_producto/modelo_vivo.md`
+- `50_producto/lenguaje_producto.md`
+- `50_producto/experiencia_cognitiva.md`
+- `50_producto/navegacion.md`
+- `50_producto/flujo_exploracion.md`
+
+En caso de conflicto prevalecen siempre las definiciones canónicas.
+
+---
+
+# Objetivo
+
+Observe amplía la comprensión del conocimiento representado por el Observatorio.
+
+Su responsabilidad consiste en proporcionar el contexto necesario para comprender un elemento concreto del Modelo Vivo.
+
+No explica toda la organización.
+
+No interpreta el conocimiento.
+
+No propone decisiones.
+
+No modifica el Modelo.
 
 ---
 
 # Naturaleza
 
-Observe pertenece al Producto.
+Observe constituye un instrumento de exploración.
 
-No pertenece al Canon.
+No constituye un panel de control.
 
-No pertenece a la Ontología.
+No constituye un visor de datos.
 
-No constituye un dashboard.
+No constituye un motor de análisis.
 
-No representa una cronología.
+No constituye un instrumento de inferencia.
 
-No es un visor de datos.
+Representa exclusivamente conocimiento ya existente.
 
-Representa una vista contextual del conocimiento disponible.
+---
+
+# Responsabilidad
+
+Corresponde a Observe:
+
+- ampliar el contexto de un elemento concreto;
+- representar las relaciones directamente relevantes;
+- conservar el contexto durante toda la exploración;
+- facilitar la transición hacia niveles superiores de profundidad;
+- mantener la trazabilidad del conocimiento representado.
+
+No le corresponde:
+
+- generar conocimiento;
+- modificar conocimiento;
+- interpretar conocimiento;
+- recomendar acciones;
+- ejecutar análisis.
 
 ---
 
 # Principios
 
-## OBS-001 · Toda exploración parte del Modelo Vivo
+## OBS-001 · Una única pregunta
 
-Observe nunca constituye el punto de entrada al producto.
+Observe responde exclusivamente:
 
-Toda exploración comienza desde un elemento representado por el Modelo Vivo.
+> ¿Qué está ocurriendo aquí?
 
----
-
-## OBS-002 · El contexto nunca se pierde
-
-Toda navegación conserva el contexto del elemento explorado.
-
-Observe nunca mezcla contextos independientes.
+Toda representación deberá contribuir directamente a responder dicha pregunta.
 
 ---
 
-## OBS-003 · El conocimiento no cambia durante la exploración
+## OBS-002 · La exploración parte del contexto
 
-Observe nunca modifica el conocimiento representado.
+Toda exploración comienza desde un elemento previamente representado.
 
-Toda exploración se realiza sobre el estado vigente del Modelo Vivo.
+Observe nunca constituye un punto de entrada independiente al Producto.
+
+---
+
+## OBS-003 · El contexto permanece continuo
+
+Durante toda la exploración el usuario conserva el contexto del elemento seleccionado.
+
+Nunca se producen cambios de contexto no explícitos.
 
 ---
 
 ## OBS-004 · La profundidad aumenta progresivamente
 
-Cada nivel de navegación revela mayor detalle sobre el mismo conocimiento.
+Cada interacción amplía la comprensión del mismo conocimiento.
 
-Nunca sustituye un contexto por otro.
+Nunca sustituye un contexto por otro distinto.
+
+---
+
+## OBS-005 · El conocimiento permanece estable
+
+La exploración nunca modifica el Modelo Vivo.
+
+Únicamente modifica el nivel de comprensión alcanzado por el usuario.
+
+---
+
+## OBS-006 · La incertidumbre permanece visible
+
+Toda incertidumbre asociada al conocimiento explorado continuará siendo visible cuando resulte aplicable.
+
+La exploración nunca elimina incertidumbre.
 
 ---
 
 # Punto de exploración
 
-Observe puede iniciarse desde cualquier elemento representado por el Modelo Vivo.
+Observe siempre parte de un elemento existente en el Modelo Vivo.
 
-Entre otros:
+La naturaleza concreta del elemento pertenece a la Ontología.
 
-- un Sistema Organizacional;
-- una tensión;
-- un patrón;
-- una capacidad;
-- una fragilidad;
-- una relación;
-- una hipótesis.
-
-Observe nunca constituye una entrada independiente al producto.
+Este documento no mantiene un catálogo propio de elementos explorables.
 
 ---
 
-# Información representada
+# Representación
 
-Observe puede mostrar:
+Observe amplía el conocimiento mostrado por el Observatorio incorporando el contexto necesario para comprender el elemento seleccionado.
 
-- relaciones;
-- dependencias;
-- tensiones;
-- evolución local;
-- incertidumbres;
-- nivel de confianza.
+La representación podrá incluir, cuando resulte pertinente:
 
-Nunca representa:
+- relaciones relevantes;
+- contexto organizacional;
+- conexiones significativas;
+- incertidumbre;
+- confianza;
+- referencias hacia instrumentos de mayor profundidad.
 
-- recomendaciones;
-- planes de acción;
-- decisiones;
-- información ajena al Modelo Vivo.
+Toda representación deberá conservar el significado definido por el Sistema Normativo.
+
+---
+
+# Profundidad
+
+Observe constituye el segundo nivel del Flujo de Exploración.
+
+Su finalidad consiste en preparar el acceso a instrumentos especializados de comprensión.
+
+La profundización nunca modifica el conocimiento.
+
+Únicamente incrementa el nivel de detalle disponible.
 
 ---
 
 # Navegación
 
-Toda navegación incrementa el nivel de detalle manteniendo el contexto.
+La navegación mantiene siempre el contexto del elemento explorado.
 
-La secuencia habitual de exploración es:
+Observe permite ampliar progresivamente la comprensión sin romper la continuidad cognitiva.
 
-Observe
-
-↓
-
-Pattern
-
-↓
-
-Crónica
-
-↓
-
-Evidencias
-
-Cada instrumento amplía la comprensión del mismo conocimiento.
+La transición hacia otros instrumentos pertenece al Flujo de Exploración definido por el Producto.
 
 ---
 
 # Interacción
 
-El usuario puede:
+Observe permite:
 
-- observar;
 - explorar;
-- seleccionar elementos;
-- profundizar en el contexto.
+- ampliar contexto;
+- recorrer relaciones;
+- profundizar en el conocimiento representado.
 
 Observe no permite:
 
-- parametrizar el modelo;
-- modificar el conocimiento;
-- generar informes;
-- configurar el sistema.
+- modificar el Modelo;
+- registrar conocimiento;
+- ejecutar inferencias;
+- alterar la representación del conocimiento.
 
 ---
 
-# Relación con el Modelo Vivo
+# Integración con el Modelo Vivo
 
-Observe representa el conocimiento organizado por el Modelo Vivo.
+El Modelo Vivo mantiene operativo el conocimiento organizacional.
 
-Nunca genera conocimiento propio.
+Observe representa una vista contextual de dicho conocimiento.
 
-Toda representación depende exclusivamente del estado vigente del Modelo.
+No incorpora información ajena al Modelo.
+
+No modifica su contenido.
+
+---
+
+# Integración con el Flujo de Exploración
+
+Observe constituye el segundo nivel del Flujo de Exploración.
+
+Recibe el contexto procedente del Observatorio.
+
+Facilita el acceso a instrumentos de mayor profundidad.
+
+Su responsabilidad finaliza cuando el usuario dispone del contexto suficiente para continuar explorando.
 
 ---
 
 # Restricciones
 
-## OBS-001
+Observe no:
 
-Nunca modificar el Modelo Vivo.
-
----
-
-## OBS-002
-
-Nunca generar inferencias.
-
----
-
-## OBS-003
-
-Nunca interpretar el conocimiento representado.
-
----
-
-## OBS-004
-
-Nunca perder el contexto durante la navegación.
-
----
-
-## OBS-005
-
-Nunca representar información ajena al Modelo Vivo.
+- redefine conceptos del Canon;
+- modifica la Ontología;
+- ejecuta inferencias;
+- realiza análisis;
+- interpreta conocimiento;
+- recomienda intervenciones;
+- modifica el Modelo Vivo;
+- representa conocimiento no trazable.
 
 ---
 
 # Criterios de aceptación
 
-La implementación de Observe se considera correcta únicamente si cumple todas las condiciones siguientes:
+Una implementación de Observe se considera conforme únicamente cuando:
 
-- Toda exploración parte de un elemento del Modelo Vivo.
-- El contexto permanece constante durante la navegación.
-- Ninguna representación modifica el conocimiento existente.
-- Toda información mostrada pertenece al Modelo Vivo.
-- Observe nunca genera conocimiento propio.
+- responde exclusivamente a la pregunta "¿Qué está ocurriendo aquí?";
+- toda exploración parte de un elemento existente del Modelo Vivo;
+- el contexto permanece continuo durante toda la exploración;
+- la profundidad aumenta progresivamente;
+- toda representación conserva el significado del conocimiento;
+- la incertidumbre permanece visible cuando corresponde;
+- el instrumento no modifica el Modelo Vivo;
+- toda representación permanece completamente trazable.
+
+El incumplimiento de cualquiera de estos criterios implica que la implementación no es conforme con el Canon.
 
 ---
 
-# Filosofía
+# Gobierno
 
-Comprender una organización requiere observar el conocimiento desde distintos niveles de detalle.
+La evolución de este documento se encuentra regulada por el Sistema Normativo y el Gobierno del Canon.
 
-Observe no responde nuevas preguntas.
+Toda modificación deberá limitarse a las responsabilidades de Observe como instrumento de la capa Producto.
 
-Permite explorar con mayor profundidad las respuestas que el Modelo Vivo ya representa.
+Las modificaciones que afecten al significado del conocimiento deberán realizarse previamente en las capas normativas correspondientes.
 
-Su función consiste en hacer visible el contexto del conocimiento, no ampliarlo.
+---
+
+# Declaración
+
+Observe no produce conocimiento.
+
+No interpreta conocimiento.
+
+No decide.
+
+Su responsabilidad consiste exclusivamente en ampliar el contexto del conocimiento representado por el Modelo Vivo, preservando en todo momento su significado, su continuidad, su trazabilidad y su incertidumbre conforme al Sistema Normativo.
