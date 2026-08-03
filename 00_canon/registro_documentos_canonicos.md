@@ -38,11 +38,12 @@ La inscripción nunca crea autoridad.
 
 # Documento Canónico
 
-Un documento canónico es un documento reconocido por el canon.
 
-Todo documento canónico debe figurar exactamente una vez en este registro.
+Un documento canónico es un documento perteneciente al canon.
 
-El registro constituye la referencia oficial del inventario documental.
+Todo documento canónico deberá figurar exactamente una vez en este registro.
+
+Este registro constituye el inventario oficial de dichos documentos.
 
 ---
 
@@ -104,7 +105,9 @@ Cada entrada contiene únicamente:
 
 Una nueva inscripción incorpora el documento al inventario oficial.
 
-La inscripción no modifica su autoridad normativa.
+La inscripción presupone que el documento ya ha adquirido autoridad conforme al Sistema Normativo.
+
+La inscripción no modifica dicha autoridad.
 
 ---
 
@@ -140,7 +143,6 @@ Depende de:
 
 - sistema_normativo.md
 - gobierno_del_canon.md
-- arquitectura_repositorio.md
 - politica_identificadores.md
 
 Utilizado por:
