@@ -1,28 +1,36 @@
-# Confianza
+# CONFIANZA
 
-**Estado:** Frozen
+Estado: CANÓNICO
 
-**Versión:** 1.0.0
+Tipo: CONCEPTO
 
-**Breadcrumb:** `20_epistemologia/confianza.md`
+Versión: 2.0.0
+
+Ubicación:
+
+20_epistemologia/confianza.md
 
 ---
 
 # Propósito
 
-Este documento define el concepto de Confianza dentro de la epistemología de ATÓMICA.
+Definir el concepto de Confianza dentro de la epistemología de ATÓMICA.
 
-La Confianza expresa el grado de respaldo que el Modelo atribuye a una Hipótesis según el conocimiento disponible.
+La Confianza expresa el grado de respaldo que el Modelo puede justificar para una Hipótesis a partir de las Evidencias disponibles.
 
 ---
 
 # Definición
 
-La Confianza es una propiedad de una Hipótesis.
+La Confianza es una estimación derivada del respaldo que las Evidencias proporcionan a una Hipótesis.
 
-Representa la solidez con la que el Modelo sostiene dicha Hipótesis en un momento determinado.
+La Confianza pertenece a la Hipótesis.
 
-La Confianza nunca expresa certeza.
+No constituye una propiedad arbitraria.
+
+No representa certeza.
+
+Representa únicamente el grado de respaldo que el Modelo puede justificar en un momento determinado.
 
 ---
 
@@ -31,7 +39,7 @@ La Confianza nunca expresa certeza.
 La Confianza:
 
 - pertenece al Modelo;
-- depende de las Evidencias disponibles;
+- se deriva exclusivamente de las Evidencias disponibles;
 - evoluciona conforme evoluciona el conocimiento;
 - nunca modifica el significado de una Hipótesis.
 
@@ -42,20 +50,36 @@ La Confianza:
 La Confianza permite:
 
 - comparar el respaldo relativo entre Hipótesis;
-- identificar incertidumbre;
-- comunicar la robustez del conocimiento disponible.
+- representar la incertidumbre del Modelo;
+- comunicar la solidez del conocimiento disponible.
 
-No permite afirmar que una Hipótesis sea verdadera.
+La Confianza nunca permite afirmar que una Hipótesis sea verdadera.
 
 ---
 
 # Relaciones
 
-La Confianza:
+La Confianza constituye la última etapa del proceso epistemológico.
 
-- pertenece exactamente a una Hipótesis;
-- depende de las Evidencias asociadas a dicha Hipótesis;
-- puede aumentar o disminuir con el tiempo.
+```
+Referente
+      │
+      ▼
+Observación
+      │
+      ▼
+Evidencia
+      │
+      ▼
+Hipótesis
+      │
+      ▼
+Confianza
+```
+
+Toda Confianza pertenece exactamente a una Hipótesis.
+
+Toda Confianza depende exclusivamente de las Evidencias asociadas a dicha Hipótesis.
 
 ---
 
@@ -75,17 +99,25 @@ Una Confianza nunca existe de forma independiente.
 
 ## C-003
 
-La modificación de una Confianza nunca altera la naturaleza de una Hipótesis.
+Toda Confianza deberá derivarse mediante reglas explícitas.
+
+Nunca podrá asignarse manualmente.
 
 ---
 
 ## C-004
 
-Toda Confianza puede variar cuando aparecen nuevas Evidencias.
+Toda Confianza podrá variar cuando aparezcan nuevas Evidencias.
 
 ---
 
 ## C-005
+
+La modificación de la Confianza nunca altera la naturaleza de una Hipótesis.
+
+---
+
+## C-006
 
 La Confianza nunca representa certeza.
 
@@ -104,18 +136,34 @@ La Confianza nunca representa:
 
 ---
 
-# Dependencias
+# Relaciones
 
-- `10_nucleo/axiomas.md`
-- `20_epistemologia/hipotesis.md`
-- `20_epistemologia/evidencia.md`
+Depende de:
+
+- 10_nucleo/axiomas.md
+- 10_nucleo/principios.md
+- 20_epistemologia/principios_epistemologicos.md
+- 20_epistemologia/evidencia.md
+- 20_epistemologia/hipotesis.md
+
+Utilizado por:
+
+- 40_metodologia/
+- 50_producto/
 
 ---
 
-# Utilizado por
+# Responsabilidad
 
-- `40_metodologia/`
-- `50_producto/`
+Este documento define exclusivamente el concepto de Confianza.
+
+No define Observaciones.
+
+No define Evidencias.
+
+No define Hipótesis.
+
+No establece procedimientos metodológicos.
 
 ---
 
