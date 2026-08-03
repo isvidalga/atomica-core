@@ -2,7 +2,7 @@
 
 **Estado:** CANÓNICO
 
-**Versión:** 2.0.0
+**Versión:** 2.1.0
 
 **Tipo:** Producto
 
