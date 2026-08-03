@@ -2,11 +2,13 @@
 
 Estado: CANÓNICO
 
-Versión: 1.0
+Versión: 2.0.0
+
+Tipo: Producto
 
 Ubicación:
 
-```
+```text
 50_producto/flujo_exploracion.md
 ```
 
@@ -14,69 +16,136 @@ Ubicación:
 
 # Propósito
 
-El Flujo de Exploración define la secuencia canónica mediante la cual un CEO explora el conocimiento representado por ATÓMICA.
+Este documento establece el Flujo de Exploración canónico de ATÓMICA.
 
-No constituye un proceso obligatorio.
+El Flujo de Exploración organiza la progresión cognitiva mediante la cual una persona incrementa su comprensión del conocimiento representado por el Producto.
 
-No representa un flujo de trabajo.
+No constituye:
 
-No impone una secuencia cerrada.
+- un proceso de trabajo;
+- un flujo operativo;
+- una secuencia obligatoria;
+- una implementación de la interfaz.
 
-Describe el recorrido natural desde la observación hasta la verificación del conocimiento.
+Su finalidad consiste en definir el orden lógico mediante el cual los instrumentos amplían la comprensión del mismo conocimiento.
 
-Cada instrumento responde a una única pregunta.
+---
 
-Nunca a varias.
+# Alcance
+
+Este documento regula la progresión de la exploración entre los instrumentos del Producto.
+
+Es aplicable a:
+
+- instrumentos;
+- recorridos de exploración;
+- cambios de profundidad;
+- transiciones entre niveles de comprensión.
+
+No define:
+
+- la navegación;
+- la Ontología;
+- la Metodología;
+- el Modelo Vivo;
+- el diseño de la interfaz.
+
+---
+
+# Dependencias normativas
+
+Este documento depende de:
+
+- `00_canon/`
+- `10_nucleo/`
+- `20_epistemologia/`
+- `30_ontologia/`
+- `40_metodologia/`
+- `50_producto/principios.md`
+- `50_producto/lenguaje_producto.md`
+- `50_producto/experiencia_cognitiva.md`
+- `50_producto/navegacion.md`
+- `50_producto/modelo_vivo.md`
+
+En caso de conflicto prevalecen siempre las definiciones canónicas.
+
+---
+
+# Objetivo
+
+El Flujo de Exploración establece una progresión de comprensión.
+
+Cada instrumento amplía el conocimiento accesible desde el instrumento anterior.
+
+El objetivo no consiste en recorrer pantallas.
+
+Consiste en aumentar progresivamente el nivel de comprensión del conocimiento representado.
 
 ---
 
 # Naturaleza
 
-El Flujo de Exploración pertenece al Producto.
+El Flujo de Exploración pertenece exclusivamente a la capa Producto.
 
-No pertenece al Canon.
+No modifica el Modelo Vivo.
 
-No pertenece a la Ontología.
+No genera conocimiento.
 
-No pertenece a la Metodología.
+No interpreta el conocimiento.
 
-No representa la navegación de la interfaz.
+No establece reglas metodológicas.
 
-Representa la profundidad creciente con la que puede explorarse el conocimiento.
+Únicamente organiza la progresión cognitiva entre instrumentos.
 
 ---
 
 # Principios
 
-## FE-001 · Una pregunta por nivel
+## FEX-001 · Una pregunta por instrumento
 
-Cada instrumento responde una única pregunta.
+Cada instrumento responde una única pregunta principal.
 
-Nunca varias simultáneamente.
-
----
-
-## FE-002 · La profundidad aumenta progresivamente
-
-Cada nivel amplía el anterior.
-
-Nunca lo sustituye.
+La exploración nunca mezcla preguntas pertenecientes a instrumentos distintos.
 
 ---
 
-## FE-003 · El contexto permanece constante
+## FEX-002 · Comprensión progresiva
+
+Cada nivel amplía el conocimiento comprendido anteriormente.
+
+Nunca sustituye la comprensión ya alcanzada.
+
+---
+
+## FEX-003 · Contexto continuo
 
 Toda exploración conserva el contexto desde el que fue iniciada.
 
-El usuario nunca pierde la referencia del elemento que está explorando.
+El usuario nunca pierde la referencia del conocimiento que está explorando.
 
 ---
 
-## FE-004 · El conocimiento nunca cambia durante la exploración
+## FEX-004 · Exploración sin modificación
 
-El recorrido no modifica el Modelo Vivo.
+La exploración nunca modifica el Modelo Vivo.
 
-Únicamente permite comprenderlo con mayor profundidad.
+Únicamente incrementa el nivel de comprensión del usuario.
+
+---
+
+## FEX-005 · Profundidad creciente
+
+Cada transición conduce hacia un mayor nivel de detalle.
+
+Nunca hacia una reinterpretación del conocimiento.
+
+---
+
+## FEX-006 · Independencia de la interfaz
+
+El Flujo de Exploración es independiente de la implementación visual.
+
+Puede materializarse mediante distintas interfaces sin alterar su significado.
 
 ---
 
@@ -84,195 +153,202 @@ El recorrido no modifica el Modelo Vivo.
 
 ## Nivel 1 · Observatorio
 
-Pregunta:
+### Pregunta
 
-> ¿Cómo se encuentra mi organización en este momento?
+> ¿Cómo está mi organización ahora?
 
-Instrumento:
+### Objetivo
 
-Observatorio.
+Permitir una comprensión inmediata del estado actual del conocimiento.
 
-Tiempo esperado:
+### Resultado esperado
 
-Menos de diez segundos.
+El usuario identifica dónde concentrar su atención.
 
-Resultado:
+No explica.
 
-El CEO identifica dónde merece la pena concentrar su atención.
+No interpreta.
+
+No profundiza.
 
 ---
 
 ## Nivel 2 · Observe
 
-Pregunta:
+### Pregunta
 
-> ¿Qué está ocurriendo aquí?
+> ¿Qué está ocurriendo?
 
-Instrumento:
+### Objetivo
 
-Observe.
+Ampliar el contexto del conocimiento observado.
 
-Tiempo esperado:
+### Resultado esperado
 
-Entre treinta y noventa segundos.
-
-Resultado:
-
-El CEO comprende el contexto del elemento observado.
+El usuario comprende el significado del elemento explorado.
 
 ---
 
 ## Nivel 3 · Pattern
 
-Pregunta:
+### Pregunta
 
-> ¿Por qué este comportamiento tiende a repetirse?
+> ¿Por qué ocurre?
 
-Instrumento:
+### Objetivo
 
-Pattern.
+Facilitar la comprensión de las estructuras que explican el comportamiento observado.
 
-Resultado:
+### Resultado esperado
 
-El CEO comprende las estructuras organizacionales que sustentan el comportamiento observado.
+El usuario comprende las relaciones relevantes del conocimiento representado.
 
 ---
 
 ## Nivel 4 · Crónica
 
-Pregunta:
+### Pregunta
 
-> ¿Cómo ha evolucionado este sistema?
+> ¿Cómo ha evolucionado?
 
-Instrumento:
+### Objetivo
 
-Crónica.
+Comprender la evolución temporal del conocimiento.
 
-Resultado:
+### Resultado esperado
 
-El CEO comprende la evolución temporal del conocimiento.
+El usuario interpreta la continuidad del conocimiento representado.
 
 ---
 
 ## Nivel 5 · Evidencias
 
-Pregunta:
+### Pregunta
 
-> ¿Por qué el Modelo estima esto?
+> ¿En qué se fundamenta?
 
-Instrumento:
+### Objetivo
 
-Evidencias.
+Permitir la verificación del conocimiento disponible.
 
-Resultado:
+### Resultado esperado
 
-El CEO comprende el fundamento y el nivel de confianza del conocimiento representado.
-
----
-
-# Donella
-
-Donella constituye una capa transversal de interpretación.
-
-No pertenece a un nivel concreto del Flujo de Exploración.
-
-Puede invocarse desde cualquier instrumento.
-
-Donella responde a una única pregunta:
-
-> ¿Qué merece la pena comprender ahora?
-
-Su función consiste en facilitar la interpretación del conocimiento disponible.
-
-Nunca modifica el Modelo Vivo.
-
-Nunca genera conocimiento nuevo.
+El usuario comprende el fundamento, la trazabilidad y la incertidumbre del conocimiento representado.
 
 ---
 
-# Secuencia canónica
+# Progresión
 
-```text
-Observatorio
-      │
-      ▼
-Observe
-      │
-      ▼
-Pattern
-      │
-      ▼
-Crónica
-      │
-      ▼
-Evidencias
+Cada nivel presupone la comprensión alcanzada en el nivel anterior.
 
-Donella puede invocarse desde cualquier nivel.
-```
+No constituye un requisito obligatorio recorrer todos los niveles.
+
+El usuario puede iniciar la exploración desde cualquier instrumento compatible con su necesidad de comprensión.
+
+Cuando exista una transición entre niveles, ésta deberá preservar:
+
+- el contexto;
+- el significado;
+- la continuidad;
+- la trazabilidad.
+
+---
+
+# Profundidad
+
+El aumento de profundidad nunca modifica el conocimiento.
+
+Únicamente incrementa:
+
+- el contexto disponible;
+- las relaciones visibles;
+- la explicación accesible;
+- la capacidad de interpretación.
+
+Toda profundización mantiene la coherencia con el Modelo Vivo.
+
+---
+
+# Instrumentos transversales
+
+Algunos instrumentos pueden asistir al usuario durante cualquier momento del recorrido.
+
+Estos instrumentos no constituyen niveles del Flujo de Exploración.
+
+Su finalidad consiste en facilitar la interpretación del conocimiento disponible.
+
+Su utilización nunca modifica la progresión definida por este documento.
+
+---
+
+# Integración
+
+El Flujo de Exploración coordina la progresión entre instrumentos.
+
+La responsabilidad de cada instrumento continúa definida por su propio documento.
+
+El Flujo de Exploración no sustituye dichas responsabilidades.
+
+Únicamente establece el orden lógico mediante el cual pueden combinarse.
 
 ---
 
 # Restricciones
 
-## FE-001
+El Flujo de Exploración no:
 
-Ningún instrumento responde más de una pregunta principal.
-
----
-
-## FE-002
-
-La exploración nunca modifica el conocimiento representado.
-
----
-
-## FE-003
-
-Toda navegación conserva el contexto de origen.
-
----
-
-## FE-004
-
-Cada nivel aumenta la profundidad de comprensión.
-
-Nunca sustituye completamente al nivel anterior.
-
----
-
-## FE-005
-
-Donella nunca forma parte de la secuencia de exploración.
-
-Constituye un instrumento transversal de interpretación.
+- redefine conceptos del Canon;
+- modifica el Modelo Vivo;
+- sustituye la navegación;
+- impone recorridos obligatorios;
+- interpreta el conocimiento;
+- establece reglas metodológicas;
+- depende de una implementación concreta.
 
 ---
 
 # Criterios de aceptación
 
-La implementación del Flujo de Exploración se considera correcta únicamente si cumple todas las condiciones siguientes:
+Una implementación del Flujo de Exploración se considera conforme únicamente cuando:
 
-- Cada instrumento responde a una única pregunta.
-- La profundidad de exploración aumenta progresivamente.
-- El contexto nunca se pierde durante la navegación.
-- Ningún instrumento modifica el conocimiento representado.
-- Donella puede invocarse desde cualquier nivel.
-- Toda exploración mantiene la trazabilidad hacia el Modelo Vivo.
+- cada instrumento responde una única pregunta principal;
+- la profundidad aumenta progresivamente;
+- el contexto permanece continuo;
+- la exploración no modifica el conocimiento;
+- las transiciones conservan el significado del conocimiento;
+- la progresión mantiene la trazabilidad con el Modelo Vivo;
+- el flujo permanece independiente de la interfaz.
+
+El incumplimiento de cualquiera de estos criterios implica que la implementación no es conforme con el Canon.
 
 ---
 
-# Filosofía
+# Gobierno
 
-ATÓMICA no pretende responder todas las preguntas de una organización al mismo tiempo.
+La evolución de este documento se encuentra regulada por el Sistema Normativo y el Gobierno del Canon.
 
-Permite formularlas en el momento adecuado y con el nivel de profundidad necesario.
+Toda modificación deberá limitarse a la organización del Flujo de Exploración como responsabilidad propia de la capa Producto.
 
-Cada instrumento amplía la comprensión del mismo conocimiento.
+Las modificaciones que afecten al significado del conocimiento deberán realizarse previamente en las capas normativas correspondientes.
 
-El recorrido comienza observando.
+---
 
-Continúa comprendiendo.
+# Declaración
 
-Finaliza verificando.
+El Flujo de Exploración no organiza pantallas.
 
-La decisión permanece siempre en manos del CEO.
+No organiza funcionalidades.
+
+Organiza comprensión.
+
+Cada instrumento amplía la capacidad del usuario para interpretar el mismo conocimiento representado por el Modelo Vivo.
+
+La exploración comienza con el reconocimiento.
+
+Continúa con la comprensión.
+
+Progresa hacia la explicación.
+
+Finaliza con la verificación.
+
+En todo momento, la decisión permanece en manos del usuario.
