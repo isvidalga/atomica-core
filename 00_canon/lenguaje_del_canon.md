@@ -4,7 +4,7 @@ Estado: CANÓNICO
 
 Tipo: NORMA
 
-Versión: 2.0.0
+Versión: 2.1.0
 
 Ubicación:
 
@@ -14,7 +14,9 @@ Ubicación:
 
 # Propósito
 
-Definir el significado oficial de los términos fundamentales del Canon.
+Definir el sistema oficial de lenguaje del Canon.
+
+Establecer las reglas mediante las cuales los términos adquieren significado normativo.
 
 Eliminar ambigüedades terminológicas.
 
@@ -24,7 +26,15 @@ No define conceptos metodológicos.
 
 No define conceptos del dominio.
 
-Define únicamente el lenguaje normativo del Canon.
+Define exclusivamente las reglas del lenguaje normativo del Canon.
+
+---
+
+# Alcance
+
+Todo término con autoridad normativa deberá ajustarse a este documento.
+
+Ningún documento podrá utilizar un término normativo con un significado distinto del aquí establecido.
 
 ---
 
@@ -32,35 +42,43 @@ Define únicamente el lenguaje normativo del Canon.
 
 ## P-001 · Un término posee una única definición oficial
 
-No pueden coexistir definiciones incompatibles.
+No podrán coexistir definiciones incompatibles para un mismo término.
 
 ---
 
 ## P-002 · La definición prevalece sobre el uso
 
-Si un documento utiliza un término con un significado distinto, deberá corregirse.
+Cuando exista conflicto entre el uso de un término y su definición oficial, prevalecerá siempre la definición.
 
 ---
 
 ## P-003 · El lenguaje precede a la metodología
 
-Todo término utilizado por un documento canónico deberá estar definido.
+Todo término utilizado por un documento con autoridad normativa deberá encontrarse definido oficialmente.
 
-Los términos no definidos deberán incorporarse antes de adquirir carácter normativo.
+Los términos no definidos carecen de autoridad normativa.
 
 ---
 
 ## P-004 · Toda redefinición es explícita
 
-Modificar una definición requiere modificar este documento.
+Modificar una definición requiere una nueva versión de este documento.
 
-Nunca puede hacerse implícitamente.
+Nunca podrá realizarse implícitamente.
+
+---
+
+## P-005 · Toda definición posee una única autoridad
+
+Cada término posee exactamente una definición oficial.
+
+Las definiciones duplicadas o incompatibles constituyen una incoherencia del Canon.
 
 ---
 
 # Estructura de una definición
 
-Cada término contiene únicamente:
+Toda definición oficial deberá contener, como mínimo:
 
 - Nombre
 - Definición
@@ -70,13 +88,49 @@ Cada término contiene únicamente:
 
 ---
 
-# Términos definidos
+# Incorporación
 
-Las definiciones oficiales residen en las entradas individuales de este documento.
+La incorporación de un nuevo término requiere:
 
-La ausencia de una definición constituye una incoherencia documental que deberá corregirse.
+- una definición conforme a esta norma;
+- una nueva versión de este documento.
 
-Este documento no exige que todas las definiciones existan desde la primera versión.
+---
+
+# Modificación
+
+Toda modificación de una definición:
+
+- conserva el historial documental;
+- requiere una nueva versión;
+- nunca modifica implícitamente otras definiciones.
+
+---
+
+# Retirada
+
+La retirada de una definición nunca elimina su historial.
+
+Toda retirada deberá declararse explícitamente.
+
+---
+
+# Definiciones oficiales
+
+Las definiciones oficiales del Canon forman parte de este documento.
+
+La ausencia de definición implica que el término carece de significado normativo oficial.
+
+---
+
+# Restricciones
+
+No se permite:
+
+- utilizar un término normativo con un significado distinto del oficial;
+- definir un mismo término más de una vez;
+- redefinir implícitamente una definición existente;
+- otorgar autoridad normativa a un término no definido.
 
 ---
 
@@ -87,6 +141,18 @@ Depende de:
 - sistema_normativo.md
 - gobierno_del_canon.md
 
-Gobernado por:
+Gobierna:
 
-- sistema_normativo.md
+- el lenguaje normativo del Canon.
+
+---
+
+# Responsabilidad
+
+Este documento define exclusivamente las reglas del lenguaje normativo del Canon.
+
+No define conceptos metodológicos.
+
+No define conceptos del dominio.
+
+No sustituye a los documentos responsables de cada concepto.
