@@ -2,6 +2,8 @@
 
 Estado: CANÓNICO
 
+Tipo: CATÁLOGO
+
 Versión: 2.0.0
 
 Ubicación:
@@ -14,7 +16,7 @@ Ubicación:
 
 Declarar el conjunto oficial de entidades ontológicas del Modelo.
 
-Este catálogo constituye la única fuente de verdad sobre las entidades que forman parte de la Ontología.
+Este catálogo constituye el registro oficial de las entidades que forman parte de la Ontología del Canon.
 
 No define las entidades.
 
@@ -32,7 +34,7 @@ Toda entidad posee un único identificador.
 
 Toda entidad posee exactamente una definición oficial.
 
-Toda entidad pertenece exclusivamente a la Ontología.
+Toda entidad inscrita en este catálogo pertenece exclusivamente a la Ontología.
 
 Las entidades epistemológicas pertenecen a la Epistemología y nunca forman parte de este catálogo.
 
@@ -83,7 +85,7 @@ Estos conceptos pertenecen exclusivamente a la capa de Epistemología.
 La incorporación de una nueva entidad requiere:
 
 - definición ontológica;
-- validación metodológica;
+- aprobación conforme al Gobierno del Canon;
 - inscripción en este catálogo;
 - publicación de una nueva versión del Canon.
 
@@ -93,9 +95,7 @@ La incorporación de una nueva entidad requiere:
 
 Una entidad retirada permanece registrada.
 
-Su estado pasará a:
-
-OBSOLETO
+Su estado pasará a OBSOLETO cuando dicho estado exista para este tipo de artefacto.
 
 Su identificador nunca podrá reutilizarse.
 
@@ -107,6 +107,8 @@ Una entidad nunca podrá aparecer más de una vez.
 
 Toda entidad deberá poseer un documento oficial.
 
+Toda entidad deberá poseer exactamente una definición oficial.
+
 Una entidad nunca podrá pertenecer simultáneamente a dos capas del Canon.
 
 ---
@@ -115,6 +117,8 @@ Una entidad nunca podrá pertenecer simultáneamente a dos capas del Canon.
 
 Depende de:
 
+- `00_canon/sistema_normativo.md`
+- `00_canon/gobierno_del_canon.md`
 - `00_canon/politica_identificadores.md`
 
 Utilizado por:
@@ -127,4 +131,6 @@ Utilizado por:
 
 Este catálogo declara exclusivamente las entidades ontológicas que constituyen el Modelo.
 
-Las entidades pertenecientes a otras capas del Canon deberán declararse en sus respectivos catálogos, cuando existan.
+Las entidades pertenecientes a otras capas del Canon nunca formarán parte de este catálogo.
+
+Su declaración oficial corresponderá al catálogo definido para su propia capa, cuando exista.
