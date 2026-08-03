@@ -1,132 +1,162 @@
-# CATÁLOGO DE ENTIDADES ONTOLÓGICAS
+# Organización
 
 Estado: CANÓNICO
-
-Tipo: CATÁLOGO
 
 Versión: 2.0.0
 
 Ubicación:
 
-30_ontologia/catalogo_entidades.md
+30_ontologia/organizacion.md
 
 ---
 
 # Propósito
 
-Declarar el conjunto oficial de entidades que forman parte de la ontología de ATÓMICA.
+Definir el concepto ontológico de Organización.
 
-Este documento constituye la única fuente de verdad sobre las entidades ontológicas reconocidas por el Canon.
+La Organización constituye el referente observado por ATÓMICA.
 
-No define las entidades.
+Existe independientemente del Modelo y de cualquier representación construida por el sistema.
 
-No especifica su estructura.
+No forma parte del conocimiento.
 
-Únicamente declara cuáles existen oficialmente.
-
----
-
-# Principios
-
-Toda entidad ontológica existe únicamente cuando figura inscrita en este catálogo.
-
-Toda entidad posee un único identificador.
-
-Toda entidad posee exactamente una definición oficial.
-
-Toda entidad pertenece exclusivamente a la ontología.
+Constituye aquello sobre lo que el conocimiento se construye.
 
 ---
 
-# Organización
+# Definición
 
-Cada entrada registra:
+Una Organización es un sistema real susceptible de ser observado por ATÓMICA.
 
-- Identificador
-- Nombre oficial
-- Estado
-- Versión
-- Documento de referencia
+La Organización existe con independencia del Modelo.
 
----
+El Modelo nunca modifica la Organización.
 
-# Catálogo Oficial
-
-| ID | Entidad | Estado | Versión | Documento |
-|----|----------|--------|----------|-----------|
-| ENT-001 | Modelo | CANÓNICO | 2.0.0 | modelo.md |
-| ENT-002 | Identidad | CANÓNICO | 2.0.0 | identidad.md |
-| ENT-003 | Estado | CANÓNICO | 2.0.0 | estado.md |
-| ENT-004 | Trayectoria | CANÓNICO | 2.0.0 | trayectoria.md |
-| ENT-005 | Memoria | CANÓNICO | 2.0.0 | memoria.md |
-| ENT-006 | Relación | CANÓNICO | 2.0.0 | relacion.md |
-| ENT-007 | Representación | CANÓNICO | 2.0.0 | representacion.md |
+Únicamente construye conocimiento acerca de ella.
 
 ---
 
-# Exclusiones
+# Naturaleza
 
-No forman parte de la ontología:
+La Organización:
 
-- Observación
-- Evidencia
-- Hipótesis
-- Confianza
-
-Estas entidades pertenecen a la epistemología.
-
-Tampoco forman parte de la ontología:
-
-- Organización
-- Capacidad
-- Fragilidad
-- Intervención
-
-Estas entidades pertenecen al dominio metodológico.
+- pertenece a la realidad;
+- constituye el referente del Modelo;
+- existe independientemente de ATÓMICA;
+- puede evolucionar sin que el Modelo lo conozca;
+- nunca pertenece al conocimiento construido.
 
 ---
 
-# Evolución
+# Propiedades
 
-La incorporación de una nueva entidad requiere:
+Toda Organización:
 
-- definición conceptual;
-- inscripción en este catálogo;
-- publicación de una nueva versión del Canon.
+- constituye exactamente un referente organizacional;
+- puede poseer exactamente una Identidad dentro del Modelo;
+- puede ser observada;
+- puede evolucionar;
+- puede dejar de existir.
 
----
-
-# Retirada
-
-Una entidad retirada permanece registrada.
-
-Su estado cambia a OBSOLETO.
-
-Su identificador nunca podrá reutilizarse.
+La desaparición de una Organización no elimina el conocimiento histórico construido sobre ella.
 
 ---
 
 # Relaciones
 
-Depende de:
+La Organización:
 
-- sistema_normativo.md
-- politica_identificadores.md
+- constituye el referente de exactamente una Identidad;
+- puede originar Observaciones;
+- nunca pertenece al Modelo;
+- nunca pertenece a la Epistemología.
 
-Utilizado por:
+El Modelo representa conocimiento sobre la Organización.
 
-- toda la ontología
-- metodología
-- producto
+Nunca representa la Organización misma.
 
 ---
 
-# Responsabilidad
+# Restricciones
 
-Este documento declara exclusivamente las entidades oficiales de la ontología.
+## ORG-001
 
-No define conceptos.
+Toda Organización constituye un referente real.
 
-No establece relaciones.
+---
 
-No modifica autoridad normativa.
+## ORG-002
+
+Toda Organización puede existir sin Modelo.
+
+---
+
+## ORG-003
+
+Una Organización nunca pertenece al Modelo.
+
+---
+
+## ORG-004
+
+Una Organización nunca pertenece a la Epistemología.
+
+---
+
+## ORG-005
+
+Toda Identidad hace referencia exactamente a una Organización.
+
+---
+
+## ORG-006
+
+La modificación de una Organización nunca modifica directamente el Modelo.
+
+Sólo nuevas Observaciones pueden modificar el conocimiento construido.
+
+---
+
+## ORG-007
+
+La desaparición de una Organización nunca elimina la Memoria del Modelo.
+
+---
+
+# Exclusiones
+
+Una Organización nunca constituye:
+
+- una Identidad;
+- un Estado;
+- una Trayectoria;
+- una Representación;
+- una Observación;
+- una Hipótesis;
+- una Evidencia;
+- una Confianza;
+- una Intervención.
+
+---
+
+# Dependencias
+
+- `10_nucleo/axiomas.md`
+
+---
+
+# Utilizado por
+
+- `30_ontologia/identidad.md`
+- `20_epistemologia/observacion.md`
+- `40_metodologia/`
+
+---
+
+# Declaración
+
+La Organización constituye el referente observado por ATÓMICA.
+
+Todo conocimiento construido por el sistema pertenece al Modelo.
+
+La Organización nunca forma parte del Modelo.
