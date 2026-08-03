@@ -89,7 +89,7 @@ Nunca se eliminan.
 
 ## PV-004 · La compatibilidad debe declararse
 
-Toda nueva versión deberá indicar expresamente su relación con la versión anterior.
+Toda nueva versión deberá declarar expresamente su relación de compatibilidad con la versión inmediatamente anterior.
 
 ---
 
@@ -175,7 +175,7 @@ Nunca retroceden.
 
 ## R-005
 
-La clasificación del cambio deberá justificarse.
+La clasificación del cambio deberá justificarse documentalmente.
 
 ---
 
@@ -205,18 +205,16 @@ Toda nueva versión deberá declarar una de las siguientes condiciones:
 - Parcialmente compatible
 - Incompatible
 
-La clasificación deberá justificarse.
+La justificación formará parte del historial documental de la versión.
 
 ---
 
 # Publicación
 
-Una versión oficial del canon requiere:
-
 - aprobación conforme al Gobierno del Canon;
-- actualización del Registro de Documentos Canónicos cuando proceda;
 - actualización de los documentos afectados;
-- coherencia con la versión del canon vigente.
+- actualización del Registro de Documentos Canónicos cuando proceda;
+- verificación de coherencia documental con la versión vigente del Canon.
 
 ---
 
@@ -241,10 +239,10 @@ Depende de:
 
 Gobierna:
 
-- todos los documentos canónicos;
-- todos los registros;
-- todos los catálogos;
-- todas las publicaciones del canon.
+- el versionado de todos los documentos canónicos;
+- el versionado de todos los registros;
+- el versionado de todos los catálogos;
+- las publicaciones oficiales del Canon.
 
 ---
 
