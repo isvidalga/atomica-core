@@ -125,3 +125,110 @@ La navegación nunca comienza por documentos.
 Comienza por conocimiento representado.
 
 El recorrido principal puede ser:
+
+Estado
+↓
+Hipótesis
+↓
+Evidencias
+↓
+Observaciones
+↓
+Estado anterior
+↓
+Estado posterior
+
+
+El usuario puede abandonar el recorrido en cualquier punto para profundizar.
+
+---
+
+# 7. Visualización
+
+La Memoria se presenta como una narrativa continua de evolución del conocimiento.
+
+No como:
+
+- un listado de actividades;
+- un registro técnico;
+- un dashboard.
+
+El tiempo constituye el eje principal de representación.
+
+Las relaciones permiten profundizar cuando el usuario lo solicita.
+
+---
+
+# 8. Restricciones
+
+## R-001
+
+La Memoria nunca modifica el conocimiento histórico.
+
+---
+
+## R-002
+
+La Memoria nunca genera interpretaciones nuevas.
+
+---
+
+## R-003
+
+La Memoria nunca recomienda acciones.
+
+---
+
+## R-004
+
+Toda afirmación mantiene su trazabilidad.
+
+---
+
+## R-005
+
+Toda reconstrucción histórica debe ser reproducible.
+
+---
+
+# 9. Dependencias
+
+La Memoria Organizacional depende de:
+
+- Estado;
+- Trayectoria;
+- Representación;
+- Evidencia;
+- Observación.
+
+Puede ser representada mediante:
+
+- Crónica;
+- Observatorio;
+- Asesor Cognitivo.
+
+No depende de:
+
+- implementación;
+- tecnología;
+- interfaz concreta.
+
+---
+
+# 10. Utilizado por
+
+- Crónica;
+- Observatorio;
+- Asesor Cognitivo.
+
+---
+
+# 11. Principio final
+
+La Memoria Organizacional no conserva documentos.
+
+Conserva la evolución del conocimiento.
+
+Su propósito no consiste en recordar únicamente qué ocurrió.
+
+Consiste en comprender cómo cambió la forma en que ATÓMICA representa y comprende la realidad organizacional observada.
