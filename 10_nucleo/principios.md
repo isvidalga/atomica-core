@@ -1,18 +1,40 @@
-# Principles
+# PRINCIPIOS
 
-**Estado:** Frozen
+Estado: CANÓNICO
 
-**Versión:** 1.0.0
+Tipo: NORMA
+
+Versión: 2.0.0
+
+Ubicación:
+
+10_nucleo/principios.md
 
 ---
 
 # Propósito
 
-Los Principios definen los criterios que gobiernan todas las decisiones relacionadas con ATÓMICA.
+Definir los principios que orientan todas las decisiones relativas a ATÓMICA.
 
-Toda propuesta de evolución deberá demostrar explícitamente su compatibilidad con estos principios.
+Los principios derivan de los Axiomas Fundamentales y constituyen el criterio para evaluar cualquier evolución del sistema.
 
-Cuando una propuesta contradiga cualquiera de ellos, deberá rechazarse o justificarse mediante el proceso formal de gobernanza.
+No redefinen los axiomas.
+
+No establecen procedimientos metodológicos.
+
+No describen la implementación del producto.
+
+---
+
+# Derivación
+
+Todos los principios de este documento derivan de los Axiomas Fundamentales.
+
+Los principios orientan decisiones.
+
+Nunca modifican los axiomas.
+
+Toda contradicción entre un principio y un axioma deberá resolverse siempre en favor del axioma.
 
 ---
 
@@ -22,7 +44,7 @@ ATÓMICA es un instrumento de observación organizacional.
 
 Nunca será un sistema de gestión.
 
-Nunca sustituirá el juicio del CEO.
+Nunca sustituirá el juicio de la organización.
 
 ---
 
@@ -34,7 +56,7 @@ Toda representación deberá preservar las relaciones existentes entre sus eleme
 
 ---
 
-# P-003 · El conocimiento precede a la interfaz
+# P-003 · El conocimiento precede a la representación
 
 El dominio determina la arquitectura.
 
@@ -42,7 +64,7 @@ La arquitectura determina el producto.
 
 El producto determina la interfaz.
 
-La interfaz nunca determina el conocimiento.
+La representación nunca determina el conocimiento.
 
 ---
 
@@ -50,23 +72,23 @@ La interfaz nunca determina el conocimiento.
 
 Toda representación deberá poder justificarse mediante evidencia.
 
-La evidencia siempre tendrá mayor autoridad que cualquier interpretación.
+La evidencia prevalece siempre sobre cualquier interpretación.
 
 ---
 
-# P-005 · La incertidumbre forma parte del modelo
+# P-005 · La incertidumbre forma parte del conocimiento
 
 ATÓMICA estima.
 
 Nunca certifica.
 
-Toda hipótesis deberá expresar explícitamente su nivel de confianza.
+Toda hipótesis deberá expresar explícitamente su incertidumbre.
 
-La incertidumbre nunca se ocultará.
+La incertidumbre nunca podrá ocultarse.
 
 ---
 
-# P-006 · La decisión pertenece al CEO
+# P-006 · La decisión pertenece a la organización
 
 ATÓMICA organiza conocimiento.
 
@@ -76,7 +98,7 @@ No sustituye el criterio humano.
 
 El instrumento revela.
 
-El CEO decide.
+La organización decide.
 
 ---
 
@@ -92,7 +114,7 @@ Toda simplificación deberá aumentar la comprensión del sistema observado.
 
 # P-008 · Todo elemento debe justificar su existencia
 
-Todo elemento del producto deberá responder a una necesidad concreta.
+Todo elemento incorporado al sistema deberá responder a una necesidad explícita.
 
 Los elementos que no aporten valor demostrable deberán eliminarse.
 
@@ -108,7 +130,7 @@ La novedad nunca constituirá un objetivo por sí misma.
 
 # P-010 · La evolución preserva la identidad
 
-Toda mejora deberá hacer que ATÓMICA sea más fiel a sí misma.
+Toda mejora deberá hacer que ATÓMICA sea más fiel a sus fundamentos.
 
 La evolución consiste en aumentar claridad, coherencia y capacidad de observación.
 
@@ -116,8 +138,36 @@ Nunca en acumular complejidad.
 
 ---
 
-# Declaración
+# Restricciones
 
-Estos principios constituyen el criterio de referencia para evaluar cualquier decisión relacionada con ATÓMICA.
+Ningún principio podrá contradecir un axioma.
 
-Toda evolución del producto deberá ser compatible con ellos.
+Todo principio deberá poder justificarse a partir de los Axiomas Fundamentales.
+
+Toda modificación de un principio requerirá una nueva versión de este documento.
+
+---
+
+# Relaciones
+
+Depende de:
+
+- axiomas.md
+
+Gobierna:
+
+- la interpretación de los axiomas;
+- las decisiones metodológicas;
+- la evolución del sistema.
+
+---
+
+# Responsabilidad
+
+Este documento define exclusivamente los principios fundamentales derivados de los Axiomas.
+
+No redefine los Axiomas.
+
+No establece procedimientos metodológicos.
+
+No describe la implementación del producto.
