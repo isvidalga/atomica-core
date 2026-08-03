@@ -2,7 +2,7 @@
 
 Estado: CANÓNICO
 
-Versión: 2.0
+Versión: 2.1.0
 
 Ubicación:
 
@@ -14,11 +14,15 @@ Ubicación:
 
 Definir cómo un artefacto adquiere, ejerce, modifica y pierde autoridad dentro del Canon.
 
+Regular el ejercicio de la autoridad definida por el Sistema Normativo.
+
 No define conceptos metodológicos.
 
 No define conceptos del dominio.
 
 No define la organización del repositorio.
+
+No modifica el Sistema Normativo.
 
 ---
 
@@ -34,7 +38,7 @@ Todo artefacto deberá cumplir estas reglas para adquirir, conservar, modificar 
 
 ## G-001 · La autoridad es explícita
 
-La autoridad de un artefacto debe declararse explícitamente.
+La autoridad de un artefacto deberá declararse explícitamente.
 
 Ningún artefacto adquiere autoridad por su mera existencia.
 
@@ -42,29 +46,27 @@ Ningún artefacto adquiere autoridad por su mera existencia.
 
 ## G-002 · Toda autoridad posee origen
 
-Todo artefacto, excepto los Axiomas, deriva su autoridad de otro artefacto de igual o superior autoridad.
-
-Los Axiomas constituyen el fundamento último del Canon.
+Todo artefacto deberá poder justificar documentalmente el origen de su autoridad conforme al Sistema Normativo.
 
 ---
 
 ## G-003 · La autoridad no puede circular
 
-Ningún artefacto puede fundamentar directa o indirectamente la autoridad de sí mismo.
+Ningún artefacto podrá fundamentar directa o indirectamente la autoridad de sí mismo.
 
 ---
 
 ## G-004 · La autoridad prevalece sobre la cronología
 
-En caso de conflicto nunca prevalece el documento más reciente.
+En caso de conflicto nunca prevalecerá el documento más reciente.
 
-Prevalece exclusivamente el artefacto con mayor autoridad.
+Prevalecerá exclusivamente el artefacto con mayor autoridad.
 
 ---
 
 ## G-005 · La trazabilidad es obligatoria
 
-Toda modificación debe conservar el historial documental.
+Toda modificación deberá conservar íntegramente el historial documental.
 
 ---
 
@@ -90,6 +92,8 @@ La autoridad de un artefacto viene determinada exclusivamente por:
 
 Ningún otro criterio genera autoridad.
 
+La autoridad únicamente podrá ejercerse mientras dichas condiciones permanezcan válidas.
+
 ---
 
 # Dependencias
@@ -108,9 +112,10 @@ Nunca podrá depender de un artefacto inferior.
 Cuando dos artefactos entren en conflicto se aplicará el siguiente procedimiento:
 
 1. verificar el tipo normativo;
-2. aplicar el orden de autoridad definido en `sistema_normativo.md`;
+2. aplicar el orden de autoridad definido en `00_canon/sistema_normativo.md`;
 3. comprobar si existe derogación explícita;
-4. comprobar si existe sustitución explícita.
+4. comprobar si existe sustitución explícita;
+5. comprobar la trazabilidad de la autoridad.
 
 Si el conflicto persiste:
 
@@ -157,6 +162,32 @@ La autoridad pertenece al artefacto.
 
 El documento únicamente representa dicho artefacto.
 
-La cronología nunca constituye criterio de autoridad.
+La cronología nunca constituye un criterio de autoridad.
 
 La ausencia de información obligatoria invalida la autoridad normativa del artefacto correspondiente.
+
+Ningún documento podrá ejercer una autoridad distinta de la permitida por el Sistema Normativo.
+
+---
+
+# Relaciones
+
+Depende de:
+
+- `00_canon/sistema_normativo.md`
+
+Gobierna:
+
+- el ejercicio de la autoridad de todos los artefactos normativos del Canon.
+
+---
+
+# Responsabilidad
+
+Este documento regula exclusivamente el ejercicio de la autoridad definida por el Sistema Normativo.
+
+No crea nuevos tipos normativos.
+
+No modifica la jerarquía normativa.
+
+No constituye una fuente independiente de autoridad.
