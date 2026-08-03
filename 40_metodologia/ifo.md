@@ -1,22 +1,26 @@
 # Índice de Fragilidad Oculta (IFO)
 
-**Estado:** Frozen
+Estado: CANÓNICO
 
-**Versión:** 1.2.0
+Tipo: ESPECIFICACIÓN
 
-**Breadcrumb:** `40_metodologia/ifo.md`
+Versión: 2.0.0
+
+Ubicación:
+
+40_metodologia/ifo.md
 
 ---
 
 # Propósito
 
-El Índice de Fragilidad Oculta (IFO) constituye el instrumento metodológico mediante el cual ATÓMICA sintetiza la evaluación de la fragilidad organizacional.
+Definir el Índice de Fragilidad Oculta (IFO) como el instrumento metodológico mediante el cual ATÓMICA sintetiza la estimación del Estado Sistémico de una organización.
 
-Su finalidad consiste en ofrecer una representación cuantitativa, comprensible y comparable de la evaluación metodológica realizada sobre una organización.
+Su finalidad consiste en facilitar la comprensión del conocimiento construido por el Modelo mediante una representación cuantitativa, comparable y trazable.
 
-El IFO no pretende describir completamente una organización.
+El IFO no sustituye al Modelo.
 
-Su función consiste en sintetizar el conocimiento construido por el Modelo para facilitar su comprensión.
+Constituye una síntesis metodológica del mismo.
 
 ---
 
@@ -26,21 +30,25 @@ El IFO pertenece exclusivamente a la Metodología.
 
 No constituye una entidad de la Ontología.
 
-No representa una propiedad objetiva de una organización.
+No constituye conocimiento.
+
+No constituye una propiedad objetiva de la organización.
 
 No existe independientemente del Modelo.
 
-El IFO constituye una representación metodológica derivada.
+El IFO constituye una representación metodológica derivada del Estado Sistémico.
 
 ---
 
 # Qué representa
 
-El IFO representa una estimación metodológica del nivel relativo de fragilidad organizacional inferido a partir del conocimiento disponible.
+El IFO representa una estimación sintética del Estado Sistémico de una organización en un instante lógico determinado.
 
 Su significado depende siempre del Modelo del que deriva.
 
-El IFO nunca debe interpretarse de manera aislada.
+Nunca constituye una representación completa de la organización.
+
+Nunca debe interpretarse de forma aislada.
 
 ---
 
@@ -51,30 +59,33 @@ El IFO no representa:
 - éxito empresarial;
 - rentabilidad;
 - productividad;
-- valor de mercado;
+- valor económico;
 - calidad de gestión;
-- sostenibilidad certificada;
 - cumplimiento normativo;
 - madurez organizacional;
+- riesgo;
+- probabilidad de fracaso;
 - superioridad entre organizaciones.
 
-El IFO no constituye un juicio.
+El IFO nunca constituye un juicio.
 
-Constituye una representación metodológica.
+Constituye exclusivamente una representación metodológica.
 
 ---
 
 # Principio fundamental
 
-El IFO no evalúa organizaciones.
+ATÓMICA no evalúa organizaciones mediante el IFO.
 
-Evalúa configuraciones metodológicas de fragilidad.
+ATÓMICA construye un Modelo.
 
-Dos organizaciones pueden compartir el mismo IFO y presentar estructuras organizacionales completamente distintas.
+El IFO sintetiza el Estado Sistémico estimado por dicho Modelo.
 
-El valor principal de ATÓMICA no reside en la puntuación obtenida.
+Dos organizaciones pueden compartir el mismo IFO y poseer Modelos completamente distintos.
 
-Reside en la explicación estructural que permite comprender dicha puntuación.
+El principal valor metodológico de ATÓMICA reside en la explicación estructural del Modelo.
+
+Nunca en la puntuación.
 
 ---
 
@@ -82,47 +93,73 @@ Reside en la explicación estructural que permite comprender dicha puntuación.
 
 La unidad de análisis del IFO es la organización considerada como sistema.
 
-El IFO no evalúa:
+El IFO nunca evalúa:
 
 - individuos;
-- departamentos aislados;
-- acciones individuales;
-- acontecimientos independientes.
+- departamentos;
+- procesos aislados;
+- acontecimientos independientes;
+- decisiones concretas.
 
-Toda evaluación se realiza sobre configuraciones organizacionales.
+Toda evaluación corresponde al sistema organizacional considerado en su conjunto.
 
 ---
 
-# Organización metodológica
+# Relación con las Dimensiones
 
-El IFO utiliza las Dimensiones metodológicas para organizar la representación de sus resultados.
+El IFO utiliza las Dimensiones metodológicas exclusivamente como mecanismo de organización de la representación.
 
-Las Dimensiones estructuran la observación sin dividir la organización en componentes independientes.
+Las Dimensiones:
 
-Su definición pertenece al documento:
+- no modifican el Modelo;
+- no determinan el cálculo del IFO;
+- no constituyen partes independientes de la organización.
+
+Su definición pertenece a:
 
 `40_metodologia/dimensiones.md`
 
 ---
 
+# Relación con el Estado Sistémico
+
+El Estado Sistémico constituye el conocimiento sintetizado por el Modelo.
+
+El IFO constituye una representación metodológica derivada de dicho Estado.
+
+El Estado Sistémico precede siempre al IFO.
+
+Nunca a la inversa.
+
+---
+
 # Interpretación
 
-El IFO constituye un instrumento para orientar la comprensión de una organización.
+El IFO constituye un instrumento para facilitar la comprensión del Estado Sistémico.
 
 Nunca constituye una conclusión definitiva.
 
-Debe facilitar preguntas como:
+Debe favorecer preguntas como:
 
-- ¿Dónde aparecen señales relevantes?
+- ¿Qué revela el Modelo?
 - ¿Qué configuraciones requieren mayor atención?
-- ¿Qué aspectos conviene investigar con mayor profundidad?
-- ¿Cómo evoluciona la organización a lo largo del tiempo?
+- ¿Qué hipótesis necesitan más evidencia?
+- ¿Cómo evoluciona el Estado Sistémico?
+- ¿Con qué nivel de confianza debe interpretarse el resultado?
+
+Todo resultado deberá interpretarse conjuntamente con:
+
+- el Estado Sistémico;
+- las Capacidades;
+- las Fragilidades;
+- los Patrones;
+- la Confianza.
 
 ---
 
 # Rangos interpretativos
 
-ATÓMICA utiliza rangos interpretativos para facilitar la comunicación del resultado.
+ATÓMICA utiliza rangos interpretativos exclusivamente para facilitar la comunicación del resultado.
 
 Estos rangos constituyen una simplificación metodológica.
 
@@ -139,17 +176,18 @@ Los rangos nunca sustituyen el análisis del Modelo.
 
 # Evolución temporal
 
-El principal valor del IFO aparece cuando puede observarse su evolución.
+El principal valor metodológico del IFO aparece al observar su evolución.
 
-Un único Diagnóstico constituye una observación puntual.
+Un único Diagnóstico representa únicamente una estimación puntual.
 
-La comparación longitudinal permite identificar tendencias organizacionales.
+La comparación longitudinal permite analizar la evolución del Estado Sistémico.
 
 Toda comparación deberá considerar:
 
-- la evolución del conocimiento disponible;
-- la evolución de la metodología;
-- la trazabilidad entre versiones del instrumento.
+- la evolución del conocimiento;
+- la evolución metodológica;
+- la trazabilidad entre versiones del instrumento;
+- la comparabilidad de los resultados.
 
 ---
 
@@ -160,13 +198,13 @@ El IFO presenta las limitaciones propias de toda representación metodológica.
 Entre ellas:
 
 - información incompleta;
-- incertidumbre inherente al conocimiento organizacional;
+- incertidumbre inherente al conocimiento;
 - evolución continua de la organización;
 - simplificación necesaria para facilitar la comprensión.
 
 Estas limitaciones forman parte del instrumento.
 
-Nunca deben ocultarse.
+Nunca deberán ocultarse.
 
 ---
 
@@ -174,14 +212,14 @@ Nunca deben ocultarse.
 
 Toda modificación del IFO deberá preservar:
 
-- comparabilidad histórica;
-- coherencia con el Canon;
-- trazabilidad metodológica;
-- reproducibilidad del resultado;
-- capacidad explicativa;
-- estabilidad del instrumento.
+- la coherencia con el Canon;
+- la comparabilidad histórica;
+- la trazabilidad metodológica;
+- la reproducibilidad del resultado;
+- la estabilidad del instrumento;
+- la capacidad explicativa.
 
-Toda modificación deberá registrarse mediante una decisión metodológica versionada.
+Toda modificación requerirá una decisión metodológica versionada conforme al Sistema Normativo.
 
 ---
 
@@ -189,7 +227,7 @@ Toda modificación deberá registrarse mediante una decisión metodológica vers
 
 ## IFO-001
 
-El IFO nunca constituye una entidad del dominio.
+El IFO pertenece exclusivamente a la Metodología.
 
 ---
 
@@ -201,26 +239,55 @@ El IFO siempre deriva del Modelo.
 
 ## IFO-003
 
-El IFO nunca puede interpretarse sin el Modelo que lo genera.
+El IFO deriva del Estado Sistémico.
+
+Nunca directamente de las Observaciones.
 
 ---
 
 ## IFO-004
 
-La comparación entre dos valores del IFO sólo es válida cuando ambos proceden de versiones metodológicas compatibles o correctamente trazadas.
+El IFO nunca modifica el Modelo.
 
 ---
 
 ## IFO-005
 
+El IFO nunca puede interpretarse sin el Estado Sistémico y el Modelo que lo generan.
+
+---
+
+## IFO-006
+
+La comparación entre dos valores del IFO únicamente será válida cuando ambos procedan de versiones metodológicas compatibles o correctamente trazadas.
+
+---
+
+## IFO-007
+
 Toda modificación del IFO deberá preservar la comparabilidad histórica.
+
+---
+
+# Dependencias
+
+Depende de:
+
+- `00_canon/sistema_normativo.md`
+- `00_canon/gobierno_del_canon.md`
+- `40_metodologia/metodologia.md`
+- `40_metodologia/dimensiones.md`
+- `40_metodologia/evolucion_temporal.md`
+
+Utilizado por:
+
+- `40_metodologia/diagnostico.md`
+- `50_producto/modelo_vivo.md`
 
 ---
 
 # Declaración
 
-El IFO constituye el instrumento metodológico mediante el cual ATÓMICA sintetiza la evaluación de la fragilidad organizacional.
+El Índice de Fragilidad Oculta constituye el instrumento metodológico mediante el cual ATÓMICA sintetiza el Estado Sistémico estimado por el Modelo.
 
-No pretende eliminar la incertidumbre.
-
-Pretende hacer visible, comparable y explicable la incertidumbre representada por el Modelo.
+Su finalidad no consiste en emitir un juicio sobre una organización, sino en ofrecer una representación sintética, comparable, trazable y explicable del conocimiento disponible en un instante determinado.
