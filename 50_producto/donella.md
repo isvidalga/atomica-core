@@ -4,16 +4,17 @@
 
 **Versión:** 2.0.0
 
+**Tipo:** Producto
+
 **Ubicación:**
 
-50_producto/instrumentos/donella.md
-
+50_producto/donella.md
 
 ---
 
 # Propósito
 
-Donella constituye la manifestación concreta del Asesor Cognitivo de ATÓMICA.
+Donella constituye el instrumento de Producto mediante el cual ATÓMICA materializa el Asesor Cognitivo.
 
 Su función consiste en facilitar la exploración, explicación y comprensión del conocimiento representado por el Modelo Vivo.
 
@@ -104,7 +105,7 @@ Puede iniciarse desde:
 
 - Modelo Vivo;
 - Observatorio;
-- Instrumento de Patrones;
+- Patrones;
 - Crónica;
 - Evidencias.
 
@@ -188,7 +189,7 @@ Nunca sustituye la representación del Modelo.
 
 ---
 
-# Relación con procesos de inferencia
+# # Relación con el Motor de Inferencia
 
 Donella puede explicar conocimiento generado mediante procesos metodológicos de inferencia definidos por ATÓMICA.
 
@@ -222,3 +223,22 @@ Responde porque puede recorrer, explicar y contextualizar el conocimiento repres
 Su función no consiste en decidir.
 
 Consiste en ayudar al usuario a comprender mejor el sistema y formular mejores preguntas.
+
+---
+
+# Dependencias
+
+Donella depende de:
+
+- Asesor Cognitivo.
+- Modelo Vivo.
+- Evidencias.
+- Relaciones.
+- Hipótesis.
+- Navegación.
+
+No depende de:
+
+- Implementación tecnológica.
+- Modelo de lenguaje concreto.
+- Interfaz gráfica.
