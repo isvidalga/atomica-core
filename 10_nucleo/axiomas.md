@@ -1,23 +1,40 @@
-# AXIOMAS · Axiomas del Canon
+# AXIOMAS DEL CANON
 
-| Campo | Valor |
-|--------|-------|
-| Identificador | CORE-AXIOMS |
-| Capa | Core |
-| Estado | CANÓNICO |
-| Versión | 1.0 |
+Estado: CANÓNICO
+
+Tipo: NORMA
+
+Versión: 2.0.0
+
+Ubicación:
+
+10_nucleo/axiomas.md
 
 ---
 
 # Propósito
 
-Los axiomas constituyen las proposiciones fundamentales del Canon.
+Establecer las proposiciones fundamentales del Canon.
+
+Los axiomas constituyen el fundamento irreducible sobre el que se construye todo el conocimiento de ATÓMICA.
 
 No se demuestran.
 
 No dependen de otros documentos.
 
 Todo documento posterior deberá ser compatible con ellos.
+
+---
+
+# Definición
+
+Un axioma es una proposición fundamental aceptada por el Canon sin demostración interna.
+
+Los axiomas constituyen el fundamento irreducible del que deriva el resto del conocimiento canónico.
+
+Ningún axioma podrá deducirse de otro axioma.
+
+Toda proposición deducible constituye un principio, una consecuencia o una decisión, pero nunca un axioma.
 
 ---
 
@@ -31,49 +48,33 @@ El Modelo nunca modifica el referente.
 
 # A2 · Primacía de la representación
 
-ATÓMICA nunca opera directamente sobre organizaciones.
+ATÓMICA únicamente conoce representaciones del referente.
 
-Opera exclusivamente sobre representaciones.
-
----
-
-# A3 · Separación entre realidad y representación
-
-La representación nunca constituye la realidad.
-
-Toda representación puede ser incompleta.
-
-Toda representación puede evolucionar.
+La representación nunca constituye el referente.
 
 ---
 
-# A4 · Falibilidad
+# A3 · Incompletitud
 
-Toda representación es revisable.
+Toda representación es necesariamente incompleta.
 
-No existen representaciones definitivas.
+Toda representación permanece siempre abierta a revisión.
 
 ---
 
-# A5 · Dependencia de la evidencia
+# A4 · Dependencia de la evidencia
 
-Toda modificación de una representación requiere evidencia admisible.
+Toda modificación del conocimiento requiere evidencia admisible.
 
 Sin nueva evidencia no existe nuevo conocimiento.
 
 ---
 
-# A6 · Inmutabilidad
+# A5 · Persistencia
 
-Toda representación admitida permanece inalterable.
+Una representación nunca se modifica.
 
 Toda modificación genera una nueva representación.
-
-Nunca altera una existente.
-
----
-
-# A7 · Persistencia
 
 El conocimiento histórico nunca desaparece.
 
@@ -83,15 +84,7 @@ Nunca deja de existir.
 
 ---
 
-# A8 · Temporalidad lógica
-
-El Modelo evoluciona mediante una secuencia ordenada de Estados.
-
-El orden lógico prevalece sobre el tiempo cronológico.
-
----
-
-# A9 · Incertidumbre
+# A6 · Incertidumbre
 
 Toda representación posee incertidumbre.
 
@@ -99,69 +92,69 @@ La incertidumbre nunca desaparece completamente.
 
 ---
 
-# A10 · Ortogonalidad
+# A7 · No determinismo
 
-Estado y Confianza son dimensiones independientes.
+El Modelo produce conocimiento.
 
-Modificar una no implica modificar la otra.
+Nunca sustituye la decisión humana.
 
----
-
-# A11 · No determinismo
-
-El Modelo no determina decisiones.
-
-Produce conocimiento.
-
-Las decisiones pertenecen exclusivamente al usuario.
-
----
-
-# A12 · No normatividad
-
-ATÓMICA no certifica.
-
-No audita.
-
-No juzga.
-
-Representa.
-
----
-
-# A13 · Trazabilidad
-
-Toda representación debe poder reconstruirse desde las evidencias admitidas.
-
----
-
-# A14 · Continuidad
-
-Toda evolución del Modelo debe poder describirse como una Trayectoria.
-
----
-
-# A15 · Conservación semántica
-
-Un concepto canónico conserva el mismo significado en todo el Canon.
-
-Ningún documento puede redefinir un concepto previamente congelado.
+Las decisiones pertenecen exclusivamente a la organización.
 
 ---
 
 # Consecuencias
 
-De estos axiomas derivan:
+Los presentes axiomas no describen el funcionamiento del sistema.
 
-- Identidad
-- Estado
-- Trayectoria
-- Representación
-- Hipótesis
-- Evidencia
+Constituyen únicamente el fundamento desde el que dicho funcionamiento puede derivarse.
+
+Entre otras, de ellos derivan:
+
+- la teoría de la representación;
+- la teoría del conocimiento organizacional;
+- la teoría de la evidencia;
+- la ontología del Canon;
+- la epistemología;
+- la metodología;
+- el Modelo Vivo;
+- el producto.
 
 ---
 
-# Documentos dependientes
+# Restricciones
 
-Todos los documentos del Canon.
+Ningún documento podrá contradecir un axioma.
+
+Ningún axioma podrá deducirse de otro axioma.
+
+Toda proposición derivable deberá residir fuera de este documento.
+
+La modificación de un axioma constituye una modificación del fundamento intelectual del Canon.
+
+---
+
+# Relaciones
+
+Depende de:
+
+—
+
+Gobierna:
+
+- todo el Canon.
+
+---
+
+# Responsabilidad
+
+Este documento define exclusivamente los axiomas fundamentales del Canon.
+
+No define principios.
+
+No define metodología.
+
+No define ontología.
+
+No define decisiones de diseño.
+
+No define comportamiento del producto.
