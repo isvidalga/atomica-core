@@ -1,28 +1,32 @@
-# Evidencia
+# EVIDENCIA
 
-**Estado:** Frozen
+Estado: CANÓNICO
 
-**Versión:** 1.0.0
+Tipo: CONCEPTO
 
-**Breadcrumb:** `20_epistemologia/evidencia.md`
+Versión: 2.0.0
+
+Ubicación:
+
+20_epistemologia/evidencia.md
 
 ---
 
 # Propósito
 
-Este documento define el concepto de Evidencia dentro de la epistemología de ATÓMICA.
+Definir el concepto de Evidencia dentro de la epistemología de ATÓMICA.
 
-La Evidencia constituye el mecanismo mediante el cual una Hipótesis puede aumentar o disminuir su plausibilidad.
+La Evidencia constituye el mecanismo mediante el cual una Observación participa en la evaluación de una Hipótesis.
 
 ---
 
 # Definición
 
-Una Evidencia es una Observación utilizada para evaluar una Hipótesis.
+Una Evidencia es una Observación utilizada para evaluar una o varias Hipótesis.
 
-La Evidencia no constituye un tipo diferente de información.
+La Evidencia no constituye un tipo distinto de información.
 
-Constituye un rol epistemológico que una Observación adquiere dentro del proceso de evaluación del Modelo.
+Constituye el rol epistemológico que una Observación adquiere cuando interviene en la evaluación del conocimiento.
 
 ---
 
@@ -30,22 +34,22 @@ Constituye un rol epistemológico que una Observación adquiere dentro del proce
 
 Toda Evidencia:
 
-- procede de una Observación;
+- procede de exactamente una Observación;
 - evalúa una o varias Hipótesis;
-- modifica únicamente la Confianza del Modelo;
-- nunca modifica la realidad observada.
+- puede aumentar, disminuir o mantener la Confianza asociada a dichas Hipótesis;
+- nunca modifica el referente organizacional.
 
 ---
 
 # Alcance
 
-Una Evidencia puede:
+Una Evidencia podrá:
 
 - respaldar una Hipótesis;
 - debilitar una Hipótesis;
 - resultar insuficiente para modificar su Confianza.
 
-La ausencia de Evidencia no implica falsedad.
+La ausencia de Evidencia nunca implica falsedad.
 
 Implica únicamente insuficiencia de conocimiento.
 
@@ -53,11 +57,25 @@ Implica únicamente insuficiencia de conocimiento.
 
 # Relaciones
 
-Toda Evidencia:
+La Evidencia ocupa la segunda etapa del proceso epistemológico.
 
-- procede de exactamente una Observación;
-- puede evaluar una o varias Hipótesis;
-- influye exclusivamente sobre la Confianza de dichas Hipótesis.
+```
+Referente
+      │
+      ▼
+Observación
+      │
+      ▼
+Evidencia
+      │
+      ▼
+Hipótesis
+      │
+      ▼
+Confianza
+```
+
+Una misma Observación podrá actuar como Evidencia para distintas Hipótesis.
 
 ---
 
@@ -65,7 +83,7 @@ Toda Evidencia:
 
 ## E-001
 
-Toda Evidencia procede de una Observación.
+Toda Evidencia procede de exactamente una Observación.
 
 ---
 
@@ -85,49 +103,72 @@ Una Evidencia nunca constituye una Hipótesis.
 
 Una Evidencia nunca modifica directamente una Hipótesis.
 
+Únicamente modifica la Confianza asociada a ella.
+
 ---
 
 ## E-005
 
-Una Evidencia nunca modifica directamente el Estado del Modelo.
+Una Evidencia nunca modifica directamente el Estado Sistémico.
 
 ---
 
 ## E-006
 
-Toda Evidencia conserva su trazabilidad hasta la Observación de la que procede.
+Toda Evidencia conserva trazabilidad completa hasta la Observación de la que procede.
 
 ---
 
 # Exclusiones
 
-Una Evidencia nunca constituye:
+No constituyen Evidencias:
 
-- un hecho;
-- una decisión;
-- una recomendación;
-- una intervención;
-- una conclusión.
+- decisiones;
+- recomendaciones;
+- intervenciones;
+- conclusiones;
+- clasificaciones.
 
----
-
-# Dependencias
-
-- `10_nucleo/axiomas.md`
-- `20_epistemologia/observacion.md`
-- `20_epistemologia/hipotesis.md`
+Su existencia dependerá de etapas posteriores del conocimiento.
 
 ---
 
-# Utilizado por
+# Relaciones
 
-- `20_epistemologia/confianza.md`
-- `40_metodologia/`
+Depende de:
+
+- 10_nucleo/axiomas.md
+- 10_nucleo/principios.md
+- 20_epistemologia/principios_epistemologicos.md
+- 20_epistemologia/observacion.md
+
+Gobierna:
+
+- hipotesis.md
+
+Utilizado por:
+
+- confianza.md
+- 40_metodologia/
+
+---
+
+# Responsabilidad
+
+Este documento define exclusivamente el concepto de Evidencia.
+
+No define Observaciones.
+
+No define Hipótesis.
+
+No define Confianza.
+
+No establece procedimientos metodológicos.
 
 ---
 
 # Declaración
 
-La Evidencia no demuestra que una Hipótesis sea verdadera.
+La Evidencia nunca demuestra que una Hipótesis sea verdadera.
 
-Únicamente modifica el grado de confianza con el que el Modelo la sostiene.
+Únicamente modifica el grado de Confianza con el que el Modelo la sostiene.
