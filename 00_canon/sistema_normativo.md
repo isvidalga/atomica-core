@@ -8,6 +8,8 @@ Ubicación:
 
 00_canon/sistema_normativo.md
 
+Este documento constituye la autoridad normativa superior del Canon.
+
 ---
 
 # Propósito
@@ -15,6 +17,8 @@ Ubicación:
 Definir el modelo formal del sistema normativo del Canon.
 
 Establecer los tipos de artefacto, su autoridad, su relación jerárquica y las reglas para resolver conflictos normativos.
+
+Este documento constituye la autoridad normativa superior del Canon.
 
 No define contenido metodológico.
 
@@ -32,11 +36,12 @@ Todo artefacto posee una única autoridad normativa.
 
 La autoridad pertenece al artefacto, no al documento que lo representa.
 
-Un documento puede representar uno o varios artefactos únicamente cuando otra norma lo permita.
-
+Un documento podrá representar uno o varios artefactos únicamente cuando una Norma lo autorice expresamente.
 Un artefacto nunca cambia de tipo.
 
 Cambiar de tipo implica crear un artefacto nuevo.
+
+Toda autoridad normativa deberá poder trazarse hasta un artefacto definido por este Sistema Normativo.
 
 ---
 
@@ -88,7 +93,7 @@ Nunca crea, modifica ni deroga autoridad.
 
 ## Decisión
 
-Resuelve explícitamente una cuestión abierta autorizada por una Norma.
+Su autoridad deriva siempre de una Norma.
 
 Nunca redefine una Norma.
 
@@ -133,6 +138,8 @@ Nunca podrá resolverse un conflicto mediante interpretación implícita.
 
 La cronología nunca constituye un criterio de precedencia.
 
+La versión tampoco constituye un criterio de precedencia entre artefactos de distinto tipo.
+
 ---
 
 # Validez
@@ -144,6 +151,8 @@ La representación documental de un artefacto no crea autoridad.
 La inscripción en un registro no crea autoridad.
 
 Los registros únicamente documentan autoridad previamente establecida conforme al Canon.
+
+La autoridad únicamente podrá derivarse conforme a las reglas establecidas por este documento.
 
 ---
 
@@ -172,3 +181,5 @@ Toda derogación deberá declararse explícitamente.
 Toda contradicción normativa deberá permanecer abierta mientras no exista un artefacto con autoridad suficiente para resolverla.
 
 Todo documento deberá ser compatible con este sistema normativo.
+
+Ningún documento podrá atribuir autoridad normativa a un artefacto cuya autoridad no pueda derivarse conforme a este Sistema Normativo.
