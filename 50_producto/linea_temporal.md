@@ -1,20 +1,20 @@
 # Línea Temporal
 
-Estado: CANÓNICO
+**Estado:** CANÓNICO
 
-Versión: 2.0
+**Versión:** 2.1.0
 
 ---
 
 # Propósito
 
-La Línea Temporal constituye el mecanismo mediante el cual ATÓMICA organiza cronológicamente el conocimiento disponible sobre una organización.
+La Línea Temporal constituye el instrumento mediante el cual ATÓMICA representa cronológicamente la evolución del conocimiento disponible sobre una organización.
 
-Su finalidad consiste en facilitar la comprensión de la evolución del Modelo.
+Su finalidad consiste en facilitar la comprensión de cómo ha evolucionado el Modelo a través del tiempo.
 
-No representa la historia completa de la organización.
+La Línea Temporal no representa la historia completa de la organización.
 
-Representa la historia del conocimiento registrado.
+Representa la historia del conocimiento registrado por ATÓMICA.
 
 ---
 
@@ -24,94 +24,75 @@ La Línea Temporal pertenece al Producto.
 
 No constituye una entidad del dominio.
 
+No pertenece a la Ontología.
+
 No modifica el Modelo.
 
-Organiza información ya existente.
+No genera conocimiento.
+
+Organiza y representa elementos ya existentes.
 
 ---
 
-# Elementos representables
+# Principios
 
-La Línea Temporal puede mostrar:
+## T-001 · Una única continuidad temporal
 
-- Observaciones.
-- Evidencias.
-- Estados.
-- Hipótesis.
-- Intervenciones.
-- Cambios metodológicos relevantes.
+Toda la evolución del conocimiento de una organización pertenece a una única continuidad temporal.
 
-Cada elemento conserva su identidad original.
+No existen historiales independientes por módulos.
 
-La Línea Temporal no crea nuevos objetos.
+No existen líneas temporales paralelas.
 
 ---
 
-# Orden
+## T-002 · El tiempo organiza el conocimiento
 
-Los elementos se presentan conforme a su instante temporal correspondiente.
+La Línea Temporal organiza los elementos según su evolución temporal.
 
-Cuando un objeto disponga de más de una referencia temporal, el Producto deberá indicar explícitamente cuál se está utilizando.
+Nunca según:
 
----
-
-# Información mínima
-
-Todo elemento mostrado deberá indicar, cuando proceda:
-
-- fecha;
-- tipo;
-- origen;
-- nivel de confianza;
-- estado de verificación.
+- funcionalidades;
+- pantallas;
+- estructura técnica.
 
 ---
 
-# Relaciones
+## T-003 · La historia no se reescribe
 
-Desde cualquier elemento deberá poder accederse a:
+La incorporación de nuevo conocimiento nunca modifica Estados históricos.
 
-- los objetos relacionados;
-- el Estado al que pertenece;
-- las Evidencias asociadas;
-- las Hipótesis relacionadas.
-
-La navegación nunca rompe la trazabilidad.
+Toda actualización genera una nueva representación temporal.
 
 ---
 
-# Persistencia
+## T-004 · El silencio también informa
 
-La Línea Temporal nunca modifica elementos históricos.
+Los periodos sin evolución significativa forman parte de la historia del conocimiento.
 
-Toda incorporación añade conocimiento.
-
-Nunca reescribe la historia.
+La ausencia de cambios puede constituir información relevante.
 
 ---
 
-# Restricciones
+# Unidad temporal
 
-## R-001
+La unidad principal de representación es el Estado.
 
-La Línea Temporal nunca crea conocimiento.
+La Línea Temporal puede representar también elementos asociados:
 
-## R-002
+- Observaciones;
+- Evidencias;
+- Hipótesis;
+- Patrones;
+- Intervenciones;
+- cambios metodológicos relevantes.
 
-La Línea Temporal nunca modifica el Modelo.
+Todo elemento conserva su identidad original.
 
-## R-003
-
-Todo elemento conserva su trazabilidad.
-
-## R-004
-
-Los elementos históricos permanecen inalterables.
+La Línea Temporal nunca crea nuevos objetos.
 
 ---
 
-# Principio final
+# Organización temporal
 
-ATÓMICA no organiza documentos.
-
-Organiza la evolución del conocimiento sobre una organización.
+La Línea Temporal organiza la evolución mediante distintos niveles de resolución:
