@@ -2,19 +2,17 @@
 
 Estado: CANÓNICO
 
-Versión: 2.0.0
+Versión: 2.1.0
 
 Ubicación:
 
-```
 00_canon/registro_espacios_nombres.md
-```
 
 ---
 
 # Propósito
 
-Este registro declara los espacios de nombres oficiales del canon.
+Este registro declara los espacios de nombres oficiales del Canon.
 
 Su responsabilidad consiste exclusivamente en registrar los prefijos autorizados, el concepto al que pertenecen y el documento que ejerce autoridad sobre ellos.
 
@@ -26,9 +24,7 @@ No crea conceptos.
 
 Las reglas del sistema de identificadores pertenecen exclusivamente a:
 
-```
 00_canon/politica_identificadores.md
-```
 
 ---
 
@@ -70,10 +66,7 @@ Documento responsable de definir el concepto gobernado por un espacio de nombres
 
 | Prefijo | Concepto | Documento autoridad | Estado |
 |----------|----------|---------------------|--------|
-| AD | Decisión | naturaleza_decision.md | ACTIVO |
-| R | Revisión | auditorias/README.md | ACTIVO |
-| RA | Auditoría de consolidación | auditorias/README.md | ACTIVO |
-| RG | Auditoría de gobierno | auditorias/README.md | ACTIVO |
+| *(Sin entradas en la versión 2.1.0)* | | | |
 
 ---
 
@@ -105,7 +98,9 @@ Todo espacio de nombres identifica un concepto definido por un documento canóni
 
 ## R-005
 
-La creación de un espacio de nombres constituye un acto de gobierno del canon.
+La creación de un espacio de nombres constituye un acto de Gobierno del Canon.
+
+La inscripción en este registro no constituye dicho acto.
 
 ---
 
@@ -134,6 +129,7 @@ Un prefijo retirado nunca podrá reutilizarse.
 La incorporación de un nuevo espacio de nombres requiere:
 
 - existencia previa del concepto correspondiente;
+- inscripción del documento autoridad en el Registro de Documentos Canónicos;
 - aprobación por el Gobierno del Canon;
 - actualización de este registro.
 
@@ -182,15 +178,14 @@ Depende de:
 
 Es utilizado por:
 
-- todos los registros documentales;
-- todos los procedimientos de incorporación;
-- todas las políticas que asignen identificadores oficiales.
+- politica_identificadores.md
+- todos los procedimientos de incorporación.
 
 ---
 
 # Responsabilidad
 
-Este documento registra exclusivamente los espacios de nombres oficiales del canon.
+Este documento registra exclusivamente los espacios de nombres oficiales del Canon.
 
 No crea reglas.
 
