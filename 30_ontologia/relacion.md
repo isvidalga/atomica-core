@@ -1,8 +1,6 @@
-# RELACIÓN
+# Relación
 
 Estado: CANÓNICO
-
-Tipo: CONCEPTO
 
 Versión: 2.0.0
 
@@ -14,13 +12,15 @@ Ubicación:
 
 # Propósito
 
-Definir el concepto de Relación dentro de la ontología de ATÓMICA.
+Definir el concepto ontológico de Relación.
 
-Una Relación constituye el vínculo estructural existente entre dos o más entidades del Modelo.
+Una Relación constituye el vínculo estructural entre entidades del Modelo.
 
 Las Relaciones proporcionan estructura al Modelo.
 
-Sin Relaciones, las entidades permanecerían aisladas.
+Las entidades definen qué existe.
+
+Las Relaciones definen cómo permanece conectado.
 
 ---
 
@@ -28,52 +28,64 @@ Sin Relaciones, las entidades permanecerían aisladas.
 
 Una Relación es un vínculo estructural entre dos o más entidades del Modelo.
 
-Una Relación no es ninguna de las entidades que conecta.
+Una Relación nunca constituye ninguna de las entidades que conecta.
 
-Una Relación no modifica las entidades relacionadas.
-
-Una Relación expresa únicamente la existencia de una conexión.
+Una Relación nunca modifica dichas entidades.
 
 ---
 
 # Naturaleza
 
-La Relación:
+Toda Relación:
 
 - pertenece al Modelo;
+- conecta entidades del Modelo;
 - es independiente de cualquier implementación;
-- puede ser dirigida cuando la naturaleza de la conexión lo requiera;
-- nunca interpreta el significado de la conexión;
-- nunca altera las entidades relacionadas.
+- puede ser dirigida cuando la naturaleza del vínculo lo requiera;
+- es inmutable una vez admitida.
 
 ---
 
-# Constitución
+# Propiedades
 
 Toda Relación posee:
 
 - un identificador único;
-- las entidades relacionadas;
-- la naturaleza de la conexión;
-- una dirección, cuando corresponda.
+- las entidades que conecta;
+- una naturaleza de relación;
+- una dirección cuando resulte necesaria.
 
 ---
 
 # Formación
 
-Una Relación únicamente puede establecerse entre entidades existentes del Modelo.
+Una Relación únicamente puede existir cuando existen las entidades que conecta.
 
-La creación de una Relación nunca modifica las entidades relacionadas.
+Toda modificación de una Relación requiere la creación de una nueva Relación.
 
-La modificación de una Relación genera una nueva Relación.
+Nunca la modificación de una Relación existente.
 
 ---
 
 # Persistencia
 
-Toda Relación forma parte del conocimiento del Modelo.
+Toda Relación admitida permanece disponible mientras existan las entidades que conecta.
 
-Su historial permanece trazable conforme a las reglas generales del Canon.
+La sustitución por una nueva Relación nunca modifica la anterior.
+
+---
+
+# Relaciones
+
+Una Relación puede conectar:
+
+- Organizaciones;
+- Estados;
+- Representaciones;
+- Capacidades;
+- Fragilidades;
+- Principios Sistémicos;
+- cualquier otra entidad oficialmente definida por el Canon.
 
 ---
 
@@ -81,7 +93,7 @@ Su historial permanece trazable conforme a las reglas generales del Canon.
 
 ## RL-001
 
-Toda Relación conecta dos o más entidades del Modelo.
+Toda Relación conecta al menos dos entidades del Modelo.
 
 ---
 
@@ -105,7 +117,7 @@ Una Relación nunca sustituye a las entidades relacionadas.
 
 ## RL-005
 
-Una Relación nunca constituye una de las entidades relacionadas.
+Toda modificación genera una nueva Relación.
 
 ---
 
@@ -117,13 +129,7 @@ Varias Relaciones pueden conectar las mismas entidades.
 
 ## RL-007
 
-La dirección de una Relación existe únicamente cuando la naturaleza de la conexión lo requiere.
-
----
-
-## RL-008
-
-Una Relación nunca interpreta la conexión que representa.
+La dirección únicamente existe cuando la naturaleza del vínculo lo requiere.
 
 ---
 
@@ -132,42 +138,27 @@ Una Relación nunca interpreta la conexión que representa.
 Una Relación nunca contiene:
 
 - Observaciones;
-- Evidencias;
 - Hipótesis;
+- Evidencias;
 - Confianza;
 - decisiones;
-- recomendaciones;
 - intervenciones;
-- cálculos;
-- interfaces.
+- interfaces;
+- algoritmos.
 
 ---
 
-# Relaciones
+# Dependencias
 
-Depende de:
-
-- 10_nucleo/axiomas.md
-- 10_nucleo/principios.md
-
-Utilizado por:
-
-- estado.md
-- representacion.md
-- 40_metodologia/
-- 50_producto/
+- `10_nucleo/axiomas.md`
+- `30_ontologia/modelo.md`
 
 ---
 
-# Responsabilidad
+# Utilizado por
 
-Este documento define exclusivamente el concepto de Relación.
-
-No define las entidades del dominio.
-
-No define el significado de las conexiones.
-
-No establece reglas metodológicas.
+- toda la Ontología;
+- `40_metodologia/`
 
 ---
 
@@ -175,6 +166,6 @@ No establece reglas metodológicas.
 
 Las Relaciones constituyen la estructura del Modelo.
 
-Las entidades determinan qué existe.
+Las entidades establecen qué existe.
 
-Las Relaciones determinan cómo dichas entidades permanecen conectadas.
+Las Relaciones establecen cómo permanece conectado.
