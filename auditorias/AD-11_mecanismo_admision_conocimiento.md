@@ -1,6 +1,6 @@
 # AD-11 · Mecanismo de admisión del conocimiento
 
-**Estado:** CONGELADO
+**Estado:** PROPUESTA
 
 **Versión:** 1.0.0
 
