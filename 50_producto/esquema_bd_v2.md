@@ -1,4 +1,4 @@
-# Modelo Vivo
+# Esquema BD v2
 
 Estado: BORRADOR
 
@@ -10,123 +10,221 @@ Ubicación:
 
 # Propósito
 
-Definir la estructura persistente del Modelo Vivo.
+Definir el esquema canónico de persistencia de ATÓMICA.
 
-El Modelo representa el estado sistémico estimado de una organización.
+Este documento constituye la fuente de verdad para el diseño de la base de datos.
 
-No representa el diagnóstico.
+No define la implementación en Supabase.
 
-El diagnóstico únicamente inicializa el Modelo.
+No contiene SQL.
 
----
-
-# Tablas
-
-## modelos
-
-Representa el Modelo Vivo de una organización.
-
-Existe un único modelo por organización.
+No contiene detalles de infraestructura.
 
 ---
 
-## estados
+# Principios
 
-Representa una instantánea inmutable del Modelo.
+La base de datos representa el Modelo Vivo.
 
-Cada modificación del Modelo genera un nuevo Estado.
+No representa la interfaz.
 
-Los Estados nunca se actualizan.
+No representa la lógica de aplicación.
 
-Solo se crean.
+El diagnóstico inicial es una observación.
 
----
+El Estado Sistémico es inmutable.
 
-## trayectorias
+Toda evolución crea un nuevo Estado.
 
-Representa la secuencia temporal de Estados.
-
-Permite reconstruir la evolución completa del Modelo.
-
-No contiene información calculada.
-
-Únicamente relaciones temporales.
+Toda información pertenece a un agregado.
 
 ---
 
-## indicadores
+# Módulos
 
-Representa los indicadores calculados para un Estado.
+## 1. Marco metodológico
 
-Incluye, entre otros:
+Tablas previstas
 
-- IFO
-- indicadores por dimensión
-- indicadores derivados
-
-Los indicadores pertenecen al Estado.
-
-Nunca al Diagnóstico.
-
----
-
-## patrones_detectados
-
-Representa los patrones identificados durante el cálculo de un Estado.
-
-Su existencia depende exclusivamente del Estado al que pertenecen.
+- marcos
+- versiones_marco
+- dimensiones
+- capacidades
+- preguntas
+- reglas_evaluacion
+- umbrales_ifo
 
 ---
 
-# Relaciones
+## 2. Identidad
 
-Organización
+Tablas previstas
+
+- organizaciones
+- usuarios_organizacion
+- eventos_identidad
+
+---
+
+## 3. Observación
+
+Tablas previstas
+
+- observaciones
+- diagnosticos
+- respuestas
+- instrumentos
+- procedencias
+
+---
+
+## 4. Modelo Vivo
+
+Tablas previstas
+
+- modelos
+- estados
+- trayectorias
+- indicadores
+- patrones_detectados
+
+---
+
+## 5. Evidencia
+
+Tablas previstas
+
+- evidencias
+- archivos_evidencia
+- validaciones
+- confianzas
+
+---
+
+## 6. Inteligencia
+
+Tablas previstas
+
+- hipotesis
+- contradicciones
+- explicaciones
+
+---
+
+## 7. Intervención
+
+Tablas previstas
+
+- intervenciones
+- acciones
+- seguimientos
+
+---
+
+## 8. Certificación
+
+Tablas previstas
+
+- esquemas_certificacion
+- sellos
+- credenciales
+
+---
+
+## 9. Benchmark
+
+Tablas previstas
+
+- datasets
+- benchmarks
+- percentiles
+
+---
+
+## 10. Plataforma
+
+Tablas previstas
+
+- suscripciones
+- planes
+- eventos_uso
+- notificaciones
+- api_keys
+
+---
+
+## 11. IA
+
+Tablas previstas
+
+- conversaciones
+- mensajes
+- uso_llm
+
+---
+
+# Infraestructura
+
+No forma parte del esquema de dominio.
+
+Incluye:
+
+- Storage
+- Edge Functions
+- Jobs
+- Webhooks
+- Conectores
+- Colas
+
+---
+
+# Relaciones entre módulos
+
+Marco metodológico
 
 ↓
 
-Modelo
+Observación
 
 ↓
 
-Estado
+Modelo Vivo
 
-├── Indicadores
+↓
 
-├── Patrones detectados
+Inteligencia
 
-└── Trayectoria
+↓
 
----
+Intervención
 
-# Reglas
+↓
 
-Existe un único Modelo por organización.
+Certificación
 
-Un Modelo posee múltiples Estados.
+↓
 
-Cada Estado pertenece a un único Modelo.
+Benchmark
 
-Los Estados son inmutables.
+Identidad es transversal a todos los módulos.
 
-Toda evolución genera un nuevo Estado.
+Evidencia actúa como eje ortogonal del Modelo Vivo.
 
-La Trayectoria se construye a partir de la secuencia de Estados.
-
-Los Indicadores pertenecen a un Estado.
-
-Los Patrones pertenecen a un Estado.
+Plataforma e IA consumen el dominio, pero no lo modifican.
 
 ---
 
-# Consecuencias
+# Próximo documento
 
-`diagnosticos` deja de almacenar:
+Cada tabla se desarrollará en un documento específico indicando:
 
-- ifo_global
-- scores_dimensiones
-- fragilidades_ocultas
-- nivel_antifragilidad
-
-Toda esa información pasa a `estados`.
-
-El diagnóstico queda reducido al papel de observación inicial del Modelo.
+- propósito
+- responsabilidad
+- atributos
+- claves
+- relaciones
+- restricciones
+- índices
+- políticas RLS
+- dependencias
+- migración desde v1
