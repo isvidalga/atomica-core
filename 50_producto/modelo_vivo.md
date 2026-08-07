@@ -2,7 +2,7 @@
 
 Estado: CANÓNICO
 
-Versión: 2.0.0
+Versión: 2.0.1
 
 Tipo: Producto
 
@@ -141,6 +141,15 @@ Toda representación mantenida por el Modelo Vivo conserva la trazabilidad estab
 
 ---
 
+## MV-006 · Inmutabilidad
+
+Los Estados Sistémicos pertenecientes al Modelo Vivo son inmutables.
+
+La evolución del Modelo Vivo se produce exclusivamente mediante la incorporación de nuevos Estados.
+
+
+---
+
 # Dependencias normativas
 
 El Modelo Vivo depende de las definiciones establecidas por:
@@ -185,7 +194,11 @@ Toda superficie explora exactamente el mismo modelo.
 
 # Entradas
 
-El Modelo Vivo recibe exclusivamente conocimiento producido conforme a la metodología vigente.
+El Modelo Vivo se alimenta de las observaciones procesadas conforme a la metodología vigente.
+
+Las observaciones pueden generar nuevos Estados Sistémicos.
+
+No todas las observaciones modifican el Modelo Vivo.
 
 No incorpora información procedente de fuentes no reguladas por el Sistema Normativo.
 
@@ -229,6 +242,12 @@ Cada nueva versión deriva de la inmediatamente anterior conforme a las reglas e
 La actualización de una representación nunca implica la pérdida de la historia del modelo.
 
 Los mecanismos concretos de almacenamiento pertenecen a la arquitectura técnica y quedan fuera del alcance de este documento.
+
+Los Estados Sistémicos son inmutables.
+
+Toda actualización genera un nuevo Estado.
+
+Nunca modifica uno existente.
 
 ---
 
@@ -362,6 +381,16 @@ Cada instrumento determina:
 - qué contexto proporciona durante la navegación.
 
 El Modelo Vivo garantiza únicamente la coherencia del conocimiento compartido.
+
+---
+
+# Relación con la confianza
+
+La confianza constituye un eje independiente del Modelo Vivo.
+
+Las variaciones de confianza no modifican los Estados Sistémicos.
+
+Los Estados y la confianza evolucionan de forma ortogonal conforme al Sistema Normativo.
 
 ---
 
@@ -501,6 +530,19 @@ La generación del conocimiento, su definición, su validación y su interpretac
 El Modelo Vivo constituye el punto de unión entre el conocimiento definido por el Canon y su utilización dentro del producto.
 
 ---
+
+# Trayectoria
+
+La Trayectoria constituye la sucesión ordenada de Estados Sistémicos pertenecientes al mismo Modelo Vivo.
+
+Cada nuevo Estado amplía la Trayectoria.
+
+Los Estados anteriores nunca son modificados.
+
+La Trayectoria garantiza la continuidad histórica del Modelo Vivo.
+
+---
+
 
 # Límites del documento
 
