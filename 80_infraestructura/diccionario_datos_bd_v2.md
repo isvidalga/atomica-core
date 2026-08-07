@@ -1,8 +1,8 @@
-# Diccionario de Datos BD v2
+# Diccionario de datos BD v2
 
-Estado: BORRADOR
+Estado: CANÓNICO
 
-Versión: 2.0.0
+Versión: 1.0.0
 
 Tipo: Infraestructura
 
@@ -14,13 +14,15 @@ Ubicación:
 
 # Propósito
 
-Este documento constituye la especificación lógica completa de las entidades persistentes de la Base de Datos v2.
+Este documento constituye la especificación lógica de todas las entidades persistentes de la Base de Datos v2.
 
-Su finalidad consiste en definir cada entidad antes de su implementación física.
+Su finalidad consiste en definir la estructura de datos necesaria para implementar el dominio descrito por el Canon.
 
-La base de datos implementa este documento.
+No define la arquitectura del dominio.
 
-Nunca lo modifica.
+No define la metodología.
+
+No constituye una implementación física.
 
 ---
 
@@ -28,2102 +30,1377 @@ Nunca lo modifica.
 
 Este documento especifica:
 
-- entidades;
-- atributos;
-- claves;
-- relaciones;
-- restricciones;
-- índices;
-- reglas de integridad;
-- criterios de auditoría;
-- criterios de autorización.
+* entidades;
+* atributos;
+* claves;
+* relaciones;
+* restricciones;
+* nulabilidad;
+* índices lógicos;
+* reglas de integridad.
 
-No define:
+No especifica:
 
-- SQL;
-- migraciones;
-- RLS concreta;
-- implementación Supabase.
+* SQL;
+* RLS;
+* migraciones;
+* rendimiento;
+* implementación tecnológica.
+
+---
+
+# Dependencias
+
+Este documento depende de:
+
+* `30_ontologia/`
+* `40_metodologia/`
+* `50_producto/modelo_vivo.md`
+* `80_infraestructura/esquema_canonico.md`
+* `80_infraestructura/esquema_bd_v2.md`
+
+En caso de conflicto prevalecerán siempre dichos documentos.
 
 ---
 
 # Organización
 
-Las entidades se agrupan por módulos.
+Las entidades se documentan siguiendo exactamente los módulos definidos por `esquema_bd_v2.md`.
 
-Cada entidad mantiene la misma estructura documental.
+Cada entidad constituye una especificación completa e independiente.
+
+No podrán existir entidades no documentadas en este diccionario.
+
+# Especificación de entidades
+
+Todas las entidades definidas en este documento deberán documentarse utilizando exactamente la siguiente estructura.
 
 ---
 
-# Módulo 1 · Marco metodológico
-
-# Entidad: metodologia
+# Nombre de la entidad
 
 ## Propósito
 
-Representa una versión completa del marco metodológico de ATÓMICA.
-
-Toda observación, Estado Sistémico y Modelo Vivo referencia exactamente una metodología.
-
-Las metodologías son inmutables.
-
-Nunca se modifican.
+Describe la responsabilidad exclusiva de la entidad.
 
 ---
 
-## Campos
+## Módulo
 
-| Campo | Tipo PostgreSQL | Nulo | PK | FK | UNIQUE |
-|--------|-----------------|------|----|----|--------|
-| id | uuid | NO | ✓ | | |
-| codigo | text | NO | | | ✓ |
-| version | text | NO | | | |
-| nombre | text | NO | | | |
-| descripcion | text | SI | | | |
-| estado | text | NO | | | |
-| publicada_en | timestamptz | SI | | | |
-| creada_en | timestamptz | NO | | | |
+Indica el módulo al que pertenece.
+
+---
+
+## Clave primaria
+
+Especifica la clave primaria de la entidad.
+
+---
+
+## Claves naturales
+
+Especifica, cuando existan, los identificadores naturales.
+
+Si no existen, deberá indicarse expresamente.
+
+---
+
+## Atributos
+
+| Atributo | Tipo lógico | Nulo | Descripción |
+| -------- | ----------- | ---- | ----------- |
+
+Todos los atributos deberán documentarse.
 
 ---
 
 ## Restricciones
 
-- `codigo` único.
-- `estado ∈ {BORRADOR, PUBLICADA, OBSOLETA}`.
-- No admite modificaciones tras su publicación.
+Se especificarán todas las restricciones lógicas aplicables.
+
+Incluyen, entre otras:
+
+* unicidad;
+* obligatoriedad;
+* dominio permitido;
+* cardinalidad.
 
 ---
 
 ## Relaciones
 
-- 1 → N dimensiones
-- 1 → N capacidades
-- 1 → N preguntas
-- 1 → N umbrales
+Para cada relación deberán indicarse:
+
+* entidad relacionada;
+* cardinalidad;
+* obligatoriedad.
 
 ---
 
-## Índices
+## Integridad
 
-- codigo
-- version
-- estado
+Se documentarán las reglas que garantizan la consistencia de la entidad.
 
 ---
 
-## ON DELETE
+## Versionado
 
-RESTRICT
+Se indicará si la entidad:
 
----
-
-## Auditoría
-
-Entidad inmutable.
-
-Cada nueva metodología crea un nuevo registro.
-
----
-
-## RLS prevista
-
-Solo lectura para organizaciones.
-
-Administración exclusiva del sistema.
-
----
-
-# Entidad: dimension
-
-## Propósito
-
-Agrupa capacidades dentro de una metodología.
-
----
-
-## Campos
-
-| Campo | Tipo PostgreSQL | Nulo |
-|--------|-----------------|------|
-| id | uuid | NO |
-| metodologia_id | uuid | NO |
-| codigo | text | NO |
-| nombre | text | NO |
-| descripcion | text | SI |
-| orden | integer | NO |
-| activa | boolean | NO |
-
----
-
-## FK
-
-- metodologia_id → metodologia.id
-
----
-
-## Restricciones
-
-UNIQUE (metodologia_id,codigo)
-
----
-
-## Índices
-
-- metodologia_id
-- codigo
-- orden
-
----
-
-## ON DELETE
-
-RESTRICT
+* es versionable;
+* genera historial;
+* es inmutable;
+* admite sustitución.
 
 ---
 
 ## Auditoría
 
-Entidad inmutable.
+Se indicará la información mínima necesaria para garantizar la trazabilidad.
 
 ---
 
-## RLS prevista
+## Observaciones
 
-Solo lectura.
+Únicamente podrán incluirse aclaraciones relevantes para la implementación del dominio.
+
+No podrán incorporarse decisiones físicas ni instrucciones SQL.
 
 ---
 
-# Entidad: capacidad
+# Restricción documental
+
+Toda entidad persistente del sistema deberá aparecer exactamente una vez en este documento.
+
+No podrán existir entidades implementadas que no hayan sido previamente especificadas aquí.
+
+La implementación física deberá derivarse exclusivamente de este diccionario.
+
+---
+
+# marco_metodologico
 
 ## Propósito
 
-Representa una capacidad organizacional definida por una metodología.
+Representa una versión completa del marco metodológico utilizado para construir el Modelo Vivo.
 
-Toda observación afecta una o varias capacidades.
+Toda observación y todo Estado Sistémico deberán referenciar explícitamente una versión del marco metodológico.
 
----
+Nunca se modificará una versión existente.
 
-## Campos
-
-| Campo | Tipo PostgreSQL | Nulo |
-|--------|-----------------|------|
-| id | uuid | NO |
-| metodologia_id | uuid | NO |
-| dimension_id | uuid | NO |
-| codigo | text | NO |
-| nombre | text | NO |
-| descripcion | text | SI |
-| orden | integer | NO |
-| activa | boolean | NO |
+Toda evolución generará una nueva versión.
 
 ---
 
-## FK
+## Módulo
 
-- metodologia_id → metodologia.id
-- dimension_id → dimension.id
+Módulo 1 · Marco metodológico
+
+---
+
+## Clave primaria
+
+```text
+id
+```
+
+---
+
+## Claves naturales
+
+```text
+codigo
+version
+```
+
+La combinación deberá ser única.
+
+---
+
+## Atributos
+
+| Atributo      | Tipo lógico | Nulo | Descripción                 |
+| ------------- | ----------- | ---- | --------------------------- |
+| id            | UUID        | No   | Identificador único         |
+| codigo        | Texto corto | No   | Código del marco            |
+| version       | Texto corto | No   | Versión metodológica        |
+| nombre        | Texto       | No   | Nombre del marco            |
+| descripcion   | Texto largo | Sí   | Descripción                 |
+| estado        | Enumerado   | No   | Borrador, vigente, retirado |
+| vigente_desde | FechaHora   | Sí   | Inicio de vigencia          |
+| vigente_hasta | FechaHora   | Sí   | Fin de vigencia             |
+| creado_en     | FechaHora   | No   | Creación                    |
+| creado_por    | UUID        | Sí   | Autor responsable           |
 
 ---
 
 ## Restricciones
 
-UNIQUE (metodologia_id,codigo)
+Solo podrá existir una versión vigente para un mismo código.
+
+Una versión publicada nunca podrá modificarse.
 
 ---
 
-## Índices
+## Relaciones
 
-- metodologia_id
-- dimension_id
-- codigo
+Un marco metodológico posee múltiples:
+
+* dimensiones;
+* capacidades;
+* preguntas;
+* umbrales;
+* instrumentos.
 
 ---
 
-## ON DELETE
+## Integridad
 
-RESTRICT
+Toda entidad metodológica deberá pertenecer exactamente a un marco metodológico.
+
+---
+
+## Versionado
+
+Entidad versionable.
+
+Registros inmutables tras su publicación.
 
 ---
 
 ## Auditoría
 
-Entidad inmutable.
+Toda publicación deberá conservar:
+
+* autor;
+* fecha;
+* versión;
+* motivo de publicación.
 
 ---
 
-## RLS prevista
+## Observaciones
 
-Solo lectura.
+Constituye la raíz de todo el conocimiento metodológico del sistema.
 
 ---
 
-# Entidad: pregunta
+# dimension
 
 ## Propósito
 
-Instrumento de observación perteneciente a una metodología.
+Representa una dimensión metodológica utilizada para organizar las capacidades del modelo.
+
+Las dimensiones constituyen el primer nivel de clasificación del marco metodológico.
 
 ---
 
-## Campos
+## Módulo
 
-| Campo | Tipo PostgreSQL | Nulo |
-|--------|-----------------|------|
-| id | uuid | NO |
-| metodologia_id | uuid | NO |
-| capacidad_id | uuid | NO |
-| codigo | text | NO |
-| texto | text | NO |
-| tipo | text | NO |
-| orden | integer | NO |
-| obligatoria | boolean | NO |
-| activa | boolean | NO |
+Módulo 1 · Marco metodológico
 
 ---
 
-## FK
+## Clave primaria
 
-- metodologia_id → metodologia.id
-- capacidad_id → capacidad.id
+```text
+id
+```
+
+---
+
+## Claves naturales
+
+```text
+marco_metodologico_id
+codigo
+```
+
+La combinación deberá ser única.
+
+---
+
+## Atributos
+
+| Atributo              | Tipo lógico | Nulo | Descripción            |
+| --------------------- | ----------- | ---- | ---------------------- |
+| id                    | UUID        | No   | Identificador único    |
+| marco_metodologico_id | UUID        | No   | Marco al que pertenece |
+| codigo                | Texto corto | No   | Código de la dimensión |
+| nombre                | Texto       | No   | Nombre                 |
+| descripcion           | Texto largo | Sí   | Descripción            |
+| orden                 | Entero      | No   | Orden de presentación  |
+| activa                | Booleano    | No   | Estado operativo       |
 
 ---
 
 ## Restricciones
 
-UNIQUE (metodologia_id,codigo)
+Cada dimensión pertenece a un único marco metodológico.
+
+No podrán existir códigos duplicados dentro del mismo marco.
 
 ---
 
-## Índices
+## Relaciones
 
-- metodologia_id
-- capacidad_id
-- codigo
+Pertenece a:
+
+* marco_metodologico
+
+Contiene múltiples:
+
+* capacidades
 
 ---
 
-## ON DELETE
+## Integridad
 
-RESTRICT
+La eliminación de un marco metodológico no podrá dejar dimensiones huérfanas.
+
+---
+
+## Versionado
+
+Hereda el versionado del marco metodológico.
+
+No podrá cambiar de marco.
 
 ---
 
 ## Auditoría
 
-Entidad inmutable.
+Se registrarán creación, publicación y retirada.
 
 ---
 
-## RLS prevista
+## Observaciones
 
-Solo lectura.
+Las dimensiones son elementos metodológicos.
+
+Nunca almacenan resultados de una organización.
 
 ---
 
-# Entidad: umbral
+# capacidad
 
 ## Propósito
 
-Define la clasificación oficial del IFO para una metodología.
+Representa la unidad metodológica básica sobre la que se realizan las observaciones del sistema.
 
-Los umbrales nunca estarán codificados en la aplicación.
-
----
-
-## Campos
-
-| Campo | Tipo PostgreSQL | Nulo |
-|--------|-----------------|------|
-| id | uuid | NO |
-| metodologia_id | uuid | NO |
-| codigo | text | NO |
-| valor_min | numeric(5,2) | NO |
-| valor_max | numeric(5,2) | NO |
-| etiqueta | text | NO |
-| color | text | SI |
-| orden | integer | NO |
+Toda observación, hipótesis, intervención y evolución del Modelo Vivo se refiere, directa o indirectamente, a una capacidad.
 
 ---
 
-## FK
+## Módulo
 
-- metodologia_id → metodologia.id
+Módulo 1 · Marco metodológico
+
+---
+
+## Clave primaria
+
+```text
+id
+```
+
+---
+
+## Claves naturales
+
+```text
+marco_metodologico_id
+codigo
+```
+
+La combinación deberá ser única.
+
+---
+
+## Atributos
+
+| Atributo              | Tipo lógico | Nulo | Descripción                    |
+| --------------------- | ----------- | ---- | ------------------------------ |
+| id                    | UUID        | No   | Identificador único            |
+| marco_metodologico_id | UUID        | No   | Marco metodológico             |
+| dimension_id          | UUID        | No   | Dimensión a la que pertenece   |
+| codigo                | Texto corto | No   | Código estable de la capacidad |
+| nombre                | Texto       | No   | Nombre                         |
+| descripcion           | Texto largo | Sí   | Definición metodológica        |
+| orden                 | Entero      | No   | Orden dentro de la dimensión   |
+| activa                | Booleano    | No   | Estado operativo               |
 
 ---
 
 ## Restricciones
 
-UNIQUE (metodologia_id,codigo)
+Cada capacidad pertenece exactamente a una dimensión.
 
-CHECK (valor_min <= valor_max)
+No podrán existir códigos repetidos dentro del mismo marco metodológico.
 
----
-
-## Índices
-
-- metodologia_id
-- orden
+Una capacidad nunca podrá pertenecer simultáneamente a dos dimensiones.
 
 ---
 
-## ON DELETE
+## Relaciones
 
-RESTRICT
+Pertenece a:
+
+* marco_metodologico
+* dimension
+
+Es referenciada por:
+
+* preguntas
+* observaciones
+* hipótesis
+* intervenciones
+
+---
+
+## Integridad
+
+No podrá eliminarse una capacidad utilizada por observaciones históricas.
+
+La sustitución se realizará exclusivamente mediante una nueva versión del marco metodológico.
+
+---
+
+## Versionado
+
+Hereda el versionado del marco metodológico.
+
+Los registros publicados serán inmutables.
 
 ---
 
 ## Auditoría
 
-Entidad inmutable.
+Se conservarán:
+
+* fecha de creación;
+* autor;
+* versión metodológica;
+* motivo de sustitución, cuando exista.
 
 ---
 
-## RLS prevista
+## Observaciones
 
-Solo lectura.
+La capacidad constituye la unidad metodológica fundamental del dominio.
 
----
+No almacena información específica de ninguna organización.
 
-# Estado del documento
-
-Completado:
-
-- Módulo 1 · Marco metodológico
+Todo dato organizacional pertenece a los módulos posteriores.
 
 ---
 
-# Módulo 3 · Observaciones
-
-# Entidad: observaciones
+# pregunta
 
 ## Propósito
 
-Representa una observación realizada sobre una organización.
+Representa un instrumento metodológico destinado a obtener observaciones sobre una capacidad.
 
-Toda información que entra en el Modelo Vivo procede de una observación.
+Una pregunta nunca constituye conocimiento.
 
-El diagnóstico inicial constituye un tipo particular de observación.
-
----
-
-## Campos
-
-| Campo               | Tipo PostgreSQL | Nulo |
-| ------------------- | --------------- | ---- |
-| id                  | uuid            | NO   |
-| organizacion_id     | uuid            | NO   |
-| metodologia_id      | uuid            | NO   |
-| tipo_observacion_id | uuid            | NO   |
-| origen_id           | uuid            | NO   |
-| realizada_en        | timestamptz     | NO   |
-| finalizada_en       | timestamptz     | SI   |
-| estado              | text            | NO   |
-| observador_id       | uuid            | SI   |
-| creada_en           | timestamptz     | NO   |
+Únicamente permite capturar información que posteriormente será interpretada conforme a la metodología vigente.
 
 ---
 
-## FK
+## Módulo
 
-organizacion_id → organizaciones.id
+Módulo 1 · Marco metodológico
 
-metodologia_id → metodologias.id
+---
 
-tipo_observacion_id → tipos_observacion.id
+## Clave primaria
 
-origen_id → origenes_observacion.id
+```text
+id
+```
 
-observador_id → auth.users.id
+---
+
+## Claves naturales
+
+```text
+marco_metodologico_id
+codigo
+```
+
+La combinación deberá ser única.
+
+---
+
+## Atributos
+
+| Atributo              | Tipo lógico | Nulo | Descripción                |
+| --------------------- | ----------- | ---- | -------------------------- |
+| id                    | UUID        | No   | Identificador único        |
+| marco_metodologico_id | UUID        | No   | Marco metodológico         |
+| capacidad_id          | UUID        | No   | Capacidad evaluada         |
+| codigo                | Texto corto | No   | Código estable             |
+| texto                 | Texto largo | No   | Enunciado                  |
+| descripcion           | Texto largo | Sí   | Aclaraciones metodológicas |
+| tipo_respuesta        | Enumerado   | No   | Tipo de respuesta esperado |
+| obligatoria           | Booleano    | No   | Obligatoriedad             |
+| orden                 | Entero      | No   | Orden de presentación      |
+| activa                | Booleano    | No   | Estado operativo           |
 
 ---
 
 ## Restricciones
 
-estado ∈
+Toda pregunta pertenece exactamente a una capacidad.
 
-* ABIERTA
-* FINALIZADA
-* CANCELADA
+No podrán existir códigos duplicados dentro del mismo marco metodológico.
 
----
-
-## Índices
-
-* organizacion_id
-* metodologia_id
-* realizada_en
-* estado
+El tipo de respuesta deberá corresponder con el instrumento metodológico definido.
 
 ---
 
-## ON DELETE
+## Relaciones
 
-RESTRICT
+Pertenece a:
+
+* marco_metodologico
+* capacidad
+
+Es utilizada por:
+
+* observaciones
+
+---
+
+## Integridad
+
+Una pregunta utilizada en observaciones históricas no podrá eliminarse.
+
+Su modificación requerirá una nueva versión del marco metodológico.
+
+---
+
+## Versionado
+
+Hereda el versionado del marco metodológico.
+
+Es inmutable una vez publicada.
 
 ---
 
 ## Auditoría
 
-No se elimina.
+Se conservarán:
 
-Toda modificación queda registrada.
-
----
-
-## RLS prevista
-
-Miembros de la organización.
-
-Consultores autorizados.
-
-Administradores.
+* fecha de creación;
+* autor;
+* versión metodológica;
+* motivo de sustitución.
 
 ---
 
-# Entidad: respuestas_observacion
+## Observaciones
+
+Las preguntas pertenecen exclusivamente al marco metodológico.
+
+No almacenan respuestas.
+
+Las respuestas pertenecen al Módulo 3 · Observaciones.
+
+---
+
+# instrumento
 
 ## Propósito
 
-Representa el resultado de una observación elemental.
+Representa el mecanismo metodológico mediante el cual se obtiene una observación.
 
-No representa una conclusión.
+Un instrumento define cómo se captura información.
 
-No representa un Estado Sistémico.
+Nunca almacena observaciones.
 
----
-
-## Campos
-
-| Campo          | Tipo PostgreSQL | Nulo |
-| -------------- | --------------- | ---- |
-| id             | uuid            | NO   |
-| observacion_id | uuid            | NO   |
-| pregunta_id    | uuid            | NO   |
-| valor          | jsonb           | NO   |
-| confianza      | numeric(5,2)    | SI   |
-| creada_en      | timestamptz     | NO   |
+Nunca interpreta resultados.
 
 ---
 
-## FK
+## Módulo
 
-observacion_id → observaciones.id
+Módulo 1 · Marco metodológico
 
-pregunta_id → preguntas.id
+---
+
+## Clave primaria
+
+```text
+id
+```
+
+---
+
+## Claves naturales
+
+```text
+marco_metodologico_id
+codigo
+```
+
+La combinación deberá ser única.
+
+---
+
+## Atributos
+
+| Atributo              | Tipo lógico | Nulo | Descripción             |
+| --------------------- | ----------- | ---- | ----------------------- |
+| id                    | UUID        | No   | Identificador único     |
+| marco_metodologico_id | UUID        | No   | Marco metodológico      |
+| codigo                | Texto corto | No   | Código estable          |
+| nombre                | Texto       | No   | Nombre del instrumento  |
+| descripcion           | Texto largo | Sí   | Definición metodológica |
+| tipo                  | Enumerado   | No   | Tipo de instrumento     |
+| activo                | Booleano    | No   | Estado operativo        |
 
 ---
 
 ## Restricciones
 
-UNIQUE(observacion_id,pregunta_id)
+Cada instrumento pertenece exactamente a un marco metodológico.
+
+No podrán existir códigos duplicados dentro del mismo marco.
 
 ---
 
-## Índices
+## Relaciones
 
-* observacion_id
-* pregunta_id
+Pertenece a:
 
----
-
-## ON DELETE
-
-CASCADE
-
----
-
-# Entidad: tipos_observacion
-
-## Propósito
-
-Catálogo de tipos de observación.
-
----
-
-## Campos
-
-| Campo  | Tipo PostgreSQL | Nulo |
-| ------ | --------------- | ---- |
-| id     | uuid            | NO   |
-| codigo | text            | NO   |
-| nombre | text            | NO   |
-| activa | boolean         | NO   |
-
----
-
-## Restricciones
-
-UNIQUE(codigo)
-
----
-
-## Valores iniciales
-
-* DIAGNOSTICO_INICIAL
-* REVISION_PERIODICA
-* EVIDENCIA
-* ENTREVISTA
-* IMPORTACION
-
----
-
-# Entidad: origenes_observacion
-
-## Propósito
-
-Indica el origen mediante el cual fue obtenida una observación.
-
----
-
-## Campos
-
-| Campo       | Tipo PostgreSQL | Nulo |
-| ----------- | --------------- | ---- |
-| id          | uuid            | NO   |
-| codigo      | text            | NO   |
-| descripcion | text            | NO   |
-
----
-
-## Restricciones
-
-UNIQUE(codigo)
-
----
-
-## Valores iniciales
-
-* USUARIO
-* CONSULTOR
-* IMPORTACION
-* API
-* SISTEMA
-
----
-
-# Dependencias
-
-Depende de:
-
-* Marco metodológico
-* Organizaciones
+* marco_metodologico
 
 Es utilizado por:
 
-* Modelo Vivo
-* Evidencias
-* Hipótesis
+* observaciones
 
 ---
 
-## Módulo 4 · Modelo Vivo
+## Integridad
+
+Los instrumentos utilizados por observaciones históricas no podrán eliminarse.
 
 ---
 
-# Entidad: modelos_vivos
+## Versionado
 
-## Propósito
+Hereda el versionado del marco metodológico.
 
-Representa el Modelo Vivo de una organización.
-
-Existe un único Modelo Vivo por organización.
-
-No almacena Estados Sistémicos.
-
-Actúa como agregador de su trayectoria.
-
----
-
-## Campos
-
-| Campo           | Tipo PostgreSQL | Nulo |
-| --------------- | --------------- | ---- |
-| id              | uuid            | NO   |
-| organizacion_id | uuid            | NO   |
-| creado_en       | timestamptz     | NO   |
-| archivado_en    | timestamptz     | SI   |
-
----
-
-## FK
-
-organizacion_id → organizaciones.id
-
----
-
-## Restricciones
-
-UNIQUE(organizacion_id)
-
----
-
-## Índices
-
-* organizacion_id
-
----
-
-## ON DELETE
-
-RESTRICT
+Es inmutable tras su publicación.
 
 ---
 
 ## Auditoría
 
-Nunca se elimina.
+Se conservarán:
+
+* autor;
+* fecha de creación;
+* versión metodológica.
 
 ---
 
-## RLS prevista
+## Observaciones
 
-Miembros de la organización.
+El instrumento describe el mecanismo de captura.
 
-Consultores autorizados.
-
-Administradores.
+La observación constituye el dato obtenido mediante dicho instrumento.
 
 ---
 
-# Entidad: estados_sistemicos
+# organizacion
 
 ## Propósito
 
-Representa un Estado Sistémico inmutable.
+Representa el referente organizacional sobre el que se construye un Modelo Vivo.
 
-Todo Estado pertenece a un único Modelo Vivo.
+La organización no es el Modelo Vivo.
 
-Nunca se modifica.
+No representa conocimiento.
 
----
-
-## Campos
-
-| Campo                 | Tipo PostgreSQL | Nulo |
-| --------------------- | --------------- | ---- |
-| id                    | uuid            | NO   |
-| modelo_vivo_id        | uuid            | NO   |
-| metodologia_id        | uuid            | NO   |
-| observacion_origen_id | uuid            | NO   |
-| ifo                   | numeric(5,2)    | NO   |
-| nivel                 | text            | NO   |
-| generado_en           | timestamptz     | NO   |
+Constituye únicamente la identidad persistente sobre la que se realizan observaciones.
 
 ---
 
-## FK
+## Módulo
 
-modelo_vivo_id → modelos_vivos.id
+Módulo 2 · Organizaciones
 
-metodologia_id → metodologias.id
+---
 
-observacion_origen_id → observaciones.id
+## Clave primaria
+
+```text
+id
+```
+
+---
+
+## Claves naturales
+
+```text
+identificador_legal
+```
+
+Cuando exista (NIF, CIF u otro identificador oficial), deberá ser único.
+
+---
+
+## Atributos
+
+| Atributo            | Tipo lógico | Nulo | Descripción               |
+| ------------------- | ----------- | ---- | ------------------------- |
+| id                  | UUID        | No   | Identificador único       |
+| identificador_legal | Texto corto | Sí   | Identificador oficial     |
+| nombre              | Texto       | No   | Denominación              |
+| tipo                | Enumerado   | No   | Tipo de organización      |
+| pais                | Texto corto | No   | País                      |
+| fecha_constitucion  | Fecha       | Sí   | Constitución              |
+| estado              | Enumerado   | No   | Estado de la organización |
+| creada_en           | FechaHora   | No   | Alta                      |
+| actualizada_en      | FechaHora   | No   | Última actualización      |
 
 ---
 
 ## Restricciones
 
-ifo BETWEEN 0 AND 100
+Una organización representa un único referente organizacional.
 
-nivel ∈
-
-* FRAGIL
-* ROBUSTO
-* RESILIENTE
-* ANTIFRAGIL
+La identidad organizacional nunca podrá reutilizarse.
 
 ---
 
-## Índices
+## Relaciones
 
-* modelo_vivo_id
-* generado_en
-* metodologia_id
+Es referenciada por:
+
+* miembros_organizacion
+* observaciones
+* modelo_vivo
+* ruptura_identidad
 
 ---
 
-## ON DELETE
+## Integridad
 
-RESTRICT
+Una organización con información histórica no podrá eliminarse físicamente.
+
+La supresión deberá seguir las reglas establecidas por la política de conservación.
+
+---
+
+## Versionado
+
+La identidad permanece estable durante toda la existencia de la organización.
+
+Las modificaciones de identidad se representan mediante eventos de ruptura.
 
 ---
 
 ## Auditoría
 
-Entidad inmutable.
+Se conservarán:
 
-No admite UPDATE.
-
-No admite DELETE.
+* creación;
+* modificaciones;
+* cambios de identidad.
 
 ---
 
-# Entidad: trayectorias_modelo
+## Observaciones
+
+Esta entidad representa únicamente la existencia de la organización.
+
+El conocimiento sobre ella pertenece al Modelo Vivo.
+
+---
+
+# miembro_organizacion
 
 ## Propósito
 
-Mantiene la secuencia temporal de Estados Sistémicos.
+Representa la pertenencia de un usuario a una organización.
 
-Constituye el historial del Modelo Vivo.
+La pertenencia determina los permisos de acceso sobre el Modelo Vivo.
 
----
+Un usuario puede pertenecer a varias organizaciones.
 
-## Campos
-
-| Campo               | Tipo PostgreSQL | Nulo |
-| ------------------- | --------------- | ---- |
-| id                  | uuid            | NO   |
-| modelo_vivo_id      | uuid            | NO   |
-| estado_sistemico_id | uuid            | NO   |
-| orden               | integer         | NO   |
-| creado_en           | timestamptz     | NO   |
+Una organización puede tener múltiples usuarios.
 
 ---
 
-## FK
+## Módulo
 
-modelo_vivo_id → modelos_vivos.id
+Módulo 2 · Organizaciones
 
-estado_sistemico_id → estados_sistemicos.id
+---
+
+## Clave primaria
+
+```text
+id
+```
+
+---
+
+## Claves naturales
+
+```text
+organizacion_id
+usuario_id
+```
+
+La combinación deberá ser única.
+
+---
+
+## Atributos
+
+| Atributo         | Tipo lógico | Nulo | Descripción                            |
+| ---------------- | ----------- | ---- | -------------------------------------- |
+| id               | UUID        | No   | Identificador único                    |
+| organizacion_id  | UUID        | No   | Organización                           |
+| usuario_id       | UUID        | No   | Usuario                                |
+| rol              | Enumerado   | No   | Rol dentro de la organización          |
+| estado           | Enumerado   | No   | Invitado, activo, suspendido, revocado |
+| invitado_por     | UUID        | Sí   | Usuario que realizó la invitación      |
+| fecha_invitacion | FechaHora   | Sí   | Fecha de invitación                    |
+| fecha_aceptacion | FechaHora   | Sí   | Fecha de aceptación                    |
+| creado_en        | FechaHora   | No   | Alta del registro                      |
+| actualizado_en   | FechaHora   | No   | Última modificación                    |
 
 ---
 
 ## Restricciones
 
-UNIQUE(modelo_vivo_id, orden)
+Un usuario no podrá tener dos pertenencias activas a la misma organización.
 
-UNIQUE(estado_sistemico_id)
-
----
-
-## Índices
-
-* modelo_vivo_id
-* orden
+Solo podrán existir los roles definidos por el marco de autorización.
 
 ---
 
-## ON DELETE
+## Relaciones
 
-RESTRICT
+Pertenece a:
+
+* organizacion
+* usuario
+
+Es utilizada por:
+
+* políticas RLS
+* auditoría
+* asignación de responsabilidades
+
+---
+
+## Integridad
+
+La eliminación de un usuario no eliminará automáticamente la pertenencia histórica.
+
+La revocación de acceso deberá conservar la trazabilidad.
+
+---
+
+## Versionado
+
+No versionable.
+
+La evolución del acceso se representa mediante cambios de estado.
 
 ---
 
 ## Auditoría
 
-No admite modificaciones.
+Se registrarán:
 
-Solo inserción.
-
----
-
-# Dependencias
-
-Depende de:
-
-* Marco metodológico
-* Organizaciones
-* Observaciones
-
-Es utilizado por:
-
-* Evidencias
-* Hipótesis
-* Intervenciones
-* Credenciales
-* Conocimiento agregado
+* altas;
+* cambios de rol;
+* revocaciones;
+* reactivaciones.
 
 ---
 
-## Módulo 5 · Evidencias
+## Observaciones
+
+Esta entidad constituye la base del modelo de autorización.
+
+Las políticas RLS deberán derivarse exclusivamente de esta relación.
+
+Nunca deberán depender de relaciones indirectas o recursivas.
 
 ---
 
-# Entidad: evidencias
+# organizacion_marco_metodologico
 
 ## Propósito
 
-Representa una evidencia asociada a una observación.
+Representa la asignación de un marco metodológico a una organización durante un intervalo temporal determinado.
 
-Una evidencia puede aumentar la confianza de una afirmación.
+Toda observación deberá realizarse bajo una versión explícita del marco metodológico.
 
-Nunca modifica directamente un Estado Sistémico.
-
----
-
-## Campos
-
-| Campo             | Tipo PostgreSQL | Nulo |
-| ----------------- | --------------- | ---- |
-| id                | uuid            | NO   |
-| organizacion_id   | uuid            | NO   |
-| observacion_id    | uuid            | NO   |
-| tipo_evidencia_id | uuid            | NO   |
-| estado            | text            | NO   |
-| titulo            | text            | NO   |
-| descripcion       | text            | SI   |
-| ubicacion         | text            | SI   |
-| hash_documento    | text            | SI   |
-| fecha_obtencion   | timestamptz     | SI   |
-| creada_en         | timestamptz     | NO   |
+Nunca se modificará retrospectivamente la asignación utilizada por observaciones históricas.
 
 ---
 
-## FK
+## Módulo
 
-organizacion_id → organizaciones.id
+Módulo 2 · Organizaciones
 
-observacion_id → observaciones.id
+---
 
-tipo_evidencia_id → tipos_evidencia.id
+## Clave primaria
+
+```text
+id
+```
+
+---
+
+## Claves naturales
+
+```text
+organizacion_id
+marco_metodologico_id
+vigente_desde
+```
+
+La combinación deberá ser única.
+
+---
+
+## Atributos
+
+| Atributo              | Tipo lógico | Nulo | Descripción                 |
+| --------------------- | ----------- | ---- | --------------------------- |
+| id                    | UUID        | No   | Identificador único         |
+| organizacion_id       | UUID        | No   | Organización                |
+| marco_metodologico_id | UUID        | No   | Marco metodológico asignado |
+| vigente_desde         | FechaHora   | No   | Inicio de vigencia          |
+| vigente_hasta         | FechaHora   | Sí   | Fin de vigencia             |
+| motivo                | Texto largo | Sí   | Justificación del cambio    |
+| creado_en             | FechaHora   | No   | Fecha de creación           |
+| creado_por            | UUID        | Sí   | Responsable del cambio      |
 
 ---
 
 ## Restricciones
 
-estado ∈
+Solo podrá existir una asignación vigente por organización.
 
-* PENDIENTE
-* VALIDADA
-* RECHAZADA
-* CADUCADA
+Los periodos de vigencia no podrán solaparse.
 
----
-
-## Índices
-
-* organizacion_id
-* observacion_id
-* tipo_evidencia_id
-* estado
+Toda observación deberá referenciar una asignación válida para su fecha de realización.
 
 ---
 
-## ON DELETE
+## Relaciones
 
-RESTRICT
+Pertenece a:
+
+* organizacion
+* marco_metodologico
+
+Es utilizada por:
+
+* observaciones
+* modelo_vivo
+* estados_sistemicos
+
+---
+
+## Integridad
+
+Una asignación utilizada por observaciones históricas no podrá eliminarse.
+
+Los cambios metodológicos generarán una nueva asignación, nunca la modificación de una existente.
+
+---
+
+## Versionado
+
+Entidad histórica.
+
+Cada cambio crea un nuevo registro.
+
+Los registros anteriores permanecen inmutables.
 
 ---
 
 ## Auditoría
 
-No se elimina físicamente.
+Se conservarán:
 
-Toda modificación queda registrada.
-
----
-
-## RLS prevista
-
-Miembros de la organización.
-
-Consultores.
-
-Administradores.
+* autor del cambio;
+* fecha;
+* motivo;
+* versión metodológica asignada.
 
 ---
 
-# Entidad: tipos_evidencia
+## Observaciones
+
+Esta entidad materializa la Regla 10 del contrato de implementación.
+
+Garantiza que cualquier observación y cualquier Estado Sistémico puedan reconstruirse exactamente utilizando la versión metodológica vigente en el momento en que fueron generados.
+
+---
+
+# observacion
 
 ## Propósito
 
-Catálogo de tipos de evidencia.
+Representa un proceso completo de observación realizado sobre una organización conforme a una versión concreta del marco metodológico.
+
+Una observación constituye el origen de todo conocimiento generado por ATÓMICA.
+
+No representa resultados.
+
+No representa hipótesis.
+
+No representa el Estado Sistémico.
 
 ---
 
-## Campos
+## Módulo
 
-| Campo  | Tipo PostgreSQL | Nulo |
-| ------ | --------------- | ---- |
-| id     | uuid            | NO   |
-| codigo | text            | NO   |
-| nombre | text            | NO   |
-| activa | boolean         | NO   |
+Módulo 3 · Observaciones
+
+---
+
+## Clave primaria
+
+```text
+id
+```
+
+---
+
+## Claves naturales
+
+No existen.
+
+---
+
+## Atributos
+
+| Atributo              | Tipo lógico | Nulo | Descripción                             |
+| --------------------- | ----------- | ---- | --------------------------------------- |
+| id                    | UUID        | No   | Identificador único                     |
+| organizacion_id       | UUID        | No   | Organización observada                  |
+| marco_metodologico_id | UUID        | No   | Marco metodológico utilizado            |
+| instrumento_id        | UUID        | No   | Instrumento utilizado                   |
+| observador_id         | UUID        | Sí   | Usuario responsable                     |
+| estado                | Enumerado   | No   | Borrador, en curso, finalizada, anulada |
+| iniciada_en           | FechaHora   | No   | Inicio                                  |
+| finalizada_en         | FechaHora   | Sí   | Finalización                            |
+| confianza             | Decimal     | Sí   | Nivel global de confianza               |
+| observaciones         | Texto largo | Sí   | Notas generales                         |
+| creada_en             | FechaHora   | No   | Creación                                |
+| actualizada_en        | FechaHora   | No   | Última modificación                     |
 
 ---
 
 ## Restricciones
 
-UNIQUE(codigo)
+Solo podrán registrarse respuestas mientras la observación permanezca abierta.
+
+Una observación finalizada será inmutable.
+
+Toda observación deberá estar vinculada a una organización y a un marco metodológico.
 
 ---
 
-## Valores iniciales
+## Relaciones
 
-* DOCUMENTO
-* URL
-* IMAGEN
-* CERTIFICADO
-* ACTA
-* OTRO
+Pertenece a:
+
+* organizacion
+* marco_metodologico
+* instrumento
+
+Contiene múltiples:
+
+* respuestas
+* evidencias
+
+Origina:
+
+* modelo_vivo
+* hipótesis
 
 ---
 
-# Entidad: relaciones_evidencia
+## Integridad
+
+No podrá eliminarse una observación utilizada para construir un Estado Sistémico.
+
+La anulación deberá conservar el registro histórico.
+
+---
+
+## Versionado
+
+Entidad histórica.
+
+No se modifica tras su finalización.
+
+---
+
+## Auditoría
+
+Se registrarán:
+
+* inicio;
+* cierre;
+* anulación;
+* usuario responsable.
+
+---
+
+## Observaciones
+
+La observación constituye la unidad de trabajo del sistema.
+
+Todo conocimiento posterior deberá poder reconstruirse a partir de una o varias observaciones identificables.
+
+---
+
+# respuesta
 
 ## Propósito
 
-Relaciona una evidencia con los elementos del Modelo Vivo que sustenta.
+Representa la respuesta proporcionada a una pregunta durante una observación.
 
-Permite mantener la trazabilidad completa.
+La respuesta constituye un dato observado.
 
----
+No constituye una interpretación.
 
-## Campos
-
-| Campo         | Tipo PostgreSQL | Nulo |
-| ------------- | --------------- | ---- |
-| id            | uuid            | NO   |
-| evidencia_id  | uuid            | NO   |
-| entidad       | text            | NO   |
-| entidad_id    | uuid            | NO   |
-| tipo_relacion | text            | NO   |
-| creada_en     | timestamptz     | NO   |
+No constituye una hipótesis.
 
 ---
 
-## FK
+## Módulo
 
-evidencia_id → evidencias.id
+Módulo 3 · Observaciones
+
+---
+
+## Clave primaria
+
+```text id="4myo4z"
+id
+```
+
+---
+
+## Claves naturales
+
+```text id="h3slsw"
+observacion_id
+pregunta_id
+```
+
+La combinación deberá ser única.
+
+---
+
+## Atributos
+
+| Atributo       | Tipo lógico | Nulo | Descripción                                       |
+| -------------- | ----------- | ---- | ------------------------------------------------- |
+| id             | UUID        | No   | Identificador único                               |
+| observacion_id | UUID        | No   | Observación                                       |
+| pregunta_id    | UUID        | No   | Pregunta respondida                               |
+| capacidad_id   | UUID        | No   | Capacidad observada (desnormalización controlada) |
+| valor          | JSONB       | No   | Valor de la respuesta                             |
+| confianza      | Decimal     | Sí   | Confianza declarada                               |
+| comentario     | Texto largo | Sí   | Observaciones adicionales                         |
+| respondida_en  | FechaHora   | No   | Fecha de respuesta                                |
+| respondida_por | UUID        | Sí   | Usuario responsable                               |
 
 ---
 
 ## Restricciones
 
-UNIQUE(evidencia_id, entidad, entidad_id)
+Solo podrá existir una respuesta por pregunta dentro de una observación.
+
+El tipo almacenado en `valor` deberá ser compatible con `pregunta.tipo_respuesta`.
+
+No podrán añadirse respuestas a una observación finalizada.
 
 ---
 
-## Índices
+## Relaciones
 
-* evidencia_id
-* entidad
-* entidad_id
+Pertenece a:
+
+* observacion
+* pregunta
+* capacidad
+
+Puede estar respaldada por:
+
+* evidencias
+
+Es utilizada por:
+
+* modelo_vivo
+* hipótesis
 
 ---
 
-## ON DELETE
+## Integridad
 
-CASCADE
+La eliminación de una respuesta invalidará la observación completa.
+
+No podrá eliminarse individualmente una respuesta perteneciente a una observación cerrada.
+
+---
+
+## Versionado
+
+No versionable.
+
+Las correcciones se realizarán mientras la observación permanezca abierta.
+
+Una vez cerrada será inmutable.
 
 ---
 
 ## Auditoría
 
-Entidad inmutable.
+Se registrarán:
+
+* creación;
+* modificación antes del cierre;
+* usuario responsable.
 
 ---
 
-# Entidad: evaluaciones_evidencia
+## Observaciones
+
+`valor` se almacena como **JSONB** para admitir distintos tipos de respuesta (escala, selección única, múltiple, texto, numérico, fecha, etc.) sin modificar el esquema físico.
+
+La interpretación del contenido pertenece a la metodología, no a esta entidad.
+
+# evidencia
 
 ## Propósito
 
-Registra la valoración realizada sobre una evidencia.
+Representa un elemento verificable que respalda una o varias respuestas obtenidas durante una observación.
 
-No modifica la evidencia original.
+La evidencia incrementa o reduce la confianza del conocimiento.
 
----
-
-## Campos
-
-| Campo           | Tipo PostgreSQL | Nulo |
-| --------------- | --------------- | ---- |
-| id              | uuid            | NO   |
-| evidencia_id    | uuid            | NO   |
-| evaluador_id    | uuid            | NO   |
-| nivel_confianza | numeric(5,2)    | NO   |
-| observaciones   | text            | SI   |
-| evaluada_en     | timestamptz     | NO   |
+Nunca modifica directamente el Estado Sistémico.
 
 ---
 
-## FK
+## Módulo
 
-evidencia_id → evidencias.id
+Módulo 3 · Observaciones
 
-evaluador_id → auth.users.id
+---
+
+## Clave primaria
+
+```text
+id
+```
+
+---
+
+## Claves naturales
+
+No existen.
+
+---
+
+## Atributos
+
+| Atributo        | Tipo lógico | Nulo | Descripción                              |
+| --------------- | ----------- | ---- | ---------------------------------------- |
+| id              | UUID        | No   | Identificador único                      |
+| observacion_id  | UUID        | No   | Observación a la que pertenece           |
+| tipo            | Enumerado   | No   | Tipo de evidencia                        |
+| titulo          | Texto       | No   | Nombre descriptivo                       |
+| descripcion     | Texto largo | Sí   | Descripción                              |
+| ubicacion       | Texto       | Sí   | Ruta, URL o referencia física            |
+| hash            | Texto corto | Sí   | Huella de integridad                     |
+| fecha_documento | Fecha       | Sí   | Fecha del documento                      |
+| fecha_caducidad | Fecha       | Sí   | Fecha de expiración, si aplica           |
+| estado          | Enumerado   | No   | Pendiente, validada, rechazada, caducada |
+| creada_en       | FechaHora   | No   | Fecha de registro                        |
+| creada_por      | UUID        | Sí   | Usuario responsable                      |
 
 ---
 
 ## Restricciones
 
-nivel_confianza BETWEEN 0 AND 100
+Toda evidencia pertenece exactamente a una observación.
+
+La evidencia podrá existir aunque todavía no haya sido validada.
+
+La validación nunca modificará la evidencia original.
 
 ---
 
-## Índices
+## Relaciones
 
-* evidencia_id
-* evaluador_id
+Pertenece a:
 
----
+* observacion
 
-## ON DELETE
+Puede respaldar múltiples:
 
-RESTRICT
+* respuestas
 
----
+Puede ser utilizada por múltiples:
 
-## Auditoría
-
-No admite modificaciones.
-
-Solo inserción.
+* hipótesis
 
 ---
 
-# Dependencias
+## Integridad
 
-Depende de:
+La eliminación física de evidencias estará prohibida salvo obligación legal.
 
-* Organizaciones
-* Observaciones
-* Modelo Vivo
-
-Es utilizado por:
-
-* Hipótesis
-* Intervenciones
+Las invalidaciones se representarán mediante cambios de estado.
 
 ---
 
-## Módulo 6 · Hipótesis
+## Versionado
 
----
+Entidad histórica.
 
-# Entidad: hipotesis
+Las evidencias no se sobrescriben.
 
-## Propósito
-
-Representa una hipótesis formulada a partir del conocimiento disponible.
-
-Una hipótesis puede fortalecerse, debilitarse o invalidarse.
-
-Nunca modifica directamente un Estado Sistémico.
-
----
-
-## Campos
-
-| Campo               | Tipo PostgreSQL | Nulo |
-| ------------------- | --------------- | ---- |
-| id                  | uuid            | NO   |
-| organizacion_id     | uuid            | NO   |
-| estado_sistemico_id | uuid            | NO   |
-| tipo_hipotesis_id   | uuid            | NO   |
-| estado              | text            | NO   |
-| descripcion         | text            | NO   |
-| nivel_confianza     | numeric(5,2)    | NO   |
-| creada_en           | timestamptz     | NO   |
-| revisada_en         | timestamptz     | SI   |
-
----
-
-## FK
-
-organizacion_id → organizaciones.id
-
-estado_sistemico_id → estados_sistemicos.id
-
-tipo_hipotesis_id → tipos_hipotesis.id
-
----
-
-## Restricciones
-
-nivel_confianza BETWEEN 0 AND 100
-
-estado ∈
-
-* LATENTE
-* EMERGENTE
-* CONSISTENTE
-* CONTRASTADA
-* REVISADA
-* INVALIDADA
-
----
-
-## Índices
-
-* organizacion_id
-* estado_sistemico_id
-* estado
-
----
-
-## ON DELETE
-
-RESTRICT
+Las modificaciones generan nuevos registros o nuevos estados de validación.
 
 ---
 
 ## Auditoría
 
-No admite eliminación física.
+Se conservarán:
 
-Toda transición de estado queda registrada.
+* creación;
+* validaciones;
+* rechazos;
+* caducidad;
+* usuario responsable.
 
 ---
 
-# Entidad: tipos_hipotesis
+## Observaciones
 
-## Propósito
+La evidencia constituye un elemento independiente del conocimiento.
 
-Catálogo de tipos de hipótesis.
+Su función es aumentar o disminuir la confianza del Modelo Vivo.
 
----
-
-## Campos
-
-| Campo  | Tipo PostgreSQL | Nulo |
-| ------ | --------------- | ---- |
-| id     | uuid            | NO   |
-| codigo | text            | NO   |
-| nombre | text            | NO   |
-| activa | boolean         | NO   |
-
----
-
-## Restricciones
-
-UNIQUE(codigo)
-
----
-
-# Entidad: contradicciones
-
-## Propósito
-
-Registra contradicciones detectadas sobre una hipótesis.
-
-Las contradicciones no eliminan la hipótesis.
-
-Constituyen parte de su trazabilidad.
-
----
-
-## Campos
-
-| Campo        | Tipo PostgreSQL | Nulo |
-| ------------ | --------------- | ---- |
-| id           | uuid            | NO   |
-| hipotesis_id | uuid            | NO   |
-| evidencia_id | uuid            | SI   |
-| descripcion  | text            | NO   |
-| creada_en    | timestamptz     | NO   |
-
----
-
-## FK
-
-hipotesis_id → hipotesis.id
-
-evidencia_id → evidencias.id
-
----
-
-## Índices
-
-* hipotesis_id
-* evidencia_id
-
----
-
-## ON DELETE
-
-RESTRICT
-
----
-
-## Auditoría
-
-Entidad inmutable.
-
----
-
-# Entidad: historial_hipotesis
-
-## Propósito
-
-Registra la evolución temporal de una hipótesis.
-
-Cada cambio genera un nuevo registro.
-
----
-
-## Campos
-
-| Campo           | Tipo PostgreSQL | Nulo |
-| --------------- | --------------- | ---- |
-| id              | uuid            | NO   |
-| hipotesis_id    | uuid            | NO   |
-| estado          | text            | NO   |
-| nivel_confianza | numeric(5,2)    | NO   |
-| motivo          | text            | SI   |
-| registrado_en   | timestamptz     | NO   |
-
----
-
-## FK
-
-hipotesis_id → hipotesis.id
-
----
-
-## Índices
-
-* hipotesis_id
-* registrado_en
-
----
-
-## ON DELETE
-
-CASCADE
-
----
-
-## Auditoría
-
-Solo inserción.
-
-No admite modificaciones.
-
----
-
-# Dependencias
-
-Depende de:
-
-* Organizaciones
-* Modelo Vivo
-* Evidencias
-
-Es utilizado por:
-
-* Intervenciones
-
----
-
-## Módulo 7 · Intervenciones
-
----
-
-# Entidad: intervenciones
-
-## Propósito
-
-Representa una intervención destinada a fortalecer una organización.
-
-Toda intervención nace a partir de una hipótesis.
-
-Su ejecución no modifica directamente el Estado Sistémico.
-
----
-
-## Campos
-
-| Campo                | Tipo PostgreSQL | Nulo |
-| -------------------- | --------------- | ---- |
-| id                   | uuid            | NO   |
-| organizacion_id      | uuid            | NO   |
-| hipotesis_id         | uuid            | NO   |
-| tipo_intervencion_id | uuid            | NO   |
-| estado               | text            | NO   |
-| titulo               | text            | NO   |
-| descripcion          | text            | SI   |
-| prioridad            | smallint        | NO   |
-| fecha_inicio         | date            | SI   |
-| fecha_fin_prevista   | date            | SI   |
-| creada_en            | timestamptz     | NO   |
-
----
-
-## FK
-
-organizacion_id → organizaciones.id
-
-hipotesis_id → hipotesis.id
-
-tipo_intervencion_id → tipos_intervencion.id
-
----
-
-## Restricciones
-
-estado ∈
-
-* PROPUESTA
-* PLANIFICADA
-* EN_CURSO
-* COMPLETADA
-* CANCELADA
-
-prioridad BETWEEN 1 AND 5
-
----
-
-## Índices
-
-* organizacion_id
-* hipotesis_id
-* estado
-
----
-
-## ON DELETE
-
-RESTRICT
-
----
-
-## Auditoría
-
-No admite eliminación física.
-
-Toda transición queda registrada.
-
----
-
-# Entidad: tipos_intervencion
-
-## Propósito
-
-Catálogo de tipos de intervención.
-
----
-
-## Campos
-
-| Campo  | Tipo PostgreSQL | Nulo |
-| ------ | --------------- | ---- |
-| id     | uuid            | NO   |
-| codigo | text            | NO   |
-| nombre | text            | NO   |
-| activa | boolean         | NO   |
-
----
-
-## Restricciones
-
-UNIQUE(codigo)
-
----
-
-# Entidad: seguimiento_intervenciones
-
-## Propósito
-
-Registra la evolución temporal de una intervención.
-
-Cada cambio genera un registro independiente.
-
----
-
-## Campos
-
-| Campo           | Tipo PostgreSQL | Nulo |
-| --------------- | --------------- | ---- |
-| id              | uuid            | NO   |
-| intervencion_id | uuid            | NO   |
-| estado          | text            | NO   |
-| comentario      | text            | SI   |
-| registrado_en   | timestamptz     | NO   |
-
----
-
-## FK
-
-intervencion_id → intervenciones.id
-
----
-
-## Índices
-
-* intervencion_id
-* registrado_en
-
----
-
-## ON DELETE
-
-CASCADE
-
----
-
-## Auditoría
-
-Solo inserción.
-
-No admite modificaciones.
-
----
-
-# Entidad: resultados_intervencion
-
-## Propósito
-
-Registra el resultado observado tras una intervención.
-
-No modifica retrospectivamente la intervención.
-
-Constituye una observación independiente.
-
----
-
-## Campos
-
-| Campo           | Tipo PostgreSQL | Nulo |
-| --------------- | --------------- | ---- |
-| id              | uuid            | NO   |
-| intervencion_id | uuid            | NO   |
-| observacion_id  | uuid            | NO   |
-| creado_en       | timestamptz     | NO   |
-
----
-
-## FK
-
-intervencion_id → intervenciones.id
-
-observacion_id → observaciones.id
-
----
-
-## Restricciones
-
-UNIQUE(intervencion_id, observacion_id)
-
----
-
-## Índices
-
-* intervencion_id
-* observacion_id
-
----
-
-## ON DELETE
-
-CASCADE
-
----
-
-## Auditoría
-
-Entidad inmutable.
-
----
-
-# Dependencias
-
-Depende de:
-
-* Organizaciones
-* Hipótesis
-* Observaciones
-
-Es utilizado por:
-
-* Credenciales
-* Conocimiento agregado
-
----
-
-## Módulo 8 · Credenciales
-
----
-
-# Entidad: credenciales
-
-## Propósito
-
-Representa una credencial emitida a una organización.
-
-La credencial certifica un Estado Sistémico.
-
-No modifica el Modelo Vivo.
-
----
-
-## Campos
-
-| Campo               | Tipo PostgreSQL | Nulo |
-| ------------------- | --------------- | ---- |
-| id                  | uuid            | NO   |
-| organizacion_id     | uuid            | NO   |
-| estado_sistemico_id | uuid            | NO   |
-| sello_id            | uuid            | NO   |
-| estado              | text            | NO   |
-| codigo              | text            | NO   |
-| emitida_en          | timestamptz     | NO   |
-| caduca_en           | timestamptz     | SI   |
-| revocada_en         | timestamptz     | SI   |
-
----
-
-## FK
-
-organizacion_id → organizaciones.id
-
-estado_sistemico_id → estados_sistemicos.id
-
-sello_id → sellos.id
-
----
-
-## Restricciones
-
-UNIQUE(codigo)
-
-estado ∈
-
-* EMITIDA
-* VIGENTE
-* CADUCADA
-* REVOCADA
-
----
-
-## Índices
-
-* organizacion_id
-* estado_sistemico_id
-* sello_id
-* estado
-
----
-
-## ON DELETE
-
-RESTRICT
-
----
-
-## Auditoría
-
-Nunca se elimina físicamente.
-
-Toda revocación queda registrada.
-
----
-
-# Entidad: sellos
-
-## Propósito
-
-Catálogo de sellos soportados por ATÓMICA.
-
----
-
-## Campos
-
-| Campo   | Tipo PostgreSQL | Nulo |
-| ------- | --------------- | ---- |
-| id      | uuid            | NO   |
-| codigo  | text            | NO   |
-| nombre  | text            | NO   |
-| version | text            | NO   |
-| activo  | boolean         | NO   |
-
----
-
-## Restricciones
-
-UNIQUE(codigo, version)
-
----
-
-## Valores iniciales
-
-* B_CORP
-
-La arquitectura admite múltiples sellos.
-
----
-
-# Entidad: verificaciones_credencial
-
-## Propósito
-
-Registra todas las verificaciones realizadas sobre una credencial.
-
----
-
-## Campos
-
-| Campo         | Tipo PostgreSQL | Nulo |
-| ------------- | --------------- | ---- |
-| id            | uuid            | NO   |
-| credencial_id | uuid            | NO   |
-| verificada_en | timestamptz     | NO   |
-| origen        | text            | SI   |
-| resultado     | text            | NO   |
-
----
-
-## FK
-
-credencial_id → credenciales.id
-
----
-
-## Índices
-
-* credencial_id
-* verificada_en
-
----
-
-## ON DELETE
-
-CASCADE
-
----
-
-## Auditoría
-
-Entidad inmutable.
-
-Solo inserción.
-
----
-
-# Dependencias
-
-Depende de:
-
-* Organizaciones
-* Modelo Vivo
-
-Es utilizado por:
-
-* Plataforma
-
----
-
-## Módulo 9 · Conocimiento agregado
-
----
-
-# Entidad: conjuntos_benchmark
-
-## Propósito
-
-Representa un conjunto anonimizado de organizaciones utilizado para comparación estadística.
-
-Nunca almacena información identificable.
-
-Nunca alimenta el Modelo Vivo de una organización.
-
----
-
-## Campos
-
-| Campo       | Tipo PostgreSQL | Nulo |
-| ----------- | --------------- | ---- |
-| id          | uuid            | NO   |
-| codigo      | text            | NO   |
-| nombre      | text            | NO   |
-| descripcion | text            | SI   |
-| creado_en   | timestamptz     | NO   |
-
----
-
-## Restricciones
-
-UNIQUE(codigo)
-
----
-
-## Índices
-
-* codigo
-
----
-
-## Auditoría
-
-Entidad de referencia.
-
----
-
-# Entidad: observaciones_agregadas
-
-## Propósito
-
-Representa información anonimizada incorporada a un conjunto benchmark.
-
-No mantiene relación con organizaciones individuales.
-
----
-
-## Campos
-
-| Campo                 | Tipo PostgreSQL | Nulo |
-| --------------------- | --------------- | ---- |
-| id                    | uuid            | NO   |
-| conjunto_id           | uuid            | NO   |
-| marco_metodologico_id | uuid            | NO   |
-| dimension_id          | uuid            | NO   |
-| periodo               | date            | NO   |
-| total_observaciones   | integer         | NO   |
-| creado_en             | timestamptz     | NO   |
-
----
-
-## FK
-
-conjunto_id → conjuntos_benchmark.id
-
-marco_metodologico_id → marcos_metodologicos.id
-
-dimension_id → dimensiones.id
-
----
-
-## Restricciones
-
-total_observaciones > 0
-
----
-
-## Índices
-
-* conjunto_id
-* dimension_id
-* periodo
-
----
-
-## ON DELETE
-
-RESTRICT
-
----
-
-## Auditoría
-
-Entidad inmutable.
-
----
-
-# Entidad: indicadores_benchmark
-
-## Propósito
-
-Almacena indicadores estadísticos calculados a partir de observaciones agregadas.
-
-No contiene información identificable.
-
----
-
-## Campos
-
-| Campo                   | Tipo PostgreSQL | Nulo |
-| ----------------------- | --------------- | ---- |
-| id                      | uuid            | NO   |
-| observacion_agregada_id | uuid            | NO   |
-| indicador               | text            | NO   |
-| valor                   | numeric(12,4)   | NO   |
-| calculado_en            | timestamptz     | NO   |
-
----
-
-## FK
-
-observacion_agregada_id → observaciones_agregadas.id
-
----
-
-## Restricciones
-
-UNIQUE(observacion_agregada_id, indicador)
-
----
-
-## Índices
-
-* observacion_agregada_id
-* indicador
-
----
-
-## ON DELETE
-
-CASCADE
-
----
-
-## Auditoría
-
-Solo inserción.
-
-Nunca se modifica un cálculo histórico.
-
----
-
-# Principio de aislamiento
-
-El conocimiento agregado constituye un sumidero.
-
-Las organizaciones alimentan el benchmark.
-
-El benchmark nunca modifica el Modelo Vivo de ninguna organización.
-
-No existen dependencias en sentido inverso.
-
----
-
-# Dependencias
-
-Depende de:
-
-* Marco metodológico
-
-No es dependencia de ningún módulo funcional.
-
----
-
-## Módulo 10 · Plataforma
-
----
-
-# Entidad: organizaciones_usuarios
-
-## Propósito
-
-Relaciona usuarios autenticados con organizaciones.
-
-Define pertenencia.
-
-No almacena información propia de la organización.
-
----
-
-## Campos
-
-| Campo           | Tipo PostgreSQL | Nulo |
-| --------------- | --------------- | ---- |
-| id              | uuid            | NO   |
-| organizacion_id | uuid            | NO   |
-| usuario_auth_id | uuid            | NO   |
-| rol             | text            | NO   |
-| activo          | boolean         | NO   |
-| creado_en       | timestamptz     | NO   |
-
----
-
-## FK
-
-organizacion_id → organizaciones.id
-
-usuario_auth_id → auth.users.id
-
----
-
-## Restricciones
-
-UNIQUE(organizacion_id, usuario_auth_id)
-
-rol ∈
-
-* OWNER
-* ADMIN
-* EDITOR
-* LECTOR
-
----
-
-## Índices
-
-* organizacion_id
-* usuario_auth_id
-
----
-
-## ON DELETE
-
-CASCADE
-
----
-
-## Auditoría
-
-Toda modificación de rol queda registrada.
-
----
-
-# Entidad: eventos_plataforma
-
-## Propósito
-
-Registra eventos técnicos y funcionales producidos por la plataforma.
-
-No forma parte del Modelo Vivo.
-
----
-
-## Campos
-
-| Campo           | Tipo PostgreSQL | Nulo |
-| --------------- | --------------- | ---- |
-| id              | uuid            | NO   |
-| usuario_auth_id | uuid            | SI   |
-| organizacion_id | uuid            | SI   |
-| evento          | text            | NO   |
-| datos           | jsonb           | SI   |
-| ocurrido_en     | timestamptz     | NO   |
-
----
-
-## FK
-
-usuario_auth_id → auth.users.id
-
-organizacion_id → organizaciones.id
-
----
-
-## Índices
-
-* usuario_auth_id
-* organizacion_id
-* evento
-* ocurrido_en
-
----
-
-## ON DELETE
-
-SET NULL
-
----
-
-## Auditoría
-
-Entidad exclusivamente aditiva.
-
-Nunca se modifica.
-
-Nunca se elimina.
-
----
-
-# Entidad: trabajos_asincronos
-
-## Propósito
-
-Gestiona procesos ejecutados en segundo plano.
-
-No contiene conocimiento del dominio.
-
----
-
-## Campos
-
-| Campo         | Tipo PostgreSQL | Nulo |
-| ------------- | --------------- | ---- |
-| id            | uuid            | NO   |
-| tipo          | text            | NO   |
-| estado        | text            | NO   |
-| payload       | jsonb           | NO   |
-| iniciado_en   | timestamptz     | NO   |
-| finalizado_en | timestamptz     | SI   |
-
----
-
-## Restricciones
-
-estado ∈
-
-* PENDIENTE
-* EJECUTANDO
-* FINALIZADO
-* ERROR
-
----
-
-## Índices
-
-* tipo
-* estado
-
----
-
-## Auditoría
-
-Conservación íntegra del historial.
-
----
-
-# Entidad: configuracion_plataforma
-
-## Propósito
-
-Almacena parámetros globales de funcionamiento.
-
-No contiene datos de organizaciones.
-
----
-
-## Campos
-
-| Campo          | Tipo PostgreSQL | Nulo |
-| -------------- | --------------- | ---- |
-| clave          | text            | NO   |
-| valor          | jsonb           | NO   |
-| actualizado_en | timestamptz     | NO   |
-
----
-
-## Restricciones
-
-PRIMARY KEY(clave)
-
----
-
-## Dependencias
-
-No depende del dominio.
-
-Es infraestructura.
-
----
-
-# Estado del documento
-
-Completados los diez módulos del diccionario de datos:
-
-1. Marco metodológico
-2. Organizaciones
-3. Observaciones
-4. Modelo Vivo
-5. Evidencias
-6. Hipótesis
-7. Intervenciones
-8. Credenciales
-9. Conocimiento agregado
-10. Plataforma
-
----
-
-# Próximo documento
-
-Con el diccionario completo, el siguiente documento es:
-
-`80_infraestructura/esquema_bd_v2.md`
-
-Ahora ya puede dejar de ser conceptual y pasar a contener:
-
-* tablas definitivas;
-* claves primarias;
-* claves foráneas;
-* cardinalidades;
-* orden de creación;
-* DAG real de dependencias;
-* módulos físicos de PostgreSQL/Supabase.
-
-Ese documento será el que permita implementar `schema.sql` sin ambigüedades.
-
+Nunca altera directamente el conocimiento representado.
