@@ -1,4 +1,4 @@
-# Esquema Canónico v2
+# Esquema Canónico
 
 Estado: CANÓNICO
 
@@ -6,35 +6,23 @@ Versión: 1.0.0
 
 Ubicación:
 
-30_infrastructura/esquema_canonico.md
-
----
-
-## El esquema no es la fuente de verdad
-
-El Esquema Canónico deriva del Canon.
-
-Nunca constituye la definición del Modelo.
-
-Toda implementación deberá poder regenerarse a partir del Canon sin consultar una base de datos existente.
+80_infraestructura/esquema_canonico.md
 
 ---
 
 # Propósito
 
-El Esquema Canónico define la estructura persistente necesaria para implementar el Modelo de ATÓMICA.
+El Esquema Canónico define la estructura persistente necesaria para materializar el Modelo de ATÓMICA.
 
-Constituye la especificación normativa de la capa de persistencia.
+Constituye la especificación normativa de la persistencia.
 
-No depende de una tecnología concreta.
+No define una implementación concreta.
 
-No describe PostgreSQL.
+No depende de PostgreSQL.
 
-No describe Supabase.
+No depende de Supabase.
 
-No describe migraciones.
-
-Describe únicamente las entidades persistentes y las relaciones que deben existir para que el Modelo pueda materializarse.
+No depende de SQL.
 
 ---
 
@@ -42,208 +30,173 @@ Describe únicamente las entidades persistentes y las relaciones que deben exist
 
 El Esquema pertenece a la Infraestructura.
 
-No pertenece al Dominio.
+No pertenece a la Ontología.
+
+No pertenece al Producto.
 
 No modifica el Modelo.
 
-Implementa el Modelo.
+Lo implementa.
 
 ---
 
 # Principios
 
-## El dominio gobierna el esquema
+## El Canon gobierna el esquema
 
-Ninguna tabla existe por decisión técnica.
+Toda entidad persistente deriva de un concepto definido en el Canon.
 
-Toda estructura persistente deriva de un concepto definido en el Canon.
+Nunca al contrario.
 
 ---
 
-## El esquema no crea conocimiento
+## El esquema no es la fuente de verdad
 
-Persistir no significa modelar.
+La autoridad reside en el Canon.
 
-El Modelo existe independientemente de la base de datos.
+El esquema constituye una implementación derivada.
+
+Toda implementación deberá poder regenerarse a partir del Canon.
+
+---
+
+## Persistir no significa modelar
+
+El Modelo existe independientemente de cualquier tecnología.
+
+Persistir consiste únicamente en conservar el estado necesario para reconstruir el Modelo.
+
+---
+
+## Persistencia mínima
+
+Solo se persistirá aquello cuya pérdida impida reconstruir el Modelo.
+
+Toda información derivable deberá calcularse.
 
 ---
 
 ## Una responsabilidad por entidad
 
-Cada entidad persistente posee una única responsabilidad.
+Cada entidad persistente representa un único concepto.
 
-No se permiten tablas híbridas.
+No existirán tablas híbridas.
 
----
-
-## La implementación es sustituible
-
-El Esquema Canónico debe poder implementarse sobre distintas tecnologías sin alterar el Modelo.
+No existirán entidades creadas únicamente para simplificar consultas.
 
 ---
 
-# Niveles
+## Independencia tecnológica
 
-El esquema se organiza en cuatro niveles.
+El Esquema Canónico deberá poder implementarse sobre distintas tecnologías sin alterar el Modelo.
 
-## Nivel 1 · Núcleo
-
-Persistencia indispensable para representar el Modelo.
-
-Su ausencia impide el funcionamiento del sistema.
-
-Ejemplos:
-
-- Organización
-- Observación
-- Evidencia
-- Estado Sistémico
+La conformidad depende de la semántica, no del motor de almacenamiento.
 
 ---
 
-## Nivel 2 · Catálogos
+# Componentes
 
-Conocimiento relativamente estable utilizado por el Modelo.
+El Esquema Canónico se compone exclusivamente de:
 
-Ejemplos:
+- entidades persistentes;
+- atributos persistentes;
+- relaciones;
+- invariantes;
+- reglas de trazabilidad.
 
-- Capacidades
-- Fragilidades
-- Principios
-- Referencias
-
----
-
-## Nivel 3 · Operación
-
-Datos derivados de la interacción con el usuario.
-
-Ejemplos:
-
-- Diagnósticos
-- Respuestas
-- Credenciales
+Todo lo demás pertenece a la implementación.
 
 ---
 
-## Nivel 4 · Infraestructura
+# No pertenecen al Esquema Canónico
 
-Objetos necesarios para operar la plataforma.
+No forman parte del Esquema:
 
-Ejemplos:
+- tablas físicas;
+- tipos SQL;
+- índices;
+- restricciones técnicas;
+- vistas;
+- funciones;
+- procedimientos;
+- triggers;
+- políticas RLS;
+- permisos;
+- migraciones;
+- optimizaciones;
+- configuraciones del proveedor.
 
-- Usuarios
-- Permisos
-- Auditoría técnica
+Estos elementos pertenecen al Modelo Físico.
 
 ---
 
-# Especificación de entidades
+# Entidad persistente
 
-Cada entidad deberá documentarse mediante la siguiente estructura.
+Toda entidad persistente deberá especificar:
 
-## Nombre
-
-Responsabilidad única.
-
-### Propósito
+## Identidad
 
 Qué representa.
 
-### Origen
+## Propósito
+
+Por qué necesita persistirse.
+
+## Origen
 
 Qué concepto del Canon implementa.
 
-### Persistencia
+## Estado persistido
 
 Qué información conserva.
 
-### Relaciones
+## Relaciones
 
 Con qué otras entidades puede relacionarse.
 
-### Restricciones
+## Invariantes
 
-Invariantes del Modelo.
+Qué condiciones deben cumplirse siempre.
 
-### Estado
+## Justificación
 
-Canónica / Experimental / Derivada.
+Qué perdería el Modelo si desapareciera.
 
 ---
 
 # Relaciones
 
-Toda relación deberá existir porque representa una relación del Modelo.
+Las relaciones únicamente existirán cuando representen relaciones reales del Modelo.
 
-No se crearán relaciones exclusivamente para simplificar consultas.
+Nunca se introducirán relaciones motivadas exclusivamente por conveniencia técnica.
 
 ---
 
 # Datos derivados
 
-Los datos calculables no forman parte del Esquema Canónico.
+Los datos calculables no pertenecen al Esquema Canónico.
 
-Deberán obtenerse mediante cálculo.
-
-No deberán persistirse salvo justificación explícita.
+Su persistencia requerirá una justificación explícita.
 
 ---
 
 # Dependencias
 
-Las dependencias externas deberán declararse explícitamente.
+Toda dependencia externa deberá declararse.
 
-Ejemplos:
+Las dependencias pueden proporcionar servicios.
 
-- autenticación
-- almacenamiento documental
-- búsqueda
-- IA
-
-No podrán modificar el Modelo.
+Nunca podrán modificar el significado del Modelo.
 
 ---
 
-# Exclusiones
-
-No forman parte del Esquema Canónico:
-
-- índices
-- vistas
-- triggers
-- políticas RLS
-- funciones SQL
-- permisos
-- migraciones
-- optimizaciones
-- configuraciones del proveedor
-
-Todos ellos pertenecen a la implementación.
-
----
-
-# Trazabilidad
-
-Toda entidad persistente deberá poder responder:
-
-1. ¿Qué concepto del Canon implementa?
-
-2. ¿Por qué necesita persistirse?
-
-3. ¿Qué ocurriría si desapareciera?
-
-Si una entidad no puede responder a estas tres preguntas, no pertenece al Esquema Canónico.
-
----
-
-# Criterio de conformidad
+# Conformidad
 
 Una implementación será conforme cuando:
 
 - implemente todas las entidades obligatorias;
-- respete las relaciones definidas;
-- preserve las invariantes del Modelo;
-- no introduzca conceptos inexistentes en el Canon.
+- preserve sus relaciones;
+- mantenga las invariantes;
+- respete la semántica definida por el Canon.
 
-La tecnología utilizada es irrelevante para la conformidad.
+La tecnología utilizada no forma parte del criterio de conformidad.
