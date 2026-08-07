@@ -2,7 +2,7 @@
 
 Estado: CANÓNICO
 
-Versión: 1.0.0
+Versión: 2.0.0
 
 Tipo: Infraestructura
 
@@ -14,285 +14,164 @@ Ubicación:
 
 # Propósito
 
-Este documento define la organización lógica de la Base de Datos de ATÓMICA.
+Este documento define el modelo lógico de persistencia de ATÓMICA.
 
-No constituye una implementación SQL.
+Es la especificación que deberá implementarse en PostgreSQL/Supabase.
 
-No define tecnologías.
+No define el dominio.
 
-No define motores de base de datos.
+No modifica el Canon.
 
-Su finalidad consiste en establecer la estructura de persistencia compatible con el Sistema Normativo.
+No sustituye al Diccionario de Datos.
 
 ---
 
 # Alcance
 
-Este documento regula:
+Este documento especifica:
 
-- los módulos de persistencia;
-- sus responsabilidades;
-- las dependencias entre módulos.
+* entidades persistentes;
+* relaciones;
+* claves primarias;
+* claves foráneas;
+* dependencias entre módulos;
+* orden de creación del esquema.
 
-No regula:
+No especifica:
 
-- tablas;
-- columnas;
-- índices;
-- tipos de datos;
-- consultas;
-- optimizaciones.
-
----
-
-# Principios
-
-La Base de Datos se organiza por módulos funcionales.
-
-Cada módulo posee una única responsabilidad.
-
-Las dependencias entre módulos siguen una única dirección.
-
-No podrán existir dependencias circulares.
+* tipos detallados;
+* RLS;
+* índices;
+* SQL;
+* migraciones.
 
 ---
 
-# Organización
+# Módulos
 
-La Base de Datos se organiza en los siguientes módulos:
-
+```
 1. Marco metodológico
-
 2. Organizaciones
-
 3. Observaciones
-
 4. Modelo Vivo
-
 5. Evidencias
-
 6. Hipótesis
-
 7. Intervenciones
-
 8. Credenciales
-
 9. Conocimiento agregado
-
 10. Plataforma
+```
 
 ---
 
-# Marco metodológico
+# DAG de dependencias
 
-Responsabilidad:
+```
+Marco metodológico
+        │
+        ▼
+Organizaciones
+        │
+        ▼
+Observaciones
+      ┌─┴───────────────┐
+      ▼                 ▼
+Modelo Vivo       Evidencias
+      │                 │
+      └──────┬──────────┘
+             ▼
+        Hipótesis
+             │
+             ▼
+      Intervenciones
+             │
+             ▼
+      Credenciales
 
-Persistir las definiciones versionadas del marco metodológico.
+Conocimiento agregado
+▲
+│
+└──────────── Modelo Vivo
 
-Incluye:
-
-- dimensiones;
-- capacidades;
-- preguntas;
-- escalas;
-- umbrales;
-- metodología vigente.
-
-No contiene información de organizaciones.
-
----
-
-# Organizaciones
-
-Responsabilidad:
-
-Persistir la identidad de cada organización.
-
-Incluye:
-
-- organización;
-- usuarios;
-- pertenencia;
-- identidad organizacional.
-
----
-
-# Observaciones
-
-Responsabilidad:
-
-Persistir todas las observaciones realizadas.
-
-Incluye:
-
-- diagnóstico inicial;
-- observaciones posteriores;
-- origen;
-- instrumento;
-- fecha.
-
-Las observaciones nunca modifican directamente el Modelo Vivo.
+Plataforma
+│
+├── Organizaciones
+├── Modelo Vivo
+├── Credenciales
+└── auth.users
+```
 
 ---
 
-# Modelo Vivo
+# Dependencias prohibidas
 
-Responsabilidad:
+No podrán existir dependencias desde:
 
-Persistir la evolución del conocimiento.
-
-Incluye:
-
-- Modelo Vivo;
-- Estados Sistémicos;
-- Trayectoria.
-
-Los Estados son inmutables.
+* Conocimiento agregado hacia Modelo Vivo.
+* Plataforma hacia Metodología.
+* Evidencias hacia Hipótesis.
+* Credenciales hacia Intervenciones.
 
 ---
 
-# Evidencias
+# Orden de creación
 
-Responsabilidad:
-
-Persistir las evidencias asociadas a observaciones e hipótesis.
-
-Las evidencias modifican la confianza.
-
-Nunca modifican directamente un Estado Sistémico.
-
----
-
-# Hipótesis
-
-Responsabilidad:
-
-Persistir las hipótesis y su evolución.
-
-Incluye:
-
-- ciclo de vida;
-- contradicciones;
-- relaciones con evidencias.
-
----
-
-# Intervenciones
-
-Responsabilidad:
-
-Persistir las intervenciones realizadas sobre la organización.
-
-Incluye:
-
-- intervención;
-- estado;
-- seguimiento;
-- resultado.
-
----
-
-# Credenciales
-
-Responsabilidad:
-
-Persistir las credenciales emitidas por el producto.
-
-La emisión depende del Modelo Vivo.
-
-Las credenciales no modifican el Modelo.
-
----
-
-# Conocimiento agregado
-
-Responsabilidad:
-
-Persistir conocimiento anonimizado utilizado para benchmarking.
-
-Nunca retroalimenta el Modelo Vivo.
-
----
-
-# Plataforma
-
-Responsabilidad:
-
-Persistir la información necesaria para el funcionamiento del producto.
-
-Incluye:
-
-- autenticación;
-- suscripciones;
-- auditoría;
-- métricas;
-- configuración.
-
-No forma parte del dominio.
-
----
-
-# Dependencias
-
-Las dependencias permitidas son:
+## Fase 1
 
 Marco metodológico
 
-↓
+## Fase 2
 
 Organizaciones
 
-↓
+## Fase 3
 
 Observaciones
 
-↓
+## Fase 4
 
 Modelo Vivo
 
-↓
+## Fase 5
+
+Evidencias
+
+## Fase 6
 
 Hipótesis
 
-↓
+## Fase 7
 
 Intervenciones
 
-↓
+## Fase 8
 
 Credenciales
 
-↓
+## Fase 9
 
 Conocimiento agregado
 
-Plataforma constituye un módulo transversal que no modifica el dominio.
+## Fase 10
+
+Plataforma
 
 ---
 
-# Restricciones
+# Correspondencia
 
-Toda implementación deberá respetar:
+Cada entidad definida en este documento deberá estar desarrollada íntegramente en:
 
-- separación entre módulos;
-- independencia del dominio;
-- inmutabilidad de los Estados;
-- trazabilidad completa;
-- versionado del marco metodológico.
+```
+80_infraestructura/diccionario_datos_bd_v2.md
+```
 
----
-
-# Relación con la implementación
-
-La implementación física de la Base de Datos deberá derivarse exclusivamente de este documento.
-
-Las tablas, índices y restricciones pertenecen a la documentación de desarrollo.
+No podrán existir entidades en uno de los documentos que no existan en el otro.
 
 ---
 
-# Referencias
+# Implementación
 
-- Canon
-- Ontología
-- Metodología
-- Modelo Vivo
+La implementación SQL deberá reproducir exactamente este esquema.
+
+Cualquier diferencia entre el código y este documento constituye una no conformidad.
