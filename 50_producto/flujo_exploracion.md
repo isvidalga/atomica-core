@@ -1,12 +1,12 @@
 # Flujo de Exploración
 
-**Estado:** CANÓNICO
+Estado: CANÓNICO
 
-**Versión:** 3.0.0
+Versión: 3.1.0
 
-**Tipo:** Producto
+Tipo: Producto
 
-**Ubicación:**
+Ubicación:
 
 50_producto/flujo_exploracion.md
 
@@ -20,10 +20,10 @@ El Flujo de Exploración organiza la forma mediante la cual una persona incremen
 
 No constituye:
 
-* un proceso de trabajo;
-* un flujo operativo;
-* una secuencia obligatoria;
-* una implementación de interfaz.
+- un proceso de trabajo;
+- un flujo operativo;
+- una secuencia obligatoria;
+- una implementación de interfaz.
 
 Su finalidad consiste en definir cómo los distintos instrumentos del Producto permiten explorar un mismo conocimiento manteniendo contexto, significado y trazabilidad.
 
@@ -35,19 +35,19 @@ Este documento regula la relación entre los instrumentos de exploración del Pr
 
 Es aplicable a:
 
-instrumentos;
-recorridos de exploración;
-cambios de profundidad;
-transiciones entre representaciones.
+- instrumentos;
+- recorridos de exploración;
+- cambios de profundidad;
+- transiciones entre representaciones.
 
 No define:
 
-la Ontología;
-la Metodología;
-el Modelo Vivo;
-la navegación concreta;
-el diseño visual;
-la implementación técnica.
+- la Ontología;
+- la Metodología;
+- el Modelo Vivo;
+- la navegación concreta;
+- el diseño visual;
+- la implementación técnica.
 
 ---
 
@@ -55,16 +55,16 @@ la implementación técnica.
 
 Este documento depende de:
 
-00_canon/
-10_nucleo/
-20_epistemologia/
-30_ontologia/
-40_metodologia/
-50_producto/principios.md
-50_producto/lenguaje_producto.md
-50_producto/modelo_vivo.md
-50_producto/navegacion.md
-50_producto/experiencia_cognitiva.md
+- `00_canon/`
+- `10_nucleo/`
+- `20_epistemologia/`
+- `30_ontologia/`
+- `40_metodologia/`
+- `50_producto/principios.md`
+- `50_producto/lenguaje_producto.md`
+- `50_producto/modelo_vivo.md`
+- `50_producto/navegacion.md`
+- `50_producto/experiencia_cognitiva.md`
 
 En caso de conflicto prevalecen siempre las definiciones canónicas.
 
@@ -78,11 +78,12 @@ Su objetivo no consiste en recorrer pantallas.
 
 Consiste en facilitar que el usuario pueda:
 
-reconocer el estado del conocimiento;
-comprender relaciones;
-explorar evolución;
-verificar fundamento;
-formular mejores preguntas.
+- reconocer el Estado Sistémico;
+- comprender relaciones;
+- explorar evolución;
+- verificar fundamento;
+- identificar incertidumbre;
+- formular mejores preguntas.
 
 Cada instrumento amplía la comprensión disponible sin modificar el conocimiento representado.
 
@@ -96,71 +97,97 @@ No modifica el Modelo Vivo.
 
 No genera conocimiento.
 
-No interpreta el conocimiento.
+No establece reglas epistemológicas.
 
 No establece reglas metodológicas.
 
-Únicamente organiza la relación cognitiva entre instrumentos.
+No prescribe acciones.
+
+Organiza únicamente la relación cognitiva entre instrumentos.
 
 ---
 
 # Principios
 
-# FEX-001 · Una pregunta por instrumento
+## FEX-001 · Una pregunta por instrumento
 
 Cada instrumento responde una necesidad principal de comprensión.
 
-La exploración nunca mezcla responsabilidades pertenecientes a instrumentos diferentes.
+La exploración no mezcla responsabilidades pertenecientes a instrumentos diferentes.
 
+---
 
-# FEX-002 · Un único conocimiento representado
+## FEX-002 · Un único conocimiento representado
 
 Todos los instrumentos exploran el mismo conocimiento mantenido por el Modelo Vivo.
 
-No existen interpretaciones independientes por instrumento.
+No existen modelos independientes por instrumento.
 
+No existen representaciones paralelas del conocimiento.
 
-# FEX-003 · Contexto continuo
+---
 
-Toda exploración conserva:
+## FEX-003 · Contexto continuo
 
-el contexto inicial;
-el elemento explorado;
-las relaciones disponibles;
-la trazabilidad asociada.
+Toda exploración conserva, cuando resulte aplicable:
 
-El usuario nunca pierde la referencia del conocimiento que está explorando.
+- el contexto inicial;
+- el elemento explorado;
+- las relaciones relevantes;
+- la trazabilidad asociada.
 
+El usuario no debe perder la referencia del conocimiento que está explorando.
 
-# FEX-004 · La exploración no modifica conocimiento
+---
 
-La interacción únicamente modifica la comprensión del usuario.
+## FEX-004 · La exploración no modifica conocimiento
+
+La interacción modifica únicamente la forma y profundidad de exploración.
 
 Nunca modifica:
 
-el Modelo Vivo;
-las entidades representadas;
-las relaciones del Modelo;
-la historia registrada.
+- el Modelo Vivo;
+- las entidades representadas;
+- las relaciones del Modelo;
+- los Estados históricos;
+- la evidencia registrada.
 
+---
 
-# FEX-005 · La profundidad aumenta comprensión
+## FEX-005 · La profundidad aumenta comprensión
 
-Una exploración más profunda incorpora:
+Una exploración más profunda puede incorporar:
 
-más contexto;
-más relaciones;
-más fundamento;
-más trazabilidad.
+- más contexto;
+- más relaciones;
+- más fundamento;
+- más trazabilidad;
+- más información sobre incertidumbre.
 
 Nunca cambia el significado del conocimiento representado.
 
+---
 
-# FEX-006 · Los instrumentos no son productos independientes
+## FEX-006 · Los instrumentos forman una experiencia única
 
 Los instrumentos forman parte de una única experiencia de comprensión.
 
-Ningún instrumento constituye un sistema aislado.
+Ningún instrumento constituye un sistema independiente del Modelo Vivo.
+
+---
+
+## FEX-007 · La exploración no implica conclusión
+
+El acceso a mayor profundidad no convierte automáticamente una representación en una conclusión.
+
+La exploración debe preservar la distinción entre:
+
+- Observación;
+- Evidencia;
+- Hipótesis;
+- Confianza;
+- Estado;
+- Representación.
 
 ---
 
@@ -170,138 +197,160 @@ El Producto dispone de distintos instrumentos para explorar el conocimiento repr
 
 Estos instrumentos no constituyen una secuencia obligatoria.
 
-Cada uno responde una pregunta específica.
+Cada uno responde una pregunta específica de comprensión.
 
 ---
 
 # Observatorio
 
-# Pregunta
+## Pregunta
 
-¿Cómo está mi organización ahora?
+**¿Cómo está mi organización ahora?**
 
-# Función
+## Función
 
 Permite reconocer el Estado Sistémico vigente y orientar la atención hacia aquello que requiere exploración.
 
-Representa:
+Puede representar:
 
-estado actual;
-nivel de confianza;
-cambios relevantes;
-elementos prioritarios.
+- Estado Sistémico;
+- nivel de Confianza;
+- cambios relevantes;
+- elementos que requieren atención;
+- relaciones relevantes para la comprensión del estado actual.
 
 No:
 
-explica causas;
-interpreta relaciones;
-recomienda acciones.
-Instrumento de Patrones
+- determina causas;
+- establece conclusiones definitivas;
+- prescribe acciones;
+- modifica el Modelo.
 
 ---
 
 # Instrumento de Patrones
 
-# Pregunta
+## Pregunta
 
-¿Qué estructuras están relacionadas con el comportamiento observado?
+**¿Qué estructuras están relacionadas con el comportamiento observado?**
 
-# Función
+## Función
 
-Permite explorar relaciones entre:
+Permite explorar configuraciones y relaciones significativas presentes en el conocimiento representado.
 
-Fragilidades;
-Capacidades;
-Relaciones;
-Hipótesis;
-Evidencias asociadas.
+Puede mostrar relaciones entre:
 
-No determina causas.
+- Fragilidades;
+- Capacidades;
+- Patrones;
+- Relaciones;
+- Hipótesis;
+- Evidencias asociadas.
+
+No determina causas definitivas.
 
 No genera conocimiento nuevo.
 
-No sustituye la interpretación humana.
+No convierte una relación observada en causalidad.
 
 ---
 
 # Crónica
 
-# Pregunta
+## Pregunta
 
-¿Cómo ha evolucionado nuestra comprensión?
+**¿Cómo ha evolucionado nuestra comprensión?**
 
-# Función
+## Función
 
 Permite recorrer la evolución temporal del conocimiento registrado.
 
-Representa:
+Puede representar:
 
-cambios de Estado;
-evolución de hipótesis;
-incorporación de evidencias;
-transformación de la comprensión.
+- cambios de Estado;
+- evolución de Hipótesis;
+- incorporación de Evidencias;
+- cambios en la Confianza;
+- transformación de la representación del conocimiento.
 
 No reescribe la historia.
 
-No interpreta acontecimientos.
+No interpreta acontecimientos históricos como hechos causales.
 
 ---
 
 # Evidencias
 
-# Pregunta
+## Pregunta
 
-¿En qué se fundamenta este conocimiento?
+**¿En qué se fundamenta este conocimiento?**
 
-# Función
+## Función
 
-Permite recorrer la trazabilidad entre el conocimiento representado y las evidencias que lo sustentan.
-
-No constituye una fase final del recorrido.
+Permite recorrer la trazabilidad entre el conocimiento representado y las Evidencias que lo sustentan.
 
 Puede utilizarse desde cualquier instrumento compatible.
+
+Permite distinguir:
+
+- qué conocimiento está sustentado;
+- qué Evidencias lo sustentan;
+- qué incertidumbre permanece;
+- qué conocimiento carece de fundamento suficiente.
+
+No constituye una fase final obligatoria del recorrido.
 
 ---
 
 # Donella
 
-# Pregunta
+## Pregunta
 
-¿Qué merece la pena comprender ahora?
+**¿Qué merece la pena comprender ahora?**
 
-# Función
+## Función
 
-Facilita la interpretación del conocimiento disponible.
+Donella constituye un instrumento transversal de exploración asistida del conocimiento disponible.
 
-Donella constituye un instrumento transversal.
+Puede ayudar al usuario a:
 
-Puede utilizarse desde distintos puntos de exploración manteniendo siempre el contexto original.
+- formular preguntas;
+- localizar relaciones relevantes;
+- profundizar en elementos del Modelo;
+- contextualizar información ya representada;
+- identificar áreas que requieren mayor comprensión.
 
-No genera conocimiento nuevo.
+Donella no constituye una fuente independiente de conocimiento.
 
 No modifica el Modelo Vivo.
+
+No convierte sus propias respuestas en conocimiento del Modelo.
+
+Toda afirmación realizada por Donella deberá permanecer diferenciada del conocimiento representado por el Modelo.
 
 ---
 
 # Gemelo Organizacional
 
-# Pregunta
+## Pregunta
 
-¿Cómo se relaciona el conocimiento disponible sobre la organización?
+**¿Cómo se relaciona el conocimiento disponible sobre la organización?**
 
-# Función
+## Función
 
-Constituye la representación navegable del Modelo Organizacional.
+Constituye una representación navegable del Modelo Organizacional.
 
-Permite recorrer:
+Permite recorrer, según el conocimiento disponible:
 
-entidades;
-relaciones;
-estados;
-trayectorias;
-representaciones.
+- entidades;
+- relaciones;
+- Estados;
+- Trayectorias;
+- Representaciones.
 
 No sustituye al Modelo.
+
+No constituye un modelo alternativo.
 
 No modifica el conocimiento representado.
 
@@ -313,24 +362,58 @@ La exploración no sigue una secuencia fija.
 
 El usuario puede desplazarse entre instrumentos según la pregunta de comprensión que necesite resolver.
 
-Cada transición debe conservar:
+La profundidad no se define por el número de pantallas recorridas.
 
-contexto;
-significado;
-continuidad;
-trazabilidad.
+Se define por la cantidad y naturaleza del contexto necesario para comprender el conocimiento representado.
+
+Una exploración puede avanzar desde:
+
+```text
+Estado
+   ↓
+Relación
+   ↓
+Hipótesis
+   ↓
+Evidencia
+
+o desde cualquier otro punto permitido por el contexto.
+
+No existe un recorrido único obligatorio.
+
+---
+
+# Transiciones
+
+Una transición entre instrumentos deberá conservar, cuando sea aplicable:
+
+el elemento desde el que se inicia;
+el contexto relevante;
+la pregunta que originó la exploración;
+la trazabilidad disponible;
+la referencia al Modelo Vivo.
+
+La transición puede cambiar la perspectiva de exploración.
+
+No puede cambiar el conocimiento representado.
 
 ---
 
 # Relación con la navegación
 
-La navegación organiza el acceso entre preguntas de comprensión.
+La navegación organiza el acceso entre instrumentos y estados de exploración.
 
-El Flujo de Exploración define cómo esas preguntas amplían la comprensión mediante instrumentos.
+El Flujo de Exploración define cómo esas transiciones amplían la comprensión.
 
-La navegación y el flujo trabajan conjuntamente.
+La navegación y el flujo mantienen responsabilidades diferentes.
 
-Ninguno sustituye al otro.
+La navegación responde a:
+
+¿Cómo llego?
+
+El Flujo de Exploración responde a:
+
+¿Qué comprensión adicional puedo obtener al llegar allí?
 
 ---
 
@@ -342,6 +425,49 @@ El Flujo de Exploración organiza la progresión de comprensión entre instrumen
 
 Ambos mantienen responsabilidades diferentes.
 
+El Flujo de Exploración no define:
+
+componentes de interfaz;
+patrones visuales;
+animaciones;
+controles;
+layouts.
+
+---
+
+# Relación con el Modelo Vivo
+
+El Modelo Vivo constituye la fuente común del conocimiento representado.
+
+El Flujo de Exploración determina cómo ese conocimiento puede recorrerse mediante distintos instrumentos.
+
+El Flujo de Exploración nunca modifica el Modelo Vivo.
+
+---
+
+# Relación con la incertidumbre
+
+La exploración deberá conservar la incertidumbre asociada al conocimiento cuando esta resulte relevante para su interpretación.
+
+La profundidad de exploración nunca puede utilizarse para ocultar:
+
+ausencia de Evidencia;
+baja Confianza;
+conocimiento incompleto;
+límites de la representación.
+
+Una representación más detallada no implica necesariamente mayor certeza.
+
+---
+
+# Relación con la trazabilidad
+
+Cuando un instrumento permita profundizar en el fundamento de una afirmación o representación, la trazabilidad deberá conservarse hasta el conocimiento disponible que la sustenta.
+
+La exploración no puede romper la cadena de referencia existente.
+
+La ausencia de trazabilidad deberá permanecer explícita.
+
 ---
 
 # Restricciones
@@ -351,10 +477,13 @@ El Flujo de Exploración no:
 redefine conceptos del Canon;
 modifica el Modelo Vivo;
 genera conocimiento;
-interpreta evidencias;
+convierte relaciones en causalidades;
+convierte Hipótesis en hechos;
 establece reglas metodológicas;
+establece criterios epistemológicos;
 impone recorridos obligatorios;
-depende de una interfaz concreta.
+depende de una interfaz concreta;
+depende de una implementación tecnológica.
 
 ---
 
@@ -365,11 +494,13 @@ Una implementación del Flujo de Exploración se considera conforme únicamente 
 cada instrumento mantiene una responsabilidad clara;
 cada instrumento responde una necesidad de comprensión concreta;
 todos los instrumentos representan el mismo conocimiento;
-el contexto permanece continuo;
+el contexto permanece continuo durante las transiciones;
 la exploración no modifica el conocimiento;
 la incertidumbre permanece visible cuando corresponde;
-la trazabilidad se conserva durante todo el recorrido;
-la experiencia permanece independiente de la implementación técnica.
+la trazabilidad se conserva durante la exploración;
+las relaciones no se presentan como causalidades sin fundamento;
+la experiencia permanece independiente de la implementación técnica;
+ningún instrumento mantiene un modelo alternativo.
 
 El incumplimiento de cualquiera de estos criterios implica que la implementación no es conforme con el Canon.
 
