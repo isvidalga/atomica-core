@@ -63,6 +63,8 @@ Ninguna afirmación constituye conocimiento por sí misma.
 
 Toda afirmación deberá poder justificarse mediante los mecanismos definidos por la epistemología del Canon.
 
+La justificación deberá conservar la trazabilidad necesaria para reconstruir su origen y fundamento.
+
 ---
 
 ## EP-004 · Toda afirmación debe poder refutarse
