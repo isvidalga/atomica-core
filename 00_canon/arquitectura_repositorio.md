@@ -1,8 +1,10 @@
-# Arquitectura del Repositorio
+# ARQUITECTURA DEL REPOSITORIO
 
 Estado: CANÓNICO
 
-Versión: 3.0.0
+Tipo: NORMA
+
+Versión: 4.0.0
 
 Ubicación:
 
@@ -12,191 +14,212 @@ Ubicación:
 
 # Propósito
 
-Definir la arquitectura oficial del repositorio.
+Definir la arquitectura documental de ATÓMICA.
 
-Establecer la organización estructural del conocimiento.
+El repositorio se organiza por capas que reflejan la arquitectura intelectual del sistema y no criterios técnicos.
 
-Determinar la responsabilidad de cada directorio.
+Cada capa posee una responsabilidad única.
 
-Definir las dependencias permitidas entre las capas del canon.
-
-No define metodología.
-
-No define conceptos.
-
-No define normas de gobierno.
-
-No define procedimientos.
+Cada capa solo puede depender de las capas superiores autorizadas.
 
 ---
 
-# Principios
+# Responsabilidad única
 
-## A-001 · Arquitectura intelectual
+Cada documento posee una única responsabilidad.
 
-La organización del repositorio responde a la arquitectura del conocimiento y no a criterios técnicos.
+Cada concepto posee una única definición oficial.
 
----
+No podrán existir documentos con responsabilidades compartidas.
 
-## A-002 · Responsabilidad única
+En caso de detectar duplicidades:
 
-Todo directorio posee exactamente una responsabilidad.
-
----
-
-## A-003 · Dependencias dirigidas
-
-Las dependencias únicamente podrán seguir la dirección definida por esta arquitectura.
+- se conservará una única fuente de verdad;
+- el resto deberá integrarse o eliminarse.
 
 ---
 
-## A-004 · Separación
+# Capas
 
-Los documentos pertenecientes a responsabilidades distintas deberán residir en directorios distintos.
-
----
-
-## A-005 · Estabilidad
-
-La incorporación de nuevos documentos no modifica la arquitectura del repositorio.
-
-Toda modificación arquitectónica requiere una nueva versión de este documento.
-
----
-
-# Estructura oficial
-
-## Capas del canon
-
-Las siguientes capas constituyen la arquitectura metodológica oficial.
-
-| Capa | Responsabilidad |
-|------|-----------------|
-| 00_canon | Gobierno del canon |
-| 10_nucleo | Fundamentos invariantes |
-| 20_epistemologia | Principios del conocimiento |
-| 30_ontologia | Entidades y relaciones |
-| 40_metodologia | Métodos e instrumentos |
-| 50_producto | Materialización del producto |
-| 60_interfaces | Interfaces oficiales |
-| 70_patrones | Patrones reutilizables |
+| Capa | Responsabilidad | Puede depender de |
+|---|---|---|
+| `00_canon` | Gobierno del Canon | — |
+| `10_nucleo` | Fundamentos invariantes | `00_canon` |
+| `20_epistemologia` | Principios del conocimiento | `00_canon`, `10_nucleo` |
+| `30_ontologia` | Entidades y relaciones | `00_canon`, `10_nucleo`, `20_epistemologia` |
+| `40_metodologia` | Métodos e instrumentos | `00_canon`–`30_ontologia` |
+| `50_producto` | Materialización del producto | `00_canon`–`40_metodologia` |
+| `60_interfaces` | Interfaces oficiales | `00_canon`–`50_producto` |
+| `70_patrones` | Patrones reutilizables | `00_canon`–`60_interfaces` |
+| `80_infraestructura` | Infraestructura del sistema | `00_canon`–`70_patrones` |
+| `90_desarrollo` | Desarrollo e implementación | `00_canon`–`80_infraestructura` |
 
 ---
 
-## Directorios de gobierno
+# Dependencias
 
-Contienen artefactos necesarios para gobernar el repositorio.
+Las dependencias entre capas son unidireccionales.
 
-No forman parte del conocimiento metodológico.
-
-Ejemplos:
-
-- auditorias
-- governance
-
----
-
-## Directorios de soporte
-
-Contienen recursos auxiliares.
-
-Nunca constituyen autoridad normativa.
-
-Ejemplos:
-
-- docs
-- src
-- static
-
----
-
-## Directorios históricos
-
-Conservan trazabilidad.
-
-Nunca constituyen fuente de verdad.
-
-Ejemplos:
-
-- archive
-
----
-
-## Directorios experimentales
-
-Contienen trabajo en curso.
-
-Su contenido carece de autoridad normativa.
-
-Ejemplos:
-
-- research
-- atomicalab
-
----
-
-# Dependencias permitidas
-
-Las dependencias entre capas siguen una única dirección.
-
-| Capa | Puede depender de |
-|------|-------------------|
-| 00_canon | — |
-| 10_nucleo | 00_canon |
-| 20_epistemologia | 00_canon, 10_nucleo |
-| 30_ontologia | 00_canon, 10_nucleo, 20_epistemologia |
-| 40_metodologia | 00_canon, 10_nucleo, 20_epistemologia, 30_ontologia |
-| 50_producto | 00–40 |
-| 60_interfaces | 00–50 |
-| 70_patrones | 00–60 |
+Una capa únicamente puede depender de las capas superiores declaradas en la tabla anterior.
 
 Las dependencias inversas no están permitidas.
 
----
-
-# Incorporación de directorios
-
-Todo nuevo directorio deberá:
-
-- poseer una responsabilidad única;
-- pertenecer a una categoría definida por el Canon;
-- no duplicar responsabilidades existentes.
+Un documento de una capa inferior no puede redefinir, sustituir ni contradecir una definición o norma de una capa superior.
 
 ---
 
-# Restricciones
+# Naturaleza de las capas
 
-No crear capas adicionales sin modificar este documento.
+## 00_canon
 
-No modificar la responsabilidad de una capa sin nueva versión.
-
-No situar documentos canónicos fuera de las capas o directorios autorizados.
-
-No introducir dependencias inversas.
+Contiene las normas que gobiernan el Canon y la autoridad documental de ATÓMICA.
 
 ---
 
-# Relaciones
+## 10_nucleo
 
-Depende de:
+Contiene los fundamentos invariantes del sistema.
 
-- sistema_normativo.md
-- gobierno_del_canon.md
+---
 
-Gobierna:
+## 20_epistemologia
 
-- politica_directorios.md
+Contiene los principios y conceptos que gobiernan la construcción y evaluación del conocimiento.
+
+---
+
+## 30_ontologia
+
+Contiene las entidades y relaciones reconocidas por la ontología de ATÓMICA.
+
+---
+
+## 40_metodologia
+
+Contiene los métodos mediante los cuales se construye y transforma el conocimiento conforme al Canon.
+
+---
+
+## 50_producto
+
+Contiene la materialización del producto y sus instrumentos.
+
+---
+
+## 60_interfaces
+
+Contiene las interfaces oficiales mediante las cuales el producto representa y permite explorar el conocimiento.
+
+---
+
+## 70_patrones
+
+Contiene los patrones reutilizables definidos por ATÓMICA.
+
+---
+
+## 80_infraestructura
+
+Contiene la infraestructura necesaria para soportar el sistema.
+
+Esta capa pertenece a la arquitectura del repositorio, pero no puede redefinir conceptos, normas, entidades, metodología o producto establecidos en las capas superiores.
+
+---
+
+## 90_desarrollo
+
+Contiene los artefactos de desarrollo e implementación.
+
+Esta capa pertenece a la arquitectura operativa del repositorio.
+
+No posee autoridad para redefinir ninguna decisión, norma, entidad, concepto metodológico o definición de producto establecida en las capas superiores.
+
+---
+
+# Autoridad
+
+La posición de un documento dentro de una capa no le confiere por sí misma autoridad normativa.
+
+La autoridad deberá proceder del mecanismo de gobierno establecido por el Canon.
+
+La existencia de un documento no constituye evidencia de su autoridad.
+
+---
+
+# Precedencia
+
+En caso de conflicto entre documentos, se aplicarán las reglas de precedencia establecidas por:
+
+- `00_canon/sistema_normativo.md`
+- `00_canon/gobierno_del_canon.md`
+- `00_canon/politica_precedencia_repositorios.md`
+
+La pertenencia a una capa no autoriza a resolver mediante interpretación un conflicto normativo.
+
+---
+
+# Integridad documental
+
+Todo documento deberá:
+
+- pertenecer a una única responsabilidad;
+- declarar su tipo;
+- declarar su estado;
+- respetar las dependencias de su capa;
+- mantener trazabilidad hasta su fuente de autoridad;
+- evitar duplicar definiciones existentes.
+
+---
+
+# Duplicidades
+
+Cuando un mismo artefacto exista en más de una capa:
+
+1. deberá determinarse cuál es su única fuente de verdad;
+2. las copias que no constituyan fuente de verdad deberán integrarse o eliminarse;
+3. no podrán coexistir dos autoridades para el mismo artefacto.
+
+La existencia de una versión posterior no determina por sí sola su autoridad.
+
+---
+
+# Documentos de infraestructura y desarrollo
+
+Los documentos de `80_infraestructura` y `90_desarrollo` están subordinados a las capas conceptuales y de producto.
+
+No podrán utilizarse como fuente para modificar:
+
+- axiomas;
+- principios;
+- conceptos epistemológicos;
+- entidades ontológicas;
+- metodología;
+- producto;
+- interfaces.
+
+Cuando un documento de infraestructura o desarrollo entre en conflicto con una definición o norma superior, prevalece la autoridad superior conforme al Sistema Normativo.
 
 ---
 
 # Responsabilidad
 
-Este documento define exclusivamente la arquitectura oficial del repositorio.
+Este documento define exclusivamente la arquitectura documental del repositorio.
 
-No define el contenido de las capas.
+No define:
 
-No define metodología.
+- el contenido de las capas;
+- las entidades de la ontología;
+- los procedimientos metodológicos;
+- el producto;
+- la infraestructura concreta;
+- las prácticas de desarrollo.
 
-No define conceptos.
+---
 
-No define normas de gobierno.
+# Referencias normativas
+
+- `00_canon/sistema_normativo.md`
+- `00_canon/gobierno_del_canon.md`
+- `00_canon/politica_directorios.md`
+- `00_canon/politica_precedencia_repositorios.md`
+- `00_canon/proceso_modificacion_canon.md`
