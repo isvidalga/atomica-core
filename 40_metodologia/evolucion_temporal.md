@@ -38,7 +38,7 @@ No constituye una representación.
 
 No constituye una interfaz.
 
-Constituye el principio metodológico que gobierna la evolución del conocimiento construido por el Modelo.
+Constituye la especificación metodológica que gobierna la evolución del conocimiento construido por el Modelo.
 
 ---
 
@@ -46,7 +46,7 @@ Constituye el principio metodológico que gobierna la evolución del conocimient
 
 La Evolución Temporal define cómo el Modelo incorpora nuevo conocimiento sin alterar el conocimiento previamente admitido.
 
-Toda evolución metodológica se expresa mediante la creación de nuevos Estados.
+Toda evolución del conocimiento se expresa mediante la creación de nuevas Representaciones y, cuando corresponde, de nuevos Estados.
 
 Nunca mediante la modificación de Estados existentes.
 
@@ -74,7 +74,7 @@ La ausencia de nuevas Observaciones no implica desaparición del conocimiento.
 
 ## ET-003 · Evidencia
 
-La evolución del conocimiento depende exclusivamente de nueva Evidencia.
+La evolución del conocimiento depende de la incorporación y evaluación de Evidencias.
 
 El paso del tiempo nunca modifica por sí mismo el conocimiento admitido.
 
@@ -84,13 +84,13 @@ El paso del tiempo nunca modifica por sí mismo el conocimiento admitido.
 
 Una Intervención nunca modifica directamente el Modelo.
 
-Únicamente la Evidencia derivada de sus efectos podrá producir nuevo conocimiento.
+Únicamente la información obtenida posteriormente sobre sus efectos podrá incorporarse como conocimiento mediante el proceso metodológico correspondiente.
 
 ---
 
 ## ET-005 · Estado
 
-Toda modificación del conocimiento admitido genera un nuevo Estado.
+Toda modificación del conocimiento admitido que produzca un cambio en el estado representado por el Modelo genera un nuevo Estado.
 
 Los Estados anteriores permanecen inalterables.
 
@@ -116,7 +116,7 @@ Toda Trayectoria preserva el orden lógico de los Estados.
 
 # Tiempo
 
-El tiempo cronológico no determina la evolución del Modelo.
+El tiempo cronológico no determina por sí mismo la evolución del Modelo.
 
 La evolución del conocimiento se organiza mediante instantes lógicos representados por Estados.
 
@@ -126,7 +126,7 @@ Toda interpretación deberá considerar el contexto temporal correspondiente al 
 
 # Relación con el Modelo
 
-La Evolución Temporal conecta los principales elementos metodológicos del Canon.
+La Evolución Temporal conecta los principales elementos metodológicos del proceso de construcción del conocimiento.
 
 Toda evolución sigue la siguiente secuencia conceptual:
 
@@ -146,89 +146,10 @@ Evidencias
 Confianza
       │
       ▼
-Nuevo Estado
+Representación
       │
       ▼
-Nueva Representación
+Estado
       │
       ▼
 Trayectoria
-```
-
-Cada nuevo Estado preserva íntegramente la historia anterior.
-
----
-
-# Restricciones
-
-## ET-001
-
-Nunca podrá eliminarse conocimiento histórico.
-
----
-
-## ET-002
-
-Nunca podrá reinterpretarse un Estado utilizando conocimiento posterior.
-
----
-
-## ET-003
-
-Toda modificación del conocimiento deberá ser completamente trazable.
-
----
-
-## ET-004
-
-Toda reconstrucción histórica deberá producir exactamente el conocimiento admitido en ese instante lógico.
-
----
-
-## ET-005
-
-La evolución del conocimiento nunca modifica Estados previamente existentes.
-
----
-
-## ET-006
-
-El paso del tiempo nunca constituye evidencia.
-
----
-
-## ET-007
-
-Toda evolución del conocimiento deberá expresarse mediante un nuevo Estado perteneciente a la misma Trayectoria.
-
----
-
-# Dependencias
-
-Depende de:
-
-- `00_canon/sistema_normativo.md`
-- `00_canon/gobierno_del_canon.md`
-- `20_epistemologia/observacion.md`
-- `20_epistemologia/evidencia.md`
-- `20_epistemologia/hipotesis.md`
-- `20_epistemologia/confianza.md`
-- `30_ontologia/estado.md`
-- `30_ontologia/trayectoria.md`
-- `30_ontologia/memoria.md`
-- `40_metodologia/metodologia.md`
-
-Utilizado por:
-
-- `40_metodologia/ifo.md`
-- `50_producto/modelo_vivo.md`
-
----
-
-# Declaración
-
-La Evolución Temporal garantiza que el conocimiento construido por ATÓMICA permanezca acumulativo, trazable y reconstruible.
-
-Toda evolución del Modelo se produce mediante la incorporación de nuevo conocimiento.
-
-Nunca mediante la modificación del conocimiento previamente admitido.
