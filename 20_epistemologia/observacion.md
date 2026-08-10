@@ -18,7 +18,7 @@ Definir el concepto de Observación dentro de la epistemología de ATÓMICA.
 
 La Observación constituye la unidad mínima mediante la cual el sistema incorpora información procedente del referente.
 
-Toda construcción de conocimiento comienza con una observación.
+Toda construcción de conocimiento comienza con una Observación.
 
 ---
 
@@ -58,37 +58,32 @@ Una Observación podrá originarse a partir de distintas fuentes.
 
 Entre otras:
 
-- declaraciones;
-- documentos;
-- indicadores;
-- registros;
-- mediciones.
+* declaraciones;
+* documentos;
+* indicadores;
+* registros;
+* mediciones.
 
 La naturaleza de la fuente nunca modifica el significado epistemológico de la Observación.
 
 ---
 
-# Relaciones
+# Relaciones epistemológicas
 
 La Observación constituye la entrada del proceso epistemológico.
 
-Su relación con el resto de la epistemología es:
+Una Observación podrá participar posteriormente en la evaluación de conocimiento mediante el papel epistemológico que corresponda.
 
-```
-Referente
-      │
-      ▼
-Observación
-      │
-      ▼
-Evidencia
-      │
-      ▼
-Hipótesis
-      │
-      ▼
-Confianza
-```
+Este documento no establece por sí solo el orden completo entre:
+
+* Observación;
+* Hipótesis;
+* Evidencia;
+* Confianza.
+
+El orden global del proceso epistemológico deberá ser establecido de forma coherente por la normativa y metodología correspondientes.
+
+Mientras exista una contradicción documental sobre dicho orden, esta permanece abierta y no podrá resolverse mediante interpretación.
 
 Una Observación nunca constituye conocimiento suficiente por sí sola.
 
@@ -142,37 +137,37 @@ La Confianza únicamente podrá modificarse mediante la evaluación de Hipótesi
 
 No son Observaciones:
 
-- interpretaciones;
-- inferencias;
-- hipótesis;
-- conclusiones;
-- recomendaciones;
-- decisiones;
-- puntuaciones;
-- índices;
-- clasificaciones.
+* interpretaciones;
+* inferencias;
+* hipótesis;
+* conclusiones;
+* recomendaciones;
+* decisiones;
+* puntuaciones;
+* índices;
+* clasificaciones.
 
 Todos ellos pertenecen a niveles posteriores del conocimiento.
 
 ---
 
-# Relaciones
+# Relaciones documentales
 
 Depende de:
 
-- 10_nucleo/axiomas.md
-- 10_nucleo/principios.md
-- 20_epistemologia/principios_epistemologicos.md
+* 10_nucleo/axiomas.md
+* 10_nucleo/principios.md
+* 20_epistemologia/principios_epistemologicos.md
 
-Gobierna:
+Relacionado con:
 
-- evidencia.md
+* 20_epistemologia/evidencia.md
+* 20_epistemologia/hipotesis.md
+* 20_epistemologia/confianza.md
 
 Utilizado por:
 
-- hipotesis.md
-- confianza.md
-- 40_metodologia/
+* 40_metodologia/
 
 ---
 
@@ -187,3 +182,13 @@ No define Hipótesis.
 No define Confianza.
 
 No establece procedimientos metodológicos.
+
+---
+
+# Nota de coherencia epistemológica
+
+Existe una contradicción documental pendiente respecto al orden relativo entre Observación, Hipótesis, Evidencia y Confianza.
+
+Este documento no resuelve dicha contradicción.
+
+La resolución deberá realizarse mediante el mecanismo normativo correspondiente y deberá reflejarse posteriormente de forma coherente en los documentos epistemológicos y metodológicos afectados.
