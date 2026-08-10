@@ -8,9 +8,7 @@ Tipo: Producto
 
 Ubicación:
 
-```text
 50_producto/modelo_vivo.md
-```
 
 ---
 
@@ -18,7 +16,7 @@ Ubicación:
 
 El Modelo Vivo constituye el instrumento central del producto ATÓMICA.
 
-Su finalidad consiste en mantener una representación operacional única del conocimiento disponible sobre una organización para que pueda ser explorado, interpretado y utilizado por los distintos instrumentos del producto.
+Su finalidad consiste en mantener disponible para los instrumentos del producto la representación vigente del conocimiento admitido por el Modelo sobre una organización.
 
 El Modelo Vivo no genera conocimiento.
 
@@ -26,7 +24,7 @@ No modifica el conocimiento.
 
 No redefine conceptos del Canon.
 
-Su responsabilidad consiste exclusivamente en mantener operativo el conocimiento producido conforme al Sistema Normativo de ATÓMICA.
+Su responsabilidad consiste exclusivamente en mantener operativo, para el Producto, el conocimiento producido conforme al Sistema Normativo de ATÓMICA.
 
 ---
 
@@ -50,7 +48,7 @@ Las definiciones correspondientes pertenecen a sus documentos canónicos.
 
 # Naturaleza
 
-El Modelo Vivo constituye un instrumento permanente del producto.
+El Modelo Vivo constituye un instrumento permanente del Producto.
 
 Su existencia es independiente de:
 
@@ -60,7 +58,7 @@ Su existencia es independiente de:
 - la persistencia física;
 - la implementación.
 
-Las distintas superficies del producto representan el Modelo Vivo.
+Las distintas superficies del Producto representan el conocimiento disponible mediante el Modelo Vivo.
 
 Nunca lo sustituyen.
 
@@ -70,13 +68,13 @@ Nunca modifican su significado.
 
 # Objetivo
 
-El Modelo Vivo proporciona una representación única y coherente del conocimiento organizacional disponible.
+El Modelo Vivo proporciona al Producto acceso coherente a la representación vigente del conocimiento organizacional admitido por el Modelo.
 
-Todos los instrumentos del producto utilizan esa representación común.
+Todos los instrumentos del Producto utilizan esa representación común.
 
 Ningún instrumento mantiene un modelo propio.
 
-Toda exploración realizada dentro del producto parte del Modelo Vivo vigente.
+Toda exploración realizada dentro del Producto parte del estado vigente del Modelo Vivo.
 
 ---
 
@@ -84,16 +82,14 @@ Toda exploración realizada dentro del producto parte del Modelo Vivo vigente.
 
 Corresponde exclusivamente al Modelo Vivo:
 
-- integrar el conocimiento generado mediante la metodología vigente;
-- mantener una representación coherente de dicho conocimiento;
-- conservar la continuidad entre sucesivas actualizaciones;
-- proporcionar una referencia común para todos los instrumentos del producto;
-- garantizar la coherencia entre todas las superficies de exploración;
+- mantener disponible la representación vigente del conocimiento generado mediante la metodología vigente;
+- proporcionar una referencia común para todos los instrumentos del Producto;
+- garantizar la coherencia entre las superficies que consumen el modelo;
 - mantener la trazabilidad exigida por el Sistema Normativo;
-- conservar la continuidad histórica del modelo;
+- conservar la continuidad histórica del conocimiento representado;
 - facilitar la exploración del conocimiento representado.
 
-Ninguna responsabilidad ajena al producto pertenece al Modelo Vivo.
+Ninguna responsabilidad ajena al Producto pertenece al Modelo Vivo.
 
 ---
 
@@ -101,19 +97,19 @@ Ninguna responsabilidad ajena al producto pertenece al Modelo Vivo.
 
 ## MV-001 · Fuente única
 
-Existe un único Modelo Vivo por organización.
+Existe una única representación vigente del Modelo para una organización.
 
-Toda representación procede del mismo modelo.
+Toda representación del Producto procede de la misma fuente de conocimiento.
 
-No existen modelos alternativos.
+No existen modelos alternativos mantenidos por instrumentos del Producto.
 
 ---
 
 ## MV-002 · Coherencia
 
-Todos los instrumentos consultan exactamente la misma representación.
+Todos los instrumentos consultan la representación vigente del mismo Modelo.
 
-No pueden existir interpretaciones incompatibles entre superficies.
+No pueden existir modelos incompatibles mantenidos por distintas superficies.
 
 ---
 
@@ -123,15 +119,15 @@ La interfaz consume el Modelo Vivo.
 
 Nunca altera su contenido.
 
-Los cambios de diseño no modifican el significado del modelo.
+Los cambios de diseño no modifican el significado del conocimiento representado.
 
 ---
 
 ## MV-004 · Continuidad
 
-El Modelo Vivo mantiene continuidad entre versiones sucesivas.
+El Modelo Vivo mantiene continuidad entre sucesivos Estados del Modelo.
 
-Cada actualización preserva la coherencia del conocimiento representado.
+Cada actualización preserva la trazabilidad del conocimiento representado.
 
 ---
 
@@ -143,10 +139,9 @@ Toda representación mantenida por el Modelo Vivo conserva la trazabilidad estab
 
 ## MV-006 · Inmutabilidad
 
-Los Estados Sistémicos pertenecientes al Modelo Vivo son inmutables.
+Los Estados y las Representaciones pertenecientes al Modelo son inmutables.
 
-La evolución del Modelo Vivo se produce exclusivamente mediante la incorporación de nuevos Estados.
-
+La evolución del Modelo se produce mediante la incorporación de nuevas Representaciones y nuevos Estados.
 
 ---
 
@@ -172,52 +167,48 @@ El Modelo Vivo utiliza exclusivamente conocimiento generado conforme a la metodo
 
 La construcción del conocimiento pertenece a la Metodología.
 
-La definición del conocimiento pertenece a la Ontología.
+La definición ontológica del Modelo, Estado, Representación, Trayectoria y Memoria pertenece a la Ontología.
 
 La validez del conocimiento pertenece a la Epistemología.
 
-El Modelo Vivo únicamente mantiene dicho conocimiento disponible para el producto.
+El Modelo Vivo únicamente mantiene dicho conocimiento disponible para el Producto.
 
 ---
 
 # Unidad de representación
 
-Existe un único Modelo Vivo para cada organización.
+Existe un único Modelo para cada organización.
 
-Todas las consultas realizadas por el producto hacen referencia al mismo estado vigente.
+El Modelo Vivo proporciona acceso al Estado vigente de dicho Modelo.
 
 No existen representaciones independientes por instrumento.
 
-Toda superficie explora exactamente el mismo modelo.
+Toda superficie explora el mismo conocimiento representado.
 
 ---
 
 # Entradas
 
-El Modelo Vivo se alimenta de las observaciones procesadas conforme a la metodología vigente.
+El Modelo Vivo recibe las representaciones generadas por la metodología a partir del conocimiento admitido por el Modelo.
 
-Las observaciones pueden generar nuevos Estados Sistémicos.
-
-No todas las observaciones modifican el Modelo Vivo.
+Las Observaciones constituyen entradas del proceso de construcción del conocimiento, no entradas directas del Modelo Vivo.
 
 No incorpora información procedente de fuentes no reguladas por el Sistema Normativo.
 
-Las entradas del Modelo Vivo son las representaciones generadas por la metodología a partir de las observaciones realizadas sobre una organización.
-
-La definición, validación e interpretación de dichas entradas pertenecen a la capa Metodología.
+La definición, validación e interpretación del conocimiento pertenecen a las capas correspondientes del Canon.
 
 ---
 
 # Actualización
 
-El Modelo Vivo se actualiza únicamente cuando cambia el conocimiento disponible sobre la organización.
+El Modelo Vivo se actualiza cuando cambia el conocimiento representado por el Modelo y dicho cambio produce una nueva Representación y un nuevo Estado.
 
 Una actualización puede producirse como consecuencia de:
 
-- nuevas observaciones;
-- nueva evidencia;
+- nuevo conocimiento admitido;
+- nueva Evidencia;
 - cambios metodológicos autorizados;
-- procesos de reevaluación previstos por la metodología.
+- procesos de reevaluación previstos por la metodología vigente.
 
 Ninguna modificación de la interfaz, de la implementación técnica o de la experiencia de usuario constituye una actualización del Modelo Vivo.
 
@@ -225,11 +216,11 @@ Ninguna modificación de la interfaz, de la implementación técnica o de la exp
 
 # Estado vigente
 
-En cada instante existe un único estado vigente del Modelo Vivo.
+En cada instante existe un único Estado vigente para una misma Identidad.
 
-Ese estado representa la referencia utilizada por todos los instrumentos del producto.
+Ese Estado constituye la referencia utilizada por los instrumentos del Producto.
 
-Las versiones anteriores permanecen disponibles para garantizar la continuidad histórica y la trazabilidad del conocimiento.
+Los Estados anteriores permanecen disponibles como parte de la Memoria y de la Trayectoria del Modelo.
 
 ---
 
@@ -237,15 +228,15 @@ Las versiones anteriores permanecen disponibles para garantizar la continuidad h
 
 El Modelo Vivo mantiene continuidad entre actualizaciones.
 
-Cada nueva versión deriva de la inmediatamente anterior conforme a las reglas establecidas por la metodología.
+Cada nuevo Estado referencia una nueva Representación del conocimiento admitido.
 
-La actualización de una representación nunca implica la pérdida de la historia del modelo.
+La actualización de una Representación nunca implica la pérdida de las Representaciones anteriores.
 
 Los mecanismos concretos de almacenamiento pertenecen a la arquitectura técnica y quedan fuera del alcance de este documento.
 
-Los Estados Sistémicos son inmutables.
+Los Estados y las Representaciones son inmutables.
 
-Toda actualización genera un nuevo Estado.
+Toda modificación del conocimiento admitido que requiera una nueva representación genera una nueva Representación y un nuevo Estado.
 
 Nunca modifica uno existente.
 
@@ -253,25 +244,25 @@ Nunca modifica uno existente.
 
 # Consistencia
 
-Toda actualización debe preservar la consistencia global del Modelo Vivo.
+Toda actualización debe preservar la consistencia global de la representación utilizada por el Producto.
 
-No pueden coexistir representaciones incompatibles del mismo estado de conocimiento.
+No pueden coexistir representaciones incompatibles del mismo Estado vigente dentro de los instrumentos del Producto.
 
-La consistencia del modelo prevalece sobre cualquier necesidad de representación particular de un instrumento.
+La consistencia del modelo prevalece sobre cualquier necesidad particular de representación de un instrumento.
 
 ---
 
 # Capacidades
 
-El Modelo Vivo proporciona al producto las siguientes capacidades:
+El Modelo Vivo proporciona al Producto las siguientes capacidades:
 
-- mantener una representación única del conocimiento organizacional;
+- mantener disponible una representación única del conocimiento organizacional;
 - ofrecer un punto común de consulta para todos los instrumentos;
 - permitir la exploración del conocimiento desde distintos niveles de detalle;
-- conservar la continuidad entre estados sucesivos;
+- conservar la continuidad entre Estados sucesivos;
 - facilitar la trazabilidad del conocimiento representado;
-- proporcionar una referencia estable para la interpretación sistémica;
-- mantener sincronizados todos los instrumentos que consumen el modelo.
+- proporcionar una referencia estable para la interpretación del conocimiento;
+- mantener coherentes los instrumentos que consumen el modelo.
 
 Estas capacidades pertenecen al instrumento.
 
@@ -287,19 +278,19 @@ Cada instrumento determina la forma en que dicha exploración se presenta al usu
 
 La lógica de navegación pertenece a cada instrumento.
 
-La coherencia del recorrido pertenece al Modelo Vivo.
+La coherencia del conocimiento recorrido pertenece al Modelo Vivo.
 
 ---
 
 # Sincronización
 
-Todos los instrumentos consumen el mismo estado vigente del Modelo Vivo.
+Todos los instrumentos consumen el mismo Estado vigente del Modelo Vivo.
 
-No mantienen copias independientes.
+No mantienen modelos independientes.
 
-No generan representaciones paralelas.
+No generan representaciones paralelas del conocimiento.
 
-Toda modificación autorizada del Modelo Vivo se refleja de forma coherente en el conjunto del producto.
+Toda actualización autorizada del Modelo se refleja de forma coherente en el conjunto del Producto.
 
 ---
 
@@ -319,7 +310,7 @@ Puede representarse mediante:
 
 Ninguna representación visual forma parte del Modelo Vivo.
 
-Todas constituyen únicamente mecanismos de acceso al mismo instrumento.
+Todas constituyen únicamente mecanismos de acceso al conocimiento representado.
 
 ---
 
@@ -327,15 +318,15 @@ Todas constituyen únicamente mecanismos de acceso al mismo instrumento.
 
 El Modelo Vivo garantiza:
 
-- existencia de una única representación vigente;
+- acceso a una única representación vigente;
 - coherencia entre instrumentos;
 - continuidad temporal;
-- trazabilidad completa;
+- trazabilidad;
 - independencia respecto a la interfaz;
 - compatibilidad con el Sistema Normativo;
 - estabilidad semántica del conocimiento representado.
 
-Estas garantías constituyen requisitos permanentes del producto.
+Estas garantías constituyen requisitos permanentes del Producto.
 
 ---
 
@@ -345,7 +336,9 @@ El Modelo Vivo actúa como fuente común de conocimiento para los instrumentos d
 
 Cada instrumento consume la representación mantenida por el Modelo Vivo conforme a su responsabilidad específica.
 
-Ningún instrumento modifica directamente el contenido del Modelo Vivo salvo mediante los mecanismos autorizados por la metodología vigente.
+Ningún instrumento modifica directamente el contenido del Modelo Vivo.
+
+Las modificaciones del conocimiento se producen mediante los mecanismos autorizados por la metodología vigente y se reflejan posteriormente en el Producto.
 
 La incorporación de nuevos instrumentos no altera la naturaleza del Modelo Vivo.
 
@@ -353,15 +346,15 @@ La incorporación de nuevos instrumentos no altera la naturaleza del Modelo Vivo
 
 ---
 
-# Integración con el producto
+# Integración con el Producto
 
 El Modelo Vivo constituye la representación compartida utilizada por los instrumentos definidos en la capa Producto.
 
-Cada instrumento responde una necesidad distinta del usuario.
+Cada instrumento responde a una necesidad distinta del usuario.
 
 Ninguno mantiene conocimiento propio.
 
-Todos consumen el conocimiento mantenido por el Modelo Vivo.
+Todos consumen el conocimiento representado por el Modelo Vivo.
 
 Las responsabilidades particulares de cada instrumento se definen en sus respectivos documentos.
 
@@ -369,7 +362,7 @@ Las responsabilidades particulares de cada instrumento se definen en sus respect
 
 # Relación con los instrumentos
 
-Los instrumentos del producto utilizan el Modelo Vivo como fuente única de representación.
+Los instrumentos del Producto utilizan el Modelo Vivo como fuente común de representación.
 
 El Modelo Vivo no sustituye la responsabilidad de cada instrumento.
 
@@ -384,13 +377,13 @@ El Modelo Vivo garantiza únicamente la coherencia del conocimiento compartido.
 
 ---
 
-# Relación con la confianza
+# Relación con la Confianza
 
-La confianza constituye un eje independiente del Modelo Vivo.
+La Confianza constituye un elemento epistemológico del conocimiento representado por el Modelo.
 
-Las variaciones de confianza no modifican los Estados Sistémicos.
+El Modelo Vivo no calcula ni modifica la Confianza.
 
-Los Estados y la confianza evolucionan de forma ortogonal conforme al Sistema Normativo.
+Las variaciones de Confianza deberán producirse conforme a las reglas de la Epistemología y la Metodología vigentes.
 
 ---
 
@@ -398,7 +391,7 @@ Los Estados y la confianza evolucionan de forma ortogonal conforme al Sistema No
 
 El Modelo Vivo admite la incorporación de nuevos instrumentos sin modificar su naturaleza.
 
-La evolución del producto no requiere redefinir el Modelo Vivo.
+La evolución del Producto no requiere redefinir el Modelo Vivo.
 
 Los nuevos instrumentos deberán consumir la representación vigente respetando las restricciones establecidas por este documento y por el Sistema Normativo.
 
@@ -406,20 +399,21 @@ Los nuevos instrumentos deberán consumir la representación vigente respetando 
 
 # Contrato del Modelo Vivo
 
-El Modelo Vivo constituye el contrato de representación compartido por todos los instrumentos del producto.
+El Modelo Vivo constituye el contrato de representación compartido por todos los instrumentos del Producto.
 
 Todo instrumento que utilice el Modelo Vivo asume las siguientes garantías:
 
-- existe una única representación vigente;
+- existe un único Estado vigente para cada Identidad;
+- dicho Estado referencia exactamente una Representación;
 - la representación es coherente con el Sistema Normativo;
-- toda actualización mantiene la continuidad del modelo;
+- toda actualización mantiene la continuidad del Modelo;
 - la representación conserva su trazabilidad;
 - el significado del conocimiento no depende de la interfaz;
-- los cambios metodológicos se reflejan mediante nuevas versiones del modelo.
+- los cambios metodológicos autorizados se reflejan mediante nuevas Representaciones y nuevos Estados.
 
 Ningún instrumento puede exigir responsabilidades distintas al Modelo Vivo.
 
-Toda necesidad adicional deberá resolverse mediante nuevos instrumentos o mediante la evolución del Sistema Normativo.
+Toda necesidad adicional deberá resolverse mediante nuevos instrumentos o mediante la evolución normativa correspondiente.
 
 ---
 
@@ -429,8 +423,8 @@ El Modelo Vivo no:
 
 - redefine conceptos canónicos;
 - modifica la Ontología;
-- interpreta la evidencia;
-- ejecuta la metodología;
+- interpreta la Evidencia;
+- ejecuta la Metodología;
 - establece criterios epistemológicos;
 - realiza inferencias por sí mismo;
 - sustituye al juicio humano;
@@ -452,13 +446,13 @@ Toda implementación del Modelo Vivo deberá ser compatible con:
 - la metodología vigente;
 - la ontología vigente.
 
-La compatibilidad normativa constituye un requisito obligatorio para cualquier evolución del producto.
+La compatibilidad normativa constituye un requisito obligatorio para cualquier evolución del Producto.
 
 ---
 
 # Evolución
 
-La evolución del Modelo Vivo únicamente puede afectar a su capacidad como instrumento de producto.
+La evolución del Modelo Vivo únicamente puede afectar a su capacidad como instrumento de Producto.
 
 No puede utilizarse para introducir nuevas definiciones del dominio.
 
@@ -472,11 +466,13 @@ Cuando una evolución requiera alterar el significado de un concepto, dicha modi
 
 Una implementación del Modelo Vivo se considera conforme únicamente cuando cumple todas las condiciones siguientes:
 
-- existe un único Modelo Vivo por organización;
-- todos los instrumentos utilizan la misma representación;
+- existe un único Modelo por organización;
+- existe un único Estado vigente para cada Identidad;
+- cada Estado referencia exactamente una Representación;
+- todos los instrumentos utilizan el mismo Modelo;
 - ninguna interfaz modifica el significado del modelo;
 - toda representación mantiene coherencia con el Sistema Normativo;
-- la continuidad entre versiones queda preservada;
+- la continuidad entre Estados queda preservada;
 - la trazabilidad permanece íntegra;
 - las actualizaciones afectan al conocimiento representado y no a la definición de los conceptos;
 - el modelo permanece independiente de cualquier tecnología o interfaz.
@@ -503,7 +499,7 @@ Las definiciones contenidas en dichos documentos prevalecen siempre sobre este d
 
 La evolución de este documento se encuentra sujeta a las normas establecidas por:
 
-- Sistema Normativo.
+- Sistema Normativo;
 - Gobierno del Canon.
 
 No podrán incorporarse definiciones pertenecientes a otras capas de la arquitectura documental.
@@ -521,28 +517,27 @@ Toda modificación deberá preservar la separación entre:
 
 # Resultado esperado
 
-El Modelo Vivo constituye la representación operacional única del conocimiento organizacional utilizada por ATÓMICA.
+El Modelo Vivo constituye el instrumento de Producto que mantiene disponible la representación vigente del conocimiento organizacional admitido por el Modelo.
 
-Su responsabilidad consiste exclusivamente en mantener dicho conocimiento disponible, coherente y operativo para los instrumentos del producto.
+Su responsabilidad consiste exclusivamente en mantener dicho conocimiento disponible, coherente y operativo para los instrumentos del Producto.
 
-La generación del conocimiento, su definición, su validación y su interpretación pertenecen a las capas normativas del Canon.
+La generación del conocimiento, su definición, su validación y su interpretación pertenecen a las capas correspondientes del Canon.
 
-El Modelo Vivo constituye el punto de unión entre el conocimiento definido por el Canon y su utilización dentro del producto.
+El Modelo Vivo constituye el punto de unión entre el conocimiento definido por el Canon y su utilización dentro del Producto.
 
 ---
 
 # Trayectoria
 
-La Trayectoria constituye la sucesión ordenada de Estados Sistémicos pertenecientes al mismo Modelo Vivo.
+La Trayectoria constituye la sucesión ordenada de Estados pertenecientes al mismo Modelo y a la misma Identidad.
 
 Cada nuevo Estado amplía la Trayectoria.
 
 Los Estados anteriores nunca son modificados.
 
-La Trayectoria garantiza la continuidad histórica del Modelo Vivo.
+La Trayectoria garantiza la continuidad histórica del Modelo.
 
 ---
-
 
 # Límites del documento
 
