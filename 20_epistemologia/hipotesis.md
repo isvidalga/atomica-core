@@ -59,27 +59,13 @@ Una Hipótesis podrá:
 
 # Relaciones
 
-La Hipótesis ocupa la tercera etapa del proceso epistemológico.
-
-```
-Referente
-      │
-      ▼
-Observación
-      │
-      ▼
-Evidencia
-      │
-      ▼
-Hipótesis
-      │
-      ▼
-Confianza
-```
+Una Hipótesis mantiene relaciones epistemológicas con las Evidencias que utiliza para explicar el conocimiento disponible y con la Confianza que expresa el grado de respaldo disponible.
 
 Una Hipótesis podrá estar asociada a múltiples Evidencias.
 
 Toda Hipótesis posee exactamente un nivel de Confianza.
+
+Este documento no establece por sí solo el orden completo del proceso epistemológico entre Observación, Hipótesis, Evidencia y Confianza.
 
 ---
 
@@ -137,7 +123,7 @@ No constituyen Hipótesis:
 
 ---
 
-# Relaciones
+# Relaciones documentales
 
 Depende de:
 
@@ -147,9 +133,9 @@ Depende de:
 - 20_epistemologia/observacion.md
 - 20_epistemologia/evidencia.md
 
-Gobierna:
+Relacionado con:
 
-- confianza.md
+- 20_epistemologia/confianza.md
 
 Utilizado por:
 
@@ -177,3 +163,13 @@ No establece procedimientos metodológicos.
 ATÓMICA nunca afirma hechos acerca de una organización.
 
 Formula Hipótesis para explicar las Evidencias disponibles y las mantiene abiertas a revisión conforme evoluciona el conocimiento.
+
+---
+
+# Nota de coherencia epistemológica
+
+Existe una contradicción documental pendiente respecto al orden relativo entre Observación, Hipótesis, Evidencia y Confianza.
+
+La definición de Hipótesis establece su relación necesaria con una o varias Evidencias, pero este documento no resuelve el orden global del proceso epistemológico.
+
+La resolución deberá realizarse mediante el mecanismo normativo correspondiente y deberá reflejarse posteriormente de forma coherente en los documentos epistemológicos y metodológicos afectados.
