@@ -54,31 +54,31 @@ La metodología:
 
 # Ciclo metodológico
 
-Todo conocimiento evoluciona mediante la siguiente secuencia lógica:
+El proceso metodológico relaciona los siguientes elementos:
 
-```text
-Observación
-      │
-      ▼
-Hipótesis
-      │
-      ▼
-Evidencia
-      │
-      ▼
-Confianza
-      │
-      ▼
-Representación
-      │
-      ▼
-Estado
-      │
-      ▼
-Trayectoria
-```
+- Observación;
+- Hipótesis;
+- Evidencia;
+- Confianza;
+- Representación;
+- Estado;
+- Trayectoria.
 
-Cada nueva Observación puede producir una nueva Hipótesis, modificar la Confianza de Hipótesis existentes o generar un nuevo Estado.
+Las Observaciones constituyen la entrada del proceso metodológico.
+
+Las Hipótesis permiten formular explicaciones provisionales sobre el conocimiento disponible.
+
+Las Evidencias permiten evaluar Hipótesis.
+
+La Confianza expresa el grado de respaldo alcanzado por una Hipótesis.
+
+La Representación organiza el conocimiento admitido por el Modelo.
+
+La actualización del conocimiento representado produce un nuevo Estado.
+
+La sucesión de Estados constituye la Trayectoria.
+
+El orden definitivo entre Hipótesis y Evidencia se encuentra sujeto a las definiciones y normas de la Epistemología.
 
 ---
 
@@ -93,6 +93,10 @@ Las Evidencias evalúan dichas Hipótesis.
 La Confianza expresa el grado de respaldo alcanzado.
 
 Cuando el conocimiento admitido cambia, el Modelo genera una nueva Representación y un nuevo Estado.
+
+Una nueva Evidencia puede respaldar o debilitar una Hipótesis existente.
+
+La incorporación de conocimiento nuevo no convierte una Hipótesis en un hecho.
 
 ---
 
@@ -132,7 +136,7 @@ Utilizado por:
 - diagnostico.md
 - ifo.md
 - evolucion_temporal.md
-- producto
+- 50_producto/
 
 ---
 
