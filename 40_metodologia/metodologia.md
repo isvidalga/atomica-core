@@ -54,25 +54,31 @@ La metodología:
 
 # Ciclo metodológico
 
-El proceso metodológico comprende la transformación del conocimiento desde las Observaciones hasta la actualización del Modelo.
+Todo conocimiento evoluciona mediante la siguiente secuencia lógica:
 
-Las Observaciones constituyen la entrada del proceso.
+```text
+Observación
+      │
+      ▼
+Hipótesis
+      │
+      ▼
+Evidencia
+      │
+      ▼
+Confianza
+      │
+      ▼
+Representación
+      │
+      ▼
+Estado
+      │
+      ▼
+Trayectoria
+```
 
-Las Hipótesis permiten formular explicaciones provisionales.
-
-Las Evidencias permiten evaluar Hipótesis.
-
-La Confianza expresa el respaldo disponible para las Hipótesis.
-
-La Representación organiza el conocimiento admitido.
-
-La actualización de la Representación produce un nuevo Estado.
-
-La sucesión de Estados constituye la Trayectoria.
-
-El orden definitivo entre Hipótesis y Evidencia queda sujeto a las definiciones vigentes de la Epistemología y a las decisiones normativas que gobiernen su relación.
-
-Esta especificación no resuelve mediante interpretación una contradicción entre documentos canónicos.
+Cada nueva Observación puede producir una nueva Hipótesis, modificar la Confianza de Hipótesis existentes o generar un nuevo Estado.
 
 ---
 
@@ -80,50 +86,13 @@ Esta especificación no resuelve mediante interpretación una contradicción ent
 
 La metodología incorpora Observaciones.
 
-Las Observaciones constituyen conocimiento disponible para el Modelo.
+Las Observaciones pueden originar Hipótesis.
 
-Las Hipótesis son formuladas por el Modelo para explicar una o varias Evidencias.
+Las Evidencias evalúan dichas Hipótesis.
 
-Las Evidencias permiten evaluar Hipótesis.
+La Confianza expresa el grado de respaldo alcanzado.
 
-La Confianza expresa el nivel de respaldo de una Hipótesis conforme al conocimiento disponible.
-
-La incorporación de nuevo conocimiento puede:
-
-- generar nuevas Hipótesis;
-- respaldar Hipótesis existentes;
-- debilitar Hipótesis existentes;
-- modificar su nivel de Confianza;
-- producir una nueva Representación;
-- producir un nuevo Estado.
-
-Ninguna de estas operaciones convierte una Hipótesis en un hecho.
-
----
-
-# Representación
-
-La Representación organiza el conocimiento admitido por el Modelo.
-
-Una nueva Representación constituye una actualización del conocimiento representado.
-
-La Representación pertenece a la Ontología.
-
-Esta especificación no redefine el concepto de Representación.
-
----
-
-# Estado
-
-La actualización del conocimiento representado produce un nuevo Estado.
-
-Los Estados existentes no se modifican.
-
-Cada nuevo Estado conserva la representación correspondiente al conocimiento disponible en ese momento.
-
-El Estado pertenece a la Ontología.
-
-Esta especificación no redefine el concepto de Estado.
+Cuando el conocimiento admitido cambia, el Modelo genera una nueva Representación y un nuevo Estado.
 
 ---
 
@@ -131,53 +100,9 @@ Esta especificación no redefine el concepto de Estado.
 
 La evolución del conocimiento nunca modifica Estados existentes.
 
-Todo cambio metodológico que produzca una nueva Representación produce un nuevo Estado.
+Todo cambio produce un nuevo Estado incorporado al final de la Trayectoria correspondiente.
 
-El nuevo Estado se incorpora al final de la Trayectoria correspondiente.
-
-La Memoria conserva permanentemente los Estados históricos.
-
----
-
-# Trayectoria
-
-La Trayectoria conserva la sucesión ordenada de Estados producidos durante la evolución del Modelo.
-
-Cada nuevo Estado amplía la trayectoria.
-
-Los Estados anteriores permanecen disponibles como conocimiento histórico.
-
----
-
-# Incertidumbre
-
-La metodología conserva explícitamente la incertidumbre existente en el conocimiento.
-
-La Confianza puede modificarse cuando aparece nuevo conocimiento.
-
-La modificación de la Confianza no modifica la naturaleza de una Hipótesis.
-
-La incertidumbre no podrá eliminarse por decisión metodológica.
-
----
-
-# IFO
-
-El Índice de Fragilidad Oculta pertenece a la Metodología.
-
-El IFO no es una entidad de la Ontología.
-
-El IFO no constituye conocimiento por sí mismo.
-
-El IFO no es una propiedad objetiva de la organización.
-
-El IFO no existe independientemente del Modelo.
-
-El IFO sintetiza una estimación derivada del Modelo conforme a la metodología definida para su cálculo.
-
-La especificación del IFO corresponde a:
-
-40_metodologia/ifo.md
+La Memoria conserva permanentemente todos los Estados históricos.
 
 ---
 
@@ -185,14 +110,11 @@ La especificación del IFO corresponde a:
 
 La metodología nunca:
 
-modifica la realidad;
-modifica Estados existentes;
-elimina conocimiento histórico;
-convierte Hipótesis en hechos;
-elimina incertidumbre;
-razona fuera del Modelo;
-redefine conceptos epistemológicos;
-redefine entidades ontológicas.
+- modifica Estados existentes;
+- elimina conocimiento histórico;
+- convierte Hipótesis en hechos;
+- elimina incertidumbre;
+- razona fuera del Modelo.
 
 ---
 
@@ -200,36 +122,17 @@ redefine entidades ontológicas.
 
 Depende de:
 
-10_nucleo/axiomas.md
-10_nucleo/principios.md
-20_epistemologia/
-30_ontologia/
+- 10_nucleo/axiomas.md
+- 10_nucleo/principios.md
+- 20_epistemologia/
+- 30_ontologia/
 
 Utilizado por:
 
-diagnostico.md
-ifo.md
-evolucion_temporal.md
-50_producto/
-
----
-
-# Responsabilidad
-
-Esta especificación define exclusivamente el proceso metodológico mediante el cual ATÓMICA construye, mantiene y actualiza conocimiento sobre una Identidad.
-
-No define:
-
-Axiomas;
-Principios;
-Observaciones;
-Evidencias;
-Hipótesis;
-Confianza;
-entidades ontológicas;
-interfaces;
-infraestructura;
-implementaciones técnicas.
+- diagnostico.md
+- ifo.md
+- evolucion_temporal.md
+- producto
 
 ---
 
