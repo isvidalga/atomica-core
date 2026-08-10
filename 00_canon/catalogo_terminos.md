@@ -4,7 +4,7 @@ Estado: CANÓNICO
 
 Tipo: CATÁLOGO
 
-Versión: 1.0.0
+Versión: 1.1.0
 
 Ubicación:
 
@@ -14,107 +14,365 @@ Ubicación:
 
 # Propósito
 
-Declarar las definiciones oficiales de los términos del Canon.
+Establecer el vocabulario canónico utilizado por ATÓMICA.
 
-Garantizar que cada término normativo posee exactamente una única definición oficial.
+Este documento registra términos cuya definición ha sido establecida en documentos normativos, ontológicos, epistemológicos, metodológicos o de producto.
 
-No establece las reglas del lenguaje.
+No crea por sí mismo conceptos nuevos.
 
-No interpreta las definiciones.
-
-No modifica su autoridad normativa.
-
-Las reglas del sistema de lenguaje pertenecen exclusivamente a:
-
-00_canon/lenguaje_del_canon.md
+No sustituye los documentos que contienen las definiciones canónicas.
 
 ---
 
-# Principios
+# Naturaleza
 
-Toda definición pertenece exactamente a un único término.
+Un término pertenece al vocabulario canónico cuando existe una definición verificable en un documento con autoridad reconocida.
 
-Todo término aparece exactamente una vez.
+La presencia de un término en este catálogo no sustituye la definición de origen.
 
-Toda modificación conserva el historial documental.
-
----
-
-# Estructura
-
-Cada término contiene únicamente:
-
-- Nombre
-- Definición
-- No es
-- Consecuencias normativas
-- Relaciones
+Cuando un término carezca de definición canónica suficiente, deberá declararse expresamente como pendiente.
 
 ---
 
-# Catálogo
+# Términos canónicos
 
-La presente versión no incorpora todavía definiciones oficiales.
+## Organización
 
-Las futuras versiones ampliarán este catálogo manteniendo una única definición por término.
+**Definición:** referente real observado.
 
----
+La Organización existe con independencia del Modelo y puede cambiar sin que el Modelo lo conozca.
 
-# Incorporación
+**Fuente:**
 
-La incorporación de un término requiere:
-
-- cumplimiento de la estructura definida por
-  `lenguaje_del_canon.md`;
-- nueva versión de este catálogo.
+- `30_ontologia/organizacion.md`
+- `30_ontologia/catalogo_entidades.md`
 
 ---
 
-# Modificación
+## Modelo
 
-Toda modificación conserva el historial documental.
+**Definición:** sistema formal que organiza el conocimiento construido sobre un referente.
 
-Nunca podrá modificar implícitamente otro término.
+Toda afirmación de ATÓMICA pertenece al Modelo y nunca directamente a la realidad.
 
----
+**Fuente:**
 
-# Retirada
-
-Una definición retirada permanece en el historial.
-
-Nunca podrá eliminarse.
+- `30_ontologia/modelo.md`
+- `30_ontologia/catalogo_entidades.md`
 
 ---
 
-# Restricciones
+## Identidad
 
-No se permite:
+**Definición:** aquello de lo que se predica la continuidad del conocimiento.
 
-- definir un término dos veces;
-- utilizar definiciones incompatibles;
-- eliminar definiciones históricas;
-- incorporar términos fuera de este catálogo.
+**Fuente:**
+
+- `30_ontologia/identidad.md`
+- `30_ontologia/catalogo_entidades.md`
 
 ---
 
-# Relaciones
+## Estado
 
-Depende de:
+**Definición:** unidad histórica que referencia exactamente una Representación en un instante lógico.
 
-- lenguaje_del_canon.md
+El Estado es inmutable.
 
-Utilizado por:
+No contiene conocimiento: lo referencia.
 
-- todo el Canon.
+**Fuente:**
+
+- `30_ontologia/estado.md`
+- `30_ontologia/catalogo_entidades.md`
+- `gobernanza/decisiones/D-001`
+
+---
+
+## Representación
+
+**Definición:** estructura formal asociada a un Estado que organiza el conocimiento admitido.
+
+La Representación no produce conocimiento.
+
+Es inmutable.
+
+**Fuente:**
+
+- `30_ontologia/representacion.md`
+- `30_ontologia/catalogo_entidades.md`
+
+---
+
+## Trayectoria
+
+**Definición:** sucesión ordenada de Estados.
+
+**Fuente:**
+
+- `30_ontologia/trayectoria.md`
+- `30_ontologia/catalogo_entidades.md`
+
+---
+
+## Memoria
+
+**Definición:** mecanismo que conserva permanentemente los Estados históricos.
+
+**Fuente:**
+
+- `30_ontologia/memoria.md`
+- `30_ontologia/catalogo_entidades.md`
+
+---
+
+## Relación
+
+**Definición:** conexión estructural entre dos o más entidades del dominio.
+
+**Fuente:**
+
+- `30_ontologia/relacion.md`
+
+---
+
+## Observación
+
+**Definición:** registro de un fenómeno relativo a una organización.
+
+La Observación registra.
+
+No interpreta.
+
+No explica.
+
+No concluye.
+
+**Fuente:**
+
+- `20_epistemologia/observacion.md`
+
+---
+
+## Evidencia
+
+**Definición:** Observación utilizada para evaluar una o varias Hipótesis.
+
+La Evidencia conserva trazabilidad hasta la Observación de la que procede.
+
+**Fuente:**
+
+- `20_epistemologia/evidencia.md`
+
+---
+
+## Hipótesis
+
+**Definición:** proposición formulada por el Modelo para explicar una o varias Evidencias.
+
+Es provisional, revisable y refutable.
+
+No constituye un hecho ni una verdad.
+
+**Fuente:**
+
+- `20_epistemologia/hipotesis.md`
+
+---
+
+## Confianza
+
+**Definición:** estimación del grado de respaldo que las Evidencias proporcionan a una Hipótesis.
+
+La Confianza nunca constituye certeza.
+
+**Fuente:**
+
+- `20_epistemologia/confianza.md`
+
+---
+
+## Modelo Vivo
+
+**Definición:** instrumento central del Producto que mantiene una representación operacional única del conocimiento disponible sobre una organización.
+
+El Modelo Vivo no genera conocimiento.
+
+No modifica conocimiento.
+
+No realiza inferencias por sí mismo.
+
+**Fuente:**
+
+- `50_producto/modelo_vivo.md`
+
+---
+
+## IFO
+
+**Definición:** síntesis metodológica de la estimación del estado de una organización.
+
+El IFO pertenece exclusivamente a la Metodología.
+
+No es una entidad ontológica.
+
+No constituye conocimiento.
+
+No es una propiedad objetiva de la organización.
+
+**Fuente:**
+
+- `40_metodologia/ifo.md`
+- `40_metodologia/metodologia.md`
+
+---
+
+# Términos pendientes de definición canónica
+
+## Instrumento
+
+`[DECISIÓN PENDIENTE]`
+
+El término estructura la capa Producto y aparece en los principios de Producto, pero el corpus auditado no contiene una definición canónica formal del concepto.
+
+No se establecerá una definición por inferencia.
+
+**Estado:** pendiente.
+
+---
+
+## Estado Sistémico
+
+`[DECISIÓN PENDIENTE]`
+
+El término aparece utilizado en múltiples documentos del corpus, pero su estatuto canónico no está resuelto.
+
+La decisión D-001, vigente, reserva el término «Estado» para la entidad ontológica Estado y prohíbe utilizarlo para designar el concepto denominado «Estado Sistémico».
+
+La decisión D-002, que establecía la derogación del término «Estado Sistémico» y remitía su sustitución a una definición posterior, figura actualmente como OBSOLETA.
+
+El nombre definitivo prometido por D-002 no está establecido en el corpus auditado.
+
+Por tanto:
+
+- «Estado» no podrá utilizarse como sustituto de «Estado Sistémico».
+- «Estado Sistémico» no podrá considerarse término canónico vigente.
+- No se establecerá un nuevo nombre por interpretación.
+
+**Estado:** pendiente de Decisión.
+
+---
+
+## Founder
+
+`[DECISIÓN PENDIENTE]`
+
+El término aparece en documentación operativa, pero el corpus normativo no establece una definición canónica de la figura, sus atribuciones ni su autoridad formal dentro del Sistema Normativo.
+
+La documentación operativa del Founder no constituye por sí misma fuente normativa.
+
+**Estado:** pendiente.
+
+---
+
+# Reglas de uso
+
+## T-001 · Definición de origen
+
+Toda definición canónica deberá poder trazarse hasta el documento que la establece.
+
+---
+
+## T-002 · No inferencia
+
+La ausencia de una definición canónica no podrá resolverse mediante inferencia a partir del uso informal del término.
+
+---
+
+## T-003 · No sustitución silenciosa
+
+Un término pendiente no podrá ser sustituido silenciosamente por otro término canónico de significado distinto.
+
+---
+
+## T-004 · Colisión terminológica
+
+Cuando un término utilizado en un documento entre en conflicto con una definición canónica vigente, el conflicto deberá documentarse y resolverse mediante el mecanismo normativo correspondiente.
+
+---
+
+## T-005 · Evolución
+
+Un cambio en la definición canónica de un término deberá producir una nueva versión del documento que contiene dicha definición y actualizar las referencias afectadas.
+
+---
+
+# Términos no canónicos
+
+Los siguientes términos no deberán tratarse como conceptos canónicos salvo que exista una fuente normativa que lo establezca:
+
+- Dashboard
+- Evaluación
+- Ranking
+- Riesgo
+- Madurez
+- Puntuación como juicio
+- Estado Sistémico
+- Instrumento, en ausencia de definición formal
+
+Su utilización contextual no implica reconocimiento conceptual.
+
+---
+
+# Relaciones documentales
+
+Este catálogo se relaciona con:
+
+- `00_canon/sistema_normativo.md`
+- `00_canon/gobierno_del_canon.md`
+- `10_nucleo/axiomas.md`
+- `10_nucleo/principios.md`
+- `20_epistemologia/`
+- `30_ontologia/`
+- `40_metodologia/`
+- `50_producto/`
+- `gobernanza/decisiones/`
 
 ---
 
 # Responsabilidad
 
-Este documento declara exclusivamente las definiciones oficiales del lenguaje del Canon.
+Este documento registra el vocabulario canónico.
 
-No crea reglas lingüísticas.
+No crea entidades ontológicas.
 
-No modifica la autoridad normativa.
+No define procedimientos metodológicos.
 
-No interpreta los conceptos definidos.
+No define instrumentos de Producto.
+
+No modifica decisiones de gobernanza.
+
+No resuelve por sí mismo las decisiones pendientes identificadas en el corpus.
+
+---
+
+# Decisiones pendientes relacionadas
+
+- **DP-2:** nombre canónico del concepto actualmente denominado «Estado Sistémico».
+- **DP-3:** figura y autoridad del Founder.
+- **DP-5:** definición canónica de Instrumento.
+
+La resolución de estas decisiones deberá producirse mediante el mecanismo formal de gobierno del Canon.
+
+---
+
+# Nota de coherencia
+
+Este catálogo distingue deliberadamente entre:
+
+1. términos con definición canónica verificable;
+2. términos utilizados en el corpus pero cuya definición canónica está pendiente.
+
+La segunda categoría no constituye una categoría conceptual provisional.
+
+Hasta que exista la decisión correspondiente, el término permanece sin definición canónica.
