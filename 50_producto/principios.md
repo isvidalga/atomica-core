@@ -8,9 +8,7 @@ Tipo: Producto
 
 Ubicación:
 
-```text
 50_producto/principios.md
-```
 
 ---
 
@@ -119,89 +117,6 @@ Nunca lo sustituye.
 
 ---
 
-## PRD-007 · Continuidad
-
-Toda exploración conserva el contexto desde el que fue iniciada.
-
-El usuario nunca pierde la referencia del conocimiento que está explorando.
-
-La navegación mantiene siempre la continuidad del recorrido.
-
----
-
-## PRD-008 · Estabilidad
-
-Cuando el conocimiento no cambia, la representación permanece estable.
-
-ATÓMICA nunca introduce cambios artificiales para atraer la atención del usuario.
-
-La estabilidad constituye información.
-
----
-
-## PRD-009 · Coherencia
-
-Todo instrumento mantiene coherencia con:
-
-- el Sistema Normativo;
-- el Modelo Vivo;
-- la metodología vigente;
-- el resto de instrumentos del producto.
-
-No pueden existir contradicciones entre superficies.
-
----
-
-## PRD-010 · Explicabilidad
-
-Toda representación utilizada por un instrumento debe ser compatible con las reglas de explicabilidad establecidas por el Sistema Normativo.
-
-Ninguna representación puede convertirse en una caja negra.
-
----
-
-## PRD-011 · Independencia de la interfaz
-
-El significado del conocimiento nunca depende de su representación gráfica.
-
-Las interfaces muestran el conocimiento.
-
-Nunca lo modifican.
-
----
-
-## PRD-012 · Independencia tecnológica
-
-Los principios definidos en este documento son independientes de:
-
-- tecnologías;
-- lenguajes;
-- plataformas;
-- arquitecturas técnicas;
-- implementaciones.
-
-Su validez permanece constante aunque cambie la infraestructura del producto.
-
----
-
-## PRD-013 · Simplicidad
-
-Toda decisión de diseño prioriza la reducción de complejidad innecesaria.
-
-Cuando dos soluciones proporcionan el mismo nivel de comprensión, prevalece la más simple.
-
----
-
-## PRD-014 · Continuidad evolutiva
-
-La evolución del producto amplía las capacidades existentes.
-
-No rompe la coherencia de los instrumentos previamente definidos.
-
-Toda evolución preserva la compatibilidad con el Sistema Normativo.
-
----
-
 # Criterios de aceptación
 
 Una implementación de la capa Producto se considera conforme únicamente cuando:
@@ -209,13 +124,10 @@ Una implementación de la capa Producto se considera conforme únicamente cuando
 - cada instrumento mantiene una única responsabilidad;
 - todos los instrumentos utilizan el Modelo Vivo;
 - la exploración no modifica el conocimiento;
-- el contexto permanece estable durante la navegación;
 - la representación es consistente entre instrumentos;
-- toda representación es explicable;
-- la interfaz no altera el significado del conocimiento;
-- la evolución del producto preserva la coherencia del conjunto.
+- la evolución de la comprensión es progresiva.
 
-El incumplimiento de cualquiera de estos criterios implica que la implementación no es conforme con el Canon.
+El incumplimiento de cualquiera de estos criterios implica que la implementación no es conforme con los principios del Producto.
 
 ---
 
