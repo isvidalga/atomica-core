@@ -153,3 +153,72 @@ Estado
       │
       ▼
 Trayectoria
+
+
+La secuencia entre Hipótesis y Evidencias deberá interpretarse conforme a las reglas de la Epistemología.
+
+Cada nuevo Estado preserva íntegramente la historia anterior.
+
+---
+
+# Restricciones
+
+# ET-R-001
+
+Nunca podrá eliminarse conocimiento histórico.
+
+# ET-R-002
+
+Nunca podrá reinterpretarse un Estado utilizando conocimiento posterior como si dicho conocimiento hubiera estado disponible en el instante lógico original.
+
+# ET-R-003
+
+Toda modificación del conocimiento deberá ser completamente trazable.
+
+# ET-R-004
+
+Toda reconstrucción histórica deberá producir el conocimiento admitido en el instante lógico correspondiente.
+
+# ET-R-005
+
+La evolución del conocimiento nunca modifica Estados previamente existentes.
+
+# ET-R-006
+
+El paso del tiempo nunca constituye evidencia.
+
+# ET-R-007
+
+Toda evolución del conocimiento que implique un cambio de estado deberá expresarse mediante un nuevo Estado perteneciente a la misma Trayectoria.
+
+---
+
+# Dependencias
+
+Depende de:
+
+00_canon/sistema_normativo.md
+00_canon/gobierno_del_canon.md
+20_epistemologia/observacion.md
+20_epistemologia/evidencia.md
+20_epistemologia/hipotesis.md
+20_epistemologia/confianza.md
+30_ontologia/estado.md
+30_ontologia/trayectoria.md
+30_ontologia/memoria.md
+40_metodologia/metodologia.md
+
+Utilizado por:
+
+40_metodologia/ifo.md
+50_producto/modelo_vivo.md
+
+---
+
+# Declaración
+
+La Evolución Temporal garantiza que el conocimiento construido por ATÓMICA permanezca acumulativo, trazable y reconstruible.
+
+Toda evolución del Modelo se produce mediante la incorporación de nuevo conocimiento y su correspondiente actualización de la Representación y, cuando proceda, del Estado.
+
+Nunca mediante la modificación del conocimiento previamente admitido.
