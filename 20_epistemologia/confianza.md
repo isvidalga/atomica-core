@@ -59,27 +59,11 @@ La Confianza nunca permite afirmar que una Hipótesis sea verdadera.
 
 # Relaciones
 
-La Confianza constituye la última etapa del proceso epistemológico.
-
-```
-Referente
-      │
-      ▼
-Observación
-      │
-      ▼
-Evidencia
-      │
-      ▼
-Hipótesis
-      │
-      ▼
-Confianza
-```
-
 Toda Confianza pertenece exactamente a una Hipótesis.
 
-Toda Confianza depende exclusivamente de las Evidencias asociadas a dicha Hipótesis.
+Toda Confianza depende de las Evidencias asociadas a dicha Hipótesis.
+
+Este documento no establece por sí solo el orden completo del proceso epistemológico entre Observación, Hipótesis, Evidencia y Confianza.
 
 ---
 
@@ -136,7 +120,7 @@ La Confianza nunca representa:
 
 ---
 
-# Relaciones
+# Relaciones documentales
 
 Depende de:
 
@@ -172,3 +156,23 @@ No establece procedimientos metodológicos.
 La Confianza expresa únicamente el grado de respaldo que el Modelo puede justificar para una Hipótesis con el conocimiento disponible.
 
 Nunca constituye una garantía de verdad.
+
+---
+
+# Nota de coherencia epistemológica
+
+Existe una contradicción documental pendiente respecto al orden relativo entre Observación, Hipótesis, Evidencia y Confianza.
+
+Los documentos de la capa epistemológica han utilizado históricamente:
+
+Observación → Evidencia → Hipótesis → Confianza
+
+Mientras que la Metodología utiliza:
+
+Observación → Hipótesis → Evidencia → Confianza
+
+La definición de Evidencia establece que toda Evidencia evalúa al menos una Hipótesis, mientras que la definición de Hipótesis establece que una Hipótesis explica una o varias Evidencias.
+
+Este documento no resuelve dicha contradicción.
+
+La resolución deberá realizarse mediante el mecanismo normativo correspondiente y deberá reflejarse posteriormente de forma coherente en los documentos epistemológicos y metodológicos afectados.
