@@ -16,66 +16,107 @@ Ubicación:
 
 Definir el concepto de Evidencia dentro de la epistemología de ATÓMICA.
 
-La Evidencia constituye el mecanismo mediante el cual una Observación participa en la evaluación de una Hipótesis.
+La Evidencia determina el papel que una Observación desempeña en la evaluación de una o varias Hipótesis.
 
 ---
 
 # Definición
 
-Una Evidencia es una Observación utilizada para evaluar una o varias Hipótesis.
+Una Evidencia es **una Observación utilizada para evaluar una o varias Hipótesis**.
 
 La Evidencia no constituye un tipo distinto de información.
 
-Constituye el rol epistemológico que una Observación adquiere cuando interviene en la evaluación del conocimiento.
+Es el rol epistemológico que una Observación adquiere al intervenir en la evaluación del conocimiento.
+
+Una misma Observación puede adquirir el rol de Evidencia respecto de una o varias Hipótesis.
 
 ---
 
 # Naturaleza
 
-Toda Evidencia:
+La Evidencia no constituye una afirmación independiente.
 
-- procede de exactamente una Observación;
-- evalúa una o varias Hipótesis;
-- puede aumentar, disminuir o mantener la Confianza asociada a dichas Hipótesis;
-- nunca modifica el referente organizacional.
+Su contenido procede de una Observación y conserva trazabilidad hasta ella.
+
+La Evidencia puede:
+
+* respaldar una Hipótesis;
+* debilitar una Hipótesis;
+* no aportar suficiente información para modificar la Confianza asociada a una Hipótesis.
+
+La interpretación de una Evidencia siempre depende de la Hipótesis respecto de la cual se evalúa.
 
 ---
 
-# Alcance
+# Relación con la Observación
 
-Una Evidencia podrá:
+Toda Evidencia procede de una Observación.
 
-- respaldar una Hipótesis;
-- debilitar una Hipótesis;
-- resultar insuficiente para modificar su Confianza.
+Una Observación puede existir sin adquirir el rol de Evidencia.
 
-La ausencia de Evidencia nunca implica falsedad.
+Una Evidencia no puede existir sin una Observación de origen.
+
+La transformación de una Observación en Evidencia no altera la Observación original.
+
+---
+
+# Relación con la Hipótesis
+
+Toda Evidencia evalúa al menos una Hipótesis.
+
+Una Evidencia no constituye una Hipótesis.
+
+Una Evidencia no crea por sí misma una Hipótesis.
+
+La evaluación de una Hipótesis puede utilizar una o varias Evidencias.
+
+Una misma Evidencia puede participar en la evaluación de varias Hipótesis.
+
+---
+
+# Ausencia de Evidencia
+
+La ausencia de Evidencia no implica falsedad.
 
 Implica únicamente insuficiencia de conocimiento.
 
+ATÓMICA no podrá convertir la ausencia de Evidencia en una afirmación de inexistencia, falsedad o certeza negativa salvo que exista una base epistemológica explícita que lo permita.
+
 ---
 
-# Relaciones
+# Confianza
 
-La Evidencia ocupa la segunda etapa del proceso epistemológico.
+La Evidencia contribuye a la determinación de la Confianza asociada a una Hipótesis.
 
-```
-Referente
-      │
-      ▼
-Observación
-      │
-      ▼
+La Evidencia no posee Confianza de forma independiente.
+
+La Confianza pertenece a la Hipótesis y expresa el grado de respaldo que las Evidencias permiten justificar con el conocimiento disponible.
+
+Una Evidencia nunca modifica directamente la Confianza mediante una asignación manual.
+
+---
+
+# Estado
+
+Una Evidencia no modifica directamente un Estado.
+
+Cualquier modificación de una representación del conocimiento deberá producirse mediante las reglas metodológicas correspondientes.
+
+---
+
+# Trazabilidad
+
+Toda Evidencia debe conservar trazabilidad completa hasta la Observación de la que procede.
+
+La trazabilidad debe permitir reconstruir:
+
 Evidencia
-      │
-      ▼
-Hipótesis
-      │
-      ▼
-Confianza
-```
+    ↓
+Observación
+    ↓
+fuente de la Observación
 
-Una misma Observación podrá actuar como Evidencia para distintas Hipótesis.
+La pérdida del origen de una Evidencia impide considerarla plenamente trazable.
 
 ---
 
@@ -83,7 +124,7 @@ Una misma Observación podrá actuar como Evidencia para distintas Hipótesis.
 
 ## E-001
 
-Toda Evidencia procede de exactamente una Observación.
+Toda Evidencia debe proceder de una Observación.
 
 ---
 
@@ -95,21 +136,19 @@ Toda Evidencia evalúa al menos una Hipótesis.
 
 ## E-003
 
-Una Evidencia nunca constituye una Hipótesis.
+Una Evidencia puede respaldar, debilitar o resultar insuficiente para una Hipótesis.
 
 ---
 
 ## E-004
 
-Una Evidencia nunca modifica directamente una Hipótesis.
-
-Únicamente modifica la Confianza asociada a ella.
+La ausencia de Evidencia no implica falsedad.
 
 ---
 
 ## E-005
 
-Una Evidencia nunca modifica directamente el Estado Sistémico.
+Una Evidencia no modifica directamente un Estado.
 
 ---
 
@@ -121,35 +160,45 @@ Toda Evidencia conserva trazabilidad completa hasta la Observación de la que pr
 
 # Exclusiones
 
-No constituyen Evidencias:
+No son Evidencias:
 
-- decisiones;
-- recomendaciones;
-- intervenciones;
-- conclusiones;
-- clasificaciones.
+* hipótesis;
+* interpretaciones;
+* conclusiones;
+* decisiones;
+* recomendaciones;
+* índices;
+* puntuaciones;
+* clasificaciones.
 
-Su existencia dependerá de etapas posteriores del conocimiento.
+Una interpretación sobre una Observación no se convierte en Evidencia por el hecho de estar documentada.
 
 ---
 
-# Relaciones
+# Orden epistemológico
 
-Depende de:
+Existe una contradicción documental pendiente respecto al orden relativo entre Observación, Hipótesis, Evidencia y Confianza.
 
-- 10_nucleo/axiomas.md
-- 10_nucleo/principios.md
-- 20_epistemologia/principios_epistemologicos.md
-- 20_epistemologia/observacion.md
+Los documentos de la capa epistemológica han utilizado históricamente:
 
-Gobierna:
+Observación → Evidencia → Hipótesis → Confianza
 
-- hipotesis.md
+Mientras que `40_metodologia/metodologia.md` v3.0.0 utiliza:
 
-Utilizado por:
+Observación → Hipótesis → Evidencia → Confianza
 
-- confianza.md
-- 40_metodologia/
+La definición E-002 establece que toda Evidencia evalúa al menos una Hipótesis.
+
+Por tanto, este documento **no fija el orden global del ciclo epistemológico**.
+
+La contradicción deberá resolverse mediante el mecanismo normativo correspondiente.
+
+Hasta entonces:
+
+* E-001 establece el origen de la Evidencia;
+* E-002 establece su relación necesaria con una Hipótesis;
+* E-003–E-006 establecen sus propiedades y restricciones;
+* el orden global permanece abierto.
 
 ---
 
@@ -157,18 +206,39 @@ Utilizado por:
 
 Este documento define exclusivamente el concepto de Evidencia.
 
-No define Observaciones.
+No define:
 
-No define Hipótesis.
+* el procedimiento de formulación de Hipótesis;
+* las reglas de cálculo de Confianza;
+* el proceso metodológico completo;
+* la representación del conocimiento;
+* el Estado;
+* la implementación tecnológica.
 
-No define Confianza.
-
-No establece procedimientos metodológicos.
+Estas responsabilidades corresponden a los documentos de sus respectivas capas.
 
 ---
 
-# Declaración
+# Relaciones documentales
 
-La Evidencia nunca demuestra que una Hipótesis sea verdadera.
+Relacionado directamente con:
 
-Únicamente modifica el grado de Confianza con el que el Modelo la sostiene.
+20_epistemologia/observacion.md
+20_epistemologia/hipotesis.md
+20_epistemologia/confianza.md
+20_epistemologia/principios_epistemologicos.md
+
+Utilizado por:
+
+40_metodologia/
+50_producto/
+
+---
+
+# Nota de coherencia
+
+Este documento mantiene las restricciones E-001 a E-006.
+
+La contradicción histórica entre el diagrama epistemológico y el orden metodológico no se resuelve aquí porque hacerlo requeriría modificar una decisión normativa que excede el alcance de este documento.
+
+La resolución deberá producir una única formulación coherente del ciclo y actualizar todos los documentos afectados.
