@@ -14,7 +14,7 @@ Ubicación:
 
 # Propósito
 
-Definir el Índice de Fragilidad Oculta (IFO) como el instrumento metodológico mediante el cual ATÓMICA sintetiza la estimación del Estado Sistémico de una organización.
+Definir el Índice de Fragilidad Oculta (IFO) como el instrumento metodológico mediante el cual ATÓMICA sintetiza la estimación del estado representado por el Modelo de una organización.
 
 Su finalidad consiste en facilitar la comprensión del conocimiento construido por el Modelo mediante una representación cuantitativa, comparable y trazable.
 
@@ -30,19 +30,19 @@ El IFO pertenece exclusivamente a la Metodología.
 
 No constituye una entidad de la Ontología.
 
-No constituye conocimiento.
+No constituye conocimiento por sí mismo.
 
 No constituye una propiedad objetiva de la organización.
 
 No existe independientemente del Modelo.
 
-El IFO constituye una representación metodológica derivada del Estado Sistémico.
+El IFO constituye una representación metodológica derivada del estado representado por el Modelo.
 
 ---
 
 # Qué representa
 
-El IFO representa una estimación sintética del Estado Sistémico de una organización en un instante lógico determinado.
+El IFO representa una estimación sintética del estado representado por el Modelo en un instante lógico determinado.
 
 Su significado depende siempre del Modelo del que deriva.
 
@@ -79,7 +79,7 @@ ATÓMICA no evalúa organizaciones mediante el IFO.
 
 ATÓMICA construye un Modelo.
 
-El IFO sintetiza el Estado Sistémico estimado por dicho Modelo.
+El IFO sintetiza el estado estimado por dicho Modelo.
 
 Dos organizaciones pueden compartir el mismo IFO y poseer Modelos completamente distintos.
 
@@ -112,7 +112,6 @@ El IFO utiliza las Dimensiones metodológicas exclusivamente como mecanismo de o
 Las Dimensiones:
 
 - no modifican el Modelo;
-- no determinan el cálculo del IFO;
 - no constituyen partes independientes de la organización.
 
 Su definición pertenece a:
@@ -121,13 +120,13 @@ Su definición pertenece a:
 
 ---
 
-# Relación con el Estado Sistémico
+# Relación con el estado representado por el Modelo
 
-El Estado Sistémico constituye el conocimiento sintetizado por el Modelo.
+El estado representado por el Modelo constituye el conocimiento sintetizado por el Modelo.
 
-El IFO constituye una representación metodológica derivada de dicho Estado.
+El IFO constituye una representación metodológica derivada de dicho estado.
 
-El Estado Sistémico precede siempre al IFO.
+El estado representado por el Modelo precede siempre al IFO.
 
 Nunca a la inversa.
 
@@ -135,7 +134,7 @@ Nunca a la inversa.
 
 # Interpretación
 
-El IFO constituye un instrumento para facilitar la comprensión del Estado Sistémico.
+El IFO constituye un instrumento para facilitar la comprensión del estado representado por el Modelo.
 
 Nunca constituye una conclusión definitiva.
 
@@ -144,12 +143,12 @@ Debe favorecer preguntas como:
 - ¿Qué revela el Modelo?
 - ¿Qué configuraciones requieren mayor atención?
 - ¿Qué hipótesis necesitan más evidencia?
-- ¿Cómo evoluciona el Estado Sistémico?
+- ¿Cómo evoluciona el estado representado por el Modelo?
 - ¿Con qué nivel de confianza debe interpretarse el resultado?
 
 Todo resultado deberá interpretarse conjuntamente con:
 
-- el Estado Sistémico;
+- el estado representado por el Modelo;
 - las Capacidades;
 - las Fragilidades;
 - los Patrones;
@@ -164,7 +163,7 @@ ATÓMICA utiliza rangos interpretativos exclusivamente para facilitar la comunic
 Estos rangos constituyen una simplificación metodológica.
 
 | Rango | Interpretación |
-|--------|----------------|
+| --- | --- |
 | 0–25 | Frágil |
 | 26–50 | Robusto |
 | 51–75 | Resiliente |
@@ -180,7 +179,7 @@ El principal valor metodológico del IFO aparece al observar su evolución.
 
 Un único Diagnóstico representa únicamente una estimación puntual.
 
-La comparación longitudinal permite analizar la evolución del Estado Sistémico.
+La comparación longitudinal permite analizar la evolución del estado representado por el Modelo.
 
 Toda comparación deberá considerar:
 
@@ -239,7 +238,7 @@ El IFO siempre deriva del Modelo.
 
 ## IFO-003
 
-El IFO deriva del Estado Sistémico.
+El IFO deriva del estado representado por el Modelo.
 
 Nunca directamente de las Observaciones.
 
@@ -253,7 +252,7 @@ El IFO nunca modifica el Modelo.
 
 ## IFO-005
 
-El IFO nunca puede interpretarse sin el Estado Sistémico y el Modelo que lo generan.
+El IFO nunca puede interpretarse sin el estado representado por el Modelo y el Modelo que lo genera.
 
 ---
 
@@ -288,6 +287,6 @@ Utilizado por:
 
 # Declaración
 
-El Índice de Fragilidad Oculta constituye el instrumento metodológico mediante el cual ATÓMICA sintetiza el Estado Sistémico estimado por el Modelo.
+El Índice de Fragilidad Oculta constituye el instrumento metodológico mediante el cual ATÓMICA sintetiza el estado representado por el Modelo.
 
 Su finalidad no consiste en emitir un juicio sobre una organización, sino en ofrecer una representación sintética, comparable, trazable y explicable del conocimiento disponible en un instante determinado.
