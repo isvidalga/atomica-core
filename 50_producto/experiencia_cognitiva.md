@@ -2,7 +2,7 @@
 
 Estado: CANÓNICO
 
-Versión: 2.0.0
+Versión: 2.1.0
 
 Tipo: Producto
 
@@ -18,17 +18,17 @@ Ubicación:
 
 Este documento establece los principios que gobiernan la interacción entre las personas y el conocimiento representado por ATÓMICA.
 
-Su finalidad consiste en garantizar que toda experiencia del producto favorezca la comprensión del conocimiento organizacional y reduzca el esfuerzo necesario para interpretarlo.
+Su finalidad consiste en garantizar que toda experiencia del Producto favorezca la comprensión del conocimiento organizacional y reduzca el esfuerzo necesario para interpretarlo.
 
 No define:
 
-- interfaces;
-- componentes;
-- navegación;
-- diseño visual;
-- implementación técnica.
+* interfaces;
+* componentes;
+* navegación;
+* diseño visual;
+* implementación técnica.
 
-Define exclusivamente las reglas cognitivas que deben respetar todos los instrumentos del producto.
+Define exclusivamente las reglas cognitivas que deben respetar los instrumentos del Producto.
 
 ---
 
@@ -36,12 +36,12 @@ Define exclusivamente las reglas cognitivas que deben respetar todos los instrum
 
 Este documento es aplicable a:
 
-- instrumentos;
-- experiencias;
-- recorridos de exploración;
-- interacciones;
-- representaciones;
-- flujos cognitivos.
+* instrumentos;
+* experiencias;
+* recorridos de exploración;
+* interacciones;
+* representaciones;
+* flujos cognitivos.
 
 Todo documento perteneciente a la capa Producto deberá ser compatible con estas reglas.
 
@@ -51,14 +51,14 @@ Todo documento perteneciente a la capa Producto deberá ser compatible con estas
 
 Este documento depende de:
 
-- `00_canon/`
-- `10_nucleo/`
-- `20_epistemologia/`
-- `30_ontologia/`
-- `40_metodologia/`
-- `50_producto/principios.md`
-- `50_producto/lenguaje_producto.md`
-- `50_producto/modelo_vivo.md`
+* `00_canon/`
+* `10_nucleo/`
+* `20_epistemologia/`
+* `30_ontologia/`
+* `40_metodologia/`
+* `50_producto/principios.md`
+* `50_producto/lenguaje_producto.md`
+* `50_producto/modelo_vivo.md`
 
 En caso de conflicto prevalecen siempre las definiciones canónicas.
 
@@ -68,9 +68,9 @@ En caso de conflicto prevalecen siempre las definiciones canónicas.
 
 La Experiencia Cognitiva tiene como finalidad facilitar la comprensión progresiva del conocimiento representado por el Modelo Vivo.
 
-El objetivo del producto no consiste en mostrar información.
+El objetivo del Producto no consiste en mostrar información.
 
-Consiste en facilitar la construcción de comprensión suficiente para apoyar el juicio de la organización.
+Consiste en facilitar la construcción de comprensión suficiente para que el usuario pueda interpretar el conocimiento disponible y ejercer su propio juicio.
 
 ---
 
@@ -84,11 +84,11 @@ La cantidad de información presentada nunca constituye un objetivo por sí mism
 
 ---
 
-## EC-002 · El conocimiento precede a la acción
+## EC-002 · La comprensión precede a la decisión
 
-Toda acción propuesta debe derivarse del conocimiento previamente comprendido.
+La experiencia debe proporcionar contexto suficiente para comprender el conocimiento antes de que el usuario deba utilizarlo para tomar una decisión.
 
-Nunca se presenta una acción sin contexto suficiente.
+ATÓMICA no sustituye el proceso de decisión.
 
 ---
 
@@ -140,25 +140,46 @@ La experiencia facilita el acceso al conocimiento.
 
 No modifica su significado.
 
-No introduce interpretaciones adicionales.
+No introduce interpretaciones que no estén sustentadas por el Modelo.
+
+---
+
+## EC-009 · La acción no constituye conocimiento
+
+Las posibles acciones o intervenciones no forman parte del conocimiento únicamente por ser mostradas por el Producto.
+
+Cuando se representen, deberán conservar su fundamento, contexto e incertidumbre.
+
+La decisión de actuar pertenece al usuario.
 
 ---
 
 # Modelo cognitivo
 
-Toda experiencia organizada por ATÓMICA sigue una progresión estable de comprensión.
+Toda experiencia de ATÓMICA debe favorecer una progresión de comprensión.
 
-Como regla general, la secuencia será:
+Como referencia general:
 
-1. observar;
-2. comprender;
-3. relacionar;
-4. decidir;
-5. actuar.
+```text
+Observar
+   │
+   ▼
+Comprender
+   │
+   ▼
+Relacionar
+   │
+   ▼
+Decidir
+```
 
-Cada etapa amplía la anterior.
+Esta secuencia no constituye un flujo obligatorio de navegación.
 
-Nunca la sustituye.
+Representa una progresión cognitiva.
+
+El usuario puede volver a niveles anteriores o profundizar en cualquiera de ellos según la pregunta que esté explorando.
+
+La acción posterior a la decisión pertenece al ámbito de actuación de la organización y no constituye una etapa necesaria de la Experiencia Cognitiva de ATÓMICA.
 
 ---
 
@@ -176,11 +197,13 @@ La representación debe facilitar el reconocimiento inmediato del contexto.
 
 # Comprender
 
-La comprensión incorpora el significado del conocimiento observado.
+La comprensión incorpora significado y contexto al conocimiento observado.
 
-Debe proporcionar el contexto suficiente para responder:
+Debe proporcionar elementos suficientes para responder:
 
-> ¿Por qué es importante?
+> ¿Qué significa lo que estoy viendo?
+
+La experiencia no deberá presentar explicaciones que excedan el conocimiento disponible.
 
 ---
 
@@ -188,44 +211,47 @@ Debe proporcionar el contexto suficiente para responder:
 
 La experiencia permite comprender cómo se conecta el conocimiento representado.
 
-El usuario deja de interpretar elementos aislados.
+El usuario deja de interpretar elementos aislados y puede explorar:
 
-Comienza a interpretar estructuras y relaciones.
+* relaciones;
+* estructuras;
+* Hipótesis;
+* Evidencias;
+* evolución;
+* contexto.
+
+Las relaciones representadas deberán conservar su significado y nivel de incertidumbre.
 
 ---
 
 # Decidir
 
-La experiencia proporciona el conocimiento necesario para reducir la incertidumbre de la decisión.
+La experiencia proporciona el conocimiento necesario para que el usuario pueda ejercer su propio juicio.
 
 La decisión continúa perteneciendo al usuario.
 
-El producto no sustituye dicho proceso.
+ATÓMICA no convierte automáticamente una interpretación en una decisión.
 
----
-
-# Actuar
-
-Las acciones disponibles deberán ser coherentes con el conocimiento previamente comprendido.
-
-Nunca aparecerán desconectadas del recorrido cognitivo.
+Tampoco presenta una recomendación como decisión ya determinada.
 
 ---
 
 # Jerarquía cognitiva
 
-La experiencia organiza el conocimiento respetando una prioridad estable.
+La experiencia prioriza, como regla general:
 
-Como regla general, el orden será:
-
-1. estado;
+1. Estado;
 2. cambio;
-3. impacto;
-4. confianza;
-5. explicación;
-6. acción.
+3. Confianza;
+4. explicación;
+5. fundamento;
+6. posible intervención.
 
-Cada instrumento podrá adaptar esta secuencia cuando resulte necesario, siempre que preserve la coherencia cognitiva.
+Esta prioridad no constituye una secuencia obligatoria para todos los instrumentos.
+
+Cada instrumento podrá adaptarla a su pregunta principal siempre que preserve la coherencia cognitiva.
+
+La posible intervención nunca deberá ocultar el conocimiento que la fundamenta.
 
 ---
 
@@ -235,13 +261,15 @@ Toda representación podrá ofrecer distintos niveles de profundidad.
 
 Como mínimo podrán existir:
 
-- reconocimiento;
-- comprensión;
-- investigación.
+* reconocimiento;
+* comprensión;
+* investigación.
 
 Cada nivel amplía el anterior.
 
-Nunca incrementa innecesariamente la complejidad del nivel previo.
+La profundización deberá aportar conocimiento, contexto, relaciones o trazabilidad.
+
+Nunca deberá incrementar innecesariamente la complejidad.
 
 ---
 
@@ -251,33 +279,34 @@ La experiencia alterna momentos de visión global con momentos de análisis deta
 
 El usuario debe poder cambiar entre ambos niveles sin perder el contexto.
 
-La transición entre niveles constituye una ampliación del conocimiento.
+La transición entre niveles constituye una ampliación de la exploración.
 
-Nunca un cambio de significado.
+Nunca constituye un cambio del significado del conocimiento.
 
 ---
 
 # Continuidad
 
-Cada interacción responde una única necesidad de comprensión.
+Cada interacción responde una necesidad concreta de comprensión.
 
-La siguiente interacción amplía únicamente aquello que resulta necesario comprender.
+La siguiente interacción amplía aquello que resulta necesario comprender.
 
 La experiencia evita:
 
-- repeticiones innecesarias;
-- cambios bruscos de contexto;
-- saltos cognitivos injustificados.
+* repeticiones innecesarias;
+* cambios bruscos de contexto;
+* saltos cognitivos injustificados;
+* información sin relación con la pregunta que se está explorando.
 
 ---
 
 # Memoria cognitiva
 
-La experiencia conserva el contexto previamente adquirido.
+La experiencia conserva el contexto previamente adquirido durante una exploración.
 
-El usuario no debe reconstruir información ya comprendida durante la misma exploración.
+El usuario no debe reconstruir información ya comprendida cuando esta siga siendo necesaria para interpretar el conocimiento actual.
 
-La continuidad cognitiva constituye una responsabilidad permanente del producto.
+La continuidad cognitiva constituye una responsabilidad permanente del Producto.
 
 ---
 
@@ -285,12 +314,12 @@ La continuidad cognitiva constituye una responsabilidad permanente del producto.
 
 Toda experiencia minimizará:
 
-- memoria de trabajo;
-- cambios de contexto;
-- decisiones simultáneas;
-- búsqueda innecesaria;
-- ambigüedad;
-- complejidad no justificada.
+* memoria de trabajo innecesaria;
+* cambios de contexto;
+* decisiones simultáneas;
+* búsqueda innecesaria;
+* ambigüedad;
+* complejidad no justificada.
 
 La reducción de carga cognitiva nunca podrá lograrse reduciendo el significado del conocimiento.
 
@@ -298,7 +327,7 @@ La reducción de carga cognitiva nunca podrá lograrse reduciendo el significado
 
 # Consistencia
 
-Los mismos patrones de interacción producirán siempre el mismo significado.
+Los mismos patrones de interacción producirán el mismo significado.
 
 El comportamiento cognitivo permanecerá estable en todos los instrumentos.
 
@@ -306,18 +335,43 @@ Las diferencias entre instrumentos responderán únicamente a sus responsabilida
 
 ---
 
+# Relación con la Navegación
+
+La Experiencia Cognitiva define cómo debe favorecerse la comprensión.
+
+La Navegación define cómo se organiza el acceso mediante preguntas.
+
+La Experiencia Cognitiva no establece la arquitectura de navegación.
+
+La Navegación no modifica los principios cognitivos establecidos aquí.
+
+---
+
+# Relación con el Flujo de Exploración
+
+El Flujo de Exploración organiza la progresión de comprensión entre instrumentos.
+
+La Experiencia Cognitiva establece las condiciones cognitivas que debe respetar dicha progresión.
+
+Ambos documentos mantienen responsabilidades diferentes.
+
+---
+
 # Restricciones
 
 La Experiencia Cognitiva no:
 
-- redefine conceptos del Canon;
-- modifica la Ontología;
-- interpreta la evidencia;
-- establece reglas metodológicas;
-- sustituye el juicio humano;
-- determina el diseño visual;
-- determina la implementación técnica;
-- establece la arquitectura de navegación.
+* redefine conceptos del Canon;
+* modifica la Ontología;
+* interpreta la evidencia;
+* establece reglas metodológicas;
+* sustituye el juicio humano;
+* determina el diseño visual;
+* determina la implementación técnica;
+* establece la arquitectura de navegación;
+* modifica el Modelo Vivo;
+* convierte recomendaciones o intervenciones en conocimiento;
+* oculta incertidumbre para simplificar la experiencia.
 
 ---
 
@@ -325,16 +379,19 @@ La Experiencia Cognitiva no:
 
 Una implementación de la Experiencia Cognitiva se considera conforme únicamente cuando:
 
-- toda interacción incrementa la comprensión;
-- el contexto permanece continuo;
-- la incertidumbre permanece visible cuando corresponde;
-- el conocimiento precede a cualquier acción;
-- la exploración progresa de forma coherente;
-- la carga cognitiva se reduce sin alterar el significado;
-- la experiencia mantiene consistencia entre instrumentos;
-- la representación permanece compatible con el Modelo Vivo.
+* toda interacción favorece la comprensión;
+* el contexto permanece continuo;
+* la incertidumbre permanece visible cuando corresponde;
+* la comprensión precede a la decisión;
+* la decisión permanece en el usuario;
+* la exploración progresa de forma coherente;
+* la carga cognitiva se reduce sin alterar el significado;
+* la experiencia mantiene consistencia entre instrumentos;
+* la representación permanece compatible con el Modelo Vivo;
+* las relaciones y explicaciones conservan su fundamento;
+* las posibles intervenciones no ocultan el conocimiento que las sustenta.
 
-El incumplimiento de cualquiera de estos criterios implica que la implementación no es conforme con el Canon.
+El incumplimiento de cualquiera de estos criterios implica que la implementación no es conforme con los principios de la Experiencia Cognitiva.
 
 ---
 
@@ -352,4 +409,4 @@ Las modificaciones que afecten al significado del conocimiento deberán realizar
 
 ATÓMICA no mide la calidad de la experiencia por la cantidad de información mostrada.
 
-La mide por la capacidad del producto para facilitar la comprensión del conocimiento organizacional con el menor esfuerzo cognitivo posible, preservando en todo momento el significado definido por el Canon.
+La mide por la capacidad del Producto para facilitar la comprensión del conocimiento organizacional con el menor esfuerzo cognitivo posible, preservando en todo momento el significado, la incertidumbre y la trazabilidad definidos por el Canon.
