@@ -418,3 +418,242 @@ o si existe algún FAIL que obligue a modificarlo.
 **EJECUCION CONCEPTUAL**
 
 No sustituye la ejecución automatizada sobre código.
+
+
+---
+
+# 14. EJECUCIÓN T7–T16 — REVISIÓN CONCEPTUAL
+
+## T7 — Tres configuraciones independientes
+
+```text
+K04 = I2/S1
+K06 = I2/S2
+K07 = I1/S2
+```
+
+Sin acoplamientos ni rutas de propagación.
+
+Resultado: **PASS**.
+
+---
+
+## T8 — K03/K04/K05 procedentes de una misma estructura
+
+Una misma persona concentra conocimiento, decisión y relación, con baja sustituibilidad.
+
+Resultado esperado:
+
+```text
+una estructura consolidada
+```
+
+y no tres penalizaciones independientes.
+
+Resultado: **PASS**.
+
+---
+
+## T9 — Tres restricciones independientes no conectadas
+
+```text
+K04 = I2/S1
+K06 = I2/S1
+K07 = I2/S1
+```
+
+Sin relaciones catalogadas.
+
+Resultado esperado: permanecen independientes.
+
+Resultado: **PASS**.
+
+---
+
+## T10 — Tres configuraciones conectadas
+
+La formulación original proponía:
+
+```text
+K04 → K06 → K07
+```
+
+pero esa cadena no existe en el catálogo cerrado A01–A06.
+
+Esto es un **FAIL DE LA ESPECIFICACIÓN DE PRUEBA**, no del motor.
+
+La prueba se corrige utilizando relaciones que sí existen:
+
+```text
+K02
+↓ A02
+K06
+```
+
+y:
+
+```text
+K02
+↓ A05
+K08
+```
+
+Cuando las condiciones de A02/A05 se cumplen, existe un Cluster estructural.
+
+Resultado: **PASS tras corregir la prueba**.
+
+---
+
+## T11 — I3/S4 con absorción suficiente
+
+Resultado esperado:
+
+```text
+D
+```
+
+Resultado: **PASS**.
+
+---
+
+## T12 — I3/S4 con absorción insuficiente
+
+Aunque exista capacidad esencial comprometida y evidencia suficiente, I3/S4 no satisface las condiciones de E.
+
+Resultado esperado:
+
+```text
+D
+```
+
+Resultado: **PASS**.
+
+---
+
+## T13 — I4/S3 sin alcance organizacional demostrado
+
+Resultado esperado:
+
+```text
+D
+```
+
+Resultado: **PASS**.
+
+---
+
+## T14 — I4/S4 con condiciones críticas
+
+Con capacidad esencial comprometida, absorción insuficiente y evidencia suficiente:
+
+```text
+E
+```
+
+Resultado: **PASS**.
+
+---
+
+## T15 — D + D + D independientes
+
+Tres Clusters D sin relación catalogada:
+
+```text
+D + D + D → D
+```
+
+No E por acumulación.
+
+Resultado: **PASS**.
+
+---
+
+## T16 — Corrección de una condición crítica
+
+Lectura histórica:
+
+```text
+E
+```
+
+Nueva evidencia material elimina una condición E.
+
+Nueva lectura:
+
+```text
+D
+```
+
+La lectura histórica permanece inmutable.
+
+Resultado: **PASS**.
+
+---
+
+# 15. Resultado agregado T7–T16
+
+```text
+10 PASS
+0 FAIL de motor
+1 FAIL previo de especificación, corregido
+```
+
+---
+
+# 16. Hallazgo metodológico
+
+T10 demuestra que el catálogo de acoplamientos cerrado debe ser respetado también por las pruebas.
+
+No se puede introducir implícitamente una relación nueva para construir un caso de prueba.
+
+Una relación inexistente debe convertirse en hipótesis metodológica externa, no en lógica del motor.
+
+---
+
+# 17. Estado después de T1–T16
+
+T1–T6:
+
+```text
+5 PASS
+1 PASS CONDICIONADO
+0 FAIL
+```
+
+T7–T16:
+
+```text
+10 PASS
+0 FAIL de motor
+1 FAIL de especificación corregido
+```
+
+Esto no constituye todavía validación empírica del modelo.
+
+Constituye coherencia conceptual preliminar.
+
+---
+
+# 18. Siguiente bloque
+
+Ejecutar:
+
+```text
+R1–R10
+L1–L6
+Replay
+Auditoría
+Prueba de decisión
+Prueba de integridad histórica
+Prueba de IA
+```
+
+El objetivo es comprobar que el motor conserva sus propiedades cuando se conecta con Memoria, Evolución, versionado, trazabilidad y registro de decisiones.
+
+---
+
+# 19. Estado del documento
+
+**EJECUCIÓN CONCEPTUAL**
+
+No sustituye los tests automatizados sobre una implementación real.
