@@ -327,23 +327,36 @@ Resultado: **PASS**.
 
 ---
 
-# 8. T10 — Tres restricciones conectadas
+# 8. T10 — Tres configuraciones conectadas
+
+Se utiliza únicamente el catálogo cerrado de acoplamientos.
 
 ```text
-K04
-↓
-ruta explícita
-↓
+K02
+↓ A02
 K06
-↓
-ruta explícita
-↓
-K07
 ```
 
-cuando la relación esté respaldada por acoplamientos catalogados.
+y:
 
-Resultado esperado: creación de un conjunto estructural consolidado que puede tener mayor alcance que cada restricción individual.
+```text
+K02
+↓ A05
+K08
+```
+
+con condiciones materiales y rutas explícitas de continuidad/propagación.
+
+Resultado esperado:
+
+```text
+K02 + K06 + K08
+→ Cluster conectado
+```
+
+El Cluster puede tener mayor alcance que cada configuración aislada cuando las reglas del acoplamiento lo permiten.
+
+No se admite inventar una relación K04 → K06 → K07, porque el catálogo A01–A06 no contiene esas relaciones.
 
 Resultado: **PASS** si el cambio procede de estructura y no de recuento.
 
@@ -380,8 +393,10 @@ evidencia = suficiente
 Resultado esperado:
 
 ```text
-E
+D
 ```
+
+I3/S4 no puede producir E automáticamente. E exige I4/S4 y las condiciones E1–E4 definidas en MOTOR_ESTADO_V2.md.
 
 ---
 
